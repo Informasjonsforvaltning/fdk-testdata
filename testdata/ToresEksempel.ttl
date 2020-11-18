@@ -8,7 +8,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xkos: <https://rdf-vocabulary.ddialliance.org/xkos/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
@@ -70,7 +70,7 @@ digdir:Tidsintervall  a  owl:NamedIndividual , dct:PeriodOfTime ;
         dcat:startDate  "2016-02-11T00:00:00+01:00"^^xsd:dateTime .
 
 digdir:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
-        vcard:fn            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
+        vcard:hasOrganizationName            "Digitalisation department"@en , "Avdeling for digitalisering"@nn , "Avdeling for digitalisering"@nb ;
         vcard:hasEmail      <mailto:informasjonsforvaltning@digdir.no> ;
         vcard:hasTelephone  <tel:12345678> .
 
