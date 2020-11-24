@@ -17,7 +17,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel , owl:NamedIndivid
         modelldcatno:containsModelElement
                 digdir:Aktør , digdir:Enhet , digdir:Person , digdir:Kontaktinformasjon , digdir:Identifikator , digdir:Sivilstand , digdir:Kjønn , digdir:Landkode , digdir:Personnavn , digdir:Periode , digdir:Tekst , digdir:DatoKlokkeslett , digdir:Organisasjonsnummer , digdir:Dato ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet"^^xsd:string ;
-        dct:publisher          digdir:Utgiver ;
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:temporal            digdir:Tidsintervall ;
         dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
         dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
@@ -38,7 +38,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
         modelldcatno:containsModelElement
                 digdir:Adresse , digdir:GeografiskAdresse , digdir:OffisiellAdresse , digdir:Postboksadresse , digdir:Matrikkeladresse , digdir:Vegadresse , digdir:Kommunenummer , digdir:Poststed , digdir:Punkt , digdir:Matrikkelnummer , digdir:Adressenummer ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AdresseModell"^^xsd:string ;
-        dct:publisher          digdir:Utgiver ;
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:description         "Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
         dct:title               "Felles informasjonsmodell for Adresse"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
@@ -56,15 +56,10 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
 digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:description         "Katalog med oversikt over Digitaliseringsdirektoratets modeller"@nb ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
-        dct:publisher           digdir:Utgiver ;
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:title               "Digitaliseringsdirektoratets modellkatalog"@nb ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
-
-digdir:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
-        dct:identifier  "991825827"^^xsd:string ;
-        dct:type        "Organisasjonsledd"@nb ;
-        foaf:name       "Digitaliseringsdirektoratet"@nb .
 
 digdir:Tidsintervall  a  owl:NamedIndividual , dct:PeriodOfTime ;
         dcat:startDate  "2016-02-11T00:00:00+01:00"^^xsd:dateTime .
