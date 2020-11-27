@@ -7,8 +7,12 @@
   dct:identifier "1" ;
   dct:title "Samordnet registermelding"@nb ;
   dct:description "Elektronisk skjema for registrering av selskap"@nb ;
+  dcat:keyword "Selskapsregistrering" @nb ;
+
+  cv:hasCriterion "Over 18 år"@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> a cpsv:PublicService ;
