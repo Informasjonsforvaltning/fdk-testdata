@@ -8,53 +8,315 @@
   dct:identifier "1" ;
   dct:title "Samordnet registermelding"@nb ;
   dct:description "Elektronisk skjema for registrering av selskap"@nb ;
-  dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
-  cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+  dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
+  cv:sector <https://data.norge.no/concepts/2> ;
+  cv:isDescribedAt <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> ,
+                   <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/2> ;
+  cv:isClassifiedBy <https://data.norge.no/concepts/3> ,
+                    <https://data.norge.no/concepts/4> ,
+                    <https://data.norge.no/concepts/5> ,
+                    <https://data.norge.no/concepts/6> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
-
+  dct:language "Norsk bokmål"@nb, "Nynorsk"@nb ; # TODO - dct:LinguisticSystem
+  cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> ;
+  cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ,
+                      <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
+                      <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
+  # TODO - cv:hasLegalResouce
+  cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/1> ,
+                <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> a cpsv:PublicService ;
   dct:identifier "2" ;
-  dct:title "Søknad om serverings- og skjenkebevilling"@nb ;
+  dct:title "Søknad om skjenkebevilling"@nb ;
   dct:description "Søknad om skjenkebevilling"@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
+  dcat:keyword "Skjenkebevilling"@nb, "Alkoholservering"@nb, "Bar"@nb, "Nattklubb"@nb ;
+  cv:sector <https://data.norge.no/concepts/2> ;
+  cv:isClassifiedBy <https://data.norge.no/concepts/7> ,
+                    <https://data.norge.no/concepts/8> ,
+                    <https://data.norge.no/concepts/9> ,
+                    <https://data.norge.no/concepts/10> ,
+                    <https://data.norge.no/concepts/11> ,
+                    <https://data.norge.no/concepts/12> ,
+                    <https://data.norge.no/concepts/13> ;
+  dct:requires <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  dct:language "Norsk bokmål"@nb, "Nynorsk"@nb ;
+  cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/2> ,
+                  <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/3> ,
+                  <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/4> ,
+                  <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/5> ;
+  cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/4> ,
+                      <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/5> ,
+                      <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
+  cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> ,
+                <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
+  cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> a cpsv:PublicService ;
   dct:identifier "3" ;
+  dct:title "Søknad om serveringbevilling"@nb ;
+  dct:description "Søknad om serveringbevilling"@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
+  dcat:keyword "Serveringsbevilling"@nb, "Matservering"@nb, "Matproduksjon"@nb, "Catering"@nb, "Restaurantdrift"@nb
+  cv:sector <https://data.norge.no/concepts/2> ;
+  cv:isClassifiedBy <https://data.norge.no/concepts/14> ,
+                    <https://data.norge.no/concepts/15> ,
+                    <https://data.norge.no/concepts/16> ,
+                    <https://data.norge.no/concepts/17> ,
+                    <https://data.norge.no/concepts/18> ;
+  dct:requires <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  dct:language "Norsk bokmål"@nb, "Nynorsk"@nb ;
+  cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/5> ,
+                  <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> ;
+  cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
+  cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
+  cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> a cpsv:PublicService ;
+  dct:identifier "4" ;
   dct:title "Ny næringsmiddelvirksomhet inkl. matkontaktmaterialer"@nb ;
   dct:description "Dette skjemaet  brukes for å registrere en ny virksomhet, eller søke om godkjenning av en ny næringsmiddelvirksomhet. Skjemaet skal også brukes dersom du vil utvide aktiviteten i en allerede eksisterende virksomhet og starte med en ny aktivitet som ikke er registrert."@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/985399077> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> a cpsv:PublicService ;
-  dct:identifier "4" ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/5> a cpsv:PublicService ;
+  dct:identifier "5" ;
   dct:title "Registrering av ny fettutskiller"@nb ;
   dct:description "Registrering av ny fettutskiller."@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/985399077> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:Event ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> a cv:PublicOrganisation ;
+  skos:prefLabel "Brønnøysundregistrene"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> a cv:PublicOrganisation ;
+  skos:prefLabel "Brønnøy kommune"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:BusinessEvent ;
   dct:identifier "1" ;
   dct:title "Starte og drive restaurant"@nb ;
   dct:description "Elektronisk prosess for etablering og oppstart av restaurantdrift."@nb ;
-  dct:type <https://data.norge.no/concpets/livshendelse> ;
+  dct:type <https://data.norge.no/concepts/1> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ,
-               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> ;
-  .
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/5> ;
+.
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> a cv:CriterionRequirement ;
   dct:identifier "1" ;
   dct:title "Over 18 år"@nb ;
 .
 
+<http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/2> a cv:CriterionRequirement ;
+  dct:identifier "2" ;
+  dct:title "Over 20 år"@nb ;
+.
 
-<https://data.norge.no/concpets/livshendelse> a skos:Concept ;
-  .
+<http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/3> a cv:CriterionRequirement ;
+  dct:identifier "3" ;
+  dct:title "Bestått kunnskapsprøven"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/4> a cv:CriterionRequirement ;
+  dct:identifier "4" ;
+  dct:title "Krever en fysisk person som styrer /stedfortreder som har styringsrett over skjenking"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/5> a cv:CriterionRequirement ;
+  dct:identifier "5" ;
+  dct:title "Krav om vandel"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> a cv:CriterionRequirement ;
+  dct:identifier "6" ;
+  dct:title "Bevillingssøker kan enten være en fysisk eller jurdisk person"@nb ;
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/1> a skos:Concept ;
+  skos:prefLabel "Starting business" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/2> a skos:Concept ;
+  skos:prefLabel "Nacekode: 56.1" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/3> a skos:Concept ;
+  skos:prefLabel "Organisasjonsnummer" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/4> a skos:Concept ;
+  skos:prefLabel "Aksjeselskap" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/5> a skos:Concept ;
+  skos:prefLabel "Adresse" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/6> a skos:Concept ;
+  skos:prefLabel "Kontaktperson" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/7> a skos:Concept ;
+  skos:prefLabel "Skjenkeansvarlig" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/8> a skos:Concept ;
+  skos:prefLabel "Daglig leder" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/9> a skos:Concept ;
+  skos:prefLabel "Alkoholfrie drikkevarer" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/10> a skos:Concept ;
+  skos:prefLabel "Alminnelig bevilling" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/11> a skos:Concept ;
+  skos:prefLabel "Bevilling for lukket" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/12> a skos:Concept ;
+  skos:prefLabel "Selskap" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/13> a skos:Concept ;
+  skos:prefLabel "Vandel" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/14> a skos:Concept ;
+  skos:prefLabel "Etablererprøve" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/15> a skos:Concept ;
+  skos:prefLabel "Daglig leder" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/16> a skos:Concept ;
+  skos:prefLabel "Kafé" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/17> a skos:Concept ;
+  skos:prefLabel "Spiserestaurant" ;
+.
+
+# TODO - Sjekk om vi kan gjenbruke EU-vokabular
+<https://data.norge.no/concepts/18> a skos:Concept ;
+  skos:prefLabel "Gatekjøkken" ;
+.
+
+
+# TODO - Snakk med Stig
+<http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> a cv:PublicServiceDataset ;
+  dct:identifier "1" ;
+  dct:name "Enhetsregisteret"@nb ;
+  #dct:publisher
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/2> a cv:PublicServiceDataset ;
+  dct:identifier "2" ;
+  dct:name "Foretaksregisteret"@nb ;
+  #dct:publisher
+.
+
+# TODO - rolle må byttes
+<http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> a cv:Participation ;
+  dct:identifier "1" ;
+  dct:description "Statistisk sentralbyrås Virksomhets- og foretaksregister"@nb ;
+  cv:role <https://data.norge.no/concepts/15> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> a cv:Participation ;
+  dct:identifier "2" ;
+  dct:description "Merverdiavgiftsregisteret"@nb ;
+  cv:role <https://data.norge.no/concepts/15> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> a cv:Participation ;
+  dct:identifier "3" ;
+  dct:description "Arbeidsgiverdelen av Arbeidsgiver/arbeidstakerregisteret"@nb ;
+  cv:role <https://data.norge.no/concepts/15> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/participation/4> a cv:Participation ;
+  dct:identifier "4" ;
+  dct:description "Politi"@nb ;
+  cv:role <https://data.norge.no/concepts/15> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/participation/5> a cv:Participation ;
+  dct:identifier "5" ;
+  dct:description "Kemner"@nb ;
+  cv:role <https://data.norge.no/concepts/15> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> a cv:Participation ;
+  dct:identifier "6" ;
+  dct:description "Mattilsynet"@nb ;
+  cv:role <https://data.norge.no/concepts/15> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> a cv:Evidence ;
+  dct:identifier "1" ;
+  dct:title "Dokumentasjon på bestått kunnskapsprøve"@nb ;
+  dct:description "Dokumentasjon på bestått kunnskapsprøve"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> a cv:Evidence ;
+  dct:identifier "2" ;
+  dct:title "Vandelsattest"@nb ;
+  dct:description "Vandelsattest"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/output/1> a cv:Output ;
+  dct:identifier "1" ;
+  dct:title "Firmaattest"@nb ;
+  dct:description "Firmaattest"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> a cv:Output ;
+  dct:identifier "2" ;
+  dct:title "Registerutskrift"@nb ;
+  dct:description "Registerutskrift"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> a cv:Output ;
+  dct:identifier "3" ;
+  dct:title "Skjenkebevilling"@nb ;
+  dct:description "Skjenkebevilling"@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> a cv:Output ;
+  dct:identifier "4" ;
+  dct:title "Serveringsbevilling"@nb ;
+  dct:description "Serveringsbevilling"@nb ;
+.
