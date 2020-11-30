@@ -127,6 +127,9 @@ digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
         dct:modified            "2017-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
+digdir:AlternativModellformat a owl:NamedIndividual , <https://www.difi.no/sites/difino/files/adresse_-_felles_informasjonsmodell.png> , foaf:Document ;
+        dct:title                 "Forenklet modell for ModellDCAT-AP-NO"@nb  ;
+        dct:format                <http://publications.europa.eu/resource/authority/file-type/PNG> .
 
 digdir:Utgiver  a       owl:NamedIndividual , foaf:Agent ;
         dct:identifier  "991825827"^^xsd:string ;
