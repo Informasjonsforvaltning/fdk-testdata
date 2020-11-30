@@ -1,0 +1,132 @@
+[
+  {
+    "anbefaltTerm": {
+      "navn": {
+        "nb": "1demoterm1811"
+      }
+    },
+    "tillattTerm": {
+      "nb": [
+        "Tillatt term"
+      ]
+    },
+    "frarådetTerm": {
+      "nb": [
+        "Frarådet term"
+      ]
+    },
+    "definisjon": {
+      "tekst": {
+        "no": "definisjon"
+      }
+    },
+    "kildebeskrivelse": {
+      "forholdTilKilde": "egendefinert",
+      "kilde": []
+    },
+    "merknad": {
+      "nb": "merknad"
+    },
+    "ansvarligVirksomhet": {
+      "uri": null,
+      "id": "910244132",
+      "navn": null,
+      "orgPath": null,
+      "prefLabel": null
+    },
+    "eksempel": {
+      "nb": "bruk av begrepet: Eksempel"
+    },
+    "fagområde": {
+      "nb": "bruk av begrepet: Fagområde"
+    },
+    "bruksområde": {
+      "nb": [
+        "bruk av begrepet: bruksområde(r)"
+      ]
+    },
+    "omfang": {
+      "uri": "lenketilomfangno",
+      "tekst": "bruk av begrepet: Omfang: Tittel på omfang"
+    },
+    "kontaktpunkt": {
+      "harEpost": "e-post@epost.no",
+      "harTelefon": "47474747"
+    },
+    "gyldigFom": "2019-12-31",
+    "gyldigTom": "2020-12-30",
+    "endringslogelement": {
+      "brukerId": "03096000854",
+      "endringstidspunkt": "2020-10-14T12:54:52.264+02:00"
+    },
+    "seOgså": [
+      "http://begrepskatalogen/begrep/98da4336-dff2-11e7-a0fd-005056821322",
+      "http://begrepskatalogen/begrep/98da4336-dff2-11e7-a0fd-005056821322"
+    ]
+  },
+  {
+    "anbefaltTerm": {
+      "navn": {
+        "nb": "2demoterm1811"
+      }
+    },
+    "tillattTerm": {
+      "nb": [
+        "Tillatt term"
+      ]
+    },
+    "frarådetTerm": {
+      "nb": [
+        "Frarådet term"
+      ]
+    },
+    "definisjon": {
+      "tekst": {
+        "nb": "definisjon"
+      }
+    },
+    "kildebeskrivelse": {
+      "forholdTilKilde": "egendefinert",
+      "kilde": []
+    },
+    "merknad": {
+      "nb": "merknad"
+    },
+    "ansvarligVirksomhet": {
+      "uri": null,
+      "id": "910244132",
+      "navn": null,
+      "orgPath": null,
+      "prefLabel": null
+    },
+    "eksempel": {
+      "nb": "bruk av begrepet: Eksempel"
+    },
+    "fagområde": {
+      "nb": "bruk av begrepet: Fagområde"
+    },
+    "bruksområde": {
+      "nb": [
+        "bruk av begrepet: bruksområde(r)"
+      ]
+    },
+    "omfang": {
+      "uri": "http://lenketilomfang.no",
+      "tekst": "bruk av begrepet: Omfang: Tittel på omfang"
+    },
+    "kontaktpunkt": {
+      "harEpost": "e-post@epost.no",
+      "harTelefon": "47474747"
+    },
+    "gyldigFom": "2019-12-31",
+    "gyldigTom": "2020-12-30",
+    "endringslogelement": {
+      "brukerId": "03096000854",
+      "endringstidspunkt": "2020-10-14T12:54:52.264+02:00"
+    },
+    "seOgså": [
+      "http://begrepskatalogen/begrep/98da4336-dff2-11e7-a0fd-005056821322",
+      "http://begrepskatalogen/begrep/98da4336-dff2-11e7-a0fd-005056821322"
+    ]
+  }
+]
