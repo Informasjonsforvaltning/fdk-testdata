@@ -143,6 +143,7 @@
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> a cv:CriterionRequirement ;
   dct:identifier "6" ;
   dct:title "Bevillingssøker kan enten være en fysisk eller jurdisk person"@nb ;
+.
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/1> a skos:Concept ;
