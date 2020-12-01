@@ -8,7 +8,7 @@
   dct:identifier "1" ;
   dct:title "Samordnet registermelding"@nb ;
   dct:description "Elektronisk skjema for registrering av selskap"@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isDescribedAt <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> ,
@@ -18,7 +18,8 @@
                     <https://data.norge.no/concepts/5> ,
                     <https://data.norge.no/concepts/6> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
-  dct:language "Norsk bokmål"@nb, "Nynorsk"@nb ; # TODO - dct:LinguisticSystem
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
   cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> ;
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
@@ -32,7 +33,7 @@
   dct:identifier "2" ;
   dct:title "Søknad om skjenkebevilling"@nb ;
   dct:description "Søknad om skjenkebevilling"@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
+  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
   dcat:keyword "Skjenkebevilling"@nb, "Alkoholservering"@nb, "Bar"@nb, "Nattklubb"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isClassifiedBy <https://data.norge.no/concepts/7> ,
@@ -44,7 +45,8 @@
                     <https://data.norge.no/concepts/13> ;
   dct:requires <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
-  dct:language "Norsk bokmål"@nb, "Nynorsk"@nb ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
   cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/2> ,
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/3> ,
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/4> ,
@@ -61,7 +63,7 @@
   dct:identifier "3" ;
   dct:title "Søknad om serveringbevilling"@nb ;
   dct:description "Søknad om serveringbevilling"@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
+  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
   dcat:keyword "Serveringsbevilling"@nb, "Matservering"@nb, "Matproduksjon"@nb, "Catering"@nb, "Restaurantdrift"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isClassifiedBy <https://data.norge.no/concepts/14> ,
@@ -71,7 +73,8 @@
                     <https://data.norge.no/concepts/18> ;
   dct:requires <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
-  dct:language "Norsk bokmål"@nb, "Nynorsk"@nb ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
   cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/5> ,
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> ;
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
@@ -83,7 +86,7 @@
   dct:identifier "4" ;
   dct:title "Ny næringsmiddelvirksomhet inkl. matkontaktmaterialer"@nb ;
   dct:description "Dette skjemaet  brukes for å registrere en ny virksomhet, eller søke om godkjenning av en ny næringsmiddelvirksomhet. Skjemaet skal også brukes dersom du vil utvide aktiviteten i en allerede eksisterende virksomhet og starte med en ny aktivitet som ikke er registrert."@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/985399077> ;
+  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/3> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
 .
 
@@ -91,16 +94,29 @@
   dct:identifier "5" ;
   dct:title "Registrering av ny fettutskiller"@nb ;
   dct:description "Registrering av ny fettutskiller."@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/985399077> ;
+  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> a cv:PublicOrganisation ;
+  dct:identifier "1" ;
+  dct:title "Brønnøysundregistrene"@nb ;
   skos:prefLabel "Brønnøysundregistrene"@nb ;
+  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> a cv:PublicOrganisation ;
+  dct:identifier "2" ;
+  dct:title "Brønnøy kommune"@nb ;
   skos:prefLabel "Brønnøy kommune"@nb ;
+  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/3> a cv:PublicOrganisation ;
+  dct:identifier "3" ;
+  dct:title "Mattilsynet"@nb ;
+  skos:prefLabel "Mattilsynet"@nb ;
+  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:BusinessEvent ;
@@ -248,6 +264,7 @@
   dct:name "Foretaksregisteret"@nb ;
   #dct:publisher
 .
+
 
 # TODO - rolle må byttes
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> a cv:Participation ;
