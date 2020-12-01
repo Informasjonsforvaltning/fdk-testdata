@@ -121,8 +121,8 @@
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:BusinessEvent ;
   dct:identifier "1" ;
-  dct:title "Starte og drive restaurant"@nb ;
-  dct:description "Elektronisk prosess for etablering og oppstart av restaurantdrift."@nb ;
+  dct:title "Starte og drive bedrift"@nb ;
+  dct:description "Elektronisk prosess for etablering og oppstart av en bedrift."@nb ;
   dct:type <https://data.norge.no/concepts/1> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
