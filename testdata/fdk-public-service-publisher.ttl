@@ -163,92 +163,92 @@
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/1> a skos:Concept ;
-  skos:prefLabel "Starting business" ;
+  skos:prefLabel "Starting business"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/2> a skos:Concept ;
-  skos:prefLabel "Nacekode: 56.1" ;
+  skos:prefLabel "Nacekode: 56.1"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/3> a skos:Concept ;
-  skos:prefLabel "Organisasjonsnummer" ;
+  skos:prefLabel "Organisasjonsnummer"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/4> a skos:Concept ;
-  skos:prefLabel "Aksjeselskap" ;
+  skos:prefLabel "Aksjeselskap"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/5> a skos:Concept ;
-  skos:prefLabel "Adresse" ;
+  skos:prefLabel "Adresse"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/6> a skos:Concept ;
-  skos:prefLabel "Kontaktperson" ;
+  skos:prefLabel "Kontaktperson"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/7> a skos:Concept ;
-  skos:prefLabel "Skjenkeansvarlig" ;
+  skos:prefLabel "Skjenkeansvarlig"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/8> a skos:Concept ;
-  skos:prefLabel "Daglig leder" ;
+  skos:prefLabel "Daglig leder"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/9> a skos:Concept ;
-  skos:prefLabel "Alkoholfrie drikkevarer" ;
+  skos:prefLabel "Alkoholfrie drikkevarer"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/10> a skos:Concept ;
-  skos:prefLabel "Alminnelig bevilling" ;
+  skos:prefLabel "Alminnelig bevilling"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/11> a skos:Concept ;
-  skos:prefLabel "Bevilling for lukket" ;
+  skos:prefLabel "Bevilling for lukket"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/12> a skos:Concept ;
-  skos:prefLabel "Selskap" ;
+  skos:prefLabel "Selskap"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/13> a skos:Concept ;
-  skos:prefLabel "Vandel" ;
+  skos:prefLabel "Vandel"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/14> a skos:Concept ;
-  skos:prefLabel "Etablererprøve" ;
+  skos:prefLabel "Etablererprøve"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/15> a skos:Concept ;
-  skos:prefLabel "Daglig leder" ;
+  skos:prefLabel "Daglig leder"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/16> a skos:Concept ;
-  skos:prefLabel "Kafé" ;
+  skos:prefLabel "Kafé"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/17> a skos:Concept ;
-  skos:prefLabel "Spiserestaurant" ;
+  skos:prefLabel "Spiserestaurant"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/18> a skos:Concept ;
-  skos:prefLabel "Gatekjøkken" ;
+  skos:prefLabel "Gatekjøkken"@nb ;
 .
 
 
