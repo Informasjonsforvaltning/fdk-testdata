@@ -379,7 +379,7 @@ digdir:telefonnummer  a          modelldcatno:Attribute , owl:NamedIndividual ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:mobiltelefonnummer a      modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:subject "https://fellesdatakatalog.digdir.no/api/concepts/af4b2af3-64bd-42ba-967e-01cb8ef01c52"^^xsd:anyURI ;
+        dct:subject "https://registrering-begrep-api.staging.fellesdatakatalog.digdir.no/910244132/af277c65-3e96-4b2b-8a04-72781d390dc4"^^xsd:anyURI ;
         dct:title          "mobiltelefonnummer"@nb ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
