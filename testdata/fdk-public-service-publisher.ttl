@@ -8,7 +8,7 @@
   dct:identifier "1" ;
   dct:title "Samordnet registermelding"@nb ;
   dct:description "Elektronisk skjema for registrering av selskap"@nb ;
-  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isDescribedAt <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> ,
@@ -33,7 +33,7 @@
   dct:identifier "2" ;
   dct:title "Søknad om skjenkebevilling"@nb ;
   dct:description "Søknad om skjenkebevilling"@nb ;
-  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   dcat:keyword "Skjenkebevilling"@nb, "Alkoholservering"@nb, "Bar"@nb, "Nattklubb"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isClassifiedBy <https://data.norge.no/concepts/7> ,
@@ -63,7 +63,7 @@
   dct:identifier "3" ;
   dct:title "Søknad om serveringbevilling"@nb ;
   dct:description "Søknad om serveringbevilling"@nb ;
-  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   dcat:keyword "Serveringsbevilling"@nb, "Matservering"@nb, "Matproduksjon"@nb, "Catering"@nb, "Restaurantdrift"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isClassifiedBy <https://data.norge.no/concepts/14> ,
