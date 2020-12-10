@@ -24,7 +24,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel , owl:NamedIndivid
         owl:versionInfo        "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dct:title               "Liland's store modell for lotterigevinster"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
