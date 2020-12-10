@@ -19,7 +19,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel , owl:NamedIndivid
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.staging.fellesdatakatalog.digdir.no/organizations/910258028> ;
         dct:temporal            digdir:Tidsintervall ;
-        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse."@nb ;
+        dct:description         "Overordnet informasjonsmodell alle gevinster Liland har de siste årene."@nb ;
         dct:title               "Liland's store modell for lotterigevinster"@nb ;
         owl:versionInfo        "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
@@ -39,7 +39,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
                 digdir:Adresse , digdir:GeografiskAdresse , digdir:OffisiellAdresse , digdir:Postboksadresse , digdir:Matrikkeladresse , digdir:Vegadresse , digdir:Kommunenummer , digdir:Poststed , digdir:Punkt , digdir:Matrikkelnummer , digdir:Adressenummer ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AdresseModell"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.staging.fellesdatakatalog.digdir.no/organizations/910258028> ;
-        dct:description         "Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
+        dct:description         "Overordnet informasjonsmodell for informasjon som kan kalles verdens beste"@nb ;
         dct:title               "Vedens beste informasjonsmodell"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
