@@ -13,9 +13,9 @@
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isDescribedAt <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> ,
                    <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/2> ;
-  cv:isClassifiedBy <https://data.norge.no/concepts/3> ,
-                    <https://data.norge.no/concepts/4> ,
-                    <https://data.norge.no/concepts/5> ,
+  cv:isClassifiedBy <http://data.brreg.no/begrep/28155> ,
+                    <http://begrepskatalogen/begrep/d67e2d32-6dcf-11e6-be2b-ba992a0501a6> ,
+                    <http://data.brreg.no/begrep/43180> ,
                     <https://data.norge.no/concepts/6> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
@@ -24,21 +24,24 @@
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
-  # TODO - cv:hasLegalResouce
+  cv:hasLegalResouce <https://lovdata.no/lov/1994-06-03-15> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> ;
+  cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
+  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
+  cv:hasContactPoint <https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> a cpsv:PublicService ;
   dct:identifier "2" ;
   dct:title "Søknad om skjenkebevilling"@nb ;
   dct:description "Søknad om skjenkebevilling"@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
   dcat:keyword "Skjenkebevilling"@nb, "Alkoholservering"@nb, "Bar"@nb, "Nattklubb"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isClassifiedBy <https://data.norge.no/concepts/7> ,
-                    <https://data.norge.no/concepts/8> ,
-                    <https://data.norge.no/concepts/9> ,
+                    <http://data.brreg.no/begrep/60813> ,
+                    <http://begrepskatalogen/begrep/adcad8a7-e67e-11e8-b878-0050568204d6> ,
                     <https://data.norge.no/concepts/10> ,
                     <https://data.norge.no/concepts/11> ,
                     <https://data.norge.no/concepts/12> ,
@@ -56,18 +59,23 @@
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
+  cv:hasLegalResouce <https://lovdata.no/lov/1989-06-02-27> ,
+                     <https://lovdata.no/forskrift/2005-06-08-538> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> ;
+  cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
+  # dct:spatial - kommune
+  cv:hasContactPoint <https://kommune24-7.no/1813/702431> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> a cpsv:PublicService ;
   dct:identifier "3" ;
   dct:title "Søknad om serveringbevilling"@nb ;
   dct:description "Søknad om serveringbevilling"@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
   dcat:keyword "Serveringsbevilling"@nb, "Matservering"@nb, "Matproduksjon"@nb, "Catering"@nb, "Restaurantdrift"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isClassifiedBy <https://data.norge.no/concepts/14> ,
-                    <https://data.norge.no/concepts/15> ,
+                    <http://data.brreg.no/begrep/60813> ,
                     <https://data.norge.no/concepts/16> ,
                     <https://data.norge.no/concepts/17> ,
                     <https://data.norge.no/concepts/18> ;
@@ -79,7 +87,11 @@
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> ;
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
+  cv:hasLegalResouce <https://lovdata.no/lov/1997-06-13-55> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> ;
+  cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
+  # dct:spatial - kommune
+  cv:hasContactPoint <https://kommune24-7.no/1813/702429> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> a cpsv:PublicService ;
@@ -172,21 +184,6 @@
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
-<https://data.norge.no/concepts/3> a skos:Concept ;
-  skos:prefLabel "Organisasjonsnummer"@nb ;
-.
-
-# TODO - Sjekk om vi kan gjenbruke EU-vokabular
-<https://data.norge.no/concepts/4> a skos:Concept ;
-  skos:prefLabel "Aksjeselskap"@nb ;
-.
-
-# TODO - Sjekk om vi kan gjenbruke EU-vokabular
-<https://data.norge.no/concepts/5> a skos:Concept ;
-  skos:prefLabel "Adresse"@nb ;
-.
-
-# TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/6> a skos:Concept ;
   skos:prefLabel "Kontaktperson"@nb ;
 .
@@ -194,16 +191,6 @@
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/7> a skos:Concept ;
   skos:prefLabel "Skjenkeansvarlig"@nb ;
-.
-
-# TODO - Sjekk om vi kan gjenbruke EU-vokabular
-<https://data.norge.no/concepts/8> a skos:Concept ;
-  skos:prefLabel "Daglig leder"@nb ;
-.
-
-# TODO - Sjekk om vi kan gjenbruke EU-vokabular
-<https://data.norge.no/concepts/9> a skos:Concept ;
-  skos:prefLabel "Alkoholfrie drikkevarer"@nb ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
@@ -232,11 +219,6 @@
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
-<https://data.norge.no/concepts/15> a skos:Concept ;
-  skos:prefLabel "Daglig leder"@nb ;
-.
-
-# TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/16> a skos:Concept ;
   skos:prefLabel "Kafé"@nb ;
 .
@@ -249,6 +231,63 @@
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
 <https://data.norge.no/concepts/18> a skos:Concept ;
   skos:prefLabel "Gatekjøkken"@nb ;
+.
+
+
+
+# TODO - Controlled vocabulary (Participation)
+<https://data.norge.no/concepts/100> a skos:Concept ;
+  skos:prefLabel "Dataleverandør"@nb ;
+.
+
+# TODO - Controlled vocabulary (Participation)
+<https://data.norge.no/concepts/101> a skos:Concept ;
+  skos:prefLabel "Datakonsument"@nb ;
+.
+
+# TODO - Controlled vocabulary (Participation)
+<https://data.norge.no/concepts/102> a skos:Concept ;
+  skos:prefLabel "Sluttbruker"@nb ;
+.
+
+# TODO - Controlled vocabulary (Participation)
+<https://data.norge.no/concepts/103> a skos:Concept ;
+  skos:prefLabel "Tjenestetilbyder"@nb ;
+.
+
+# TODO - Controlled vocabulary (Participation)
+<https://data.norge.no/concepts/104> a skos:Concept ;
+  skos:prefLabel "Tjenesteprodusent"@nb ;
+.
+
+
+# Concept Type - Output
+<https://data.norge.no/concepts/200> a skos:Concept ;
+  skos:prefLabel "Erklæring"@nb, "Declaration"@en ;
+.
+
+<https://data.norge.no/concepts/201> a skos:Concept ;
+  skos:prefLabel "Fysisk objekt"@nb, "Physical object"@en ;
+.
+
+<https://data.norge.no/concepts/202> a skos:Concept ;
+  skos:prefLabel "Kode"@nb, "Code"@en ;
+.
+
+<https://data.norge.no/concepts/203> a skos:Concept ;
+  skos:prefLabel "Økonomisk forpliktelse"@nb, "Financial obligation"@en ;
+.
+
+<https://data.norge.no/concepts/204> a skos:Concept ;
+  skos:prefLabel "Økonomisk fordel"@nb, "Financial benefit"@en ;
+.
+
+<https://data.norge.no/concepts/205> a skos:Concept ;
+  skos:prefLabel "Tillatelse"@nb, "Permit"@en ;
+.
+
+<https://data.norge.no/concepts/206> a skos:Concept ;
+  skos:prefLabel "Anerkjennelse"@nb, "Recognition"@en ;
 .
 
 
@@ -319,22 +358,28 @@
   dct:identifier "1" ;
   dct:title "Firmaattest"@nb ;
   dct:description "Firmaattest"@nb ;
+  dct:type <https://data.norge.no/concepts/200> ,
+           <https://data.norge.no/concepts/201> ,
+           <https://data.norge.no/concepts/206> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> a cv:Output ;
   dct:identifier "2" ;
   dct:title "Registerutskrift"@nb ;
   dct:description "Registerutskrift"@nb ;
+  dct:type <https://data.norge.no/concepts/201> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> a cv:Output ;
   dct:identifier "3" ;
   dct:title "Skjenkebevilling"@nb ;
   dct:description "Skjenkebevilling"@nb ;
+  dct:type <https://data.norge.no/concepts/205> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> a cv:Output ;
   dct:identifier "4" ;
   dct:title "Serveringsbevilling"@nb ;
   dct:description "Serveringsbevilling"@nb ;
+  dct:type <https://data.norge.no/concepts/205> ;
 .
