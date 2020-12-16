@@ -24,7 +24,7 @@
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
-  cv:hasLegalResouce <https://lovdata.no/lov/1994-06-03-15> ;
+  cv:hasLegalResource <https://lovdata.no/lov/1994-06-03-15> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> ;
   cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
@@ -59,7 +59,7 @@
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
-  cv:hasLegalResouce <https://lovdata.no/lov/1989-06-02-27> ,
+  cv:hasLegalResource <https://lovdata.no/lov/1989-06-02-27> ,
                      <https://lovdata.no/forskrift/2005-06-08-538> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> ;
   cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
@@ -87,7 +87,7 @@
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> ;
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
-  cv:hasLegalResouce <https://lovdata.no/lov/1997-06-13-55> ;
+  cv:hasLegalResource <https://lovdata.no/lov/1997-06-13-55> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> ;
   cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
   # dct:spatial - kommune
@@ -309,37 +309,37 @@
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> a cv:Participation ;
   dct:identifier "1" ;
   dct:description "Statistisk sentralbyrås Virksomhets- og foretaksregister"@nb ;
-  cv:role <https://data.norge.no/concepts/15> ;
+  cv:role <https://data.norge.no/concepts/101> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> a cv:Participation ;
   dct:identifier "2" ;
   dct:description "Merverdiavgiftsregisteret"@nb ;
-  cv:role <https://data.norge.no/concepts/15> ;
+  cv:role <https://data.norge.no/concepts/101> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> a cv:Participation ;
   dct:identifier "3" ;
-  dct:description "Arbeidsgiverdelen av Arbeidsgiver/arbeidstakerregisteret"@nb ;
-  cv:role <https://data.norge.no/concepts/15> ;
+  dct:description "Arbeidsgiverdelen av Arbeidsgiver-/arbeidstakerregisteret"@nb ;
+  cv:role <https://data.norge.no/concepts/101> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/4> a cv:Participation ;
   dct:identifier "4" ;
   dct:description "Politi"@nb ;
-  cv:role <https://data.norge.no/concepts/15> ;
+  cv:role <https://data.norge.no/concepts/100> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/5> a cv:Participation ;
   dct:identifier "5" ;
   dct:description "Kemner"@nb ;
-  cv:role <https://data.norge.no/concepts/15> ;
+  cv:role <https://data.norge.no/concepts/100> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> a cv:Participation ;
   dct:identifier "6" ;
-  dct:description "Mattilsynet"@nb ;
-  cv:role <https://data.norge.no/concepts/15> ;
+  dct:description "Mattilsynet i kommunen"@nb ;
+  cv:role <https://data.norge.no/concepts/100> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> a cv:Evidence ;
@@ -382,4 +382,41 @@
   dct:title "Serveringsbevilling"@nb ;
   dct:description "Serveringsbevilling"@nb ;
   dct:type <https://data.norge.no/concepts/205> ;
+.
+
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/1> a dct:Agent ;
+  dct:identifier "1" ;
+  dct:title "Statistisk sentralbyrå (971 526 920)"@nb ;
+  cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ;
+  # cv:hasAddress
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/2> a dct:Agent ;
+  dct:identifier "2" ;
+  dct:title "Skatteetaten (974 761 076)"@nb ;
+  cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/5> ;
+  # cv:hasAddress
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/3> a dct:Agent ;
+  dct:identifier "3" ;
+  dct:title "Arbeids- og velferdsetaten (NAV) (889 640 782)"@nb ;
+  cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
+  # cv:hasAddress
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/4> a dct:Agent ;
+  dct:identifier "4" ;
+  dct:title "Politidirektoratet (982 531 950)"@nb ;
+  cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/4> ;
+  # cv:hasAddress
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/5> a dct:Agent ;
+  dct:identifier "5" ;
+  dct:title "Mattilsynet (985 399 077)"@nb ;
+  cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
+  # cv:hasAddress
 .
