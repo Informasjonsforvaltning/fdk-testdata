@@ -167,7 +167,7 @@ digdir:Identifikator  a              modelldcatno:ObjectType , owl:NamedIndividu
 
 digdir:Kontaktinformasjon  a          modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty      digdir:mobiltelefonnummer , digdir:telefonnummer , digdir:epostadresse ;
-        modelldcatno:subject         "https://fellesdatakatalog.digdir.no/api/concepts/b7b85dc1-ae8c-488f-956b-76a8e9f84495"^^xsd:anyURI ;
+        modelldcatno:subject         <https://fellesdatakatalog.digdir.no/api/concepts/b7b85dc1-ae8c-488f-956b-76a8e9f84495> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kontaktinformasjon"^^xsd:string ;
         dct:title                      "Kontaktinformasjon"@nb ;
         modelldcatno:belongsToModule   "Aktør"@nb .
@@ -209,7 +209,7 @@ digdir:Vegadresse  a                modelldcatno:ObjectType , owl:NamedIndividua
 
 digdir:Personnavn  a                 owl:NamedIndividual , modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:etternavn , digdir:mellomnavn , digdir:fornavn ;
-        modelldcatno:subject     "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        modelldcatno:subject     <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Personnavn"^^xsd:string ;
         dct:title                      "Personnavn"@nb .
 
@@ -239,7 +239,7 @@ digdir:Matrikkelnummer  a           owl:NamedIndividual , modelldcatno:DataType 
 
 digdir:OrganisasjonsnummerType
         a                            modelldcatno:SimpleType , owl:NamedIndividual ;
-        modelldcatno:subject     "http://data.brreg.no/begrep/28155"^^xsd:anyURI ;
+        modelldcatno:subject     <http://data.brreg.no/begrep/28155> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#OrganisasjonsnummerType"^^xsd:string ;
         dct:title                      "Organisasjonsnummer"@nb ;
         modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
@@ -273,7 +273,7 @@ digdir:Kjønn  a                      modelldcatno:CodeList , owl:NamedIndividua
 
 digdir:Sivilstand  a                 owl:NamedIndividual , modelldcatno:CodeList ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Sivilstand"^^xsd:string ;
-        modelldcatno:subject        "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        modelldcatno:subject        <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> ;
         dct:title              "Sivilstand"@nb .
 
 digdir:Landkode  a                   modelldcatno:CodeList , owl:NamedIndividual ;
