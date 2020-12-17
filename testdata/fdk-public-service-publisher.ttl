@@ -3,6 +3,7 @@
 @prefix cv: <http://data.europa.eu/m8g/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix schema:  <https://schema.org> .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> a cpsv:PublicService ;
   dct:identifier "1" ;
@@ -29,7 +30,7 @@
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> ;
   cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
-  cv:hasContactPoint <https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/> ;
+  cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/1> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> a cpsv:PublicService ;
@@ -64,7 +65,7 @@
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> ;
   cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
   # dct:spatial - kommune
-  cv:hasContactPoint <https://kommune24-7.no/1813/702431> ;
+  cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> a cpsv:PublicService ;
@@ -91,7 +92,7 @@
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> ;
   cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
   # dct:spatial - kommune
-  cv:hasContactPoint <https://kommune24-7.no/1813/702429> ;
+  cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/3> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> a cpsv:PublicService ;
@@ -419,4 +420,18 @@
   dct:title "Mattilsynet (985 399 077)"@nb ;
   cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   # cv:hasAddress
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/contact/1> a schema:ContactPoint ;
+   schema:contactType "Kontakt brukerveiledning ved Brønnøysundregistrene"@nb ;
+   schema:telephone "75 00 75 00" ;
+   schema:url <https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/contact/2> a schema:ContactPoint ;
+   schema:url <https://kommune24-7.no/1813/702431> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/contact/3> a schema:ContactPoint ;
+   schema:url <https://kommune24-7.no/1813/702429> ;
 .
