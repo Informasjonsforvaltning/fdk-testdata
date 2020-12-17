@@ -25,10 +25,10 @@
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
-  cv:hasLegalResource <https://lovdata.no/lov/1994-06-03-15> ;
+  cv:hasLegalResource <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> ;
-  cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
+  cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/1> ;
 .
@@ -60,10 +60,10 @@
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
-  cv:hasLegalResource <https://lovdata.no/lov/1989-06-02-27> ,
-                     <https://lovdata.no/forskrift/2005-06-08-538> ;
+  cv:hasLegalResource <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> , # <https://lovdata.no/lov/1989-06-02-27>
+                      <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> ;
-  cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
+  cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
   # dct:spatial - kommune
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/2> ;
 .
@@ -88,9 +88,9 @@
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> ;
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
-  cv:hasLegalResource <https://lovdata.no/lov/1997-06-13-55> ;
+  cv:hasLegalResource <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> ;
-  cpsv:follows <https://lovdata.no/lov/1967-02-10> ;
+  cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
   # dct:spatial - kommune
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/3> ;
 .
@@ -147,31 +147,37 @@
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> a cv:CriterionRequirement ;
   dct:identifier "1" ;
   dct:title "Over 18 år"@nb ;
+  dct:type <https://data.norge.no/concepts/150> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/2> a cv:CriterionRequirement ;
   dct:identifier "2" ;
   dct:title "Over 20 år"@nb ;
+  dct:type <https://data.norge.no/concepts/150> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/3> a cv:CriterionRequirement ;
   dct:identifier "3" ;
   dct:title "Bestått kunnskapsprøven"@nb ;
+  dct:type <https://data.norge.no/concepts/151> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/4> a cv:CriterionRequirement ;
   dct:identifier "4" ;
   dct:title "Krever en fysisk person som styrer /stedfortreder som har styringsrett over skjenking"@nb ;
+  dct:type <https://data.norge.no/concepts/152> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/5> a cv:CriterionRequirement ;
   dct:identifier "5" ;
   dct:title "Krav om vandel"@nb ;
+  dct:type <https://data.norge.no/concepts/153> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> a cv:CriterionRequirement ;
   dct:identifier "6" ;
   dct:title "Bevillingssøker kan enten være en fysisk eller jurdisk person"@nb ;
+  dct:type <https://data.norge.no/concepts/152> ;
 .
 
 # TODO - Sjekk om vi kan gjenbruke EU-vokabular
@@ -262,6 +268,29 @@
 .
 
 
+
+# TODO - Controlled vocabulary (CriterionRequirement)
+<https://data.norge.no/concepts/150> a skos:Concept ;
+  skos:prefLabel "Alder"@nb ;
+.
+
+# TODO - Controlled vocabulary (CriterionRequirement)
+<https://data.norge.no/concepts/151> a skos:Concept ;
+  skos:prefLabel "Sertifisering"@nb ;
+.
+
+# TODO - Controlled vocabulary (CriterionRequirement)
+<https://data.norge.no/concepts/152> a skos:Concept ;
+  skos:prefLabel "Stilling"@nb ;
+.
+
+# TODO - Controlled vocabulary (CriterionRequirement)
+<https://data.norge.no/concepts/153> a skos:Concept ;
+  skos:prefLabel "Attest"@nb ;
+.
+
+
+
 # Concept Type - Output
 <https://data.norge.no/concepts/200> a skos:Concept ;
   skos:prefLabel "Erklæring"@nb, "Declaration"@en ;
@@ -292,17 +321,16 @@
 .
 
 
-# TODO - Snakk med Stig
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> a cv:PublicServiceDataset ;
   dct:identifier "1" ;
   dct:name "Enhetsregisteret"@nb ;
-  #dct:publisher
+  #dct:publisher (Agent)
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/2> a cv:PublicServiceDataset ;
   dct:identifier "2" ;
   dct:name "Foretaksregisteret"@nb ;
-  #dct:publisher
+  #dct:publisher (Agent)
 .
 
 
@@ -434,4 +462,15 @@
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/3> a schema:ContactPoint ;
    schema:url <https://kommune24-7.no/1813/702429> ;
+.
+
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> a cpsv:Rule ;
+   dct:identifier "1" ;
+   dct:description "Lov om behandlingsmåten i forvaltningssaker (https://lovdata.no/lov/1967-02-10)"@nb ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+   dct:title "Lov om behandlingsmåten i forvaltningssaker"@nb ;
+   cpsv:implements <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
+                   <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
+                   <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ;
 .
