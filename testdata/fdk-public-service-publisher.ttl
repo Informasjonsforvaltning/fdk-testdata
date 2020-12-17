@@ -4,6 +4,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix schema:  <https://schema.org> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> a cpsv:PublicService ;
   dct:identifier "1" ;
@@ -25,7 +28,7 @@
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
-  cv:hasLegalResource <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
+  cv:hasLegalResource <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/1> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/output/2> ;
   cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
@@ -60,11 +63,11 @@
                       <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/1> ,
                 <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
-  cv:hasLegalResource <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> , # <https://lovdata.no/lov/1989-06-02-27>
-                      <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
+  cv:hasLegalResource <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/2> ,
+                      <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/3> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/3> ;
   cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
-  # dct:spatial - kommune
+  dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/2> ;
 .
 
@@ -88,10 +91,10 @@
                   <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/6> ;
   cv:hasParticipation <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   cpsv:hasInput <http://public-service-publisher.fellesdatakatalog.digdir.no/evidence/2> ;
-  cv:hasLegalResource <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
+  cv:hasLegalResource <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/4> ;
   cpsv:produces <http://public-service-publisher.fellesdatakatalog.digdir.no/output/4> ;
   cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
-  # dct:spatial - kommune
+  dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/3> ;
 .
 
@@ -473,4 +476,25 @@
    cpsv:implements <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
                    <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
                    <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ;
+.
+
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/1> a eli:LegalResource ;
+   dct:description "Lov om Enhetsregisteret"@nb ;
+   xsd:seeAlso <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/2> a eli:LegalResource ;
+   dct:description "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb ;
+   xsd:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/3> a eli:LegalResource ;
+   dct:description "Forskrift om omsetning av alkoholholdig drikk mv. (alkoholforskriften)"@nb ;
+   xsd:seeAlso <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/4> a eli:LegalResource ;
+   dct:description "Lov om serveringsvirksomhet (serveringsloven)"@nb ;
+   xsd:seeAlso <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
 .
