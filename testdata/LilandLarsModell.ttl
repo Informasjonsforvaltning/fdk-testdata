@@ -174,7 +174,7 @@ digdir:Kjønn  a                      modelldcatno:CodeList , owl:NamedIndividua
         dct:title                      "Kjønn"@nb .
 
 digdir:Sivilstand  a                 owl:NamedIndividual , modelldcatno:CodeList ;
-        dct:subject        "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject        "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0" ;
         dct:title              "Sivilstand"@nb .
 
 digdir:Landkode  a                   modelldcatno:CodeList , owl:NamedIndividual ;
