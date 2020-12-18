@@ -123,7 +123,7 @@ digdir:Vegadresse  a                modelldcatno:ObjectType , owl:NamedIndividua
 
 digdir:Personnavn  a                 owl:NamedIndividual , modelldcatno:DataType ;
         modelldcatno:hasProperty       digdir:etternavn , digdir:mellomnavn , digdir:fornavn ;
-        dct:subject     "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject     <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
         dct:title                      "Personnavn"@nb .
 
 digdir:Periode  a                 owl:NamedIndividual , modelldcatno:DataType ;
@@ -147,7 +147,7 @@ digdir:Matrikkelnummer  a           owl:NamedIndividual , modelldcatno:DataType 
 
 digdir:OrganisasjonsnummerType
         a                            modelldcatno:SimpleType , owl:NamedIndividual ;
-        dct:subject     "http://data.brreg.no/begrep/28155"^^xsd:anyURI ;
+        dct:subject     <http://data.brreg.no/begrep/28155> ;
         dct:title                      "Organisasjonsnummer"@nb ;
         modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
         xsd:length                   "9"^^xsd:nonNegativeInteger ;
@@ -174,7 +174,7 @@ digdir:Kjønn  a                      modelldcatno:CodeList , owl:NamedIndividua
         dct:title                      "Kjønn"@nb .
 
 digdir:Sivilstand  a                 owl:NamedIndividual , modelldcatno:CodeList ;
-        dct:subject        "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject        <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> ;
         dct:title              "Sivilstand"@nb .
 
 digdir:Landkode  a                   modelldcatno:CodeList , owl:NamedIndividual ;
