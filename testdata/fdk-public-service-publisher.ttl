@@ -6,6 +6,7 @@
 @prefix schema:  <https://schema.org> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> a cpsv:PublicService ;
@@ -417,38 +418,43 @@
 .
 
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/1> a dct:Agent ;
-  dct:identifier "1" ;
-  dct:title "Statistisk sentralbyrå (971 526 920)"@nb ;
+<https://data.brreg.no/enhetsregisteret/api/enheter/971526920> a dct:Agent ;
+  dct:identifier "971526920" ;
+  dct:title "Statistisk sentralbyrå"@nb ;
+  foaf:name "STATISTISK SENTRALBYRÅ" ;
   cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/1> ;
   # cv:hasAddress
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/2> a dct:Agent ;
-  dct:identifier "2" ;
-  dct:title "Skatteetaten (974 761 076)"@nb ;
+<https://data.brreg.no/enhetsregisteret/api/enheter/974761076> a dct:Agent ;
+  dct:identifier "974761076" ;
+  dct:title "Skatteetaten"@nb ;
+  foaf:name "SKATTEETATEN" ;
   cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/2> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/5> ;
   # cv:hasAddress
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/3> a dct:Agent ;
-  dct:identifier "3" ;
-  dct:title "Arbeids- og velferdsetaten (NAV) (889 640 782)"@nb ;
+<https://data.brreg.no/enhetsregisteret/api/enheter/889640782> a dct:Agent ;
+  dct:identifier "889640782" ;
+  dct:title "Arbeids- og velferdsetaten (NAV)"@nb ;
+  foaf:name "ARBEIDS- OG VELFERDSETATEN" ;
   cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/3> ;
   # cv:hasAddress
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/4> a dct:Agent ;
-  dct:identifier "4" ;
-  dct:title "Politidirektoratet (982 531 950)"@nb ;
+<https://data.brreg.no/enhetsregisteret/api/enheter/982531950> a dct:Agent ;
+  dct:identifier "982531950" ;
+  dct:title "Politidirektoratet"@nb ;
+  foaf:name "POLITIDIREKTORATET"@nb ;
   cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/4> ;
   # cv:hasAddress
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/agent/5> a dct:Agent ;
-  dct:identifier "5" ;
-  dct:title "Mattilsynet (985 399 077)"@nb ;
+<https://data.brreg.no/enhetsregisteret/api/enheter/985399077> a dct:Agent ;
+  dct:identifier "985399077" ;
+  dct:title "Mattilsynet"@nb ;
+  foaf:name "MATTILSYNET" ;
   cv:playsRole <http://public-service-publisher.fellesdatakatalog.digdir.no/participation/6> ;
   # cv:hasAddress
 .
