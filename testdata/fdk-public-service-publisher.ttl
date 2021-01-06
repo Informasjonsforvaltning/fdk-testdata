@@ -35,6 +35,7 @@
   cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/1> ;
+  cv:hasChannel
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> a cpsv:PublicService ;
@@ -294,7 +295,6 @@
 .
 
 
-
 # Concept Type - Output
 <https://data.norge.no/concepts/200> a skos:Concept ;
   skos:prefLabel "Erklæring"@nb, "Declaration"@en ;
@@ -322,6 +322,48 @@
 
 <https://data.norge.no/concepts/206> a skos:Concept ;
   skos:prefLabel "Anerkjennelse"@nb, "Recognition"@en ;
+.
+
+
+# Controlled vocabulary (Channel)
+<https://data.norge.no/concepts/250> a skos:Concept ;
+  skos:prefLabel "E-post"@nb, "E-mail"@en ;
+.
+
+<https://data.norge.no/concepts/251> a skos:Concept ;
+  skos:prefLabel "Hjemmeside"@nb, "Homepage"@en ;
+.
+
+<https://data.norge.no/concepts/252> a skos:Concept ;
+  skos:prefLabel "Fax"@nb, "Fax"@en ;
+.
+
+<https://data.norge.no/concepts/253> a skos:Concept ;
+  skos:prefLabel "Assistant"@nb, "Assistant"@en ;
+.
+
+<https://data.norge.no/concepts/254> a skos:Concept ;
+  skos:prefLabel "Telefon"@nb, "Telephone"@en ;
+.
+
+<https://data.norge.no/concepts/255> a skos:Concept ;
+  skos:prefLabel "Mobilapp"@nb, "Mobile App"@en ;
+.
+
+<https://data.norge.no/concepts/256> a skos:Concept ;
+  skos:prefLabel "Digital TV"@nb, "Digital TV"@en ;
+.
+
+<https://data.norge.no/concepts/257> a skos:Concept ;
+  skos:prefLabel "Post"@nb, "Mail"@en ;
+.
+
+<https://data.norge.no/concepts/258> a skos:Concept ;
+  skos:prefLabel "Service Bureau"@nb, "Service Bureau"@en ;
+.
+
+<https://data.norge.no/concepts/259> a skos:Concept ;
+  skos:prefLabel "Client's Location"@nb, "Client's Location"@en ;
 .
 
 
@@ -460,47 +502,56 @@
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/1> a schema:ContactPoint ;
-   schema:contactType "Kontakt brukerveiledning ved Brønnøysundregistrene"@nb ;
-   schema:telephone "75 00 75 00" ;
-   schema:url <https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/> ;
+  schema:name "Registrere nye og endre eksisterende virksomheter - Samordnet registermelding" ;
+  schema:description "Her kan du registrere nye virksomheter, eller endre registrerte opplysninger. De aller fleste organisasjonsformene kan bruke tjenesten. Dette gjelder blant annet enkeltpersonforetak, foreninger, aksjeselskap, ansvarlige selskap og samvirkeforetak. Det er kommet en ny og enklere tjeneste for søknad om registrering i Merverdiavgiftsregisteret. Du finner tjenesten på Skatteetaten sine nettsider." ;
+  schema:email "altinn@eksempel.no" ;
+  schema:contactType "Kontakt brukerveiledning ved Brønnøysundregistrene"@nb ;
+  schema:telephone "75 00 75 00" ;
+  schema:url <https://www.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/2> a schema:ContactPoint ;
-   schema:url <https://kommune24-7.no/1813/702431> ;
+  schema:name "Brønnøy kommune" ;
+  schema:email "postmottak@bronnoy.kommune.no" ;
+  schema:telephone "75 01 20 00" ;
+  schema:url <https://kommune24-7.no/1813/702431> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/3> a schema:ContactPoint ;
-   schema:url <https://kommune24-7.no/1813/702429> ;
+  schema:name "Brønnøy kommune" ;
+  schema:email "postmottak@bronnoy.kommune.no" ;
+  schema:telephone "75 01 20 00" ;
+  schema:url <https://kommune24-7.no/1813/702429> ;
 .
 
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> a cpsv:Rule ;
-   dct:identifier "1" ;
-   dct:description "Lov om behandlingsmåten i forvaltningssaker (https://lovdata.no/lov/1967-02-10)"@nb ;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
-   dct:title "Lov om behandlingsmåten i forvaltningssaker"@nb ;
-   cpsv:implements <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
-                   <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
-                   <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ;
+  dct:identifier "1" ;
+  dct:description "Lov om behandlingsmåten i forvaltningssaker (https://lovdata.no/lov/1967-02-10)"@nb ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:title "Lov om behandlingsmåten i forvaltningssaker"@nb ;
+  cpsv:implements <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
+                  <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
+                  <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ;
 .
 
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/1> a eli:LegalResource ;
-   dct:description "Lov om Enhetsregisteret"@nb ;
-   xsd:seeAlso <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
+  dct:description "Lov om Enhetsregisteret"@nb ;
+  xsd:seeAlso <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/2> a eli:LegalResource ;
-   dct:description "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb ;
-   xsd:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ;
+  dct:description "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb ;
+  xsd:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/3> a eli:LegalResource ;
-   dct:description "Forskrift om omsetning av alkoholholdig drikk mv. (alkoholforskriften)"@nb ;
-   xsd:seeAlso <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
+  dct:description "Forskrift om omsetning av alkoholholdig drikk mv. (alkoholforskriften)"@nb ;
+  xsd:seeAlso <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/4> a eli:LegalResource ;
-   dct:description "Lov om serveringsvirksomhet (serveringsloven)"@nb ;
-   xsd:seeAlso <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
+  dct:description "Lov om serveringsvirksomhet (serveringsloven)"@nb ;
+  xsd:seeAlso <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
 .
