@@ -239,7 +239,7 @@ digdir:Matrikkelnummer  a           owl:NamedIndividual , modelldcatno:DataType 
 
 digdir:OrganisasjonsnummerType
         a                            modelldcatno:SimpleType , owl:NamedIndividual ;
-        dct::subject     <http://data.brreg.no/begrep/28155> ;
+        dct:subject     <http://data.brreg.no/begrep/28155> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#OrganisasjonsnummerType"^^xsd:string ;
         dct:title                      "Organisasjonsnummer"@nb ;
         modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
@@ -287,7 +287,7 @@ digdir:Kommunenummer  a             modelldcatno:CodeList , owl:NamedIndividual 
         dct:title              "Kommunenummer"@nb .
 
 digdir:fulltNavn  a               modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:subject  "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject  <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#fulltNavn"^^xsd:string ;
         dct:title                   "fulltNavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
@@ -295,7 +295,7 @@ digdir:fulltNavn  a               modelldcatno:Attribute , owl:NamedIndividual ;
         xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
 
 digdir:navn  a                   modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:subject "http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
         dct:title          "navn"@nb ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#navn"^^xsd:string ;
         modelldcatno:hasDataType          digdir:Personnavn ;
@@ -312,7 +312,7 @@ digdir:kjønn  a                  modelldcatno:Attribute , owl:NamedIndividual ;
 
 digdir:statsborgerskap
         a                         modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:subject     "http://begrepskatalogen/begrep/88804c5a-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject     <http://begrepskatalogen/begrep/88804c5a-ff43-11e6-9d97-005056825ca0> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#statsborgerskap"^^xsd:string ;
         dct:title           "statsborgerskap"@nb ;
         modelldcatno:sequenceNumber "4"^^xsd:positiveInteger ;
@@ -320,7 +320,7 @@ digdir:statsborgerskap
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:fødselsdato  a             modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:subject      "http://begrepskatalogen/begrep/5138da10-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
+        dct:subject      <http://begrepskatalogen/begrep/5138da10-be20-11e6-8004-005056825ca0> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#fødselsdato"^^xsd:string ;
         dct:title           "fødselsdato"@nb ;
         modelldcatno:sequenceNumber "5"^^xsd:positiveInteger ;
@@ -328,7 +328,7 @@ digdir:fødselsdato  a             modelldcatno:Attribute , owl:NamedIndividual 
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:fødested  a                modelldcatno:Attribute , owl:NamedIndividual ;
-        dct:subject  "http://begrepskatalogen/begrep/5138da0e-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
+        dct:subject  <http://begrepskatalogen/begrep/5138da0e-be20-11e6-8004-005056825ca0> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#fødested"^^xsd:string ;
         dct:title           "fødested"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
@@ -344,14 +344,14 @@ digdir:fødeland  a               modelldcatno:Attribute , owl:NamedIndividual ;
 
 digdir:dødsdato  a                modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#dødsdato"^^xsd:string ;
-        dct:subject  "http://begrepskatalogen/begrep/be5d8b85-c3fb-11e9-8d53-005056825ca0"^^xsd:anyURI ;
+        dct:subject  <http://begrepskatalogen/begrep/be5d8b85-c3fb-11e9-8d53-005056825ca0> ;
         dct:title           "dødsdato"@nb ;
         modelldcatno:sequenceNumber "8"^^xsd:positiveInteger ;
         modelldcatno:hasSimpleType  digdir:DatoKlokkeslett ;
         xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 digdir:dødssted  a                modelldcatno:Attribute, owl:NamedIndividual ;
-        dct:subject  "http://begrepskatalogen/begrep/5138d9f2-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
+        dct:subject  <http://begrepskatalogen/begrep/5138d9f2-be20-11e6-8004-005056825ca0> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#dødssted"^^xsd:string ;
         dct:title           "dødssted"@nb ;
         modelldcatno:sequenceNumber "9"^^xsd:positiveInteger ;
@@ -367,7 +367,7 @@ digdir:dødsland  a               modelldcatno:Attribute , owl:NamedIndividual ;
 
 digdir:sivilstand  a             modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#sivilstand"^^xsd:string ;
-        dct:subject "http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> ;
         dct:title          "sivilstand"@nb ;
         modelldcatno:hasValueFrom         digdir:Sivilstand ;
         modelldcatno:sequenceNumber "11"^^xsd:positiveInteger ;
@@ -383,7 +383,7 @@ digdir:opprinneligNavn  a        modelldcatno:Attribute , owl:NamedIndividual ;
 digdir:organisasjonsnummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#organisasjonsnummer"^^xsd:string ;
-        dct:subject "http://data.brreg.no/begrep/28155"^^xsd:anyURI ;
+        dct:subject         <http://data.brreg.no/begrep/28155> ;
         dct:title          "organisasjonsnummer"@nb ;
         modelldcatno:hasSimpleType   digdir:OrganisasjonsnummerType ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
@@ -404,13 +404,13 @@ digdir:organisasjonsform
 
 digdir:næringskode  a            modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#næringskode"^^xsd:string ;
-        dct:subject     "https://fellesdatakatalog.digdir.no/api/concepts/34cf0f4b-de40-41d5-9b35-305498365ad1"^^xsd:anyURI ;
+        dct:subject     <https://fellesdatakatalog.digdir.no/api/concepts/34cf0f4b-de40-41d5-9b35-305498365ad1> ;
         dct:title                  "næringskode"@nb ;
         modelldcatno:hasSimpleType         digdir:Tekst .
 
 digdir:fornavn  a                 modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#fornavn"^^xsd:string ;
-        dct:subject    "http://begrepskatalogen/begrep/5138da05-be20-11e6-8004-005056825ca0"^^xsd:anyURI ;
+        dct:subject    <http://begrepskatalogen/begrep/5138da05-be20-11e6-8004-005056825ca0> ;
         dct:title                   "fornavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
         modelldcatno:sequenceNumber "1"^^xsd:positiveInteger ;
@@ -419,7 +419,7 @@ digdir:fornavn  a                 modelldcatno:Attribute , owl:NamedIndividual ;
 
 digdir:mellomnavn  a              modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#mellomnavn"^^xsd:string ;
-        dct:subject  "http://begrepskatalogen/begrep/88804c2f-ff43-11e6-9d97-005056825ca0"^^xsd:anyURI ;
+        dct:subject  <http://begrepskatalogen/begrep/88804c2f-ff43-11e6-9d97-005056825ca0> ;
         dct:title                 "mellomnavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
         modelldcatno:sequenceNumber "2"^^xsd:positiveInteger ;
@@ -427,7 +427,7 @@ digdir:mellomnavn  a              modelldcatno:Attribute , owl:NamedIndividual ;
 
 digdir:etternavn  a               modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#etternavn"^^xsd:string ;
-        dct:subject  "http://begrepskatalogen/begrep/46f4d714-4c6c-11e8-bb3e-005056821322"^^xsd:anyURI ;
+        dct:subject  <http://begrepskatalogen/begrep/46f4d714-4c6c-11e8-bb3e-005056821322> ;
         dct:title           "etternavn"@nb ;
         modelldcatno:hasSimpleType           digdir:Tekst ;
         modelldcatno:sequenceNumber "3"^^xsd:positiveInteger ;
@@ -497,21 +497,21 @@ digdir:gyldighetsperiode
 
 digdir:epostadresse  a           modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#epostadresse"^^xsd:string ;
-        dct:subject "https://fellesdatakatalog.digdir.no/api/concepts/6fb2f9a3-3e27-410b-8e1d-2d3d471d14b7"^^xsd:anyURI ;
+        dct:subject <https://fellesdatakatalog.digdir.no/api/concepts/6fb2f9a3-3e27-410b-8e1d-2d3d471d14b7> ;
         dct:title          "epostadresse"@nb ;
         modelldcatno:hasSimpleType     digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:telefonnummer  a          modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#telefonnummer"^^xsd:string ;
-        dct:subject        "https://fellesdatakatalog.digdir.no/api/concepts/e186c93b-1368-4955-a7cd-9036f213a886"^^xsd:anyURI ;
+        dct:subject        <https://fellesdatakatalog.digdir.no/api/concepts/e186c93b-1368-4955-a7cd-9036f213a886> ;
         dct:title          "telefonnummer"@nb ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:mobiltelefonnummer a      modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#mobiltelefonnummer"^^xsd:string ;
-        dct:subject        "https://fellesdatakatalog.digdir.no/api/concepts/af4b2af3-64bd-42ba-967e-01cb8ef01c52"^^xsd:anyURI ;
+        dct:subject        <https://fellesdatakatalog.digdir.no/api/concepts/af4b2af3-64bd-42ba-967e-01cb8ef01c52> ;
         dct:title          "mobiltelefonnummer"@nb ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
@@ -604,7 +604,7 @@ digdir:adressekode
 digdir:kommunenummer
         a                        modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#kommunenummer"^^xsd:string ;
-        dct:subject "https://fellesdatakatalog.digdir.no/api/concepts/a5ff31be-0c3f-4534-bf12-bd8ddd373d61"^^xsd:anyURI ;
+        dct:subject <https://fellesdatakatalog.digdir.no/api/concepts/a5ff31be-0c3f-4534-bf12-bd8ddd373d61> ;
         dct:title          "kommunenummer"@nb ;
         modelldcatno:hasValueFrom          digdir:Kommunenummer ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
