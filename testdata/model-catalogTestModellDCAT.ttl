@@ -167,7 +167,7 @@ digdir:Identifikator  a              modelldcatno:ObjectType , owl:NamedIndividu
 
 digdir:Kontaktinformasjon  a          modelldcatno:ObjectType , owl:NamedIndividual ;
         modelldcatno:hasProperty      digdir:mobiltelefonnummer , digdir:telefonnummer , digdir:epostadresse ;
-        dct:subject         <https://fellesdatakatalog.digdir.no/api/concepts/b7b85dc1-ae8c-488f-956b-76a8e9f84495> ;
+        dct:subject         <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Kontaktinformasjon"^^xsd:string ;
         dct:title                      "Kontaktinformasjon"@nb ;
         modelldcatno:belongsToModule   "Aktør"@nb .
@@ -404,7 +404,7 @@ digdir:organisasjonsform
 
 digdir:næringskode  a            modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#næringskode"^^xsd:string ;
-        dct:subject     <https://fellesdatakatalog.digdir.no/api/concepts/34cf0f4b-de40-41d5-9b35-305498365ad1> ;
+        dct:subject               <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> ;
         dct:title                  "næringskode"@nb ;
         modelldcatno:hasSimpleType         digdir:Tekst .
 
@@ -497,21 +497,21 @@ digdir:gyldighetsperiode
 
 digdir:epostadresse  a           modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#epostadresse"^^xsd:string ;
-        dct:subject <https://fellesdatakatalog.digdir.no/api/concepts/6fb2f9a3-3e27-410b-8e1d-2d3d471d14b7> ;
+        dct:subject <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/59855368-a391-4640-a78b-a71d4065185e> ;
         dct:title          "epostadresse"@nb ;
         modelldcatno:hasSimpleType     digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:telefonnummer  a          modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#telefonnummer"^^xsd:string ;
-        dct:subject        <https://fellesdatakatalog.digdir.no/api/concepts/e186c93b-1368-4955-a7cd-9036f213a886> ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/15ff04ea-2690-4fa1-b364-5a1e8895faf5> ;
         dct:title          "telefonnummer"@nb ;
         modelldcatno:hasSimpleType          digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
 
 digdir:mobiltelefonnummer a      modelldcatno:Attribute , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#mobiltelefonnummer"^^xsd:string ;
-        dct:subject        <https://fellesdatakatalog.digdir.no/api/concepts/af4b2af3-64bd-42ba-967e-01cb8ef01c52> ;
+        dct:subject        <https://registrering-begrep-api.fellesdatakatalog.digdir.no/991825827/8f72464c-f40f-4cee-8da9-72d407901838> ;
         dct:title          "mobiltelefonnummer"@nb ;
         modelldcatno:hasSimpleType         digdir:Tekst ;
         xsd:maxOccurs            "1"^^xsd:nonNegativeInteger .
