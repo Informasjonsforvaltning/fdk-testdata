@@ -86,6 +86,11 @@
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/2> ;
   cv:hasChannel <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
   cv:processingTime "P1D" ;
+  cv:hasCost <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/13> ,
+             <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/14> ,
+             <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/15> ,
+             <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/16> ,
+             <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/17> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> a cpsv:PublicService ;
@@ -707,4 +712,49 @@
   dct:description "Oppløsning og sletting i Foretaksregisteret: papir kr 0,-" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/cost/13> a cv:Cost ;
+  dct:identifier "13" ;
+  cv:value 0.49 ;
+  cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
+  dct:description "0,49 kr pr. vareliter for alkoholholdig drikk i gruppe 1" ;
+  cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/cost/14> a cv:Cost ;
+  dct:identifier "14" ;
+  cv:value 1.29 ;
+  cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
+  dct:description "1,29 kr pr. vareliter for alkoholholdig drikk i gruppe 2" ;
+  cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/cost/15> a cv:Cost ;
+  dct:identifier "15" ;
+  cv:value 4.27 ;
+  cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
+  dct:description "4,27 kr pr. vareliter for alkoholholdig drikk i gruppe 3" ;
+  cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/cost/16> a cv:Cost ;
+  dct:identifier "16" ;
+  cv:value 5300 ;
+  cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
+  dct:description "Bevillingsgebyret utgjør pr. år minimum kr 5300. Bevillingsmyndigheten kan likevel i særlige tilfeller bestemme at gebyret skal settes lavere. For ambulerende bevilling kan bevillingsmyndigheten kreve et gebyr på inntil kr 380 pr. gang." ;
+  cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/cost/17> a cv:Cost ;
+  dct:identifier "17" ;
+  cv:value 380 ;
+  cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
+  dct:description "Bevillingsgebyret for ambulerende bevilling kan bevillingsmyndigheten kreve et gebyr på inntil kr 380 pr. gang." ;
+  cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
 .
