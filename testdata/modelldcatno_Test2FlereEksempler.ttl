@@ -38,7 +38,6 @@ digs:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividu
         dct:type                "Fellesmodell"@nb ;
         dct:issued              "2020-10-06T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
