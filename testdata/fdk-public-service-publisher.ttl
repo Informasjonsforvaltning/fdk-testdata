@@ -126,16 +126,40 @@
   dct:identifier "4" ;
   dct:title "Ny næringsmiddelvirksomhet inkl. matkontaktmaterialer"@nb ;
   dct:description "Dette skjemaet  brukes for å registrere en ny virksomhet, eller søke om godkjenning av en ny næringsmiddelvirksomhet. Skjemaet skal også brukes dersom du vil utvide aktiviteten i en allerede eksisterende virksomhet og starte med en ny aktivitet som ikke er registrert."@nb ;
-  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/3> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/985399077> ;
+  dcat:keyword "Matservering"@nb, "Matproduksjon"@nb, "Restaurantdrift"@nb, "Næringsmiddel"@nb;
+  cv:sector <https://data.norge.no/concepts/2> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
+  cv:processingTime "P2D" ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/5> a cpsv:PublicService ;
   dct:identifier "5" ;
+  dct:title "Søke om søndagsåpnet eller uteservering"@nb ;
+  dct:description "Søke om søndagsåpnet eller uteservering."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
+  dcat:keyword "Uteservering"@nb, "Åpningstid"@nb, "Helligdag"@nb "Skjenketid"@nb;
+  cv:sector <https://data.norge.no/concepts/2> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
+  cv:processingTime "P2D" ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/6> a cpsv:PublicService ;
+  dct:identifier "6" ;
   dct:title "Registrering av ny fettutskiller"@nb ;
   dct:description "Registrering av ny fettutskiller."@nb ;
-  cv:hasCompetentAuthority <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
+  dcat:keyword "Avløp"@nb, "Avfall"@nb, "Fettutskiller"@nb, "Offentlig avløpsnett"@nb ;
+  cv:sector <https://data.norge.no/concepts/2> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
+  cv:processingTime "P2D" ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> a cv:PublicOrganisation ;
@@ -168,7 +192,8 @@
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> ,
-               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/5> ;
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/5> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/6> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> a cv:CriterionRequirement ;
