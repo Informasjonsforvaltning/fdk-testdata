@@ -140,7 +140,7 @@
   dct:title "Søke om søndagsåpnet eller uteservering"@nb ;
   dct:description "Søke om søndagsåpnet eller uteservering."@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
-  dcat:keyword "Uteservering"@nb, "Åpningstid"@nb, "Helligdag"@nb "Skjenketid"@nb;
+  dcat:keyword "Uteservering"@nb, "Åpningstid"@nb, "Helligdag"@nb, "Skjenketid"@nb;
   cv:sector <https://data.norge.no/concepts/2> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ;
