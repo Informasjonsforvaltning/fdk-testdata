@@ -85,8 +85,8 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         dcat:contactPoint       digdir:KontaktOss ;
         dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Eining"@nn ,"Legal entity"@en , "Adresse"@nb , "Adresse"@nn, "Address"@en ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
-        dct:hasPart             <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Diversemodell> ;
-        dct:replaces            <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet> ;
+        dct:hasPart             <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet> ;
+        dct:replaces            <http://data.skatteetaten.no/ns/modell/PassStellBarn/OppgaveOverPassOgStellAvBarn> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
   digdir:Diversemodell   a          modelldcatno:InformationModel , owl:NamedIndividual ;
@@ -112,7 +112,7 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         adms:versionNotes       "Lagt til objekttypen Timeline"@nb ;
         dcat:theme              <https://psi.norge.no/los/tema/eiendom> ;
         dct:isPartOf            <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AltMuligModell> ;
-        dct:isReplacedBy        <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AdresseModell> ;
+        dct:isReplacedBy        <http://skjema.geonorge.no/SOSI/produktspesifikasjon/Matrikkelen-Adresse/20200501/Matrikkelen-Adresse_20200501/Matrikkelen-Adresse_20200501> ;
         dct:hasFormat           digdir:AlternativModellformat .
 
 digdir:Katalog  a        owl:NamedIndividual , dcat:Catalog ;
@@ -968,9 +968,9 @@ ex-bidir:kreditor a owl:NamedIndividual ,
        dct:description "Denne grafen viser to enveis forenklede relasjoner, satt sammen, for å beskrive en tovegsrelasjon."@nb .
 
 
-ex-bidir:debitor a       owl:NamedIndividual ,
+ex-bidir:Debitor a       owl:NamedIndividual ,
                             modelldcatno:ObjectType ;
-        modelldcatno:hasProperty    ex-bidir:ba ;
+        modelldcatno:hasProperty    ex-bidir:skylderPengerTil ;
         dct:identifier                "http://example.com/test#debitor"^^xsd:string ;
         dct:title                   "Debitor"@nb , "Debtor"@en , "Debitor"@nn  .
 
