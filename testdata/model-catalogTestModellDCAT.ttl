@@ -73,7 +73,7 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         modelldcatno:informationModelIdentifier "https://www.digdir/AltMuligModell"^^xsd:string ;
         dct:publisher          digdir:Utgiver ;
         dct:temporal            digdir:Tidsintervall ;
-        dct:description         "Modell med eksempler"@nb ;
+        dct:description         "Modell med forskjellige eksempler"@nb ;
         dct:title               "Alt mulig modell"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         dct:type                "Fellesmodell"@nb ;
