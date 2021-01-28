@@ -1,0 +1,34 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <https//examples.com/> .
+
+#### primært for å teste mot obligatorisk bruk av kontrollerte vokabularer
+
+# denne skal valideres ok:
+:exDatasett1somSkalVæreOK a dcat:Dataset ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # obligatorisk
+  dct:description "d" ; # obligatorisk
+  dct:title "t" ; # obligatorisk
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/AGRI> ; # obligatorisk
+  dct:identifier "i" ; # obligatorisk
+.
+
+# denne skal valideres OK, i hvert fall kun warning på bruk av LOS istf. Data-theme fra EU:
+:exDatasett2somBørVæreOK a dcat:Dataset ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # obligatorisk
+  dct:description "d" ; # obligatorisk
+  dct:title "t" ; # obligatorisk
+  dcat:theme <https://psi.norge.no/los/tema/barnehage> ; # obligatorisk
+  dct:identifier "i" ; # obligatorisk
+.
+
+# denne skal gi violation:
+:exDatasett3somSkalFeile a dcat:Dataset ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # obligatorisk
+  dct:description "d" ; # obligatorisk
+  dct:title "t" ; # obligatorisk
+  dcat:theme "barnehage" ; # obligatorisk
+  dct:identifier "i" ; # obligatorisk
+.
