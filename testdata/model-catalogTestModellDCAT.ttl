@@ -968,7 +968,7 @@ ex-bidir:kreditor a owl:NamedIndividual ,
        dct:description "Denne grafen viser to enveis forenklede relasjoner, satt sammen, for å beskrive en tovegsrelasjon."@nb .
 
 
-ex-bidir:Debitor a       owl:NamedIndividual ,
+ex-bidir:debitor a       owl:NamedIndividual ,
                             modelldcatno:ObjectType ;
         modelldcatno:hasProperty    ex-bidir:skylderPengerTil ;
         dct:identifier                "http://example.com/test#debitor"^^xsd:string ;
