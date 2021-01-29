@@ -12,7 +12,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://helsedata.no/no/Modellkatalog> a        owl:NamedIndividual , dcat:Catalog ;
-        dct:description         "Katalog med oversikt over Helsedirektoratets modeller"@nb ;
+        dct:description         "Katalog med oversikt over Direktoratet for e-Helse sine modeller"@nb ;
         dct:identifier          "https://helsedata.no/no/Modellkatalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/915933149> ;
         dct:title               "Helsedirektoratets modellkatalog"@nb ;
