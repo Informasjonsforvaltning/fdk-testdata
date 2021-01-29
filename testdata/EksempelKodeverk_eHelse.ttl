@@ -10,6 +10,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xkos: <https://ddialliance.org/Specification/XKOS/1.2/OWL/xkos.html> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
 <https://helsedata.no/no/Modellkatalog> a        owl:NamedIndividual , dcat:Catalog ;
         dct:description         "Katalog med oversikt over Direktoratet for e-Helse sine modeller"@nb ;
