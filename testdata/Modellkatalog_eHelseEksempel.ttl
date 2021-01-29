@@ -1,0 +1,118 @@
+
+
+
+
+
+#Objekttyper (Variabelgruppe)
+eHelse:Avdoede  a                      owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       eHelse:alderIDager , eHelse:alderIAar , eHelse:bosattNorgeDoedstidspunkt , eHelse:doedsdato , eHelse:doedssted , eHelse:foedselsdato , eHelse:identifikatortypeIdentitet , eHelse:identitet , eHelse:kjonn ;
+        dct:identifier                ""^^xsd:string ;
+        dct:title                      "Avdøde"@nb .
+
+eHelse:Datakilde  a                      owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       eHelse:publiseringsversjon , eHelse:tilhorendeVersjonVariabeldokumentasjon ;
+        dct:identifier                ""^^xsd:string ;
+        dct:title                      "Datakilde"@nb .
+
+eHelse:Doedsfall a                      owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       eHelse:alleDiagnoser , eHelse:diagnosekodeUnderliggendeDoedsårsak , eHelse:doedskommune , eHelse:europeiskKortlisteDoedsaarsak , eHelse:ICDKodeIADoedsmelding , eHelse:ICDKodeIBDoedsmelding , eHelse:ICDKodeICDoedsmelding , eHelse:ICDKodeIDDoedsmelding , eHelse:ICDKodeIIDoedsmelding , eHelse:KodeverktypeDiagnose , eHelse:meldingstyper , eHelse:skadeaktivitet , eHelse:skadediagnose , eHelse:skadested , eHelse:spesielleOmstendigheter_a , eHelse:spesielleOmstendigheter_b, eHelse:utenlandskeStatsborgereOppholdskategori ;
+        dct:identifier                ""^^xsd:string ;
+        dct:title                      "Dødsfall"@nb .
+
+eHelse:Geografi  a                      owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       eHelse:botedsfylke , eHelse:bostedskommune , eHelse:bostedslandDoedspunkt , eHelse:doedsfylke , eHelse:doedslandDødsårsaksregisteret , eHelse:doedslandFolkeregisteret , eHelse:folkeregisteretBostedslandDødstidspunkt ;
+        dct:identifier                ""^^xsd:string ;
+        dct:title                      "Geografi"@nb .
+
+eHelse:Obduksjon a                      owl:NamedIndividual , modelldcatno:ObjectType ;
+        modelldcatno:hasProperty       eHelse:laboratorietsLopenummer , eHelse:obduksjonslaboratorium , eHelse:obduksjonstype ;
+        dct:identifier                ""^^xsd:string ;
+        dct:title                      "Obduksjon"@nb .
+
+#Attributter
+eHelse:# a               modelldcatno:Attribute , owl:NamedIndividual ; #Mal
+        dct:title                   ""@nb ;
+        dct:description             ""@nb ;
+        modelldcatno:hasValueFrom          eHelse: ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+
+eHelse:alderIDager a               modelldcatno:Attribute , owl:NamedIndividual ;
+        dct:title                   "Alder i dager"@nb ;
+        dct:description             "Alder i dager (kalkulert)."@nb ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:alderIAar a               modelldcatno:Attribute , owl:NamedIndividual ;
+        dct:title                   "Alder i år"@nb ;
+        dct:description             "Alder i år (kalkulert)."@nb ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:bosattNorgeDoedstidspunkt  a               modelldcatno:Attribute , owl:NamedIndividual ;
+        dct:title                   "Bosatt i Norge ved dødstidspunktet"@nb ;
+        modelldcatno:hasValueFrom          eHelse:BosattNorgeDoedstidspunktType ;
+        dct:description             "Indikerer om den avdøde er bosatt i Norge ved dødstidspunktet."@nb ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:doedsdato a               modelldcatno:Attribute , owl:NamedIndividual ;
+        dct:title                   "Dødsdato"@nb ;
+        dct:description             "Dødsdato. Tilgjengelig både som dato og enkeltkomponenter; Dødsår, dødsdag og dødsmåned."@nb ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger :
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:doedssted  a               modelldcatno:Attribute , owl:NamedIndividual ;
+        dct:title                   "Dødssted"@nb ;
+        dct:description             "Verdi 0 (I utlandet) er ikke sammenfallende med dødskommune 25XX (Utlandet) Selv om den kanskje burde ha vært det. Denne verdien hentes fra dødsmeldingen, mens dødskommune hentes fra DSF."@nb ;
+        modelldcatno:hasValueFrom          eHelse:DødsstedType ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:foedselsdato  a               modelldcatno:Attribute , owl:NamedIndividual ;
+        dct:title                   "Fødselsdato"@nb ;
+        dct:description             "Fødselssdato. Tilgjengelig både som dato og enkeltkomponenter; Fødselsår, Fødselsdag og fødselsmåned."@nb ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:identifikatortypeIdentitet a  modelldcatno:Attribute , owl:NamedIndividual ;
+      dct:title                   "Identifikatortype for identitet"@nb ;
+      dct:description             "Identifikatortype for avdødes identitet."@nb ;
+      modelldcatno:hasValueFrom          eHelse:IdentifikatortypeIdentitetType ;
+      xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+      xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:identitet  a               modelldcatno:Attribute , owl:NamedIndividual ; #Mal
+        dct:title                   "Identitet"@nb ;
+        dct:description             "Identiteten til den avdøde. Leveres normalt som prosjektspesifikt løpenummer."@nb ;
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+eHelse:kjoenn a               modelldcatno:Attribute , owl:NamedIndividual ; #Mal
+        dct:title                   "Kjønn"@nb ;
+        dct:description             "AvdødesKjønn"@nb ;
+        modelldcatno:hasValueFrom          eHelse:KjoennType ; #Må koordineres med Jims modell
+        xsd:minOccurs               "0"^^xsd:nonNegativeInteger ;
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger .
+
+#Kodelister
+eHelse:#  a                   modelldcatno:CodeList , owl:NamedIndividual ;#Mal
+        modelldcatno:codeListReference ""^^xsd:anyURI ;
+        dct:title                       ""@nb .
+
+eHelse:#  a                   modelldcatno:CodeList , owl:NamedIndividual ;#Mal
+        modelldcatno:codeListReference ""^^xsd:anyURI ;
+        dct:title                       ""@nb .
+
+eHelse:#  a                   modelldcatno:CodeList , owl:NamedIndividual ;#Mal
+        modelldcatno:codeListReference ""^^xsd:anyURI ;
+        dct:title                       ""@nb .
+
+eHelse:#  a                   modelldcatno:CodeList , owl:NamedIndividual ;#Mal
+        modelldcatno:codeListReference ""^^xsd:anyURI ;
+        dct:title                       ""@nb .
+
+eHelse:#  a                   modelldcatno:CodeList , owl:NamedIndividual ;#Mal
+        modelldcatno:codeListReference ""^^xsd:anyURI ;
+        dct:title                       ""@nb .
