@@ -1,0 +1,82 @@
+# ------
+# Eksempel på kodeverk "Kjønn",
+# jf. "Kjønn" på https://helsedata.no/no/variabler/
+# ------
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <https://ddialliance.org/Specification/XKOS/1.2/OWL/xkos.html> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://helsedata.no/no/Modellkatalog> a        owl:NamedIndividual , dcat:Catalog ;
+        dct:description         "Katalog med oversikt over Helsedirektoratets modeller"@nb ;
+        dct:identifier          "https://helsedata.no/no/Modellkatalog"^^xsd:string ;
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/915933149> ;
+        dct:title               "Helsedirektoratets modellkatalog"@nb ;
+        dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+        modelldcatno:model      <https://helsedata.no/no/kodeverk/Kjønn> .
+
+<https://helsedata.no/no/kodeverk/Kjønn>  a         modelldcatno:InformationModel , owl:NamedIndividual ;
+        modelldcatno:containsModelElement        <https://helsedata.no/no/kodeverk/kjønn> ;
+        dct:identifier          "https://helsedata.no/no/kodeverk/Kjønn"^^xsd:string ;
+        dct:publisher          <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/915933149> ;
+        dct:description         "Helsedirektoratets kodeverk over kjønn."@nb ;
+        dct:title               "Kjønn"@nb ;
+        owl:versionInfo         "1.0"^^xsd:string ;
+        dct:issued              "2021-01-29T00:00:00+01:00"^^xsd:dateTime ;
+        dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
+        owl:versionInfo         "1.0"^^xsd:string ;
+        adms:status             <http://purl.org/adms/status/Completed> ;
+        dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+        dcat:contactPoint       digdir:KontaktOss ;
+        dcat:keyword            "Kjønn"@nb , "Kodeverk"@en ;
+        foaf:homepage           <https://helsedata.no/no/variabler/> ;
+        dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
+        dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/helse-og-omsorg> .
+
+digdir:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
+        vcard:hasEmail      <mailto:service@helsedata.no> ;
+        vcard:hasTelephone  <tel:21495070> .
+
+<https://helsedata.no/no/kodeverk/kjønn> # ikke nødvendigivs denne URIen, kun som eksempel
+    a modelldcatno:CodeList ;
+    dct:title "Kjønn"@nb ; # tittel
+  .
+
+<https://helsedata.no/no/kodeverk/kjønn#0>
+    a modelldcatno:CodeElement ;
+    skos:inScheme <https://helsedata.no/no/kodeverk/kjønn> ; # i kodeliste
+    skos:notation "0" ; # kode
+    skos:prefLabel "Ikke kjent"@nb ; # anbefalt kodetekst
+    skos:topConceptOf <https://helsedata.no/no/kodeverk/kjønn> ; # toppelement til
+    xkos:next <https://helsedata.no/no/kodeverk/kjønn#1> ; # neste kodeelement
+  .
+
+<https://helsedata.no/no/kodeverk/kjønn#1>
+    a modelldcatno:CodeElement ;
+    skos:inScheme <https://helsedata.no/no/kodeverk/kjønn> ; # i kodeliste
+    skos:notation "1" ; # kode
+    skos:prefLabel "Mann"@nb ; # anbefalt kodetekst
+    xkos:next <https://helsedata.no/no/kodeverk/kjønn#2> ; # neste kodeelement
+    xkos:previous <https://helsedata.no/no/kodeverk/kjønn#0> ; # forrige kodeelement
+  .
+
+<https://helsedata.no/no/kodeverk/kjønn#2>
+    a modelldcatno:CodeElement ;
+    skos:inScheme <https://helsedata.no/no/kodeverk/kjønn> ; # i kodeliste
+    skos:notation "2" ; # kode
+    skos:prefLabel "Kvinne"@nb ; # anbefalt kodetekst
+    xkos:next <https://helsedata.no/no/kodeverk/kjønn#9> ; # neste kodeelement
+    xkos:previous <https://helsedata.no/no/kodeverk/kjønn#1> ; # forrige kodeelement
+  .
+
+<https://helsedata.no/no/kodeverk/kjønn#9>
+    a modelldcatno:CodeElement ;
+    skos:prefLabel "Ikke spesifisert"@nb ; # anbefalt kodetekst
+    skos:inScheme <https://helsedata.no/no/kodeverk/kjønn> ; # kodeliste
+    skos:notation "9" ; # kode
+    xkos:previous <https://helsedata.no/no/kodeverk/kjønn#2> ; # forrige kodeelement
+  .
