@@ -38,6 +38,7 @@
         dcat:keyword            "Kjønn"@nb , "Kodeverk"@en ;
         foaf:homepage           <https://helsedata.no/no/variabler/> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
+        dct:type                <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
         dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/helse-og-omsorg> .
 
 <https://helsedata.no/no/kodeverk/Kontaktpunkt>  a        vcard:Kind , owl:NamedIndividual ;
