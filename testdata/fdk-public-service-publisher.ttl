@@ -152,7 +152,7 @@
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/6> a cpsv:PublicService ;
   dct:identifier "6" ;
   dct:title "Registrering av ny fettutskiller"@nb ;
-  dct:description "Beskrivelse for registrering av ny fettutskiller."@nb ;
+  dct:description "Oppdatert beskrivelse for registrering av ny fettutskiller."@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
   dcat:keyword "Avløp"@nb, "Avfall"@nb, "Fettutskiller"@nb, "Offentlig avløpsnett"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
