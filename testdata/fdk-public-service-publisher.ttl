@@ -49,6 +49,7 @@
              <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/10> ,
              <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/11> ,
              <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/12> ;
+  #dct:conformsTo - dct:Standard
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> a cpsv:PublicService ;
@@ -160,6 +161,42 @@
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
                <http://publications.europa.eu/resource/authority/language/NNO> ;
   cv:processingTime "P2D" ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/7> a cpsv:PublicService ;
+  dct:identifier "7" ;
+  dct:title "Anlegg for idrett og fysisk aktivitet"@nb ;
+  dct:description "Anlegg for idrett og fysisk aktivitet."@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/8> a cpsv:PublicService ;
+  dct:identifier "8" ;
+  dct:title "Søknad om nasjonal grunnstøtte"@nb ;
+  dct:description "Søknad om nasjonal grunnstøtte."@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/9> a cpsv:PublicService ;
+  dct:identifier "9" ;
+  dct:title "Søknad om internasjonal grunnstøtte"@nb ;
+  dct:description "Søknad om internasjonal grunnstøtte."@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/10> a cpsv:PublicService ;
+  dct:identifier "10" ;
+  dct:title "Nasjonal tilskuddsordning for å inkludere barn og unge"@nb ;
+  dct:description "Nasjonal tilskuddsordning for å inkludere barn og unge."@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/11> a cpsv:PublicService ;
+  dct:identifier "11" ;
+  dct:title "Søknad om kulturmidler"@nb ;
+  dct:description "Søknad om kulturmidler."@nb ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/12> a cpsv:PublicService ;
+  dct:identifier "12" ;
+  dct:title "Søknad om driftsstøtte til anlegg"@nb ;
+  dct:description "Søknad om driftsstøtte til anlegg."@nb ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> a cv:PublicOrganisation ;

@@ -1,0 +1,95 @@
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix schema:  <http://schema.org/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:Event ;
+  dct:identifier "1" ;
+  dct:title "Starte og drive restaurant"@nb ;
+  dct:description "Elektronisk prosess for etablering og oppstart av en bedrift."@nb ;
+  dct:type <https://data.norge.no/concepts/300> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/4> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/5> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/6> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> a cv:Event ;
+  dct:identifier "2" ;
+  dct:title "Starte og drive et idrettslag"@nb ;
+  dct:description "Formalisering, registrering og drift av et idrettslag."@nb ;
+  dct:type <https://data.norge.no/concepts/309> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/7> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/8> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/9> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/10> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/11> ,
+               <http://public-service-publisher.fellesdatakatalog.digdir.no/services/12> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/3> a cv:Event ;
+  dct:identifier "3" ;
+  dct:title "Oppgjør etter dødsfall"@nb ;
+  dct:type <https://data.norge.no/concepts/308> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/4> a cv:Event ;
+  dct:identifier "4" ;
+  dct:title "Alvorlig sykt barn"@nb ;
+  dct:type <https://data.norge.no/concepts/305> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/5> a cv:Event ;
+  dct:identifier "5" ;
+  dct:title "Få barn"@nb ;
+  dct:type <https://data.norge.no/concepts/304> ;
+.
+
+<https://data.norge.no/concepts/300> a skos:Concept ;
+  skos:prefLabel "Starte og drive en bedrift"@nb, "Starting business"@en ;
+.
+
+<https://data.norge.no/concepts/301> a skos:Concept ;
+  skos:prefLabel "Starting cross-border business"@en ;
+.
+
+<https://data.norge.no/concepts/302> a skos:Concept ;
+  skos:prefLabel "Doing business"@en ;
+.
+
+<https://data.norge.no/concepts/303> a skos:Concept ;
+  skos:prefLabel "Closing business"@en ;
+.
+
+<https://data.norge.no/concepts/304> a skos:Concept ;
+  skos:prefLabel "Få barn"@nb, "Having a child"@en ;
+.
+
+<https://data.norge.no/concepts/305> a skos:Concept ;
+  skos:prefLabel "Alvorlig sykt barn"@nb ;
+.
+
+<https://data.norge.no/concepts/306> a skos:Concept ;
+  skos:prefLabel "Miste og finne jobb"@nb ;
+.
+
+<https://data.norge.no/concepts/307> a skos:Concept ;
+  skos:prefLabel "Ny i Norge"@nb ;
+.
+
+<https://data.norge.no/concepts/308> a skos:Concept ;
+  skos:prefLabel "Dødsfall og arv"@nb ;
+.
+
+<https://data.norge.no/concepts/309> a skos:Concept ;
+  skos:prefLabel "Starte og drive en frivillig organisasjon"@nb ;
+.
