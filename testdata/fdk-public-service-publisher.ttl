@@ -16,8 +16,8 @@
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
-  cv:isDescribedAt <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> ,
-                   <http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/2> ;
+  cv:isDescribedAt <https://data.norge.no/datasets/68d08f28-a16d-4fab-a953-ed4ab08ce2e2> ,
+                   <https://data.norge.no/datasets/ae335ad2-0f3d-4eb1-98ce-87882776a123> ;
   cv:isClassifiedBy <http://data.brreg.no/begrep/28155> ,
                     <http://begrepskatalogen/begrep/d67e2d32-6dcf-11e6-be2b-ba992a0501a6> ,
                     <http://data.brreg.no/begrep/43180> ,
@@ -411,19 +411,6 @@
 
 <https://data.norge.no/concepts/259> a skos:Concept ;
   skos:prefLabel "Client's Location"@nb, "Client's Location"@en ;
-.
-
-
-<http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/1> a cv:PublicServiceDataset ;
-  dct:identifier "1" ;
-  dct:name "Enhetsregisteret"@nb ;
-  #dct:publisher (Agent)
-.
-
-<http://public-service-publisher.fellesdatakatalog.digdir.no/public-service-dataset/2> a cv:PublicServiceDataset ;
-  dct:identifier "2" ;
-  dct:name "Foretaksregisteret"@nb ;
-  #dct:publisher (Agent)
 .
 
 
