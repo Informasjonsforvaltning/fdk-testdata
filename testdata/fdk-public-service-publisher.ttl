@@ -22,7 +22,8 @@
                     <http://begrepskatalogen/begrep/d67e2d32-6dcf-11e6-be2b-ba992a0501a6> ,
                     <http://data.brreg.no/begrep/43180> ,
                     <https://data.norge.no/concepts/6> ;
-  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ,
+                 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
                <http://publications.europa.eu/resource/authority/language/NNO> ;
   cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> ;
@@ -167,36 +168,42 @@
   dct:identifier "7" ;
   dct:title "Anlegg for idrett og fysisk aktivitet"@nb ;
   dct:description "Anlegg for idrett og fysisk aktivitet."@nb ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/8> a cpsv:PublicService ;
   dct:identifier "8" ;
   dct:title "Søknad om nasjonal grunnstøtte"@nb ;
   dct:description "Søknad om nasjonal grunnstøtte."@nb ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/9> a cpsv:PublicService ;
   dct:identifier "9" ;
   dct:title "Søknad om internasjonal grunnstøtte"@nb ;
   dct:description "Søknad om internasjonal grunnstøtte."@nb ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/10> a cpsv:PublicService ;
   dct:identifier "10" ;
   dct:title "Nasjonal tilskuddsordning for å inkludere barn og unge"@nb ;
   dct:description "Nasjonal tilskuddsordning for å inkludere barn og unge."@nb ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/11> a cpsv:PublicService ;
   dct:identifier "11" ;
   dct:title "Søknad om kulturmidler"@nb ;
   dct:description "Søknad om kulturmidler."@nb ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/12> a cpsv:PublicService ;
   dct:identifier "12" ;
   dct:title "Søknad om driftsstøtte til anlegg"@nb ;
   dct:description "Søknad om driftsstøtte til anlegg."@nb ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> a cv:PublicOrganisation ;
