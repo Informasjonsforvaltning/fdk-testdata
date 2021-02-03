@@ -227,7 +227,7 @@
   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:Event ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:BusinessEvent ;
   dct:identifier "1" ;
   dct:title "Starte og drive restaurant"@nb ;
   dct:description "Elektronisk prosess for etablering og oppstart av en bedrift."@nb ;
@@ -240,7 +240,7 @@
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/6> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> a cv:Event ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> a cv:BusinessEvent ;
   dct:identifier "2" ;
   dct:title "Starte og drive et idrettslag"@nb ;
   dct:description "Formalisering, registrering og drift av et idrettslag."@nb ;
@@ -254,19 +254,19 @@
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/12> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/3> a cv:Event ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/3> a cv:LifeEvent ;
   dct:identifier "3" ;
   dct:title "Oppgjør etter dødsfall"@nb ;
   dct:type <https://data.norge.no/concepts/308> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/4> a cv:Event ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/4> a cv:LifeEvent ;
   dct:identifier "4" ;
   dct:title "Alvorlig sykt barn"@nb ;
   dct:type <https://data.norge.no/concepts/305> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/5> a cv:Event ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/5> a cv:LifeEvent ;
   dct:identifier "5" ;
   dct:title "Få barn"@nb ;
   dct:type <https://data.norge.no/concepts/304> ;
