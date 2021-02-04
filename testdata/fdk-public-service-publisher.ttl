@@ -16,14 +16,15 @@
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
-  cv:isDescribedAt <https://data.norge.no/datasets/68d08f28-a16d-4fab-a953-ed4ab08ce2e2> ,
-                   <https://data.norge.no/datasets/ae335ad2-0f3d-4eb1-98ce-87882776a123> ;
+  cv:isDescribedAt <http://brreg.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c> ,
+                   <http://brreg.no/catalogs/974760673/datasets/63086dda-9b72-43f0-bbc2-3ced4bc2edd6> ;
   cv:isClassifiedBy <http://data.brreg.no/begrep/28155> ,
                     <http://begrepskatalogen/begrep/d67e2d32-6dcf-11e6-be2b-ba992a0501a6> ,
                     <http://data.brreg.no/begrep/43180> ,
                     <https://data.norge.no/concepts/6> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> ,
-                 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
+                 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ,
+                 <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/5> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
                <http://publications.europa.eu/resource/authority/language/NNO> ;
   cv:hasCriterion <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> ;
@@ -175,7 +176,9 @@
   dct:identifier "8" ;
   dct:title "Søknad om nasjonal grunnstøtte"@nb ;
   dct:description "Søknad om nasjonal grunnstøtte."@nb ;
-  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ,
+                 <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/7> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/services/9> a cpsv:PublicService ;
@@ -206,25 +209,52 @@
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/2> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> a cv:PublicOrganisation ;
-  dct:identifier "1" ;
-  dct:title "Brønnøysundregistrene"@nb ;
-  skos:prefLabel "Brønnøysundregistrene"@nb ;
-  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/13> a cpsv:PublicService ;
+  dct:identifier "13" ;
+  dct:title "Søknad om foreldrepenger"@nb ;
+  dct:description "Foreldrepengene skal erstatte inntekten din når du skal være hjemme med barnet. Vanligvis er det 3 krav du må fylle for å få foreldrepenger."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/889640782> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/1> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> a cv:PublicOrganisation ;
-  dct:identifier "2" ;
-  dct:title "Brønnøy kommune"@nb ;
-  skos:prefLabel "Brønnøy kommune"@nb ;
-  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/13> a cpsv:PublicService ;
+  dct:identifier "13" ;
+  dct:title "Søknad om foreldrepenger"@nb ;
+  dct:description "Foreldrepengene skal erstatte inntekten din når du skal være hjemme med barnet. Vanligvis er det 3 krav du må fylle for å få foreldrepenger."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/889640782> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/1> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/3> a cv:PublicOrganisation ;
-  dct:identifier "3" ;
-  dct:title "Mattilsynet"@nb ;
-  skos:prefLabel "Mattilsynet"@nb ;
-  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/14> a cpsv:PublicService ;
+  dct:identifier "14" ;
+  dct:title "Søknad om pleiepenger for sykt barn"@nb ;
+  dct:description "Pleiepenger er for deg som må være borte fra jobb fordi du skal være sammen med et barn som er blitt sykt, eller som er under utredning for sykdom, og som trenger din omsorg og pleie hele tiden. Hvor mye pleiepenger du får avhenger av hvor mye du kan jobbe og hvor mye barnet ditt er i et omsorgstilbud. Omsorgstilbud kan være barnehage, skole eller andre organiserte tilbud."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/889640782> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/2> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/15> a cpsv:PublicService ;
+  dct:identifier "15" ;
+  dct:title "Søknad om dagpenger"@nb ;
+  dct:description "Har du blitt arbeidsledig, kan du ha rett til dagpenger eller annen økonomisk støtte fra NAV."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/889640782> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/3> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/16> a cpsv:PublicService ;
+  dct:identifier "16" ;
+  dct:title "Søknad om permanent oppholdstillatelse"@nb ;
+  dct:description "Permanent oppholdstillatelse gir deg rett til å oppholde deg og arbeide i Norge på ubestemt tid. Når du har bodd sammenhengende i Norge i tre år, kan du få en permanent oppholdstillatelse. Det er et krav at du da har gjennomført pliktig norskopplæring i henhold til introduksjonsloven, eller du dokumenterer at kommunen har fattet vedtak om fritak fra plikten til norskopplæring. Kravet om norskkunnskaper gjelder for alle mellom 16 og 55 år og som fikk innvilget sin første oppholdstillatelse som danner grunnlag for permanent oppholdstillatelse etter 1. september 2005."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760746> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/4> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/17> a cpsv:PublicService ;
+  dct:identifier "17" ;
+  dct:title "Oppgjør etter dødsfall"@nb ;
+  dct:description "‘Oppgjør etter dødsfall’ (Altinn dødsbo) er et samarbeidsprosjekt mellom Digitaliseringsdirektoratet, Brønnøysundregistrene, domstolene, finansnæringen, Skatteetaten, Statens kartverk og Statens vegvesen. Prosjektet vil levere en MVP (minimum viable product) for tjenesten Altinn dødsbo. MVP vil dekke prosessene fra dødsfall er registrert til det er utstedt skifteattest for privat skifte og det er mulig å bruke en digital representasjon av skifteattest eller fullmakten til fullmektig i oppgjørsprosessen."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+  cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/6> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/1> a cv:BusinessEvent ;
@@ -254,23 +284,70 @@
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/12> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/3> a cv:LifeEvent ;
-  dct:identifier "3" ;
-  dct:title "Oppgjør etter dødsfall"@nb ;
-  dct:type <https://data.norge.no/concepts/308> ;
-.
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/4> a cv:LifeEvent ;
-  dct:identifier "4" ;
-  dct:title "Alvorlig sykt barn"@nb ;
-  dct:type <https://data.norge.no/concepts/305> ;
-.
-
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/5> a cv:LifeEvent ;
-  dct:identifier "5" ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/1> a cv:LifeEvent ;
+  dct:identifier "1" ;
   dct:title "Få barn"@nb ;
+  dct:description "ASD forvalter i dag flere ordninger i folketrygdloven med relevans for livshendelsen. Direktoratet forvalter også ordninger som tilhører BFD. I forbindelse med direktoratets langsiktige IKT-moderniseringsarbeid er det innført digitale tjenester for innsyn, dialog, samhandling og automatisert saksbehandling for foreldrepenger og pleiepenger. Dette digitaliseringsarbeidet understøtter målsettingene i digitaliseringsstrategien."@nb ;
   dct:type <https://data.norge.no/concepts/304> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/13> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/983887457> ;
 .
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/2> a cv:LifeEvent ;
+  dct:identifier "2" ;
+  dct:title "Alvorlig sykt barn"@nb ;
+  dct:description "Prosjektets overordnede mål er å gi familier med barn med sammensatte behov et sømløst, persontilpasset og forutsigbart tilbud slik at de kan fokusere sine ressurser på omsorg og livskvalitet for barnet og familien."@nb ;
+  dct:type <https://data.norge.no/concepts/305> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/14> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/983887406> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/3> a cv:LifeEvent ;
+  dct:identifier "3" ;
+  dct:title "Miste og finne jobb"@nb ;
+  dct:description "Livshendelsen Miste og finne jobb er knyttet til Arbeids- og velferdsforvaltningens kjernevirksomhet. Arbeids- og Velferdsdirektoratet har ansvar for digitale tjenester på statlig side, men utvikler også løsninger for kommunal sektor gjennom for eksempel Digisos-arbeidet."@nb ;
+  dct:type <https://data.norge.no/concepts/306> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/15> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/983887457> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/4> a cv:LifeEvent ;
+  dct:identifier "4" ;
+  dct:title "Ny i Norge"@nb ;
+  dct:description "Det skal være enkelt å være ny i Norge (visjon) og Flere deltar i arbeids- og samfunnsliv (oppdragsmål). For 2020: Innsiktsrapport med analyse av funn fra informasjonsinnhenting som grunnlag for videre arbeid med livshendelsen."@nb ;
+  dct:type <https://data.norge.no/concepts/307> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/16> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/872417842> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/5> a cv:LifeEvent ;
+  dct:identifier "5" ;
+  dct:title "Starte og drive en bedrift"@nb ;
+  dct:description "Den overordnede målsetningen er forenkle for den næringsdrivende i alle faser (Idé-, etablering-, drive- og avslutningsfase) gjennom å se stegene den næringsdrivende må gjennom i sammenheng. Videre å etablere sammenhengende forretningstjenester med fokus på virksomheten på tvers av offentlig sektor, men også på tvers av privat og offentlig sektor. Brønnøysundregistrenes arbeid går ut på å etablere en metodikk for arbeidet, identifisere og koordinere tiltak, og i noen tilfeller gjennomføre tiltak som bidrar til forenklingen og gevinster for næringslivet. I tillegg en tett dialog med offentlige private sektorutvikling (OPS) porteføljene."@nb ;
+  dct:type <https://data.norge.no/concepts/300> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/912660680> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/6> a cv:LifeEvent ;
+  dct:identifier "6" ;
+  dct:title "Dødsfall og arv"@nb ;
+  dct:description "Gi innbygger en opplevelse av sammenheng i tjenester fra det offentlige når de opplever dødsfall i nære relasjoner, og forenkle prosessen etter dødsfall for de etterlatte. Prosesser som i dag er kompliserte, analoge og papirbaserte, skal gjennom digitalisering og deling av data i gjøre det enklere for de etterlatte i en ellers vanskelig tid."@nb ;
+  dct:type <https://data.norge.no/concepts/308> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/17> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/972417858> ;
+.
+
+<http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/7> a cv:LifeEvent ;
+  dct:identifier "7" ;
+  dct:title "Starte og drive en frivillig organisasjon"@nb ;
+  dct:description "Det overordnede målet er å skape sammenhengende, digitale tjenester som forenkler hverdagen for frivillige organisasjoner slik at de får mer tid til aktivitet. En annen målsetning er "once-only"-prinsippet, som tilsier at frivillige organisasjoner kun skal rapportere informasjon til det offentlige en gang."@nb ;
+  dct:type <https://data.norge.no/concepts/309> ;
+  dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/18> ;
+  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/972417866> ;
+.
+
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/criterion-requirement/1> a cv:CriterionRequirement ;
   dct:identifier "1" ;
