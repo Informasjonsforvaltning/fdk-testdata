@@ -342,7 +342,7 @@
 <http://public-service-publisher.fellesdatakatalog.digdir.no/lifeevents/7> a cv:LifeEvent ;
   dct:identifier "7" ;
   dct:title "Starte og drive en frivillig organisasjon"@nb ;
-  dct:description "Det overordnede målet er å skape sammenhengende, digitale tjenester som forenkler hverdagen for frivillige organisasjoner slik at de får mer tid til aktivitet. En annen målsetning er "once-only"-prinsippet, som tilsier at frivillige organisasjoner kun skal rapportere informasjon til det offentlige en gang."@nb ;
+  dct:description "Det overordnede målet er å skape sammenhengende, digitale tjenester som forenkler hverdagen for frivillige organisasjoner slik at de får mer tid til aktivitet. En annen målsetning er 'once-only'-prinsippet, som tilsier at frivillige organisasjoner kun skal rapportere informasjon til det offentlige en gang."@nb ;
   dct:type <https://data.norge.no/concepts/309> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/18> ;
   cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/972417866> ;
