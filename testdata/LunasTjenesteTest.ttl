@@ -9,8 +9,8 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> a cpsv:PublicService ;
-  dct:identifier "1" ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/services/50> a cpsv:PublicService ;
+  dct:identifier "50" ;
   dct:title "Samordnet registermelding 2"@nb ;
   dct:description "Elektronisk skjema for registrering av selskap"@nb ;
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
