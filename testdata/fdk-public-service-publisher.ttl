@@ -291,7 +291,7 @@
   dct:description "ASD forvalter i dag flere ordninger i folketrygdloven med relevans for livshendelsen. Direktoratet forvalter også ordninger som tilhører BFD. I forbindelse med direktoratets langsiktige IKT-moderniseringsarbeid er det innført digitale tjenester for innsyn, dialog, samhandling og automatisert saksbehandling for foreldrepenger og pleiepenger. Dette digitaliseringsarbeidet understøtter målsettingene i digitaliseringsstrategien."@nb ;
   dct:type <https://data.norge.no/concepts/311> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/13> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/983887457> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887457> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/35c09856-6485-48dc-b590-ca14608bc2be> a cv:LifeEvent ;
@@ -300,7 +300,7 @@
   dct:description "Prosjektets overordnede mål er å gi familier med barn med sammensatte behov et sømløst, persontilpasset og forutsigbart tilbud slik at de kan fokusere sine ressurser på omsorg og livskvalitet for barnet og familien."@nb ;
   dct:type <https://data.norge.no/concepts/312> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/14> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/983887406> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887406> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/e6b08964-05fe-44b4-bf7a-b6e8d4722547> a cv:LifeEvent ;
@@ -309,7 +309,7 @@
   dct:description "Livshendelsen Miste og finne jobb er knyttet til Arbeids- og velferdsforvaltningens kjernevirksomhet. Arbeids- og Velferdsdirektoratet har ansvar for digitale tjenester på statlig side, men utvikler også løsninger for kommunal sektor gjennom for eksempel Digisos-arbeidet."@nb ;
   dct:type <https://data.norge.no/concepts/313> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/15> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/983887457> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/983887457> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/c46e44f7-0cbf-4651-b73a-483d9950147b> a cv:LifeEvent ;
@@ -318,7 +318,7 @@
   dct:description "Det skal være enkelt å være ny i Norge (visjon) og Flere deltar i arbeids- og samfunnsliv (oppdragsmål). For 2020: Innsiktsrapport med analyse av funn fra informasjonsinnhenting som grunnlag for videre arbeid med livshendelsen."@nb ;
   dct:type <https://data.norge.no/concepts/314> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/16> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/872417842> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/872417842> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/745d1372-2b71-4e20-bcc4-49023379e7cf> a cv:LifeEvent ;
@@ -327,7 +327,7 @@
   dct:description "Den overordnede målsetningen er forenkle for den næringsdrivende i alle faser (Idé-, etablering-, drive- og avslutningsfase) gjennom å se stegene den næringsdrivende må gjennom i sammenheng. Videre å etablere sammenhengende forretningstjenester med fokus på virksomheten på tvers av offentlig sektor, men også på tvers av privat og offentlig sektor. Brønnøysundregistrenes arbeid går ut på å etablere en metodikk for arbeidet, identifisere og koordinere tiltak, og i noen tilfeller gjennomføre tiltak som bidrar til forenklingen og gevinster for næringslivet. I tillegg en tett dialog med offentlige private sektorutvikling (OPS) porteføljene."@nb ;
   dct:type <https://data.norge.no/concepts/300> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/912660680> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/912660680> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/cc466e4c-1e08-4915-9475-4b4a4cee62ec> a cv:LifeEvent ;
@@ -336,7 +336,7 @@
   dct:description "Gi innbygger en opplevelse av sammenheng i tjenester fra det offentlige når de opplever dødsfall i nære relasjoner, og forenkle prosessen etter dødsfall for de etterlatte. Prosesser som i dag er kompliserte, analoge og papirbaserte, skal gjennom digitalisering og deling av data i gjøre det enklere for de etterlatte i en ellers vanskelig tid."@nb ;
   dct:type <https://data.norge.no/concepts/315> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/17> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/972417858> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417858> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/events/207ca059-5f03-48f5-a231-aa73322c36e2> a cv:LifeEvent ;
@@ -345,7 +345,7 @@
   dct:description "Det overordnede målet er å skape sammenhengende, digitale tjenester som forenkler hverdagen for frivillige organisasjoner slik at de får mer tid til aktivitet. En annen målsetning er 'once-only'-prinsippet, som tilsier at frivillige organisasjoner kun skal rapportere informasjon til det offentlige en gang."@nb ;
   dct:type <https://data.norge.no/concepts/316> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/18> ;
-  cv:hasCompetentAuthority <https://data.brreg.no/enhetsregisteret/api/enheter/972417866> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417866> ;
 .
 
 
