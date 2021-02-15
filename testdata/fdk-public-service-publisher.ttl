@@ -585,7 +585,7 @@
 
 <https://data.norge.no/concepts/303> a skos:Concept ;
   skos:prefLabel "Støtteordninger"@nb ;
-  skos:broader <https://data.norge.no/concepts/301> ;
+  skos:broader <https://data.norge.no/concepts/301> ,
                <https://data.norge.no/concepts/304> ;
 .
 
