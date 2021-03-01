@@ -261,7 +261,7 @@
   dct:identifier "ece8c4c0-2fa9-412a-a3fd-6eefe0681728" ;
   dct:title "Starte og drive restaurant"@nb ;
   dct:description "Elektronisk prosess for etablering og oppstart av en bedrift."@nb ;
-  dct:type <https://data.norge.no/concepts/300> ;
+  dct:type <https://data.norge.no/concepts/302> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ,
