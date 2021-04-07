@@ -321,7 +321,7 @@
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/872417842> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/745d1372-2b71-4e20-bcc4-49023379e7cf> a cv:LifeEvent ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/745d1372-2b71-4e20-bcc4-49023379e7cf> a cv:BusinessEvent ;
   dct:identifier "745d1372-2b71-4e20-bcc4-49023379e7cf" ;
   dct:title "Starte og drive en bedrift"@nb ;
   dct:description "Den overordnede målsetningen er forenkle for den næringsdrivende i alle faser (Idé-, etablering-, drive- og avslutningsfase) gjennom å se stegene den næringsdrivende må gjennom i sammenheng. Videre å etablere sammenhengende forretningstjenester med fokus på virksomheten på tvers av offentlig sektor, men også på tvers av privat og offentlig sektor. Brønnøysundregistrenes arbeid går ut på å etablere en metodikk for arbeidet, identifisere og koordinere tiltak, og i noen tilfeller gjennomføre tiltak som bidrar til forenklingen og gevinster for næringslivet. I tillegg en tett dialog med offentlige private sektorutvikling (OPS) porteføljene."@nb ;
@@ -339,7 +339,7 @@
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417858> ;
 .
 
-<http://public-service-publisher.fellesdatakatalog.digdir.no/events/207ca059-5f03-48f5-a231-aa73322c36e2> a cv:LifeEvent ;
+<http://public-service-publisher.fellesdatakatalog.digdir.no/events/207ca059-5f03-48f5-a231-aa73322c36e2> a cv:BusinessEvent ;
   dct:identifier "207ca059-5f03-48f5-a231-aa73322c36e2" ;
   dct:title "Starte og drive en frivillig organisasjon"@nb ;
   dct:description "Det overordnede målet er å skape sammenhengende, digitale tjenester som forenkler hverdagen for frivillige organisasjoner slik at de får mer tid til aktivitet. En annen målsetning er 'once-only'-prinsippet, som tilsier at frivillige organisasjoner kun skal rapportere informasjon til det offentlige en gang."@nb ;
@@ -565,95 +565,197 @@
 
 # Event types
 <https://data.norge.no/concepts/300> a skos:Concept ;
-  skos:prefLabel "Starte og drive en bedrift"@nb, "Starting and doing business"@en ;
+  skos:prefLabel "Starte og drive bedrift"@nb, "Starting and doing business"@en ;
   skos:narrower <https://data.norge.no/concepts/301> ,
                 <https://data.norge.no/concepts/304> ,
-                <https://data.norge.no/concepts/309> ;
+                <https://data.norge.no/concepts/309> ,
+                <https://data.norge.no/concepts/317> ;
 .
 
 <https://data.norge.no/concepts/301> a skos:Concept ;
-  skos:prefLabel "Starte en bedrift"@nb, "Starting business"@en ;
+  skos:prefLabel "Starte bedrift"@nb, "Starting business"@en ;
   skos:broader <https://data.norge.no/concepts/300> ;
   skos:narrower <https://data.norge.no/concepts/302> ,
-                <https://data.norge.no/concepts/303> ;
+                <https://data.norge.no/concepts/303> ,
+                <https://data.norge.no/concepts/306> ,
+                <https://data.norge.no/concepts/307> ,
+                <https://data.norge.no/concepts/308> ,
+                <https://data.norge.no/concepts/318> ,
+                <https://data.norge.no/concepts/305> ;
 .
 
 <https://data.norge.no/concepts/302> a skos:Concept ;
-  skos:prefLabel "Oppstart og registrering"@nb, "Registering a company"@en ;
+  skos:prefLabel "Registrere en virksomhet"@nb, "Registering a company"@en ;
   skos:broader <https://data.norge.no/concepts/301> ;
 .
 
 <https://data.norge.no/concepts/303> a skos:Concept ;
-  skos:prefLabel "Støtteordninger"@nb ;
+  skos:prefLabel "Behov for en lisens, tillatelser eller sertifikat for starte eller fortsette en aktivitet"@nb, "Needing a licence, permit or certificate to start or continue an activity"@en ;
   skos:broader <https://data.norge.no/concepts/301> ,
                <https://data.norge.no/concepts/304> ;
 .
 
 <https://data.norge.no/concepts/304> a skos:Concept ;
-  skos:prefLabel "Drive en bedrift"@nb, "Doing business"@en ;
+  skos:prefLabel "Drive bedrift"@nb, "Doing business"@en ;
   skos:broader <https://data.norge.no/concepts/300> ;
   skos:narrower <https://data.norge.no/concepts/303> ,
                 <https://data.norge.no/concepts/305> ,
                 <https://data.norge.no/concepts/306> ,
                 <https://data.norge.no/concepts/307> ,
-                <https://data.norge.no/concepts/308> ;
+                <https://data.norge.no/concepts/308> ,
+                <https://data.norge.no/concepts/318> ,
+                <https://data.norge.no/concepts/319> ,
+                <https://data.norge.no/concepts/320> ,
+                <https://data.norge.no/concepts/321> ;
 .
 
 <https://data.norge.no/concepts/305> a skos:Concept ;
-  skos:prefLabel "Arbeidsforhold"@nb ;
-  skos:broader <https://data.norge.no/concepts/304> ;
+  skos:prefLabel "Ansette en ansatt"@nb, "Hiring an employee"@en ;
+  skos:broader <https://data.norge.no/concepts/301> ,
+               <https://data.norge.no/concepts/304> ;
 .
 
 <https://data.norge.no/concepts/306> a skos:Concept ;
-  skos:prefLabel "Skatt og avgift"@nb ;
-  skos:broader <https://data.norge.no/concepts/304> ;
+  skos:prefLabel "Registrere immateriell eiendom"@nb, "Registering Intellectual Property"@en ;
+  skos:broader <https://data.norge.no/concepts/301> ,
+               <https://data.norge.no/concepts/304> ;
 .
 
 <https://data.norge.no/concepts/307> a skos:Concept ;
-  skos:prefLabel "Regnskap og revisjon"@nb ;
-  skos:broader <https://data.norge.no/concepts/304> ;
+  skos:prefLabel "Registrere en avdeling"@nb, "Registering a branch"@en ;
+  skos:broader <https://data.norge.no/concepts/301> ,
+               <https://data.norge.no/concepts/304> ,
+               <https://data.norge.no/concepts/317> ;
 .
 
 <https://data.norge.no/concepts/308> a skos:Concept ;
-  skos:prefLabel "Eksport og import"@nb ;
+  skos:prefLabel "Starte en ny aktivitet"@nb, "Starting a new activity"@en ;
+  skos:broader <https://data.norge.no/concepts/301> ,
+               <https://data.norge.no/concepts/304> ;
+.
+
+<https://data.norge.no/concepts/318> a skos:Concept ;
+  skos:prefLabel "Finansiere en virksomhet"@nb, "Financing a company"@en ;
+  skos:broader <https://data.norge.no/concepts/301> ,
+               <https://data.norge.no/concepts/304> ;
+.
+
+<https://data.norge.no/concepts/319> a skos:Concept ;
+  skos:prefLabel "Deltar i offentlige anskaffelser"@nb, "Participating in public procurement"@en ;
   skos:broader <https://data.norge.no/concepts/304> ;
 .
 
+<https://data.norge.no/concepts/320> a skos:Concept ;
+  skos:prefLabel "Varsling og rapportering til myndigheter"@nb, "Notifying and reporting to authorities"@en ;
+  skos:broader <https://data.norge.no/concepts/304> ;
+.
+
+<https://data.norge.no/concepts/321> a skos:Concept ;
+  skos:prefLabel "Har betalingsproblemer"@nb, "Having problems in paying creditors"@en ;
+  skos:broader <https://data.norge.no/concepts/304> ;
+.
 
 <https://data.norge.no/concepts/309> a skos:Concept ;
-  skos:prefLabel "Slette en bedrift"@nb, "Closing business"@en ;
+  skos:prefLabel "Avvikle bedrift"@nb, "Closing business"@en ;
   skos:broader <https://data.norge.no/concepts/300> ;
-  skos:narrower <https://data.norge.no/concepts/310> ;
+  skos:narrower <https://data.norge.no/concepts/310> ,
+                <https://data.norge.no/concepts/322> ;
 .
 
 <https://data.norge.no/concepts/310> a skos:Concept ;
-  skos:prefLabel "Avvikling, sletting og konkurs"@nb ;
+  skos:prefLabel "Restrukturering av en virksomhet"@nb, "Restructuring of a company"@en ;
   skos:broader <https://data.norge.no/concepts/309> ;
 .
 
+<https://data.norge.no/concepts/322> a skos:Concept ;
+  skos:prefLabel "Oppløsning av en virksomhet"@nb, "Dissolution of a company"@en ;
+  skos:broader <https://data.norge.no/concepts/309> ;
+.
+
+<https://data.norge.no/concepts/317> a skos:Concept ;
+  skos:prefLabel "Starte en internasjonal virksomhet"@nb, "Starting cross-border business"@en  ;
+  skos:broader <https://data.norge.no/concepts/300> ;
+  skos:narrower <https://data.norge.no/concepts/307> ,
+                <https://data.norge.no/concepts/323> ;
+.
+
+<https://data.norge.no/concepts/323> a skos:Concept ;
+  skos:prefLabel "Registrere en internasjonal virksomhet"@nb, "Registering a cross-border business"@en  ;
+  skos:broader <https://data.norge.no/concepts/317> ;
+.
 
 <https://data.norge.no/concepts/311> a skos:Concept ;
   skos:prefLabel "Få barn"@nb, "Having a child"@en ;
+  skos:narrower <https://data.norge.no/concepts/312> ;
 .
 
 <https://data.norge.no/concepts/312> a skos:Concept ;
-  skos:prefLabel "Alvorlig sykt barn"@nb ;
+  skos:prefLabel "Alvorlig sykt barn"@nb, "Seriously ill child"@en ;
+  skos:broader <https://data.norge.no/concepts/311> ;
+.
+
+<https://data.norge.no/concepts/325> a skos:Concept ;
+  skos:prefLabel "Arbeidsrelaterte forhold"@nb, "Work-related conditions"@en ;
+  skos:narrower <https://data.norge.no/concepts/313> ;
 .
 
 <https://data.norge.no/concepts/313> a skos:Concept ;
-  skos:prefLabel "Miste og finne jobb"@nb ;
+  skos:prefLabel "Miste og finne jobb"@nb, "Losing and finding a job"@en ;
+  skos:broader <https://data.norge.no/concepts/325> ;
+  skos:narrower <https://data.norge.no/concepts/326> ,
+                <https://data.norge.no/concepts/327> ;
+.
+
+<https://data.norge.no/concepts/326> a skos:Concept ;
+  skos:prefLabel "Lete etter en ny jobb"@nb, "Looking for a new job"@en ;
+  skos:broader <https://data.norge.no/concepts/313> ;
+.
+
+<https://data.norge.no/concepts/327> a skos:Concept ;
+  skos:prefLabel "Miste/slutte i en jobb"@nb, "Losing/quitting a job"@en ;
+  skos:broader <https://data.norge.no/concepts/313> ;
+.
+
+<https://data.norge.no/concepts/324> a skos:Concept ;
+  skos:prefLabel "Flytte til/fra landet"@nb, "Moving to/from the country"@en ;
+  skos:narrower <https://data.norge.no/concepts/314> ;
 .
 
 <https://data.norge.no/concepts/314> a skos:Concept ;
   skos:prefLabel "Ny i Norge"@nb ;
+  skos:broader <https://data.norge.no/concepts/324> ;
+.
+
+<https://data.norge.no/concepts/328> a skos:Concept ;
+  skos:prefLabel "Dødsfall i familien"@nb, "Death of a relative"@en ;
+  skos:narrower <https://data.norge.no/concepts/315> ;
 .
 
 <https://data.norge.no/concepts/315> a skos:Concept ;
   skos:prefLabel "Dødsfall og arv"@nb ;
+  skos:broader <https://data.norge.no/concepts/328> ;
 .
 
 <https://data.norge.no/concepts/316> a skos:Concept ;
-  skos:prefLabel "Starte og drive en frivillig organisasjon"@nb ;
+  skos:prefLabel "Starte og drive en frivillig organisasjon"@nb, "Starting and running a voluntary organization"@en ;
+  skos:narrower <https://data.norge.no/concepts/329> ,
+                <https://data.norge.no/concepts/330> ,
+                <https://data.norge.no/concepts/331> ;
+.
+
+<https://data.norge.no/concepts/329> a skos:Concept ;
+  skos:prefLabel "Starte en frivillig organisasjon"@nb, "Starting a voluntary organization"@en ;
+  skos:broader <https://data.norge.no/concepts/316> ;
+.
+
+<https://data.norge.no/concepts/330> a skos:Concept ;
+  skos:prefLabel "Drive en frivillig organisasjon"@nb, "Running a voluntary organization"@en ;
+  skos:broader <https://data.norge.no/concepts/316> ;
+.
+
+<https://data.norge.no/concepts/331> a skos:Concept ;
+  skos:prefLabel "Avvikle en frivillig organisasjon"@nb, "Closing a voluntary organization"@en ;
+  skos:broader <https://data.norge.no/concepts/316> ;
 .
 
 
