@@ -261,7 +261,7 @@
   dct:identifier "ece8c4c0-2fa9-412a-a3fd-6eefe0681728" ;
   dct:title "Starte og drive restaurant"@nb ;
   dct:description "Elektronisk prosess for etablering og oppstart av en bedrift."@nb ;
-  dct:type <https://data.norge.no/concepts/302> ;
+  dct:type <https://data.norge.no/concepts/300> ;
   dct:relation <http://public-service-publisher.fellesdatakatalog.digdir.no/services/1> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/2> ,
                <http://public-service-publisher.fellesdatakatalog.digdir.no/services/3> ,
@@ -691,7 +691,8 @@
 
 <https://data.norge.no/concepts/312> a skos:Concept ;
   skos:prefLabel "Alvorlig sykt barn"@nb, "Seriously ill child"@en ;
-  skos:broader <https://data.norge.no/concepts/311> ;
+  skos:broader <https://data.norge.no/concepts/311> ,
+               <https://data.norge.no/concepts/332> ;
 .
 
 <https://data.norge.no/concepts/325> a skos:Concept ;
@@ -756,6 +757,11 @@
 <https://data.norge.no/concepts/331> a skos:Concept ;
   skos:prefLabel "Avvikle en frivillig organisasjon"@nb, "Closing a voluntary organization"@en ;
   skos:broader <https://data.norge.no/concepts/316> ;
+.
+
+<https://data.norge.no/concepts/332> a skos:Concept ;
+  skos:prefLabel "Stå overfor en nødsituasjon/helseproblem"@nb, "Facing an emergency / health problem"@en ;
+  skos:narrower <https://data.norge.no/concepts/312> ;
 .
 
 
