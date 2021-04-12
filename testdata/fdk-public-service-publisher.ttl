@@ -169,6 +169,7 @@
   dct:identifier "7" ;
   dct:title "Anlegg for idrett og fysisk aktivitet"@nb ;
   dct:description "Anlegg for idrett og fysisk aktivitet."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417866> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/6def2332-1fe9-4979-b002-ba06f4b6bd0d> ;
 .
 
@@ -176,7 +177,7 @@
   dct:identifier "8" ;
   dct:title "Søknad om nasjonal grunnstøtte"@nb ;
   dct:description "Søknad om nasjonal grunnstøtte."@nb ;
-  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417793> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/6def2332-1fe9-4979-b002-ba06f4b6bd0d> ,
                  <http://public-service-publisher.fellesdatakatalog.digdir.no/events/207ca059-5f03-48f5-a231-aa73322c36e2> ;
 .
@@ -185,6 +186,7 @@
   dct:identifier "9" ;
   dct:title "Søknad om internasjonal grunnstøtte"@nb ;
   dct:description "Søknad om internasjonal grunnstøtte."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417793> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/6def2332-1fe9-4979-b002-ba06f4b6bd0d> ;
 .
 
@@ -192,6 +194,7 @@
   dct:identifier "10" ;
   dct:title "Nasjonal tilskuddsordning for å inkludere barn og unge"@nb ;
   dct:description "Nasjonal tilskuddsordning for å inkludere barn og unge."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/972417793> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/6def2332-1fe9-4979-b002-ba06f4b6bd0d> ;
 .
 
@@ -199,6 +202,7 @@
   dct:identifier "11" ;
   dct:title "Søknad om kulturmidler"@nb ;
   dct:description "Søknad om kulturmidler."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/6def2332-1fe9-4979-b002-ba06f4b6bd0d> ;
 .
 
@@ -206,6 +210,7 @@
   dct:identifier "12" ;
   dct:title "Søknad om driftsstøtte til anlegg"@nb ;
   dct:description "Søknad om driftsstøtte til anlegg."@nb ;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/964983291> ;
   cv:isGroupedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/events/6def2332-1fe9-4979-b002-ba06f4b6bd0d> ;
 .
 
@@ -973,7 +978,7 @@
   dct:identifier "1" ;
   cv:value 5570 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap: elektronisk kr 5570,-" ;
+  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap: elektronisk" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -982,7 +987,7 @@
   dct:identifier "2" ;
   cv:value 6797 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap: papir kr 6797,-" ;
+  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap: papir" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -991,7 +996,7 @@
   dct:identifier "3" ;
   cv:value 1440 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse: elektronisk kr 1440,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse: elektronisk" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1000,7 +1005,7 @@
   dct:identifier "4" ;
   cv:value 2832 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse: papir kr 2832,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse: papir" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1009,7 +1014,7 @@
   dct:identifier "5" ;
   cv:value 1440 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon: elektronisk kr 1440,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon: elektronisk" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1018,7 +1023,7 @@
   dct:identifier "6" ;
   cv:value 2832 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon: papir kr 2832,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon: papir" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1027,7 +1032,7 @@
   dct:identifier "7" ;
   cv:value 1440 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning: elektronisk kr 1440,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning: elektronisk" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1036,7 +1041,7 @@
   dct:identifier "8" ;
   cv:value 2832 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning: papir kr 2832,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning: papir" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1045,7 +1050,7 @@
   dct:identifier "9" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer: elektronisk kr 0,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer: elektronisk" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1054,7 +1059,7 @@
   dct:identifier "10" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer: papir kr 0,-" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer: papir" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1063,7 +1068,7 @@
   dct:identifier "11" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Oppløsning og sletting i Foretaksregisteret: elektronisk kr 0,-" ;
+  dct:description "Oppløsning og sletting i Foretaksregisteret: elektronisk" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1072,7 +1077,7 @@
   dct:identifier "12" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Oppløsning og sletting i Foretaksregisteret: papir kr 0,-" ;
+  dct:description "Oppløsning og sletting i Foretaksregisteret: papir" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1081,7 +1086,7 @@
   dct:identifier "13" ;
   cv:value 0.49 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "0,49 kr pr. vareliter for alkoholholdig drikk i gruppe 1" ;
+  dct:description "Pr. vareliter for alkoholholdig drikk i gruppe 1" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
 .
@@ -1090,7 +1095,7 @@
   dct:identifier "14" ;
   cv:value 1.29 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "1,29 kr pr. vareliter for alkoholholdig drikk i gruppe 2" ;
+  dct:description "Pr. vareliter for alkoholholdig drikk i gruppe 2" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
 .
@@ -1099,7 +1104,7 @@
   dct:identifier "15" ;
   cv:value 4.27 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "4,27 kr pr. vareliter for alkoholholdig drikk i gruppe 3" ;
+  dct:description "Pr. vareliter for alkoholholdig drikk i gruppe 3" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/2> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/3> ;
 .
