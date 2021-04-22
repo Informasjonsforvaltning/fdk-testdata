@@ -12,6 +12,15 @@
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
 @prefix prof: <https://www.w3.org/ns/dx/prof/> .
 
+ssb:Katalog  a                 dcat:Catalog ;
+        dct:description         "Katalog med oversikt over SSBs modeller"@nb ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
+        dct:title               "SSBs modellkatalog"@nb ;
+        dct:license             dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+        modelldcatno:model      ssb:GSIM ;
+        dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
+
 ssb:GSIM a            modelldcatno:InformationModel ;
         dct:identifier          "?????"^^xsd:string ;
         modelldcatno:informationModelIdentifier "https://www.digdir/PersonOgEnhet"^^xsd:string ;
@@ -33,15 +42,6 @@ ssb:GSIM a            modelldcatno:InformationModel ;
         prof:isProfileOf        <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
         dcat:theme              <????> ;
         dct:hasFormat           ssb:AlternativModellformat .
-
-ssb:Katalog  a                 dcat:Catalog ;
-        dct:description         "Katalog med oversikt over SSBs modeller"@nb ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
-        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
-        dct:title               "SSBs modellkatalog"@nb ;
-        dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
-        modelldcatno:model      ssb:AdresseModell , ssb:PersonOgEnhet , ssb:AltMuligModell , ssb:Diversemodell ;
-        dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
 <https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png> a foaf:Document ;
         dct:title                 "Image of the logical data model (LDM)"@en  ;
