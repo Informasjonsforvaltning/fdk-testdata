@@ -17,7 +17,7 @@ ssb:Katalog  a                 dcat:Catalog ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:title               "SSBs modellkatalog"@nb ;
-        dct:license             dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+        dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         modelldcatno:model      ssb:GSIM ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
