@@ -10,6 +10,7 @@
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
 @prefix prof: <https://www.w3.org/ns/dx/prof/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
 ssb:Katalog  a                 dcat:Catalog ;
         dct:description         "Katalog med oversikt over SSBs informasjonsmodeller"@nb ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
