@@ -28,7 +28,7 @@ ssb:GSIM a            modelldcatno:InformationModel ;
         dct:title               "Generic Statistical Information Model (GSIM)"@en , "Den generelle statistiske informasjonsmodellen"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
-        dct:type                <https://data.norge.no/vocabulary/modelldcatno#logicalModel> ;
+        dct:type                <https://data.norge.no/vocabulary/modelldcatno#logicalModel> , <https://data.norge.no/vocabulary/modelldcatno#commonSharedModel> ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
@@ -38,7 +38,7 @@ ssb:GSIM a            modelldcatno:InformationModel ;
         foaf:homepage           <https://github.com/statisticsnorway/gsim-raml-schema> , <https://www.ssb.no/a/metadata/metadatadokumenter/GSIM-brosjyre.pdf> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         prof:isProfileOf        <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
-        dcat:theme              < http://data.europa.eu/una/com-web-presence/c33e404a44> ;
+        dcat:theme              <http://data.europa.eu/una/com-web-presence/c33e404a44> ;
         dct:hasFormat           <https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png> .
 
 <https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png> a foaf:Document ;
