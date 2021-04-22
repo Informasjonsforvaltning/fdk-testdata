@@ -1,4 +1,4 @@
-@prefix ssb: <https://ssb.no/model-catalog#> .
+@prefix ssb: <https://ssb.no/model-catalog#> . #Må legge inn nytt navnerom.
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -11,7 +11,7 @@
 @prefix prof: <https://www.w3.org/ns/dx/prof/> .
 
 ssb:Katalog  a                 dcat:Catalog ;
-        dct:description         "Katalog med oversikt over SSBs modeller"@nb ;
+        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller"@nb ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:title               "SSBs modellkatalog"@nb ;
@@ -21,22 +21,21 @@ ssb:Katalog  a                 dcat:Catalog ;
 
 ssb:GSIM a            modelldcatno:InformationModel ;
         dct:identifier          "?????"^^xsd:string ;
-        modelldcatno:informationModelIdentifier "https://www.digdir/PersonOgEnhet"^^xsd:string ;
         dct:publisher          <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:temporal            ssb:Tidsintervall ;
-        dct:description         "Logical data model based on the UNECE standard Generic Statistical Information Model (GSIM)."@nb ;
+        dct:description         "Logical data model based on the UNECE standard Generic Statistical Information Model (GSIM)."@en ;
         dct:title               "Generic Statistical Information Model (GSIM)"@en , "Den generelle statistiske informasjonsmodellen"@nb ;
         owl:versionInfo         "1.0"^^xsd:string ;
-        dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
-        dct:type                modelldcatno:logicalModel , modelldcatno:commonSharedModel ;
+        dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ; #Må oppdateres.
+        dct:type                modelldcatno:conceptualModel , modelldcatno:commonSharedModel ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        owl:versionInfo         "1.0"^^xsd:string ;
+        owl:versionInfo         "1.0"^^xsd:string ; #må oppdateres.
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         dcat:contactPoint       ssb:KontaktOss ;
         dcat:keyword            "Statistikk"@nb , "Statistics"@en ;
+        dct:subject     |   |   <Id til begrep i begrepskatalogen> ;
         foaf:homepage           <https://github.com/statisticsnorway/gsim-raml-schema> , <https://www.ssb.no/a/metadata/metadatadokumenter/GSIM-brosjyre.pdf> ;
-        dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         prof:isProfileOf        <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
         dcat:theme              <http://data.europa.eu/una/com-web-presence/c33e404a44> ;
         dct:hasFormat           <https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png> .
@@ -46,7 +45,7 @@ ssb:GSIM a            modelldcatno:InformationModel ;
         dct:format                <http://publications.europa.eu/resource/authority/file-type/PNG> .
 
 ssb:Tidsintervall  a  dct:PeriodOfTime ;
-        dcat:startDate  "2016-02-11T00:00:00+01:00"^^xsd:dateTime .
+        dcat:startDate  "2016-02-11T00:00:00+01:00"^^xsd:dateTime . #Dato må oppdateres.
 
 ssb:KontaktOss  a        vcard:Kind ;
         vcard:hasEmail      <informasjon@ssb.no> ;
@@ -55,3 +54,4 @@ ssb:KontaktOss  a        vcard:Kind ;
 <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> a     dct:Standard ;
         dct:title         "Generic Statistical Information Model"@en ;
         owl:versionInfo    "??"^^xsd:string .
+        rdfs:seeAlso <lenke til relevante sider> ;
