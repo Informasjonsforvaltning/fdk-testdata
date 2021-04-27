@@ -12,7 +12,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ssb:Katalog  a                 dcat:Catalog ;
-        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller "@nb ;
+        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller  "@nb ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:title               "SSBs modellkatalog"@nb ;
