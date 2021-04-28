@@ -1,4 +1,5 @@
-@prefix ssb: <https://ssb.no/model-catalog#> . #Må legge inn nytt navnerom.
+@prefix ssb: <https://www.ssb.no> .
+@prefix ssben: <https://www.ssb.no/en> .
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -11,29 +12,28 @@
 @prefix prof: <https://www.w3.org/ns/dx/prof/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ssb:Katalog  a                 dcat:Catalog ;
-        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller    "@nb ;
+ssb:Catalog  a                 dcat:Catalog ;
+        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller"@nb, "Catalogue with SSBs information models"@en ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
-        dct:title               "SSBs modellkatalog"@nb ;
+        dct:title               "SSBs modellkatalog"@nb, "SSBs model catalogue"@en ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         modelldcatno:model      ssb:GSIM ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
-ssb:GSIM a            modelldcatno:InformationModel ;
+ssb:SSBIM a            modelldcatno:InformationModel ;
         dct:identifier          "?????"^^xsd:string ;
         dct:publisher          <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:temporal            ssb:Tidsintervall ;
-        dct:description         "Logical data model based on the UNECE standard Generic Statistical Information Model (GSIM)."@en ;
-        dct:title               "Generic Statistical Information Model (GSIM)"@en , "Den generelle statistiske informasjonsmodellen"@nb ;
-        owl:versionInfo         "1.0"^^xsd:string ;
-        dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ; #Må oppdateres.
+        dct:description         "Information Model based on the UNECE standard Generic Statistical Information Model (GSIM) v1.2"@en, "Informasjonsmodell basert på UNECE Generic statistical Information Model (GSIM) v1.2"@nb ;
+        dct:title               "SSBs Information Model (SSBIM)"@en , "SSBs informasjonsmodell (SSBIM)"@nb ;
+        owl:versionInfo         "1.1"^^xsd:string ;
+        dct:issued              "2018-10-03"^^xsd:date ;
         dct:type                modelldcatno:conceptualModel , modelldcatno:commonSharedModel ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        owl:versionInfo         "1.0"^^xsd:string ; #må oppdateres.
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-        dcat:contactPoint       ssb:KontaktOss ;
+        dcat:contactPoint       ssb:KontaktOss, ssben:ContactUs ;
         dcat:keyword            "Statistikk"@nb , "Statistics"@en ;
         dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> , <https://data.norge.no/concepts/a5ff31be-0c3f-4534-bf12-bd8ddd373d61> ; #Må oppdateres ;
         foaf:homepage           <https://github.com/statisticsnorway/gsim-raml-schema> , <https://www.ssb.no/a/metadata/metadatadokumenter/GSIM-brosjyre.pdf> ;
@@ -46,13 +46,17 @@ ssb:GSIM a            modelldcatno:InformationModel ;
         dct:format                <http://publications.europa.eu/resource/authority/file-type/PNG> .
 
 ssb:Tidsintervall  a  dct:PeriodOfTime ;
-        dcat:startDate  "2016-02-11T00:00:00+01:00"^^xsd:dateTime . #Dato må oppdateres.
+        dcat:startDate  "20108-10-03"^^xsd:date .
 
 ssb:KontaktOss  a        vcard:Kind ;
         vcard:hasEmail      <informasjon@ssb.no> ;
         vcard:hasTelephone  <tel:+4721094642> .
 
+ssben:ContactUs a vcard:Kind ;
+        vcard:hasEmail      <information@ssb.no> ;
+        vcard:hasTelephone <tel:+4721094642> .
+
 <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> a     dct:Standard ;
         dct:title         "Generic Statistical Information Model"@en ;
-        owl:versionInfo    "??"^^xsd:string ;
-        rdfs:seeAlso <https://statswiki.unece.org/display/gsim/GSIM+resources+repository> . #Må oppdateres.
+        owl:versionInfo    "1.2"^^xsd:string ;
+        rdfs:seeAlso <https://statswiki.unece.org/display/clickablegsim/Clickable+GSIM+v1.2> .
