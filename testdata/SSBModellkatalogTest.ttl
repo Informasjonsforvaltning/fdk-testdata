@@ -1,5 +1,5 @@
 @prefix ssb: <https://www.ssb.no> .
-@prefix ssben: <https://www.ssb.no/en> .
+@prefix schema: <http://schema.org/> .
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -21,7 +21,7 @@ ssb:Catalog  a                 dcat:Catalog ;
         modelldcatno:model      ssb:GSIM ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
-ssb:SSBIM a            modelldcatno:InformationModel ;
+        ssb:SSBIM a            modelldcatno:InformationModel ;
         dct:identifier          "?????"^^xsd:string ;
         dct:publisher          <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:temporal            ssb:Tidsintervall ;
@@ -33,8 +33,34 @@ ssb:SSBIM a            modelldcatno:InformationModel ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-        dcat:contactPoint       ssb:KontaktOss, ssben:ContactUs ;
         dcat:keyword            "Statistikk"@nb , "Statistics"@en ;
+        dcat:contactPoint
+        [a vcard:Organization ; # norsk
+        vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB> ; # Norsk bokmål
+        vcard:organization-unit # navn
+            "Statistisk sentralbyrås informasjonstjeneste"@nb ;
+        schema:hoursAvailable [ a schema:OpeningHoursSpecification ;
+              schema:opens  "09:00:00"^^xsd:time ;
+              schema:closes "15:00:00"^^xsd:time ;
+                ] ;
+        vcard:hasEmail <mailto:informasjon@ssb.no> ;
+        vcard:hasTelephone [ a vcard:Voice ; # telefon
+            vcard:hasValue "21094642" ;
+                ] ;
+        ] ,
+        [ a vcard:Organization ; # engelsk
+        vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/ENG> ; #engelsk
+        vcard:organization-unit # navn
+        "Statistics Norway's Information Centre"@en ;
+        schema:hoursAvailable [ a schema:OpeningHoursSpecification ;
+              schema:opens  "09:00:00"^^xsd:time ;
+              schema:closes "15:00:00"^^xsd:time ;
+                ] ;
+        vcard:hasEmail <mailto:information@ssb.no> ;
+        vcard:hasTelephone [ a vcard:Voice ; # telefon
+            vcard:hasValue "+4721094642" ;
+                ] ;
+        ] ;
         dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> , <https://data.norge.no/concepts/a5ff31be-0c3f-4534-bf12-bd8ddd373d61> ; #Må oppdateres ;
         foaf:homepage           <https://github.com/statisticsnorway/gsim-raml-schema> , <https://www.ssb.no/a/metadata/metadatadokumenter/GSIM-brosjyre.pdf> ;
         prof:isProfileOf        <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
@@ -48,13 +74,6 @@ ssb:SSBIM a            modelldcatno:InformationModel ;
 ssb:Tidsintervall  a  dct:PeriodOfTime ;
         dcat:startDate  "20108-10-03"^^xsd:date .
 
-ssb:KontaktOss  a        vcard:Kind ;
-        vcard:hasEmail      <informasjon@ssb.no> ;
-        vcard:hasTelephone  <tel:+4721094642> .
-
-ssben:ContactUs a vcard:Kind ;
-        vcard:hasEmail      <information@ssb.no> ;
-        vcard:hasTelephone <tel:+4721094642> .
 
 <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> a     dct:Standard ;
         dct:title         "Generic Statistical Information Model"@en ;
