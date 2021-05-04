@@ -1,0 +1,115 @@
+--- skatteetaten.ttl	2021-05-04 16:17:15.569779149 +0200
++++ skatteetaten_fixed.ttl	2021-05-04 16:33:21.451798521 +0200
+@@ -24526,8 +24526,8 @@
+                                          rdfs:label              "summen av regnskapsmessig verdi på balansedagen av selskapets gjeld der låneavtalen gir fordringshaver rett, men ikke plikt til å kreve aksjer eller egenkapitalbevis i selskapet ved motregning av hele eller deler av lånebeløpet, unntatt regnskapsmessig verdi konvertible lån – kortsiktig gjeld"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 6-2, Aksjeloven § 11-1"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2
+-                                                                           https://lovdata.no/dokument/NL/lov/1997-06-13-44/KAPITTEL_11-1#§11-1>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2> ,
++                                                                           <https://lovdata.no/dokument/NL/lov/1997-06-13-44/KAPITTEL_11-1#§11-1>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "c2a564e1-4c59-1e43-97f4-b155686669b6" ;
+@@ -33677,8 +33677,8 @@
+                                          rdfs:label              "summen av regnskapsmessig nedskrevet verdi på balansedagen av foretakets forskjell mellom anskaffelseskost og virkelig verdi på identifiserbare eiendeler og gjeld, fra den gang virksomheten ble kjøpt"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 5-7 og § 6-2 første ledd bokstav A, I nr. 4"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_5-2#§5-7
+-                                                                           https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_5-2#§5-7> ,
++                                                                           <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "60f68f10-d73f-2648-ab59-83cca1ffb08c" ;
+@@ -38014,8 +38014,8 @@
+                                          rdfs:label              "fast eiendom som formuesobjekt som består av boenhet i boligselskap eller enkelt avgrensbar fast eiendom som har en eller flere boenheter og hvor mer enn halvpartens av eiendommens areal er godkjent som helårsbolig av kommunen eller ev. annen offentlig myndighet på tidspunktet formuesverdsettelsen gjelder"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Skatteloven § 4-10 og Skatte-ABC, fagemnet \"Bolig - formue\""@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_5-2#§4-10,
+-                                                                           https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/bolig--formue/>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_5-2#§4-10> ,
++                                                                           <https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/bolig--formue/>
+                                                                  ] ;
+                                          skos:scopeNote          "Fritidseiendom regnes ikke som boligeiendom.\n\nVåningshus på gårdsbruk regnes ikke som boligeiendom i sammenheng med formuesskatteplikten dersom eieren driver gårdsbruket som virksomhet.\n\nLeilighet er en bolig med minst ett rom og kjøkken. En hybel er et rom med egen inngang beregnet som bolig for en eller flere personer, som har adgang til vann og toalett uten at det er nødvendig å gå gjennom en annen bolig. Er innredet og utformet slik at mennesker uten spesiell tilpasning eller ulempe ut fra hva som er normalt i samfunnet, kan sove, tilberede mat og for øvrig oppholde seg i lokalene i tiden når menneskene ikke arbeider eller studerer."@nb
+                                        ] ;
+@@ -38056,9 +38056,8 @@
+                                          rdfs:label              "kaptialinnskudd som aksjeselskap yter til annet konsernselskap under lovregulerte vilkår for å samordne inntektsskattegrunnlagene eller ev. andre posisjoner som påvirker selskapenes plikt til å svare inntektsskatt"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Skatteloven § 10-2, § 10-3 og § 10-4, Skatte-ABC emnet \"Aksjeselskap mv. – konsernbidrag\""@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_11-1#§10-2
+-
+-                                                                           https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2018/aksjeselskap-mv.--konsernbidrag/>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_11-1#§10-2> ,
++                                                                           <https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/2018/aksjeselskap-mv.--konsernbidrag/>
+                                                                  ] ;
+                                          skos:scopeNote          "Selskapene som gir og mottar konsernbidraget må\n• tilhøre samme konsern ved utgangen av skattleggingsperiode\n• morselskapet må eie mer enn ni tideler av aksjene i datterselskapet\n• morselskapet må ha en tilsvarende del av stemmene som kan avgis på generalforsamlingen i datterselskapet og\n• være hjemmehørende i Norge.\n\nReglene sidestiller norsk filial av selskap som er hjemmehørende i annet EØS-land med selskap hjemmehørende i Norge. Konsernbidrag kan også ytes til \n• selskap hjemmehørende i et annet EØS-land som tidligere har hatt filial i Norge\n• datterselskap hjemmehørende i annet EØS-land dersom det kan godtgjøres at konsernbidraget er benyttet til å dekke et tap (underskudd) som er endelig."@nb
+                                        ] ;
+@@ -40830,8 +40829,8 @@
+                                          rdfs:label              "summen av skattemessig verdi på balansedagen av selskapets gjeld der låneavtalen gir fordringshaver rett, men ikke plikt til å kreve aksjer eller egenkapitalbevis i selskapet ved motregning av hele eller deler av lånebeløpet, men forfaller ellers normalt innen ett år fra balansedagen"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 6-2, Aksjeloven § 11-1"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2
+-                                                                           https://lovdata.no/dokument/NL/lov/1997-06-13-44/KAPITTEL_11-1#§11-1>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2> ,
++                                                                           <https://lovdata.no/dokument/NL/lov/1997-06-13-44/KAPITTEL_11-1#§11-1>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "1538eb77-fdc0-4e4d-b994-5feb8d54e9eb" ;
+@@ -40939,9 +40938,8 @@
+                                          rdfs:label              "felles internasjonale standarder for regnskapsrapportering"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 3-9 tredje ledd, DIB"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_3#§3-9
+-
+-                                                                           https://dib.no/ifrs/>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_3#§3-9> ,
++                                                                           <https://dib.no/ifrs/>
+                                                                  ] ;
+                                          skos:scopeNote          "Formålet med å ha et felles språk er å styrke kvaliteten i rapporteringen og sammenlignbarheten mellom selskapene over landegrensene. Investorer og andre regnskapsinteressenter får grunnlag for å fatte informerte økonomiske beslutninger som bidrar til forbedret kapitalallokering og reduserte kapitalkostnader. \n\nStandardene og senere endringer i dem oversettes til norsk av Utenriksdepartementet etter hvert som dette innlemmes i norsk rett. Dib sørger for at oversettelsene konsolideres til en sammenhengende norske versjon som løpende er oppdatert for endringer."@nb
+                                        ] ;
+@@ -40983,8 +40981,8 @@
+                                          rdfs:label              "summen av skattemessig verdi på balansedagen av selskapets gjeld der låneavtalen gir fordringshaver rett, men ikke plikt til å kreve aksjer eller egenkapitalbevis i selskapet ved motregning av hele eller deler av lånebeløpet, unntatt skattemessig verdi konvertible lån - kortsiktig gjeld"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 6-2, Aksjeloven § 11-1"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2
+-                                                                           https://lovdata.no/dokument/NL/lov/1997-06-13-44/KAPITTEL_11-1#§11-1>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2> ,
++                                                                           <https://lovdata.no/dokument/NL/lov/1997-06-13-44/KAPITTEL_11-1#§11-1>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "63760207-5d6a-c94d-a1e9-747bd78dd747" ;
+@@ -42098,9 +42096,8 @@
+                                          rdfs:label              "forskriftsregulert sett av nasjonale forenklinger i hvordan enkelte foretak kan anvende IFRS "@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 3-9 femte ledd, forskrift 21.01.2008 nr. 57 om forenklet anvendelse av internasjonale regnskapsstandarder"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_3#§3-9
+-
+-                                                                           https://lovdata.no/dokument/SF/forskrift/2008-01-21-57?q=forskrift%2021.01.2008%20nr.%2057>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_3#§3-9> ,
++                                                                           <https://lovdata.no/dokument/SF/forskrift/2008-01-21-57?q=forskrift%2021.01.2008%20nr.%2057>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "11093494-aecd-d541-904d-2519bf9d0ad9" ;
+@@ -58567,8 +58564,8 @@
+                                          rdfs:label              "summen av regnskapsmessig verdi på balansedagen av aksjer og verdipapirfondsandel som inngår i en handelsportefølje som har god eierspredning og likviditet, og med formål om videresalg, omsetning på børs eller i et regulert marked, forutsatt at foretaket på oppkjøpstidspunktet hadde intensjon om eller forpliktelse til å avhende verdipapirfondsandelene innen tolv måneder"@nb ;
+                                          skosno:forholdTilKilde  <basertPåKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 6-2, NS 4101 Regnskapsterminologi, NRS 17 Virksomhetskjøp og konsernregnskap (Desember 2011) punkt 2"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2,
+-                                                                           https://www.regnskapsstiftelsen.no/regnskap/regnskapsstandarder/nrs-17-virksomhetskjop-og-konsernregnskap/>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56/KAPITTEL_6#§6-2> ,
++                                                                           <https://www.regnskapsstiftelsen.no/regnskap/regnskapsstandarder/nrs-17-virksomhetskjop-og-konsernregnskap/>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "d062b9a4-cc79-e54c-98be-40c3efe1357b" ;
+@@ -65072,8 +65069,8 @@
+                                          rdfs:label              "økonomisk virksomhet regulert ved avtale mellom to eller flere deltakere slik at disse har felles kontroll over virksomheten"@nb ;
+                                          skosno:forholdTilKilde  <sitatFraKilde> ;
+                                          dct:source              [ rdfs:label    "Regnskapsloven § 5-18 jamfør NRS (F) Investering i tilknyttet selskap og deltakelse i felles kontrollert virksomhet, punkt 1"@nb ;
+-                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56#KAPITTEL_5
+-                                                                           https://www.regnskapsstiftelsen.no/regnskap/regnskapsstandarder/nrsf-investering-i-tilknyttet-selskap-og-deltakelse-i-felles-kontrollert-virksomhet/>
++                                                                   rdfs:seeAlso  <https://lovdata.no/dokument/NL/lov/1998-07-17-56#KAPITTEL_5> ,
++                                                                           <https://www.regnskapsstiftelsen.no/regnskap/regnskapsstandarder/nrsf-investering-i-tilknyttet-selskap-og-deltakelse-i-felles-kontrollert-virksomhet/>
+                                                                  ]
+                                        ] ;
+         dct:identifier                 "144b6b29-0984-964f-b8e2-c5d6212a67df" ;
