@@ -13,10 +13,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ssb:Catalog  a                 dcat:Catalog ;
-        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller"@nb, "Catalogue with SSBs information models"@en ;
+        dct:description         "Katalog med oversikt over SSBs informasjonsmodeller"@nb , "Catalogue with SSBs information models"@en ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:string ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
-        dct:title               "SSBs modellkatalog"@nb, "SSBs model catalogue"@en ;
+        dct:title               "SSBs modellkatalog"@nb , "SSBs model catalogue"@en ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
         modelldcatno:model      ssb:GSIM ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
@@ -25,7 +25,7 @@ ssb:Catalog  a                 dcat:Catalog ;
         dct:identifier          "?????"^^xsd:string ;
         dct:publisher          <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:temporal            ssb:Tidsintervall ;
-        dct:description         "Information Model based on the UNECE standard Generic Statistical Information Model (GSIM) v1.2"@en, "Informasjonsmodell basert på UNECE Generic statistical Information Model (GSIM) v1.2"@nb ;
+        dct:description         "Information Model based on the UNECE standard Generic Statistical Information Model (GSIM) v1.2"@en , "Informasjonsmodell basert på UNECE Generic statistical Information Model (GSIM) v1.2"@nb ;
         dct:title               "SSBs Information Model (SSBIM)"@en , "SSBs informasjonsmodell (SSBIM)"@nb ;
         owl:versionInfo         "1.1"^^xsd:string ;
         dct:issued              "2018-10-03"^^xsd:date ;
