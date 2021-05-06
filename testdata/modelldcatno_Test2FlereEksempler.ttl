@@ -23,6 +23,7 @@
 @prefix ex-composition: <http://example.com/test_compesition#> .
 @prefix ex-abstrakt: <http://example.com/test_abstraksjon#> .
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix prof:  <https://www.w3.org/ns/dx/prof/> .
 
 digs:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividual ;
         modelldcatno:containsModelElement
@@ -46,6 +47,9 @@ digs:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividu
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
         dct:hasPart             <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Diversemodell> ;
         dct:replaces            <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Diversemodell> ;
+        dct:hasFormat           <https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png> ;
+        prof:isProfileOf        <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
+        dct:conformsTo          <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
 
@@ -104,6 +108,17 @@ digs:KontaktOss  a        vcard:Kind , owl:NamedIndividual ;
         vcard:hasEmail      <mailto:informasjonsforvaltning@digdir.no> ;
         vcard:hasTelephone  <tel:12345678> .
 
+<https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png>
+        a           foaf:Document ;
+        dct:format  <http://publications.europa.eu/resource/authority/file-type/PNG> ;
+        dct:language <http://pubs.europa.eu/resource/authority/language/NOR> ;
+        dct:title   "Image of the logical data model (LDM)"@en .
+
+<https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model>
+        a                dct:Standard ;
+        rdfs:seeAlso     <https://statswiki.unece.org/display/gsim/GSIM+resources+repository> ;
+        dct:title        "Generic Statistical Information Model"@en ;
+        owl:versionInfo  "??" .
 
 ex-code:Aktør  a                      owl:NamedIndividual , modelldcatno:modelldcatno:RootObjectType ;
         modelldcatno:hasProperty       ex-sch:hustandEierKjaeledyr , ex-mch:godteri , ex-code:kommuneliste , ex-note:merknad , ex-valgfri:utgifterBarnepass , ex-specialization:katteeksempel , ex-collection:fruktkurveksempel , ex-composition:griseeksempel , ex-abstrakt:abstraksjonseksempel , ex-rel:realisereksempel ;
