@@ -1171,10 +1171,10 @@ ex-abstrakt:sammendrag a                  owl:NamedIndividual ,
      dct:title                        "sammendrag"@nb , "summary"@en , "samandrag"@nn ;
      dct:description                  "Dette er en individual som er et atributt og en abstraksjon på samme tid. Disse to påstandene vil sikre at attributtet blir oppfattet som en abstraksjon av klassen som er knyttet med isAbstractionOf, mens hasSimpletype beskriver knytter til klassen som beskriver formatet."@nb .
 
-ex-abstrakt::TekstType a            owl:NamedIndividual ,
+ex-abstrakt:TekstType a            owl:NamedIndividual ,
                                       modelldcatno:SimpleType ;
       dct:identifier                "http://example.com/test_abstraksjon#TekstType"^^xsd:string ;
-      dct:title                       "Timeline"@nb , "Timeline"@en , "tidsline"@nn .
+      dct:title                       "TekstType"@nb , "TextType"@en , "TekstType"@nn .
 
 ex-abstrakt:timeline a              owl:NamedIndividual ,
                                       modelldcatno:ObjectType ;
