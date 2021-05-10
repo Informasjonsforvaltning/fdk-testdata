@@ -61,8 +61,8 @@ ssb:Catalog  a                 dcat:Catalog ;
             vcard:hasValue "+4721094642" ;
                 ] ;
         ] ;
-        dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> , <https://data.norge.no/concepts/a5ff31be-0c3f-4534-bf12-bd8ddd373d61> ; #Må oppdateres ;
-        foaf:homepage           <https://github.com/statisticsnorway/gsim-raml-schema> , <https://www.ssb.no/a/metadata/metadatadokumenter/GSIM-brosjyre.pdf> ;
+        dct:subject             <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971526920/f4e7cdd1-dcb0-400e-9a7b-e863010bb8ab> , <https://data.norge.no/concepts/a5ff31be-0c3f-4534-bf12-bd8ddd373d61> ; #Må oppdateres
+        foaf:homepage           <https://github.com/statisticsnorway/gsim-raml-schema> ;
         prof:isProfileOf        <https://statswiki.unece.org/display/gsim/Generic+Statistical+Information+Model> ;
         dcat:theme              <http://data.europa.eu/una/com-web-presence/c33e404a44> ;
         dct:hasFormat           <https://github.com/statisticsnorway/gsim-raml-schema/blob/master/ssb_gsim_ldm.png> .
