@@ -18,7 +18,7 @@ ssb:Catalog  a                 dcat:Catalog ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ;
         dct:title               "SSBs modellkatalog"@nb , "SSBs model catalogue"@en ;
         dct:license             <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-        modelldcatno:model      ssb:GSIM ;
+        modelldcatno:model      ssb:SSBIM ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> .
 
         ssb:SSBIM a            modelldcatno:InformationModel ;
