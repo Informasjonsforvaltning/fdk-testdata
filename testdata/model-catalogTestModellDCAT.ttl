@@ -811,13 +811,13 @@ ex-code:Kodeliste a        owl:NamedIndividual , modelldcatno:CodeList ;
 
 ex-code:kodeLillehammer      a        owl:NamedIndividual , modelldcatno:CodeElement ;
      dct:identifier                "http://example.com/code#kodeLillehammer"^^xsd:string ;
-     skos:inScheme ex-code:Kodeliste ;
-     skos:notation "3405"^^xsd:string ;
+     skos:inScheme          ex-code:Kodeliste ;
+     skos:notation          "3405"^^xsd:string ;
      skos:definition "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
      skos:prefLabel "Lillehammer"@nb ;
      skos:hiddenLabel     "LillyHammer"@nb , "Lille Hamar"@nn , "Liten mjøsby"@nb ;
      skos:note            "Ikke alle er enig om at Lillehammer er en Mjøsby"@nb ;
-     skos:scopeNote       "Kan benyttes om selve kommunen og om byen Lillehammer" ;
+     skos:scopeNote       "Kan benyttes om selve kommunen og om byen Lillehammer"@nb ;
      skos:example         "Lillehammer arrangerte OL i 1994"@nb , "Lillehammer arrangerte OL i 1994"@nn , "Lillehammer hosted the Olympics in 1994"@en ;
      xkos:previous        ex-code:kodeHamar ;
      xkos:inclusionNote "Inkluderer hele kommunen"@nb ,"Inkluderar heile kommunen"@nn , "Include all the municipality"@en .
