@@ -67,7 +67,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
 
 digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividual ;
         modelldcatno:containsModelElement
-                ex-code:Aktør , ex-code:kodeliste , ex-mch:godtepose , ex-mch:drops , ex-mch:karamell , ex-mch:sjokolade , ex-mch:tannkrem , ex-sch:Hund , ex-sch:Kanin , ex-sch:Katt , ex-sch:husStand , ex-note:oppslagstavle , ex-bidir:kreditor , ex-bidir:debitor , ex-bidir:forliksraadet , ex-valgfri:Oppgavegiver , ex-valgfri:oppgave , ex-specialization:Katt ,
+                digdir:Aktør , ex-code:Kommunelisteeksempel , ex-mch:godtepose , ex-mch:drops , ex-mch:karamell , ex-mch:sjokolade , ex-mch:tannkrem , ex-sch:Hund , ex-sch:Kanin , ex-sch:Katt , ex-sch:husStand , ex-note:oppslagstavle , ex-bidir:kreditor , ex-bidir:debitor , ex-bidir:forliksraadet , ex-valgfri:Oppgavegiver , ex-valgfri:oppgave , ex-specialization:Katt ,
                 ex-collection:Frukt , ex-collection:Fruktkurv , ex-composition:gris , ex-composition:nyre , ex-composition:skinke , ex-abstrakt:Program ,  ex-rel:konkret ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AltMuligModell"^^xsd:string ;
         modelldcatno:informationModelIdentifier "https://www.digdir/AltMuligModell"^^xsd:string ;
@@ -796,19 +796,23 @@ digdir:vegadresseSpesialiserer a       owl:NamedIndividual , modelldcatno:Specia
 
 #Eksempel ex-code beskriver hvordan man beskriver kodelister. Det er laget trådskisse på dette.
 
-ex-code:kommuneliste  a               owl:NamedIndividual , modelldcatno:Attribute  ;
+ex-code:Kommunelisteeksempel  a       modelldcatno:ObjektType ;
+      dct:title           "Kommunelisteeksempel"@nb , "Municipal list example"@en , "kommunelistedøme"@nn ;
+      modelldcatno:hasProperty  ex-code:kommuneliste .
+
+ex-code:kommuneliste  a               modelldcatno:Attribute ;
       dct:identifier                "http://example.com/code#kommuneliste"^^xsd:string ;
-      dct:title                   "kommunelisteeksempel"@nb , "municipalExample"@en , "kommunelistedøme"@nn ;
-      modelldcatno:hasValueFrom    ex-code:kodeliste ;
+      dct:title                   "kommuneliste"@nb , "municipal list"@en , "kommuneliste"@nn ;
+      modelldcatno:hasValueFrom    ex-code:Kodeliste ;
       xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
-ex-code:kodeliste a        owl:NamedIndividual , modelldcatno:CodeList ;
+ex-code:Kodeliste a        owl:NamedIndividual , modelldcatno:CodeList ;
       dct:identifier                "http://example.com/code#kodeliste"^^xsd:string ;
       dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nb , "theMunicipalNumberList"@en .
 
 ex-code:kodeLillehammer      a        owl:NamedIndividual , modelldcatno:CodeElement ;
      dct:identifier                "http://example.com/code#kodeLillehammer"^^xsd:string ;
-     skos:inScheme ex-code:kodeliste ;
+     skos:inScheme ex-code:Kodeliste ;
      skos:notation "3405"^^xsd:string ;
      skos:definition "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
      skos:prefLabel "Lillehammer"@nb ;
@@ -821,12 +825,12 @@ ex-code:kodeLillehammer      a        owl:NamedIndividual , modelldcatno:CodeEle
 
 ex-code:kodeHamar      a        owl:NamedIndividual , modelldcatno:CodeElement ;
       dct:identifier                "http://example.com/code#kodeHamar"^^xsd:string ;
-      skos:inScheme         ex-code:kodeliste ;
+      skos:inScheme         ex-code:Kodeliste ;
       skos:notation        "0403"^^xsd:string ;
       skos:definition       "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
       skos:prefLabel       "Hamar"@nb ;
       skos:altLabel         "Alle tiders by"@nb , "Heilt fin by"@nn , "City of all time"@en ;
-      skos:topConceptOf     ex-code:kodeliste ;
+      skos:topConceptOf     ex-code:Kodeliste ;
       skos:definition      "By ved Mjøsa"@nb ;
       skos:example         "Hamar er en by som ligger ved Mjøsa"@nb , "Hamar er ein by som ligg ved Mjøsa"@nb , "Hamar is a town located by Lake Mjøsa"@en ;
       xkos:exclusionNote   "Inkluderer ikke omlandet til Hamar"@nb , "Inkluderar ikkje omlandet til Hamar"@nn , "Don't include the areas around Hamar"@en .
