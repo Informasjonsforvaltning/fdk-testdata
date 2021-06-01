@@ -798,7 +798,7 @@ digdir:Eksempler  a                     modelldcatno:RootObjectType ;
       modelldcatno:hasProperty   ex-code:kommuneliste, ex-mch:godteri , ex-sch:hustandEierKjaeledyr , ex-note:noteEksempel ,
       ex-bidir:toveisrelasjonEksempel , ex-valgfri:utgifterBarnepass , ex-specialization:katteeksempel , ex-collection:fruktkurveksempel , ex-composition:griseeksempel , ex-rel:realisereksempel , ex-abstrakt:abstraksjonseksempel .
 
-#Eksempel ex-code beskriver en kodeliste kodelister. Det er laget trådskisse på dette.
+#Eksempel ex-code beskriver en kodeliste. Det er laget trådskisse på dette.
 ex-code:kommuneliste  a               modelldcatno:Attribute ;
       dct:identifier                "http://example.com/code#kommuneliste"^^xsd:string ;
       dct:title                   "kommuneliste"@nb , "municipal list"@en , "kommuneliste"@nn ;
@@ -806,7 +806,7 @@ ex-code:kommuneliste  a               modelldcatno:Attribute ;
       xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
 ex-code:Kodeliste a        owl:NamedIndividual , modelldcatno:CodeList ;
-      dct:identifier                "http://example.com/code#kodeliste"^^xsd:string ;
+      dct:identifier                "http://example.com/code#Kodeliste"^^xsd:string ;
       dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nb , "theMunicipalNumberList"@en .
 
 ex-code:kodeLillehammer      a        owl:NamedIndividual , modelldcatno:CodeElement ;
