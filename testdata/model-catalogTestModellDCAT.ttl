@@ -805,11 +805,11 @@ ex-code:kommuneliste  a               modelldcatno:Attribute ;
       modelldcatno:hasValueFrom    ex-code:Kodeliste ;
       xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
-ex-code:Kodeliste a        owl:NamedIndividual , modelldcatno:CodeList ;
+ex-code:Kodeliste a        modelldcatno:CodeList ;
       dct:identifier                "http://example.com/code#Kodeliste"^^xsd:string ;
       dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nb , "theMunicipalNumberList"@en .
 
-ex-code:kodeLillehammer      a        owl:NamedIndividual , modelldcatno:CodeElement ;
+ex-code:kodeLillehammer      a        modelldcatno:CodeElement ;
      dct:identifier                "http://example.com/code#kodeLillehammer"^^xsd:string ;
      skos:inScheme          ex-code:Kodeliste ;
      skos:notation          "3405"^^xsd:string ;
@@ -822,7 +822,7 @@ ex-code:kodeLillehammer      a        owl:NamedIndividual , modelldcatno:CodeEle
      xkos:previous        ex-code:kodeHamar ;
      xkos:inclusionNote "Inkluderer hele kommunen"@nb ,"Inkluderar heile kommunen"@nn , "Include all the municipality"@en .
 
-ex-code:kodeHamar      a        owl:NamedIndividual , modelldcatno:CodeElement ;
+ex-code:kodeHamar      a        modelldcatno:CodeElement ;
       dct:identifier                "http://example.com/code#kodeHamar"^^xsd:string ;
       skos:inScheme         ex-code:Kodeliste ;
       skos:notation        "0403"^^xsd:string ;
