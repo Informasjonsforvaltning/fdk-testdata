@@ -125,7 +125,6 @@ ex-code:Kodeliste a        modelldcatno:CodeList ;
       dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nn , "theMunicipalNumberList"@en .
 
 ex-code:kodeLillehammer      a        modelldcatno:CodeElement ;
-     dct:identifier                "http://example.com/code#kodeLillehammer"^^xsd:string ;
      skos:inScheme          ex-code:Kodeliste ;
      skos:notation          "3405" ;
      skos:definition "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
@@ -138,7 +137,6 @@ ex-code:kodeLillehammer      a        modelldcatno:CodeElement ;
      xkos:inclusionNote "Inkluderer hele kommunen"@nb .
 
 ex-code:kodeHamar      a        modelldcatno:CodeElement ;
-      dct:identifier                "http://example.com/code#kodeHamar"^^xsd:string ;
       skos:inScheme         ex-code:Kodeliste ;
       skos:notation        "0403" ;
       skos:definition       "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb ;
