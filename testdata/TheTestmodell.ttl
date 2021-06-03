@@ -29,7 +29,6 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
                 digdir:Aktør , digdir:Eksempler , ex-code:Kodeliste , ex-mch:Godtepose , ex-mch:Drops , ex-mch:Karamell , ex-mch:Sjokolade , ex-mch:Tannkrem , ex-sch:Hund , ex-sch:Kanin , ex-sch:Katt , ex-sch:Husstand , ex-note:Oppslagstavle , ex-bidir:Kreditor , ex-bidir:Debitor , ex-bidir:Forliksraadet , ex-valgfri:Oppgavegiver , ex-valgfri:Oppgave , ex-specialization:Katt ,
                 ex-specialization:Pattedyr ,ex-specialization:Katt , ex-collection:Frukt , ex-collection:Fruktkurv , ex-composition:Gris , ex-composition:Nyre , ex-composition:Skinke , ex-abstrakt:Program ,  ex-rel:Konkret , ex-rel:Abstrakt ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AltMuligModell"^^xsd:string ;
-        modelldcatno:informationModelIdentifier "https://www.digdir/AltMuligModell"^^xsd:string ;
         dct:publisher          digdir:Utgiver ;
         dct:temporal            digdir:Tidsintervall ;
         dct:description         "Modell med forskjellige eksempler"@nb ;
