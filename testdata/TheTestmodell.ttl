@@ -26,7 +26,7 @@
 
 digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividual ;
         modelldcatno:containsModelElement
-                digdir:Aktør , digdir:Eksempler , ex-code:kodeliste , ex-mch:Godtepose , ex-mch:Drops , ex-mch:Karamell , ex-mch:Sjokolade , ex-mch:Tannkrem , ex-sch:Hund , ex-sch:Kanin , ex-sch:Katt , ex-sch:Husstand , ex-note:Oppslagstavle , ex-bidir:Kreditor , ex-bidir:Debitor , ex-bidir:Forliksraadet , ex-valgfri:Oppgavegiver , ex-valgfri:Oppgave , ex-specialization:Katt ,
+                digdir:Aktør , digdir:Eksempler , ex-code:Kodeliste , ex-mch:Godtepose , ex-mch:Drops , ex-mch:Karamell , ex-mch:Sjokolade , ex-mch:Tannkrem , ex-sch:Hund , ex-sch:Kanin , ex-sch:Katt , ex-sch:Husstand , ex-note:Oppslagstavle , ex-bidir:Kreditor , ex-bidir:Debitor , ex-bidir:Forliksraadet , ex-valgfri:Oppgavegiver , ex-valgfri:Oppgave , ex-specialization:Katt ,
                 ex-specialization:Pattedyr ,ex-specialization:Katt , ex-collection:Frukt , ex-collection:Fruktkurv , ex-composition:Gris , ex-composition:Nyre , ex-composition:Skinke , ex-abstrakt:Program ,  ex-rel:Konkret , ex-rel:Abstrakt ;
         dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AltMuligModell"^^xsd:string ;
         modelldcatno:informationModelIdentifier "https://www.digdir/AltMuligModell"^^xsd:string ;
@@ -34,10 +34,11 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         dct:temporal            digdir:Tidsintervall ;
         dct:description         "Modell med forskjellige eksempler"@nb ;
         dct:title               "Alt mulig modell"@nb ;
-        owl:versionInfo         "1.1"^^xsd:string ;
+        owl:versionInfo         "1.0"^^xsd:string ;
         dct:type                "Fellesmodell"@nb ;
         dct:issued              "2020-10-06T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
+        owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         dcat:contactPoint       digdir:KontaktOss ;
@@ -56,9 +57,10 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         dct:description         "Modell med diverse i. Inneholder modellelementer som AltMuligModell skal peke til."@nb ;
         dct:title               "Diversemodell"@nb ;
         dct:type                "Fellesmodell"@nb ;
-        owl:versionInfo         "1.1"^^xsd:string ;
+        owl:versionInfo         "1.0"^^xsd:string ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
+        owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         dcat:contactPoint       digdir:KontaktOss ;
@@ -115,35 +117,37 @@ digdir:Eksempler  a                     modelldcatno:RootObjectType ;
 ex-code:kommuneliste  a               modelldcatno:Attribute ;
       dct:identifier                "http://example.com/code#kommuneliste"^^xsd:string ;
       dct:title                   "kommuneliste"@nb , "municipal list"@en , "kommuneliste"@nn ;
-      modelldcatno:hasValueFrom    ex-code:kodeliste ;
+      modelldcatno:hasValueFrom    ex-code:Kodeliste ;
       xsd:maxOccurs             "1"^^xsd:nonNegativeInteger .
 
-ex-code:kodeliste a        modelldcatno:CodeList ;
-      dct:identifier                "http://example.com/code#kodeliste"^^xsd:string ;
+ex-code:Kodeliste a        modelldcatno:CodeList ;
+      dct:identifier                "http://example.com/code#Kodeliste"^^xsd:string ;
       dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nn , "theMunicipalNumberList"@en .
 
-ex-code:kodeLillehammer
-        a                   owl:NamedIndividual , modelldcatno:CodeElement ;
-        skos:definition     "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb ;
-        skos:example        "Lillehammer arrangerte OL i 1994"@nb ;
-        skos:hiddenLabel    "LillyHammer"@nb ;
-        skos:inScheme       ex-code:kodeliste ;
-        skos:notation       "3405" ;
-        skos:note           "Ikke alle er enig om at Lillehammer er en Mjøsby"@nb ;
-        skos:prefLabel      "Lillehammer"@nb ;
-        skos:scopeNote      "Kan benyttes om selve kommunen og om byen Lillehammer" ;
-        xkos:inclusionNote  "Inkluderer hele kommunen" ;
-        xkos:previous       ex-code:kodeHamar .
+ex-code:kodeLillehammer      a        modelldcatno:CodeElement ;
+     dct:identifier                "http://example.com/code#kodeLillehammer"^^xsd:string ;
+     skos:inScheme          ex-code:Kodeliste ;
+     skos:notation          "3405" ;
+     skos:definition "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
+     skos:prefLabel "Lillehammer"@nb ;
+     skos:hiddenLabel     "LillyHammer"@en , "Lille Hamar"@nn , "Liten mjøsby"@nb ;
+     skos:note            "Ikke alle er enig om at Lillehammer er en Mjøsby"@nb ;
+     skos:scopeNote       "Kan benyttes om selve kommunen og om byen Lillehammer"@nb ;
+     skos:example         "Lillehammer arrangerte OL i 1994"@nb , "Lillehammer arrangerte OL i 1994"@nn , "Lillehammer hosted the Olympics in 1994"@en ;
+     xkos:previous        ex-code:kodeHamar ;
+     xkos:inclusionNote "Inkluderer hele kommunen"@nb ,"Inkluderar heile kommunen"@nn , "Include all the municipality"@en .
 
-ex-code:kodeHamar  a        modelldcatno:CodeElement , owl:NamedIndividual ;
-       skos:altLabel       "Alle tiders by"@nb ;
-       skos:definition     "By ved Mjøsa"@nb , "Hamar er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb ;
-       skos:example        "Hamar er en by som ligger ved Mjøsa"@nb ;
-       skos:inScheme       ex-code:kodeliste ;
-       skos:notation       "0403" ;
-       skos:prefLabel      "Hamar"@nb ;
-       skos:topConceptOf   ex-code:kodeliste ;
-       xkos:exclusionNote  "Inkluderer ikke omlandet til Hamar"@nb .
+ex-code:kodeHamar      a        modelldcatno:CodeElement ;
+      dct:identifier                "http://example.com/code#kodeHamar"^^xsd:string ;
+      skos:inScheme         ex-code:Kodeliste ;
+      skos:notation        "0403" ;
+      skos:definition       "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
+      skos:prefLabel       "Hamar"@nb ;
+      skos:altLabel         "Alle tiders by"@nb , "Heilt fin by"@nn , "City of all time"@en ;
+      skos:topConceptOf     ex-code:Kodeliste ;
+      skos:definition      "By ved Mjøsa"@nb ;
+      skos:example         "Hamar er en by som ligger ved Mjøsa"@nb , "Hamar er ein by som ligg ved Mjøsa"@nn , "Hamar is a town located by Lake Mjøsa"@en ;
+      xkos:exclusionNote   "Inkluderer ikke omlandet til Hamar"@nb , "Inkluderar ikkje omlandet til Hamar"@nn , "Don't include the areas around Hamar"@en .
 
 #Eksempelet ex-mch beskriver hvordan man framstiller multiple choice. Det er laget trådskisse på dette.
 
