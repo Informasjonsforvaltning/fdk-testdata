@@ -59,7 +59,6 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         owl:versionInfo         "1.1"^^xsd:string ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        owl:versionInfo         "1.0"^^xsd:string ;
         adms:status             <http://purl.org/adms/status/Completed> ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         dcat:contactPoint       digdir:KontaktOss ;
