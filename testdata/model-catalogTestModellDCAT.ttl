@@ -807,15 +807,15 @@ ex-code:kommuneliste  a               modelldcatno:Attribute ;
 
 ex-code:Kodeliste a        modelldcatno:CodeList ;
       dct:identifier                "http://example.com/code#Kodeliste"^^xsd:string ;
-      dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nb , "theMunicipalNumberList"@en .
+      dct:title "Kommunenummerlisten"@nb , "Kommunenummerlista"@nn , "theMunicipalNumberList"@en .
 
 ex-code:kodeLillehammer      a        modelldcatno:CodeElement ;
      dct:identifier                "http://example.com/code#kodeLillehammer"^^xsd:string ;
      skos:inScheme          ex-code:Kodeliste ;
-     skos:notation          "3405"^^xsd:string ;
+     skos:notation          "3405" ;
      skos:definition "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
      skos:prefLabel "Lillehammer"@nb ;
-     skos:hiddenLabel     "LillyHammer"@nb , "Lille Hamar"@nn , "Liten mjøsby"@nb ;
+     skos:hiddenLabel     "LillyHammer"@en , "Lille Hamar"@nn , "Liten mjøsby"@nb ;
      skos:note            "Ikke alle er enig om at Lillehammer er en Mjøsby"@nb ;
      skos:scopeNote       "Kan benyttes om selve kommunen og om byen Lillehammer"@nb ;
      skos:example         "Lillehammer arrangerte OL i 1994"@nb , "Lillehammer arrangerte OL i 1994"@nn , "Lillehammer hosted the Olympics in 1994"@en ;
@@ -825,13 +825,13 @@ ex-code:kodeLillehammer      a        modelldcatno:CodeElement ;
 ex-code:kodeHamar      a        modelldcatno:CodeElement ;
       dct:identifier                "http://example.com/code#kodeHamar"^^xsd:string ;
       skos:inScheme         ex-code:Kodeliste ;
-      skos:notation        "0403"^^xsd:string ;
+      skos:notation        "0403" ;
       skos:definition       "Lillehammer er en by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nb , "Lillehammer er ein by og kommune i Gudbrandsdalen i Innlandet, ved nordenden av Mjøsa."@nn , "Lillehammer is a town and municipality in Gudbrandsdalen in the Inland, at the northern end of Lake Mjøsa."@en ;
       skos:prefLabel       "Hamar"@nb ;
       skos:altLabel         "Alle tiders by"@nb , "Heilt fin by"@nn , "City of all time"@en ;
       skos:topConceptOf     ex-code:Kodeliste ;
       skos:definition      "By ved Mjøsa"@nb ;
-      skos:example         "Hamar er en by som ligger ved Mjøsa"@nb , "Hamar er ein by som ligg ved Mjøsa"@nb , "Hamar is a town located by Lake Mjøsa"@en ;
+      skos:example         "Hamar er en by som ligger ved Mjøsa"@nb , "Hamar er ein by som ligg ved Mjøsa"@nn , "Hamar is a town located by Lake Mjøsa"@en ;
       xkos:exclusionNote   "Inkluderer ikke omlandet til Hamar"@nb , "Inkluderar ikkje omlandet til Hamar"@nn , "Don't include the areas around Hamar"@en .
 
 #Eksempelet ex-mch beskriver hvordan man framstiller multiple choice. Det er laget trådskisse på dette.
