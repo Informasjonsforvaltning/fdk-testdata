@@ -56,7 +56,7 @@ digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndivi
         dct:description         "Modell med diverse i. Inneholder modellelementer som AltMuligModell skal peke til."@nb ;
         dct:title               "Diversemodell"@nb ;
         dct:type                "Fellesmodell"@nb ;
-        owl:versionInfo         "1.0"^^xsd:string ;
+        owl:versionInfo         "1.1"^^xsd:string ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0"^^xsd:string ;
