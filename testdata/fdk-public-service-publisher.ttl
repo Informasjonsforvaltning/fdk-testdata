@@ -16,8 +16,8 @@
   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673> ;
   dcat:keyword "Selskapsregistrering"@nb, "Firmaattest"@nb, "Organisasjonsnummer"@nb ;
   cv:sector <https://data.norge.no/concepts/2> ;
-  cv:isDescribedAt <http://brreg.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c> ,
-                   <http://brreg.no/catalogs/974760673/datasets/63086dda-9b72-43f0-bbc2-3ced4bc2edd6> ;
+  cv:isDescribedAt <https://registrering.fellesdatakatalog.digdir.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c> ,
+                   <https://registrering.fellesdatakatalog.digdir.no/catalogs/974760673/datasets/63086dda-9b72-43f0-bbc2-3ced4bc2edd6> ;
   cv:isClassifiedBy <http://data.brreg.no/begrep/28155> ,
                     <http://begrepskatalogen/begrep/d67e2d32-6dcf-11e6-be2b-ba992a0501a6> ,
                     <http://data.brreg.no/begrep/43180> ,
