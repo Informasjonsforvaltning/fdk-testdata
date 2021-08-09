@@ -978,7 +978,7 @@
   dct:identifier "1" ;
   cv:value 5570 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap: elektronisk" ;
+  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -987,7 +987,7 @@
   dct:identifier "2" ;
   cv:value 6797 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap: papir" ;
+  dct:description "Nyregistrering - Aksjeselskap, Allmennaksjeselskap, Boligbyggelag/borretslag, Kommandittselskap:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -996,7 +996,7 @@
   dct:identifier "3" ;
   cv:value 1440 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse: elektronisk" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1005,7 +1005,7 @@
   dct:identifier "4" ;
   cv:value 2832 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse: papir" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Kapitalnedsettelse:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1014,7 +1014,7 @@
   dct:identifier "5" ;
   cv:value 1440 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon: elektronisk" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1023,7 +1023,7 @@
   dct:identifier "6" ;
   cv:value 2832 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon: papir" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Fusjon og fisjon:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1032,7 +1032,7 @@
   dct:identifier "7" ;
   cv:value 1440 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning: elektronisk" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1041,7 +1041,7 @@
   dct:identifier "8" ;
   cv:value 2832 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning: papir" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - Endring av foretaksnavn, medregnet endring som følge av omdanning:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1050,7 +1050,7 @@
   dct:identifier "9" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer: elektronisk" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1059,7 +1059,7 @@
   dct:identifier "10" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer: papir" ;
+  dct:description "Endring som skal kunngjøres - Aksjeselskap: - andre endringer:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
@@ -1068,7 +1068,7 @@
   dct:identifier "11" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Oppløsning og sletting i Foretaksregisteret: elektronisk" ;
+  dct:description "Oppløsning og sletting i Foretaksregisteret:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
 .
@@ -1077,7 +1077,7 @@
   dct:identifier "12" ;
   cv:value 0 ;
   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ;
-  dct:description "Oppløsning og sletting i Foretaksregisteret: papir" ;
+  dct:description "Oppløsning og sletting i Foretaksregisteret:" ;
   cv:isDefinedBy <http://public-service-publisher.fellesdatakatalog.digdir.no/public-organisation/1> ;
   cv:ifAccessedThrough <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
 .
