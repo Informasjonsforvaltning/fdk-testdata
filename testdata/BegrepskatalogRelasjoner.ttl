@@ -1,0 +1,121 @@
+@prefix schema: <http://schema.org/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix xkos:  <http://rdf-vocabulary.ddialliance.org/xkos#> .
+
+<http://test/begrep>
+        a                  skos:Collection ;
+        rdfs:label         "Begrepskatalog Skatt"@nb ;
+        dct:description    "UTKAST til Navs begrepskatalog, godkjente begreper" ;
+        dct:identifier     <http://test/begrep> ;
+        dct:publisher      <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
+        skos:member         <http://test/begrep/9c33fd2b-2964-11e6-b2bc-96405985e0fa> ,
+                            <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2> ,
+                            <http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940> ,
+                            <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940> ,
+                            <http://test/begrep/cf24800f-dfe5-11e7-9101-005056821322> .
+
+<http://test/begrep/9c33fd2b-2964-11e6-b2bc-96405985e0fa>
+    a                              skos:Concept ;
+    skosno:betydningsbeskrivelse  [ a                       skosno:Definisjon ;
+                                    rdfs:label              "kostnader til oppmåling av regnskapsbasert fastsetting av boligeiendom for innrapportering av arealopplysninger ved formuesverdsettelse av boligen"@nb ;
+                                    skosno:forholdTilKilde  <basertPåKilde> ;
+                                    dct:source              [ rdfs:label  "RF-1189 rettledningen punkt 2.7"@nb ]
+                                  ] ;
+    skosno:datastrukturterm        "kostnadTilOppmåling"@nb ;
+    dct:identifier                 "9c33fd2b-2964-11e6-b2bc-96405985e0fa" ;
+    dct:modified                   "2017-09-04"^^xsd:date ;
+    dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
+    dct:subject                    "Formues- og inntektsskatt"@nb ;
+    skosno:assosiativRelasjon      <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2> ;
+    skosxl:prefLabel               [ a                   skosxl:Label ;
+                                     skosxl:literalForm  "kostnad til oppmåling"@nb
+                                   ] ;
+    dcat:contactPoint              [ a                       vcard:Organization ;
+                                     vcard:hasEmail          <mailto:test@skatteetaten.no> ;
+                                     vcard:organizationUnit  "Informasjonsforvaltning - innhenting"
+                                   ] .
+
+<http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2>
+    a                              skos:Concept ;
+    skosno:betydningsbeskrivelse  [ a           skosno:Definisjon ;
+                                    rdfs:label  "tidspunktet noe ble opprettet"@nb
+                                  ] ;
+    dct:identifier                 "cbe98920-1a4b-11e9-a7bb-0050568351d2" ;
+    dct:modified                   "2019-01-17"^^xsd:date ;
+    dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
+    dct:subject                    "Generelle begrep, strukturer og typer"@nb ;
+    skosno:generiskRelasjon        <http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940> ;
+    skosxl:prefLabel               [ a                   skosxl:Label ;
+                                     skosxl:literalForm  "opprettelsestidspunkt"@nb
+                                   ] ;
+    dcat:contactPoint              [ a                       vcard:Organization ;
+                                     vcard:hasEmail          <mailto:test@skatteetaten.no> ;
+                                     vcard:organizationUnit  "Informasjonsforvaltning - innhenting"
+                                   ] .
+
+<http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940>
+    a                              skos:Concept ;
+    skosno:betydningsbeskrivelse  [ a               skosno:Definisjon ;
+                                    rdfs:label      "tap i fremtidig erverv regnet fra tidspunkt for utbetaling/oppgjør"@nb ;
+                                    skos:scopeNote  "Det må foretas en sammenligning mellom inntekter med og uten skaden. Ofte må begge inntektsnivåer anslås skjønnsmessig."@nb
+                                  ] ;
+    dct:identifier                 "20b2e1c4-9fe1-11e5-a9f8-e4115b280940" ;
+    dct:modified                   "2019-02-11"^^xsd:date ;
+    dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
+    dct:subject                    "Tredjepartsopplysninger"@nb ;
+    skosno:partitivRelasjon        <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940> ;
+    skosxl:prefLabel               [ a                   skosxl:Label ;
+                                     skosxl:literalForm  "fremtidig inntektstap"@nb
+                                   ] ;
+    dcat:contactPoint              [ a                       vcard:Organization ;
+                                     vcard:hasEmail          <mailto:test@skatteetaten.no> ;
+                                     vcard:organizationUnit  "Informasjonsforvaltning - innhenting"
+                                   ] .
+
+<http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940>
+    a                              skos:Concept ;
+    skosno:betydningsbeskrivelse  [ a           skosno:Definisjon ;
+                                    rdfs:label  "med fysisk gjenstand menes både løsøre/ gjenstander og fast eiendom, samt levende dyr"@nb
+                                  ] ;
+    dct:identifier                 "20b2e1c5-9fe1-11e5-a9f8-e4115b280940" ;
+    dct:modified                   "2019-02-11"^^xsd:date ;
+    dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
+    dct:subject                    "Tredjepartsopplysninger"@nb ;
+    rdfs:seeAlso                   <http://test/begrep/cf24800f-dfe5-11e7-9101-005056821322> ;
+    skosxl:prefLabel               [ a                   skosxl:Label ;
+                                     skosxl:literalForm  "fysisk gjenstand"@nb
+                                   ] ;
+    dcat:contactPoint              [ a                       vcard:Organization ;
+                                     vcard:hasEmail          <mailto:test@skatteetaten.no> ;
+                                     vcard:organizationUnit  "Informasjonsforvaltning - innhenting"
+                                   ] .
+
+<http://test/begrep/cf24800f-dfe5-11e7-9101-005056821322>
+    a                              skos:Concept ;
+    skosno:betydningsbeskrivelse  [ a           skosno:Definisjon ;
+                                    rdfs:label  "forsørgingstillegg i skattepliktig pensjonsinntekt i skattleggingsperioden til en gitt skattepliktig fra en bestemt utbetaler av pensjon, dvs. NAV eller privat pensjonsordning, som vanligvis ytes dersom mottageren har ektefelle med lav inntekt inntil grunnbeløpet i folketrygden "@nb
+                                  ] ;
+    skosno:datastrukturterm        "skattepliktigEktefelletilleggFraFolketrygdenOgPrivatePensjonsordninger"@nb ;
+    dct:identifier                 "cf24800f-dfe5-11e7-9101-005056821322" ;
+    dct:modified                   "2017-12-12"^^xsd:date ;
+    dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
+    dct:subject                    "Formues- og inntektsskatt"@nb ;
+    rdfs:seeAlso                   <http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940> ;
+    skosno:generiskRelasjon        <http://test/begrep/9c33fd2b-2964-11e6-b2bc-96405985e0fa> ;
+    skosno:partitivRelasjon        <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2> ;
+    skosno:assosiativRelasjon      <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940> ;
+    skosxl:prefLabel               [ a                   skosxl:Label ;
+                                     skosxl:literalForm  "skattepliktig ektefelletillegg fra folketrygden og private pensjonsordninger"@nb
+                                   ] ;
+    dcat:contactPoint              [ a                       vcard:Organization ;
+                                     vcard:hasEmail          <mailto:test@skatteetaten.no> ;
+                                     vcard:organizationUnit  "Informasjonsforvaltning - innhenting"
+                                   ] .
