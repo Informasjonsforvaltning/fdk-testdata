@@ -45,7 +45,7 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel , owl:NamedIndivid
         dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Eining"@nn ,"Legal entity"@en , "Adresse"@nb , "Adresse"@nn, "Address"@en ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
-        dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
+        dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> , <http://eurovoc.europa.eu/4256> .
 
 digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIndividual ;
         modelldcatno:containsModelElement
@@ -67,7 +67,7 @@ digdir:AdresseModell  a              modelldcatno:InformationModel , owl:NamedIn
         dcat:keyword            "Adresse"@nb ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/adresse-felles-informasjonsmodell> ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
-        dcat:theme              <https://psi.norge.no/los/tema/eiendom> .
+        dcat:theme              <https://psi.norge.no/los/tema/eiendom> , <http://eurovoc.europa.eu/4256> .
 
 digdir:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividual ;
         modelldcatno:containsModelElement

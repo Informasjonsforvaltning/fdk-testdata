@@ -45,6 +45,7 @@ digs:AltMuligModell  a         modelldcatno:InformationModel , owl:NamedIndividu
                                 <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> , <https://registrering-begrep-api.fellesdatakatalog.digdir.no/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         dcat:contactPoint       digs:KontaktOss ;
+        dcat:theme              <https://psi.norge.no/los/tema/eiendom> , <http://eurovoc.europa.eu/4256> ;
         dcat:keyword            "Person"@nb , "Person"@en, "Person"@nn , "Enhet"@nb , "Eining"@nn ,"Legal entity"@en , "Adresse"@nb , "Adresse"@nn, "Address"@en ;
         foaf:homepage           <https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/informasjonsforvaltning/felles-informasjonsmodell-person-og-enhet-bakgrunn> ;
         dct:hasPart             <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Diversemodell> ;
@@ -78,7 +79,7 @@ digs:Diversemodell   a          modelldcatno:InformationModel , owl:NamedIndivid
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         dct:modified            "2017-09-28T00:00:00+01:00"^^xsd:dateTime ;
         adms:versionNotes       "Lagt til objekttypen Timeline"@nb ;
-        dcat:theme              <https://psi.norge.no/los/tema/eiendom> ;
+        dcat:theme              <https://psi.norge.no/los/tema/eiendom> , <http://eurovoc.europa.eu/4256> ;
         dct:isPartOf            <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Altmuligmodell> ;
         dct:isReplacedBy        <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Altmuligmodell> ;
         dct:hasFormat           digs:AlternativModellformat .
