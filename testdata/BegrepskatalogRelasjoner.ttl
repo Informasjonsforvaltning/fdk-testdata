@@ -34,7 +34,10 @@
     dct:modified                   "2017-09-04"^^xsd:date ;
     dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
     dct:subject                    "Formues- og inntektsskatt"@nb ;
-    skosno:assosiativRelasjon      <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2> ;
+    skosno:assosiativRelasjon      [  a   skosno:AssosiativRelasjon ;
+                                      dct:description "dette er en test"@nb ;
+                                      skos:related <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2> ;
+                                      ] ;
     skosxl:prefLabel               [ a                   skosxl:Label ;
                                      skosxl:literalForm  "kostnad til oppmåling"@nb
                                    ] ;
@@ -52,7 +55,10 @@
     dct:modified                   "2019-01-17"^^xsd:date ;
     dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
     dct:subject                    "Generelle begrep, strukturer og typer"@nb ;
-    skosno:generiskRelasjon        <http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940> ;
+    skosno:generiskRelasjon        [  a    skosno:GeneriskRelasjon ;
+                                      skosno:inndelingskriterium "tid"@nb ;
+                                      xkos:generalizes <http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940>
+                                      ] ;
     skosxl:prefLabel               [ a                   skosxl:Label ;
                                      skosxl:literalForm  "opprettelsestidspunkt"@nb
                                    ] ;
@@ -71,7 +77,10 @@
     dct:modified                   "2019-02-11"^^xsd:date ;
     dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
     dct:subject                    "Tredjepartsopplysninger"@nb ;
-    skosno:partitivRelasjon        <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940> ;
+    skosno:partitivRelasjon        [  a     skosno:PartitivRelasjon ;
+                                      skosno:inndelingskriterium "part"@nb ;
+                                      xkos:hasPart <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940>
+                                      ] ;
     skosxl:prefLabel               [ a                   skosxl:Label ;
                                      skosxl:literalForm  "fremtidig inntektstap"@nb
                                    ] ;
@@ -109,9 +118,18 @@
     dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
     dct:subject                    "Formues- og inntektsskatt"@nb ;
     rdfs:seeAlso                   <http://test/begrep/20b2e1c4-9fe1-11e5-a9f8-e4115b280940> ;
-    skosno:generiskRelasjon        <http://test/begrep/9c33fd2b-2964-11e6-b2bc-96405985e0fa> ;
-    skosno:partitivRelasjon        <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2> ;
-    skosno:assosiativRelasjon      <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940> ;
+    skosno:generiskRelasjon        [  a    skosno:GeneriskRelasjon ;
+                                      skosno:inndelingskriterium "tillegg"@nb ;
+                                      xkos:generalizes <http://test/begrep/9c33fd2b-2964-11e6-b2bc-96405985e0fa>
+                                      ] ;
+    skosno:partitivRelasjon        [  a     skosno:PartitivRelasjon ;
+                                      skosno:inndelingskriterium "utgift"@nb ;
+                                      xkos:hasPart <http://test/begrep/cbe98920-1a4b-11e9-a7bb-0050568351d2>
+                                      ] ;
+    skosno:assosiativRelasjon      [  a   skosno:AssosiativRelasjon ;
+                                      dct:description "dette er en test"@nb ;
+                                      skos:related <http://test/begrep/20b2e1c5-9fe1-11e5-a9f8-e4115b280940> ;
+                                      ] ;
     skosxl:prefLabel               [ a                   skosxl:Label ;
                                      skosxl:literalForm  "skattepliktig ektefelletillegg fra folketrygden og private pensjonsordninger"@nb
                                    ] ;
