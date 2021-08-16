@@ -29,7 +29,7 @@ ex-ModelA:ModellA  a         modelldcatno:InformationModel ; #Informasjonsmodell
         dct:title               "Modell A"@nb ; #tittel
          ###### recommended:
         modelldcatno:containsModelElement #inneholder modellelement
-                ex-ModelA:Person , ex-ModelA:Kjønn , ex-ModelA:Personnavn , ex-ModelA:Tekst , ex-ModelA:GeografiskAdresse , ex-ModelB:Aktør .
+                ex-ModelA:Person , ex-ModelA:Kjønn , ex-ModelA:Personnavn , ex-ModelA:Tekst , ex-ModelB:GeografiskAdresse , ex-ModelB:Aktør .
 
 #Objekttype Person med egenskaper.
 ex-ModelA:Person  a                     modelldcatno:ObjectType ; #Objekttype
