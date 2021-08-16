@@ -1,0 +1,98 @@
+#----------
+#Eksempel hvor man refererer til et modellelement utenfor katalogen.
+#status: under arbeid
+#----------
+
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <https://rdf-vocabulary.ddialliance.org/xkos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix ex-ModelA: <https://github.com/Informasjonsforvaltning/modelldcat-ap-no/examples/ModellA#> .
+@prefix ex-ModelB: <https://github.com/Informasjonsforvaltning/modelldcat-ap-no/examples/ModelB#> .
+
+ex-ModelA:Katalog  a               dcat:Catalog ; #Modellkatalog
+        ###### mandatory:
+        dct:description         "Modellkatalog med modelleksempel A."@nb ; #beskrivelse
+        dct:identifier          "https://github.com/Informasjonsforvaltning/modelldcat-ap-no/examples/exSimpleModel#Katalog"^^xsd:anyURI ; #identifikator
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; #utgiver
+        dct:title               "Modellkatalogeksempel"@nb ; #tittel
+        ###### recommended:
+        modelldcatno:model      ex-ModelA:ModellA . #modell
+
+#Kun obligatoriske egenskaper er tatt med for informasjonsmodell (modelldcatno:InformationModel), samt modelldcatno:containsModelElement for å beskrive modellinnholdet.
+ex-ModelA:ModellA  a         modelldcatno:InformationModel ; #Informasjonsmodell
+        ###### mandatory:
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; #utgiver
+        dct:title               "Modell A"@nb ; #tittel
+         ###### recommended:
+        modelldcatno:containsModelElement #inneholder modellelement
+                ex-ModelA:Person , ex-ModelA:Kjønn , ex-ModelA:Personnavn , ex-ModelA:Tekst , ex-ModelA:GeografiskAdresse , ex-ModelB:Aktør .
+
+#Objekttype Person med egenskaper.
+ex-ModelA:Person  a                     modelldcatno:ObjectType ; #Objekttype
+        ###### mandatory:
+        dct:title                     "Person"@nb ; #tittel
+        ###### recommended:
+        modelldcatno:hasProperty       ex-ModelA:fulltNavn , ex-ModelA:navn , ex-ModelA:personadresse .
+
+ex-ModelA:fulltNavn  a               modelldcatno:Attribute ; #Attributt
+        ###### recommended:
+        dct:title                   "fulltNavn"@nb ; #tittel
+        modelldcatno:hasSimpleType           ex-ModelA:Tekst ; #har enkeltype
+        xsd:maxOccurs               "1"^^xsd:nonNegativeInteger ; #øvre multiplisitet
+        xsd:minOccurs            "0"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+ex-ModelA:navn  a                   modelldcatno:Attribute ; #Attributt
+        ###### recommended:
+        dct:title          "navn"@nb ; #tittel
+        modelldcatno:hasDataType          ex-ModelA:Personnavn ; #har datatype
+        xsd:maxOccurs            "1"^^xsd:nonNegativeInteger ; #øvre multiplisitet
+        xsd:minOccurs            "1"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+ex-ModelA:personadresse  a                modelldcatno:Role ; #Rolle
+        ###### recommended:
+        modelldcatno:hasObjectType     ex-ModelB:GeografiskAdresse ; #har objekttype
+        dct:title                "adresse"@nb ; #tittel
+        xsd:maxOccurs             "*" ; #øvre multiplisitet
+        xsd:minOccurs            "0"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+#Datatype Personnavn med egenskaper
+ex-ModelA:Personnavn  a                 modelldcatno:DataType ; #Datatype
+        ###### mandatory:
+        dct:title                      "Personnavn"@nb ; #tittel
+        ###### recommended:
+        modelldcatno:hasProperty       ex-ModelA:etternavn , ex-ModelA:mellomnavn , ex-ModelA:fornavn .
+
+
+ex-ModelA:fornavn  a                 modelldcatno:Attribute ; #Attributt
+        ###### recommended:
+        dct:title                   "fornavn"@nb ; #tittel
+        modelldcatno:hasSimpleType           ex-ModelA:Tekst ; #har enkeltype
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ; #øvre multiplisitet
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+ex-ModelA:mellomnavn  a              modelldcatno:Attribute ; #Attributt
+        ###### recommended:
+        dct:title                 "mellomnavn"@nb ; #tittel
+        modelldcatno:hasSimpleType           ex-ModelA:Tekst ; #har enkeltype
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ; #øvre multiplisitet
+        xsd:minOccurs            "0"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+ex-ModelA:etternavn  a               modelldcatno:Attribute ; #Attributt
+        ###### recommended:
+        dct:title           "etternavn"@nb ; #tittel
+        modelldcatno:hasSimpleType           ex-ModelA:Tekst ; #har enkeltype
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ; #øvre multiplisitet
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+#Type Tekst
+ex-ModelA:Tekst  a                      modelldcatno:SimpleType ; #Enkeltype
+        ###### mandatory:
+        dct:title                      "Tekst"@nb . #tittel.
+
+ex-ModelB:Aktør  a                      modelldcatno:ObjectType ; #Objekttype
+        ###### mandatory:
+        dct:title                      "Aktør"@nb . #tittel

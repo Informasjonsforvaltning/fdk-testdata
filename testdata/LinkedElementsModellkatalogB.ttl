@@ -1,0 +1,53 @@
+#----------
+#Eksempel på en enkel modell med de mest vanlige modellelementene.
+#status: under arbeid
+#----------
+
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <https://rdf-vocabulary.ddialliance.org/xkos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix ex-ModelB: <https://github.com/Informasjonsforvaltning/modelldcat-ap-no/examples/ModelB#> .
+
+ex-ModelB:Katalog  a               dcat:Catalog ; #Modellkatalog
+        ###### mandatory:
+        dct:description         "Modellkatalog med modelleksempel."@nb ; #beskrivelse
+        dct:identifier          "https://github.com/Informasjonsforvaltning/modelldcat-ap-no/examples/exSimpleModel#Katalog"^^xsd:anyURI ; #identifikator
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; #utgiver
+        dct:title               "Modellkatalogeksempel B"@nb ; #tittel
+        ###### recommended:
+        modelldcatno:model      ex-ModelB:ModellB . #modell
+
+#Kun obligatoriske egenskaper er tatt med for informasjonsmodell (modelldcatno:InformationModel), samt modelldcatno:containsModelElement for å beskrive modellinnholdet.
+ex-ModelB:ModellB  a         modelldcatno:InformationModel ; #Informasjonsmodell
+        ###### mandatory:
+        dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; #utgiver
+        dct:title               "Modell B"@nb ; #tittel
+         ###### recommended:
+        modelldcatno:containsModelElement #inneholder modellelement
+                ex-ModelB:Aktør , ex-ModelB:Tekst , ex-ModelB:GeografiskAdresse .
+
+ex-ModelB:Aktør  a                      modelldcatno:ObjectType ; #Objekttype
+        ###### mandatory:
+        dct:title                      "Aktør"@nb . #tittel
+
+#Objekttype GeografiskAdresse
+ex-ModelB:GeografiskAdresse  a         modelldcatno:ObjectType ; #Objekttype
+        ###### mandatory:
+        dct:title                      "GeografiskAdresse"@nb ;
+        modelldcatno:hasProperty       ex-ModelB:beskrivelse .
+
+ex-ModelB:beskrivelse a                 modelldcatno:Attribute ; #Attributt
+        ###### recommended:
+        dct:title                   "fornavn"@nb ; #tittel
+        modelldcatno:hasSimpleType           ex-ModelB:Tekst ; #har enkeltype
+        xsd:maxOccurs             "1"^^xsd:nonNegativeInteger ; #øvre multiplisitet
+        xsd:minOccurs             "1"^^xsd:nonNegativeInteger . #nedre multiplisitet
+
+#Type Tekst
+ex-ModelB:Tekst  a                      modelldcatno:SimpleType ; #Enkeltype
+        ###### mandatory:
+        dct:title                      "Tekst"@nb . #tittel
