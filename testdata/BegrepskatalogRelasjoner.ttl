@@ -165,7 +165,7 @@
      dct:modified                   "2019-02-11"^^xsd:date ;
      dct:publisher                  <https://data.brreg.no/enhetsregisteret/api/enheter/974761076> ;
      dct:subject                    "Tredjepartsopplysninger"@nb ;
-     dct:replaces                   <http://test/begrep/1111> ;
+     dct:isReplacedBy                 <http://test/begrep/1111> ;
      skosxl:prefLabel               [ a                   skosxl:Label ;
                                       skosxl:literalForm  "gammelt begrep"@nb
                                     ] ;
