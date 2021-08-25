@@ -37,7 +37,8 @@
   cpsv:follows <http://public-service-publisher.fellesdatakatalog.digdir.no/rule/1> ;
   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
   cv:hasContactPoint <http://public-service-publisher.fellesdatakatalog.digdir.no/contact/1> ;
-  cv:hasChannel <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ;
+  cv:hasChannel <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/1> ,
+                <http://public-service-publisher.fellesdatakatalog.digdir.no/channel/2> ;
   cv:processingTime "P7D" ;
   cv:hasCost <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/1> ,
              <http://public-service-publisher.fellesdatakatalog.digdir.no/cost/2> ,
