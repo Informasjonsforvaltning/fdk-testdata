@@ -570,8 +570,21 @@
 
 
 # Event types
+<https://data.norge.no/concepts/298> a skos:Concept ;
+  skos:prefLabel "Innbygger"@nb, "Life event"@en ;
+  skos:narrower <https://data.norge.no/concepts/311> ,
+                <https://data.norge.no/concepts/325> ,
+                <https://data.norge.no/concepts/324> ,
+                <https://data.norge.no/concepts/328> ;
+
+<https://data.norge.no/concepts/299> a skos:Concept ;
+  skos:prefLabel "Næring"@nb, "Business event"@en ;
+  skos:narrower <https://data.norge.no/concepts/300> ,
+                <https://data.norge.no/concepts/316> ;
+
 <https://data.norge.no/concepts/300> a skos:Concept ;
   skos:prefLabel "Starte og drive bedrift"@nb, "Starting and doing business"@en ;
+  skos:broader <https://data.norge.no/concepts/299> ;
   skos:narrower <https://data.norge.no/concepts/301> ,
                 <https://data.norge.no/concepts/304> ,
                 <https://data.norge.no/concepts/309> ,
@@ -692,6 +705,7 @@
 
 <https://data.norge.no/concepts/311> a skos:Concept ;
   skos:prefLabel "Få barn"@nb, "Having a child"@en ;
+  skos:broader <https://data.norge.no/concepts/298> ;
   skos:narrower <https://data.norge.no/concepts/312> ;
 .
 
@@ -703,6 +717,7 @@
 
 <https://data.norge.no/concepts/325> a skos:Concept ;
   skos:prefLabel "Arbeidsrelaterte forhold"@nb, "Work-related conditions"@en ;
+  skos:broader <https://data.norge.no/concepts/298> ;
   skos:narrower <https://data.norge.no/concepts/313> ;
 .
 
@@ -725,6 +740,7 @@
 
 <https://data.norge.no/concepts/324> a skos:Concept ;
   skos:prefLabel "Flytte til/fra landet"@nb, "Moving to/from the country"@en ;
+  skos:broader <https://data.norge.no/concepts/298> ;
   skos:narrower <https://data.norge.no/concepts/314> ;
 .
 
@@ -735,6 +751,7 @@
 
 <https://data.norge.no/concepts/328> a skos:Concept ;
   skos:prefLabel "Dødsfall i familien"@nb, "Death of a relative"@en ;
+  skos:broader <https://data.norge.no/concepts/298> ;
   skos:narrower <https://data.norge.no/concepts/315> ;
 .
 
@@ -745,6 +762,7 @@
 
 <https://data.norge.no/concepts/316> a skos:Concept ;
   skos:prefLabel "Starte og drive en frivillig organisasjon"@nb, "Starting and running a voluntary organization"@en ;
+  skos:broader <https://data.norge.no/concepts/299> ;
   skos:narrower <https://data.norge.no/concepts/329> ,
                 <https://data.norge.no/concepts/330> ,
                 <https://data.norge.no/concepts/331> ;
