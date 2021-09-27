@@ -576,11 +576,13 @@
                 <https://data.norge.no/concepts/325> ,
                 <https://data.norge.no/concepts/324> ,
                 <https://data.norge.no/concepts/328> ;
+.
 
 <https://data.norge.no/concepts/299> a skos:Concept ;
   skos:prefLabel "Næring"@nb, "Business event"@en ;
   skos:narrower <https://data.norge.no/concepts/300> ,
                 <https://data.norge.no/concepts/316> ;
+.
 
 <https://data.norge.no/concepts/300> a skos:Concept ;
   skos:prefLabel "Starte og drive bedrift"@nb, "Starting and doing business"@en ;
