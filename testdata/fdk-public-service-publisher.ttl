@@ -575,7 +575,8 @@
   skos:narrower <https://data.norge.no/concepts/311> ,
                 <https://data.norge.no/concepts/325> ,
                 <https://data.norge.no/concepts/324> ,
-                <https://data.norge.no/concepts/328> ;
+                <https://data.norge.no/concepts/328> ,
+                <https://data.norge.no/concepts/332> ;
 .
 
 <https://data.norge.no/concepts/299> a skos:Concept ;
@@ -787,6 +788,7 @@
 
 <https://data.norge.no/concepts/332> a skos:Concept ;
   skos:prefLabel "Stå overfor en nødsituasjon/helseproblem"@nb, "Facing an emergency / health problem"@en ;
+  skos:broader <https://data.norge.no/concepts/298> ;
   skos:narrower <https://data.norge.no/concepts/312> ;
 .
 
