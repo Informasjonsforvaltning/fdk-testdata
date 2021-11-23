@@ -222,6 +222,7 @@ pass:kildesystem  a   owl:NamedIndividual ,
 pass:kontaktinformasjon  a    owl:NamedIndividual ,
                                  modelldcatno:Attribute ;
                         modelldcatno:hasDataType pass:KontaktinformasjonType ;
+                        dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> ;
                         dct:description """Generell kontaktinformasjon for Skatteetaten knyttet til innrapportering av denne oppgavetypen. Varsel om melding i Altinn vil også bruke denne informasjonen for formidling. Må fylles inn hvis en innsender sender på vegne av flere oppgavegivere, dvs. det sendes flere leveranser. For innsender som kun sender på vegne av seg selv (dvs. innsender = oppgavegiver) vil denne informasjonen være levert i Altinn innsendingsskjema, og kan utelukkes fra filen.
 kontaktinformasjon: informasjon som kan brukes for uformell kontakt med parten"""@nb ;
                         dct:title "kontaktinformasjon"@nb ;
@@ -318,6 +319,7 @@ pass:organisasjonsnavn  a  owl:NamedIndividual ,
                  dct:description "navn på organisasjon"@nb ;
                  dct:identifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/organisasjonsnavn"^^xsd:anyURI ;
                  dct:title "organisasjonsnavn"@nb ;
+                 modelldcatno:hasSimpleType skebase:OrganisasjonsnavnType ;
                  xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                  xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
@@ -327,6 +329,7 @@ pass:organisasjonsnummer  a owl:NamedIndividual ,
 organisasjonsnummer: organisasjonsnummer brukes for å identifisere juridiske personer (enheter) i Norge, og tildeles ved registrering i Enhetsregisteret. Organisasjonsnummeret består av ni siffer og starter på tallet 8 eller 9."""@nb ;
                  dct:identifier "urn:ske:oppgaveoverpassogstellavbarn-2.0/organisasjonsnummer"^^xsd:anyURI ;
                  dct:title "organisasjonsnummer"@nb ;
+                 modelldcatno:hasSimpleType skebase:OrganisasjonsnummerType ;
                  xsd:maxOccurs "1"^^xsd:nonNegativeInteger ;
                  xsd:minOccurs "1"^^xsd:nonNegativeInteger .
 
