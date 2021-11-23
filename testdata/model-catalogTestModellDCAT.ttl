@@ -252,7 +252,8 @@ digdir:Tekst  a                      modelldcatno:SimpleType , owl:NamedIndividu
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Tekst"^^xsd:string ;
         dct:title                      "Tekst"@nb ;
         modelldcatno:typeDefinitionReference      "http://www.w3.org/2001/XMLSchema#string"^^xsd:anyURI ;
-        xsd:maxLength                "100"^^xsd:nonNegativeInteger .
+        xsd:maxLength                "100"^^xsd:nonNegativeInteger ;
+        xsd:minLength                "1"^^xsd:nonNegativeInteger .
 
 digdir:Heltall  a                   modelldcatno:SimpleType , owl:NamedIndividual ;
         dct:identifier                "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Heltall"^^xsd:string ;
