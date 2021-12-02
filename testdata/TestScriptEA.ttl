@@ -1,0 +1,135 @@
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#/> .
+@prefix xkos:<https://rdf-vocabulary.ddialliance.org/xkos//> .
+@prefix skos:<http://www.w3.org/2004/02/skos/core#/> .
+@prefix modelldcatno:<https://data.norge.no/vocabulary/modelldcatno#/> .
+@prefix ex-simpleModel:<https://data.norge.no/vocabulary/modelldcatno#/> .
+@prefix ex-relation:<https://data.norge.no/vocabulary/ex-relation#/> .
+@prefix dct:<http://purl.org/dc/terms/> .
+@prefix dcat:<http://www.w3.org/ns/dcat#/> .
+
+xsd:GeografiskAdresse a 		modelldcatno:ObjectType;
+	dct:title 	'GeografiskAdresse'@n ;
+	modelldcatno:belongsToModule	xsd:ModulAdresse.
+
+xsd:personadresse a 		modelldcatno:Collection;
+	dct:title 		'adresse'@nb ;
+	xsd:maxOccurs	'*';
+	xsd:minOccurs	'0';
+	modelldcatno:hasMember		ex-relation:GeografiskAdresse;
+	modelldcatno:belongsToModule	xsd:ModulAdresse.
+
+xsd:Aktør a 		modelldcatno:ObjectType;
+	dct:title 	'Aktør'@n ;
+	modelldcatno:belongsToModule	xsd:ModulAktør.
+
+xsd:PersonSpesialiserer a 		modelldcatno:Generalization;
+	dct:title 		''@nb ;
+	modelldcatno:hasGeneralConsept		ex-relation:Aktør;
+	modelldcatno:belongsToModule	xsd:ModulAktør.
+
+xsd:Kjønn a 		modelldcatno:CodeList;
+	modelldcatno:hasProperty	 xsd:Kvinne , xsd:Mann , xsd:Ubestemt , xsd:Ukjent;
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:Kvinne a 		modelldcatno:Attribute;
+	modelldcatno:hasDataType	xsd:Kjønn;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:Mann a 		modelldcatno:Attribute;
+	modelldcatno:hasDataType	xsd:Kjønn;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:Ubestemt a 		modelldcatno:Attribute;
+	modelldcatno:hasDataType	xsd:Kjønn;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:Ukjent a 		modelldcatno:Attribute;
+	modelldcatno:hasDataType	xsd:Kjønn;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:Person a 		modelldcatno:ObjectType;
+	dct:title 	'Person'@n ;
+	modelldcatno:hasProperty	 xsd:fulltnavn , xsd:navn , xsd:kjønn , xsd:personadresse , xsd:personSpesialiserer;
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:fulltnavn a 		modelldcatno:modelldcatno:Attribute;
+	dct:title 	'fulltNavn'@nb ;
+	modelldcatno:hasDataType	xsd:Enkeltype;
+	xsd:maxOccurs	'0';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:navn a 		modelldcatno:modelldcatno:Attribute;
+	dct:title 	'navn'@nb ;
+	modelldcatno:hasDataType	xsd:Personnavn;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:kjønn a 		modelldcatno:modelldcatno:Attribute;
+	dct:title 	'Kjønn'@nb ;
+	modelldcatno:hasDataType	xsd:Kjønn;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:personadresse a 		modelldcatno:modelldcatno:Attribute;
+	modelldcatno:hasDataType	xsd:Enkeltype;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:personSpesialiserer a 		modelldcatno:modelldcatno:Attribute;
+	modelldcatno:hasDataType	xsd:Enkeltype;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:NotDescribed a 		modelldcatno:;
+	dct:title 		''@nb ;
+	modelldcatno:		ex-relation:Person;
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:personadresse a 		modelldcatno:Collection;
+	dct:title 		'adresse'@nb ;
+	xsd:maxOccurs	'*';
+	xsd:minOccurs	'0';
+	modelldcatno:hasMember		ex-relation:Person;
+	modelldcatno:belongsToModule	xsd:ModulPerson.
+
+xsd:Enkeltype a 		modelldcatno:SimpleType;
+	modelldcatno:belongsToModule	xsd:ModulTyper.
+
+xsd:Personnavn a 		modelldcatno:DataType;
+	dcat:title 	'Personnavn'@n ;
+	modelldcatno:hasProperty	 xsd:fornavn , xsd:etternavn , xsd:mellomnavn;
+	modelldcatno:belongsToModule	xsd:ModulTyper.
+
+xsd:fornavn a 		modelldcatno:Attribute;
+	dct:title 	'fornavn'@nb ;
+	modelldcatno:hasDataType	xsd:Enkeltype;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulTyper.
+
+xsd:etternavn a 		modelldcatno:Attribute;
+	dct:title 	'etternavn'@nb ;
+	modelldcatno:hasDataType	xsd:Enkeltype;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulTyper.
+
+xsd:mellomnavn a 		modelldcatno:Attribute;
+	dct:title 	'mellomnavn'@nb ;
+	modelldcatno:hasDataType	xsd:Enkeltype;
+	xsd:maxOccurs	'1';  #øvre multiplisitet
+	xsd:minOccurs	'1';  #nedre multiplisitet
+	modelldcatno:belongsToModule	xsd:ModulTyper.
