@@ -951,22 +951,22 @@
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/1> a eli:LegalResource ;
   dct:description "Lov om Enhetsregisteret"@nb ;
-  xsd:seeAlso <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
+  rdfs:seeAlso <https://lovdata.no/eli/lov/1994/06/03/15/nor/html> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/2> a eli:LegalResource ;
   dct:description "Lov om omsetning av alkoholholdig drikk m.v. (alkoholloven)"@nb ;
-  xsd:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ;
+  rdfs:seeAlso <https://lovdata.no/eli/lov/1989/06/02/27/nor/html> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/3> a eli:LegalResource ;
   dct:description "Forskrift om omsetning av alkoholholdig drikk mv. (alkoholforskriften)"@nb ;
-  xsd:seeAlso <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
+  rdfs:seeAlso <https://lovdata.no/eli/forskrift/2005/06/08/538/nor/html> ;
 .
 
 <http://public-service-publisher.fellesdatakatalog.digdir.no/legalresource/4> a eli:LegalResource ;
   dct:description "Lov om serveringsvirksomhet (serveringsloven)"@nb ;
-  xsd:seeAlso <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
+  rdfs:seeAlso <https://lovdata.no/eli/lov/1997/06/13/55/nor/html> ;
 .
 
 
