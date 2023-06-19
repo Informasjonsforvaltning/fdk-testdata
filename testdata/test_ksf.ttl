@@ -1,4 +1,4 @@
-@prefix digdir: <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#> .
+@prefix digdir: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/test_ksf.ttl#> .
 @prefix adms:  <http://www.w3.org/ns/adms#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -13,20 +13,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#> .
 
-digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
+digdir:PersonOgEnhetTEST  a         modelldcatno:InformationModel ;
         modelldcatno:containsModelElement
                 digdir:Aktør , digdir:Enhet , digdir:Person , digdir:Kontaktinformasjon , digdir:Identifikator , digdir:Sivilstand , digdir:Kjønn , digdir:Landkode , digdir:Personnavn , digdir:Periode , digdir:Tekst , digdir:DatoKlokkeslett , digdir:Organisasjonsnummer , digdir:Dato ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#PersonOgEnhet"^^xsd:anyURI ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/test_ksf.ttl#PersonOgEnhetTEST"^^xsd:anyURI ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dct:temporal            digdir:Tidsintervall ;
-        dct:description         "Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Adressedelen av modellen er beskrevet nærmere i Felles informasjonsmodell for Adresse."@nb ;
-        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dct:description         "TEST. Overordnet informasjonsmodell for Person og Enhet med knytning til Identifikasjon og Adresse. Adressedelen av modellen er beskrevet nærmere i Felles informasjonsmodell for Adresse."@nb ;
+        dct:title               "Felles informasjonsmodell for Person og Enhet-TEST"@nb ;
         owl:versionInfo        "1.0" ;
         dct:issued              "2016-11-02T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
-        dct:title               "Felles informasjonsmodell for Person og Enhet"@nb ;
+        dct:title               "Felles informasjonsmodell for Person og Enhet-TEST (nynorsk)"@nn ;
         owl:versionInfo         "1.0" ;
-        adms:status             <http://purl.org/adms/status/Completed> ;
+        adms:status             <http://purl.org/adms/status/UnderDevelopment> ;
         dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
         dct:subject             <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/20febfaa-9467-48ea-9219-8ea611321f22> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c1197a7-5c17-48f6-b399-a031d66cd8da> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/f34cf23b-abfc-4413-8d46-afd175e1c872> ,
                                 <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/94328aca-770b-4502-95e5-94e44cb6d62f> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <http://begrepskatalogen/begrep/88804c58-ff43-11e6-9d97-005056825ca0> , <http://begrepskatalogen/begrep/88804c45-ff43-11e6-9d97-005056825ca0> ;
@@ -37,18 +37,18 @@ digdir:PersonOgEnhet  a         modelldcatno:InformationModel ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         dcat:theme              <https://psi.norge.no/los/tema/personopplysninger> , <https://psi.norge.no/los/tema/naringsliv> .
 
-digdir:AdresseModell  a              modelldcatno:InformationModel ;
+digdir:AdresseModellTEST  a              modelldcatno:InformationModel ;
         modelldcatno:containsModelElement
                 digdir:Adresse , digdir:GeografiskAdresse , digdir:OffisiellAdresse , digdir:Postboksadresse , digdir:Matrikkeladresse , digdir:Vegadresse , digdir:Kommunenummer , digdir:Poststed , digdir:Punkt , digdir:Matrikkelnummer , digdir:Adressenummer ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#AdresseModell"^^xsd:anyURI ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/test_ksf.ttl#AdresseModellTEST"^^xsd:anyURI ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
-        dct:description         "Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
-        dct:title               "Felles informasjonsmodell for Adresse"@nb ;
+        dct:description         "TEST. Overordnet informasjonsmodell for Adresse. Formål: Felles forståelse av adressebegrep og standardiserte informasjonsstrukturer for konsistent bruk og representasjon av adresser."@nb ;
+        dct:title               "Felles informasjonsmodell for Adresse-TEST"@nb ;
         owl:versionInfo         "1.0" ;
         dct:issued              "2016-09-28T00:00:00+01:00"^^xsd:dateTime ;
         dct:language            <http://publications.europa.eu/resource/authority/language/NOB> ;
         owl:versionInfo         "1.0" ;
-        adms:status             <http://purl.org/adms/status/Completed> ;
+        adms:status             <http://purl.org/adms/status/UnderDevelopment> ;
         dct:type                modelldcatno:commonSharedModel , modelldcatno:logicalModel ;
         dct:subject             <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/fea0e9f2-3b62-4c6b-9df3-27dd2f7cd530> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971527404/6c117b9f-086d-4f13-8ad9-88fa965ac538> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/0be32f31-fed4-4b07-ac1d-1892c86e8aa9> ,
                                 <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/fdcb929f-cb81-46d6-b419-b6ac520ed065> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/f6d85b38-f7e3-4764-8e51-9627ccd72569> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/6c87006e-2bae-4424-9523-48d4cf4cc9bf> , <https://concept-catalog.fellesdatakatalog.digdir.no/collections/971040238/9acc8b93-ae2f-4464-9a45-7e691d7dd19a> ;
@@ -59,14 +59,14 @@ digdir:AdresseModell  a              modelldcatno:InformationModel ;
         dct:spatial             <http://publications.europa.eu/resource/authority/country/NOR> ;
         dcat:theme              <https://psi.norge.no/los/tema/eiendom> .
 
-digdir:Katalog  a         dcat:Catalog ;
+digdir:KatalogTEST  a         dcat:Catalog ;
         dct:description         "Katalog med oversikt over Digitaliseringsdirektoratets felles informasjonsmodeller"@nb ;
-        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/model-catalog.ttl#Katalog"^^xsd:anyURI ;
+        dct:identifier          "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/test_ksf.ttl#KatalogTEST"^^xsd:anyURI ;
         dct:publisher           <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
-        dct:title               "Digitaliseringsdirektoratets katalog over felles informasjonsmodeller"@nb ;
+        dct:title               "Digitaliseringsdirektoratets katalog over felles informasjonsmodeller-TEST"@nb ;
         dct:license             <http://creativecommons.org/licenses/by/4.0/deed.no> ;
         dct:modified            "2023-05-22"^^xsd:date ;
-        modelldcatno:model      digdir:AdresseModell , digdir:PersonOgEnhet .
+        modelldcatno:model      digdir:AdresseModellTEST , digdir:PersonOgEnhetTEST .
 
 digdir:Tidsintervall  a    dct:PeriodOfTime ;
         dcat:startDate  "2016-11-02T00:00:00+01:00"^^xsd:dateTime .
