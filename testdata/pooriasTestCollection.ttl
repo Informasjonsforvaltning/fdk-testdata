@@ -13,4 +13,5 @@
   skosxl:prefLabel <https://www.pooria.no/concept1#prefLabel> .
 
 <https://www.pooria.no/concept1#prefLabel> a skosxl:Label ;
-  skosxl:literalForm "Pooria Test Concept 1" .
+  skosxl:literalForm "Pooria Test Concept 1"@en , 
+                     "Pooria Test Begrep 1"@nb .
