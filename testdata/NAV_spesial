@@ -248,6 +248,7 @@ Pleiepenger kan gis til en person i 60 dager, som i hjemmet pleier en nærståen
             rdfs:label "Lars tester harvester i sindre fil."@nb ;
             dct:source [ rdfs:label "\"Informasjonsaktiva\". I Overordnede sikkerhetskrav i Arbeids- og velferdsetaten v. 1.1. vedlegg C, s. 37. Hentet 24. mars 2015 fra https://navet.adeo.no/Systemsider/sok/solrDokumenterAlle/_attachment/263309?_ts=14ba6e46568"@nb ] ;
             dct:type "Faglig definisjon"@nb ;
+            dct:created "2019-11-01"^^xsd:date ;
             skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
     dct:identifier "https://nav.no/begrep/Sindre_Spesial_16" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
