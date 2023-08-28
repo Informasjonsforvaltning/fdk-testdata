@@ -2,6 +2,7 @@
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://www.pooria.no/conceptCollection> a skos:Collection ;
   rdfs:label "Pooria Collection" ;
@@ -10,7 +11,8 @@
 <https://www.pooria.no/concept1> a skos:Concept ;
   rdfs:label "Pooria Collection" ;
   dct:identifier <https://www.pooria.no/concept1> ;
-  skosxl:prefLabel <https://www.pooria.no/concept1#prefLabel> .
+  skosxl:prefLabel <https://www.pooria.no/concept1#prefLabel> ;
+  dct:created "2000-01-31"^^xsd:date .
 
 <https://www.pooria.no/concept1#prefLabel> a skosxl:Label ;
   skosxl:literalForm "Pooria Test Concept 1"@en , 
