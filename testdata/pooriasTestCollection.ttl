@@ -15,8 +15,11 @@
   skosxl:prefLabel <https://www.pooria.no/concept1#prefLabel> ;
   dct:created "2000-01-31"^^xsd:date ;
   skos:exactMatch <https://staging.fellesdatakatalog.digdir.no/concepts/3f365341-ed85-3cb5-9c2e-ff47979f1b71> ;
-  skos:closeMatch <https://staging.fellesdatakatalog.digdir.no/concepts/3f365341-ed85-3cb5-9c2e-ff47979f1b71> ;
-  uneskos:memberOf <https://staging.fellesdatakatalog.digdir.no/organizations/889640782> .
+  skos:closeMatch <https://staging.fellesdatakatalog.digdir.no/concepts/3f365341-ed85-3cb5-9c2e-ff47979f1b71>,
+                  <https://staging.fellesdatakatalog.digdir.no/concepts/9620c7bc-d1b2-3a15-a136-c2ff726415f2> ;
+  uneskos:memberOf <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076> ,
+                   <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111290>
+                   .
 
 <https://www.pooria.no/concept1#prefLabel> a skosxl:Label ;
   skosxl:literalForm "Pooria Test Concept 1"@en , 
