@@ -5,22 +5,64 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix uneskos: <http://purl.org/umu/uneskos#> .
 
-<https://www.pooria.no/conceptCollection> a skos:Collection ;
-  rdfs:label "Pooria Collection" ;
+# Collection 1
+<https://www.pooria.no/conceptCollection1> a skos:Collection ;
+  rdfs:label "Pooria's Collection 1" ;
   skos:member <https://www.pooria.no/concept1> .
 
 <https://www.pooria.no/concept1> a skos:Concept ;
-  rdfs:label "Pooria Collection" ;
+  rdfs:label "Pooria's Concept 1" ;
   dct:identifier <https://www.pooria.no/concept1> ;
   skosxl:prefLabel <https://www.pooria.no/concept1#prefLabel> ;
   dct:created "2000-01-31"^^xsd:date ;
-  skos:exactMatch <https://staging.fellesdatakatalog.digdir.no/concepts/3f365341-ed85-3cb5-9c2e-ff47979f1b71> ;
-  skos:closeMatch <https://staging.fellesdatakatalog.digdir.no/concepts/3f365341-ed85-3cb5-9c2e-ff47979f1b71>,
-                  <https://staging.fellesdatakatalog.digdir.no/concepts/9620c7bc-d1b2-3a15-a136-c2ff726415f2> ;
-  uneskos:memberOf <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076> ,
-                   <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111290>
-                   .
+  skos:exactMatch <https://www.pooria.no/concept2> ;
+  skos:closeMatch <https://www.pooria.no/concept2>,
+                  <https://www.pooria.no/concept3> ;
+  uneskos:memberOf <https://www.pooria.no/conceptCollection2> ,
+                       <https://www.pooria.no/conceptCollection3> .
 
 <https://www.pooria.no/concept1#prefLabel> a skosxl:Label ;
-  skosxl:literalForm "Pooria Test Concept 1"@en , 
-                     "Pooria Test Begrep 1"@nb .
+  skosxl:literalForm "Pooria's Test Concept 1"@en ,
+                     "Pooria's Test Begrep 1"@nb .
+
+
+#collection 2
+<https://www.pooria.no/conceptCollection2> a skos:Collection ;
+    rdfs:label "Pooria's Collection 2" ;
+    skos:member <https://www.pooria.no/concept2>,
+                 <https://www.pooria.no/concept3> .
+
+<https://www.pooria.no/concept2#prefLabel> a skosxl:Label ;
+    skosxl:literalForm "Pooria's Test Concept 2"@en ,
+                           "Poorias Test Begrep 2"@nb .
+
+<https://www.pooria.no/concept2> a skos:Concept ;
+    rdfs:label "Pooria's Concept 2" ;
+    dct:identifier <https://www.pooria.no/concept2> ;
+    skosxl:prefLabel <https://www.pooria.no/concept2#prefLabel> ;
+    dct:created "2002-02-20"^^xsd:date ;
+    skos:exactMatch <https://www.pooria.no/concept1> ;
+    skos:closeMatch <https://www.pooria.no/concept1>,
+                    <https://www.pooria.no/concept3> ;
+    uneskos:memberOf <https://www.pooria.no/conceptCollection2> ,
+                         <https://www.pooria.no/conceptCollection3> .
+
+#collection 3
+<https://www.pooria.no/conceptCollection3> a skos:Collection ;
+    rdfs:label "Pooria's Collection 3" ;
+    skos:member <https://www.pooria.no/concept2>,
+                    <https://www.pooria.no/concept3> .
+
+<https://www.pooria.no/concept3#prefLabel> a skosxl:Label ;
+    skosxl:literalForm "Pooria's Test Concept 3"@en ,
+                           "Poorias Test Begrep 3"@nb .
+
+<https://www.pooria.no/concept3> a skos:Concept ;
+    rdfs:label "Pooria's Concept 3" ;
+    dct:identifier <https://www.pooria.no/concept3> ;
+    skosxl:prefLabel <https://www.pooria.no/concept3#prefLabel> ;
+    dct:created "2002-02-20"^^xsd:date ;
+    skos:exactMatch <https://www.pooria.no/concept1> ;
+    skos:closeMatch <https://www.pooria.no/concept2>,
+                        <https://www.pooria.no/concept1> ;
+    uneskos:memberOf <https://www.pooria.no/conceptCollection3> .
