@@ -26,46 +26,95 @@
        """Teksten blir vist på nynorsk."""@nn,
        """Catalog containing sample services and events."""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalog.ttl"^^xsd:anyURI;
-   #cv:contactPoint <>;
+   dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl>,
+                          <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjeneste1.ttl>;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktKatalog.ttl>;
    dct:title """Tjeneste- og hendelseskatalog"""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Service and event catalog"""@en;
-   dcatno:containsService <>,
-                          <>;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>;
-   #dct:modified "2023-10-23"^^xsd:date;
-   #dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-   #foaf:homepage <https://data.norge.no/public-services-and-events>;
-   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
-       <http://publications.europa.eu/resource/authority/language/NNO>,
-       <http://publications.europa.eu/resource/authority/language/ENG>;
-    dcatno:containsEvent <>.
+   dcatno:containsEvent <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelse1.ttl>, # Anbefalt med inneholder hendelser
+                        <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse1.ttl>,
+                        <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse2.ttl>;
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktKatalog.ttl>
    rdf:type cv:ContactPoint;
-   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ;
-   cv:ContactPage <>;
-   cv:email "xx"^^xsd:anyURI;
-   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
+   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
+   cv:ContactPage <>; # Valgfri med kontaktside
+   cv:email "xx"^^xsd:anyURI; # Valgfri med e-post
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:telephone """tel:+4712345678""";
-   cv:openingHours <>; # Ordinær åpningstid strukturert
-   cv:specialOpeningHoursSpecification <>; # Begrenset åpningstid strukturert.
+   cv:telephone """tel:+4712345678"""; # Valgfri med telefon
+   cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl>
+   rdf:type cpsvno:Service;
+   dct:description """xx"""@nb,
+       """xx"""@nn,
+       """xx."""@en;
+   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl"^^xsd:anyURI;
+   cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>;
+   dct:title """exTjeneste1_nb"""@nb,
+       """exTjeneste1_nn"""@nn,
+       """exTjeneste1"""@en;
+   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl>;
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOrganisasjonXx.ttl>
+   rdf:type org:Organization;
+   skos:prefLabel """xx"""@nb,
+       """xx"""@nn,
+       """xx"""@en;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)"^^xsd:anyURI;
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>
    rdf:type cv:ContactPoint;
-   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ;
-   cv:ContactPage <>;
-   cv:email "xx"^^xsd:anyURI;
-   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
+   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
+   cv:ContactPage <>; # Valgfri med kontaktside
+   cv:email "xx"^^xsd:anyURI; # Valgfri med e-post
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:telephone """tel:+4712345678""";
-   cv:openingHours <>; # Ordinær åpningstid strukturert
-   cv:specialOpeningHoursSpecification <>; # Begrenset åpningstid strukturert.
+   cv:telephone """tel:+4712345678"""; # Valgfri med telefon
+   cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl>
+   rdf:type cv:Output;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl"^^xsd:anyURI;
+   dct:title """exTjenesteresultatTjeneste1"""@nb,
+       """exTjenesteresultatTjeneste1"""@nn,
+       """exTjenesteresultatTjeneste1"""@en;
+   dct:description """xx"""@nb, # Anbefalt med beskrivelse
+       """xx"""@nn,
+       """xx."""@en;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
+   xkos:causes <>; # Valgfri med kan skape (relasjon til hendelse)
+   dct:type <https://data.norge.no/vocabulary/service-output-type#permit>; # Valgfri med type
+   .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjeneste1.ttl>
+   rdf:type cpsv:PublicService;
+   dct:description """xx"""@nb,
+       """xx"""@nn,
+       """xx"""@en;
+   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjeneste1.ttl"^^xsd:anyURI;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktOffentligTjeneste.ttl>;
+   dct:title """exOffentligTjeneste1"""@nb,
+       """exOffentligTjeneste1"""@nn,
+       """exOffentligTjeneste1"""@en;
+   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatOffentligTjeneste1.ttl>,
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligOrganisasjonXx.ttl>
    rdf:type cv:PublicOrganisation;
@@ -75,24 +124,78 @@
        """xx"""@nn,
        """xx"""@en;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)"^^xsd:anyURI;
-   locn:address [ a locn:Address ;
-       locn:fullAddress "gate/vei, postnr poststed"@nb ; ];
-   foaf:homepage <>;
-   dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
-   cv:participates <>.
+.
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exIkkeoffentligTjeneste1.ttl>
-   rdf:type cpsvno:Service;
-   dct:description """xx"""@nb,
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktOffentligTjeneste.ttl>
+   rdf:type cv:ContactPoint;
+   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
+   cv:ContactPage <>; # Valgfri med kontaktside
+   cv:email "xx"^^xsd:anyURI; # Valgfri med e-post
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
+   cv:telephone """tel:+4712345678"""; # Valgfri med telefon
+   cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatOffentligTjeneste1.ttl>
+   rdf:type cv:Output;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatOffentligTjeneste1.ttl"^^xsd:anyURI;
+   dct:title """exTjenesteresultatOffentligTjeneste1"""@nb,
+       """exTjenesteresultatOffentligTjeneste1"""@nn,
+       """exTjenesteresultatOffentligTjeneste1"""@en;
+   dct:description """xx"""@nb, # Anbefalt med beskrivelse
        """xx"""@nn,
        """xx."""@en;
-   cv:ownedBy <>;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exIkkeoffentligTjeneste1.ttl"^^xsd:anyURI;
-   cv:hasContactPoint <>;
-   dct:title """exIkkeoffentligTjeneste1_nb"""@nb,
-       """exIkkeoffentligTjeneste1_nn"""@nn,
-       """exIkkeoffentligTjeneste1"""@en;
-   cpsv:produces <>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
-                <http://publications.europa.eu/resource/authority/language/NNO>,
-                <http://publications.europa.eu/resource/authority/language/ENG>.
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
+   xkos:causes <>; # Valgfri med kan skape (relasjon til hendelse)
+   dct:type <https://data.norge.no/vocabulary/service-output-type#permit>; # Valgfri med type
+   .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelse1.ttl>
+   rdf:type cv:LifeEvent;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelse1.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
+   dct:title """Navn på livshendelsne på bokmål"""@nb, # Obligatorisk med navn
+       """Navn på livshendelsen på nynorsk"""@nn,
+       """Navn på livshendelsen på engelsk"""@en;
+   dct:description """Beskrivelse av livshendelsen på bokmål."""@nb, # Anbefalt med beskrivelse
+       """Beskrivelse av livshendelsen på nynorsk."""@nn,
+       """Beskrivelse av livshendelsen på engelsk."""@en;
+   cpsvno:mayTriggerNeedFor <>; # Anbefalt med kan utløse behov for (tjeneste)
+   dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/96caf654-e8fc-42c6-8319-2dfa264136b8>; # # Valgfri å relatere til til begrep
+   dcat:distribution <https://example.org/example-distribution>; # Valgfri å refere til beskrivelsen av distribusjon av livshendelsen
+   dct:type <https://data.norge.no/vocabulary/life-event-type#having-a-child>; # Valgfri med oppgi livshendelsestype
+   .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse1.ttl>
+   rdf:type cv:Event;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse1.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
+   dct:title """Navn på hendelsen på bokmål"""@nb, # Obligatorisk med navn
+       """Navn på hendelsen på nynorsk"""@nn,
+       """Navn på hendelsen på engelsk"""@en;
+   dct:description """Beskrivelse av hendelsen på bokmål."""@nb, # Anbefalt med beskrivelse
+       """Beskrivelse av hendelsen på nynorsk."""@nn,
+       """Beskrivelse av hendelsen på engelsk."""@en;
+   cpsvno:mayTrigger <>; # Anbefalt med kan sett i gang (tjeneste)
+   dct:subject <https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a>; # Valgfri å relatere til til begrep 
+   dcat:distribution <https://example.org/example-distribusjon>; # Valgfri å refere til beskrivelsen av distribusjon av hendelsen
+   dct:type <https://data.norge.no/vocabulary/event-type#administrative-decision-made>; # Valgfri med oppgi hendelsestype
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse2.ttl>
+   rdf:type cv:Event;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse2.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
+   dct:title """Navn på hendelsen på bokmål"""@nb, # Obligatorisk med navn
+       """Navn på hendelsen på nynorsk"""@nn,
+       """Navn på hendelsen på engelsk"""@en;
+   dct:description """Beskrivelse av hendelsen på bokmål."""@nb, # Anbefalt med beskrivelse
+       """Beskrivelse av hendelsen på nynorsk."""@nn,
+       """Beskrivelse av hendelsen på engelsk."""@en;
+   cpsvno:mayTrigger <>; # Anbefalt med kan sett i gang (tjeneste)
+   dct:subject <https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a>; # Valgfri å relatere til til begrep 
+   dcat:distribution <https://example.org/example-distribusjon>; # Valgfri å refere til beskrivelsen av distribusjon av hendelsen
+   dct:type <https://data.norge.no/vocabulary/event-type#administrative-decision-made>; # Valgfri med oppgi hendelsestype
+.
