@@ -56,7 +56,7 @@
    dct:description """xx"""@nb,
        """xx"""@nn,
        """xx."""@en;
-   cv:ownedBy <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>;
+   cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOrganisasjonXx.ttl>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl"^^xsd:anyURI;
    cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>;
    dct:title """exTjeneste1_nb"""@nb,
@@ -107,7 +107,7 @@
    dct:description """xx"""@nb,
        """xx"""@nn,
        """xx"""@en;
-   cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>;
+   cv:hasCompetentAuthority <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligOrganisasjonXx.ttl>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjeneste1.ttl"^^xsd:anyURI;
    cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktOffentligTjeneste.ttl>;
    dct:title """exOffentligTjeneste1"""@nb,
