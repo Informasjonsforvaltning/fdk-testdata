@@ -42,3 +42,57 @@
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
     dcatno:containsEvent <>.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktKatalog.ttl>
+   rdf:type cv:ContactPoint;
+   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ;
+   cv:ContactPage <>;
+   cv:email "xx"^^xsd:anyURI;
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
+   cv:telephone """tel:+4712345678""";
+   cv:openingHours <>; # Ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <>; # Begrenset åpningstid strukturert.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>
+   rdf:type cv:ContactPoint;
+   schema:contactType "xx"@nb , "xx"@nn , "xx"@en ;
+   cv:ContactPage <>;
+   cv:email "xx"^^xsd:anyURI;
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>,
+       <http://publications.europa.eu/resource/authority/language/NNO>,
+       <http://publications.europa.eu/resource/authority/language/ENG>;
+   cv:telephone """tel:+4712345678""";
+   cv:openingHours <>; # Ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <>; # Begrenset åpningstid strukturert.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligOrganisasjonXx.ttl>
+   rdf:type cv:PublicOrganisation;
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR>,
+       <https://data.geonorge.no/administrativeEnheter/>;
+   skos:prefLabel """xx"""@nb,
+       """xx"""@nn,
+       """xx"""@en;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)"^^xsd:anyURI;
+   locn:address [ a locn:Address ;
+       locn:fullAddress "gate/vei, postnr poststed"@nb ; ];
+   foaf:homepage <>;
+   dct:type <http://purl.org/adms/publishertype/LocalAuthority>;
+   cv:participates <>.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exIkkeoffentligTjeneste1.ttl>
+   rdf:type cpsvno:Service;
+   dct:description """xx"""@nb,
+       """xx"""@nn,
+       """xx."""@en;
+   cv:ownedBy <>;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exIkkeoffentligTjeneste1.ttl"^^xsd:anyURI;
+   cv:hasContactPoint <>;
+   dct:title """exIkkeoffentligTjeneste1_nb"""@nb,
+       """exIkkeoffentligTjeneste1_nn"""@nn,
+       """exIkkeoffentligTjeneste1"""@en;
+   cpsv:produces <>;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+                <http://publications.europa.eu/resource/authority/language/NNO>,
+                <http://publications.europa.eu/resource/authority/language/ENG>.
