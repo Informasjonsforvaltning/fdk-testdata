@@ -51,17 +51,17 @@
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exAvklaringshjelpGravferdsansvar.ttl>
    rdf:type cpsvno:Service;
-   dct:description """xx"""@nb,
+   dct:description """Avklare hvem som skal være ansvarlig for gravferden til en død person."""@nb,
        """xx"""@nn,
        """xx."""@en;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOrganisasjonXx.ttl>;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl"^^xsd:anyURI;
    cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>;
-   dct:title """exTjeneste1_nb"""@nb,
-       """exTjeneste1_nn"""@nn,
-       """exTjeneste1"""@en;
+   dct:title """Sørge for en gravferd"""@nb,
+       """Sørge for en gravferd_nn"""@nn,
+       """Sørge for en gravferd_en"""@en;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl>;
 .
 
