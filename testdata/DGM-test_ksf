@@ -25,10 +25,10 @@
    dct:description """Katalog som inneholder tjenester og hendelser knyttet til Dødsfall og arv."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Catalog containing sample services and events."""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalog.ttl"^^xsd:anyURI;
-   dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl>,
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogDodsfallOgArv.ttl"^^xsd:anyURI;
+   dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exAvklaringshjelpGravferdsansvar.ttl>,
                           <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjeneste1.ttl>;
-   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktKatalog.ttl>;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDodsfallOgArv.ttl>;
    dct:title """Tjeneste- og hendelseskatalog for Dødsfall og arv"""@nb,
        """Teneste- og hendingskatalog for Dødsfall og arv."""@nn,
        """Service and event catalog for Death and inheritance"""@en;
@@ -38,7 +38,7 @@
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse2.ttl>;
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktKatalog.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDodsfallOgArv.ttl>
    rdf:type cv:ContactPoint;
    schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
    cv:ContactPage <>; # Valgfri med kontaktside
@@ -57,12 +57,12 @@
        """xx"""@nn,
        """xx."""@en;
    cv:ownedBy <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOrganisasjonXx.ttl>;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1.ttl"^^xsd:anyURI;
-   cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
+   cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>;
    dct:title """Sørge for en gravferd"""@nb,
        """Sørge for en gravferd_nn"""@nn,
        """Sørge for en gravferd_en"""@en;
-   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl>;
+   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl>;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOrganisasjonXx.ttl>
@@ -73,7 +73,7 @@
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)"^^xsd:anyURI;
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktTjeneste.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>
    rdf:type cv:ContactPoint;
    schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
    cv:ContactPage <>; # Valgfri med kontaktside
@@ -86,9 +86,9 @@
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl>
    rdf:type cv:Output;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatTjeneste1.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
    dct:title """exTjenesteresultatTjeneste1"""@nb,
        """exTjenesteresultatTjeneste1"""@nn,
        """exTjenesteresultatTjeneste1"""@en;
