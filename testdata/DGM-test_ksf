@@ -79,7 +79,7 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>
    rdf:type cv:ContactPoint;
    schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
-   cv:ContactPage <>; # Valgfri med kontaktside
+   cv:ContactPage <https://prosjekt.statsforvalteren.no/gravferd/>; # Valgfri med kontaktside
    cv:email "xx"^^xsd:anyURI; # Valgfri med e-post
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
