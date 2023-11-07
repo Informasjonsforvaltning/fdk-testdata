@@ -63,6 +63,9 @@
        """Sørge for en gravferd_nn"""@nn,
        """Sørge for en gravferd_en"""@en;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl>;
+   cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonBegjaeringsskjema.ttl>,
+                 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonForhåndsavklaringGravferdsansvar.ttl>;
+   dct:subject <https://example.com/test/begrep/gravferd>;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOrganisasjonXx.ttl>
@@ -143,17 +146,45 @@
    rdf:type cv:Output;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatOffentligTjeneste1.ttl"^^xsd:anyURI;
    dct:title """exTjenesteresultatOffentligTjeneste1"""@nb,
-       """exTjenesteresultatOffentligTjeneste1"""@nn,
-       """exTjenesteresultatOffentligTjeneste1"""@en;
+             """exTjenesteresultatOffentligTjeneste1"""@nn,
+             """exTjenesteresultatOffentligTjeneste1"""@en;
    dct:description """xx"""@nb, # Anbefalt med beskrivelse
-       """xx"""@nn,
-       """xx."""@en;
+                   """xx"""@nn,
+                   """xx."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
    xkos:causes <>; # Valgfri med kan skape (relasjon til hendelse)
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit>; # Valgfri med type
    .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonBegjaeringsskjema.ttl>
+   rdf:type cv:Evidence;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonBegjaeringsskjema.ttl"^xsd:anyURI;
+   dct:title """Begjæringsskjema"""@nb,
+       """Begjæringsskjema_nn"""@nn,
+       """Begjæringsskjema_en"""@en;
+   dct:description """Beskrivelse"""@nb, # Anbefalt med beskrivelse
+                   """Beskrivelse_nn"""@nn,
+                   """Beskrivelse_nn"""@en;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
+                <http://publications.europa.eu/resource/authority/language/NNO>,
+                <http://publications.europa.eu/resource/authority/language/ENG>;
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonForhåndsavklaringGravferdsansvar.ttl>
+   rdf:type cv:Evidence;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonForhåndsavklaringGravferdsansvar.ttl"^xsd:anyURI;
+   dct:title """Forhåndsavklaring av gravferdsansvar"""@nb,
+       """Forhåndsavklaring av gravferdsansvar_nn"""@nn,
+       """Forhåndsavklaring av gravferdsansvar_en"""@en;
+   dct:description """Beskrivelse"""@nb, # Anbefalt med beskrivelse
+                   """Beskrivelse_nn"""@nn,
+                   """Beskrivelse_nn"""@en;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
+                <http://publications.europa.eu/resource/authority/language/NNO>,
+                <http://publications.europa.eu/resource/authority/language/ENG>;
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelse1.ttl>
    rdf:type cv:LifeEvent;
@@ -198,4 +229,10 @@
    dct:subject <https://data.norge.no/concepts/db48fa77-3f47-4d58-b4a3-41569f149c1a>; # Valgfri å relatere til til begrep 
    dcat:distribution <https://example.org/example-distribusjon>; # Valgfri å refere til beskrivelsen av distribusjon av hendelsen
    dct:type <https://data.norge.no/vocabulary/event-type#administrative-decision-made>; # Valgfri med oppgi hendelsestype
+.
+
+<https://example.com/test/begrep/gravferd> a skos:Concept;
+    dct:identifier "https://example.com/test/begrep/gravferd"^^xsd:anyURI;
+    skos:prefLabel "gravferd"@nb;
+    skos:definisjon "samlebegrep som omfatter begravelse og bisettelse."@nb;
 .
