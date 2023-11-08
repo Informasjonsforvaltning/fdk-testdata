@@ -92,9 +92,9 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl>
    rdf:type cv:Output;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
-   dct:title """Signert gravferdsanvar"""@nb,
-       """Signert gravferdsanvar_nn"""@nn,
-       """Signert gravferdsanvar_en"""@en;
+   dct:title """Signert gravferdsansvar"""@nb,
+       """Signert gravferdsansvar_nn"""@nn,
+       """Signert gravferdsansvar_en"""@en;
    dct:description """xx"""@nb, # Anbefalt med beskrivelse
        """xx"""@nn,
        """xx."""@en;
