@@ -20,15 +20,15 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogDodsfallOgArv.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogDoedsfallOgArv.ttl>
    rdf:type dcat:Catalog;
    dct:description """Katalog som inneholder tjenester og hendelser knyttet til Dødsfall og arv."""@nb,
        """Teksten blir vist på nynorsk."""@nn,
        """Catalog containing sample services and events."""@en;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogDodsfallOgArv.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogDoedsfallOgArv.ttl"^^xsd:anyURI;
    dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteAvklaringshjelpGravferdsansvar.ttl>,
                           <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>;
-   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDodsfallOgArv.ttl>;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDoedsfallOgArv.ttl>;
    dct:title """Tjeneste- og hendelseskatalog for Dødsfall og arv"""@nb,
        """Teneste- og hendingskatalog for Dødsfall og arv."""@nn,
        """Service and event catalog for Death and inheritance"""@en;
@@ -38,7 +38,7 @@
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseGravferdsanvarAvklart.ttl>;
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDodsfallOgArv.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDoedsfallOgArv.ttl>
    rdf:type cv:ContactPoint;
    schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
    cv:ContactPage <>; # Valgfri med kontaktside
