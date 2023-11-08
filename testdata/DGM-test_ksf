@@ -30,7 +30,7 @@
                           <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>;
    cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDoedsfallOgArv.ttl>;
    dct:title """Tjeneste- og hendelseskatalog for Dødsfall og arv"""@nb,
-       """Teneste- og hendingskatalog for Dødsfall og arv."""@nn,
+       """Teneste- og hendingskatalog for Dødsfall og arv"""@nn,
        """Service and event catalog for Death and inheritance"""@en;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
    dcatno:containsEvent <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelsePersonDoer.ttl>, # Anbefalt med inneholder hendelser
