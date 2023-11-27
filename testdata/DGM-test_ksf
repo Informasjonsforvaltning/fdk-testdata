@@ -32,7 +32,7 @@
    dct:title """Tjeneste- og hendelseskatalog for Dødsfall og arv"""@nb,
        """Teneste- og hendingskatalog for Dødsfall og arv"""@nn,
        """Service and event catalog for Death and inheritance"""@en;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>; # Organisasjonsnummer til Digdir
    dcatno:containsEvent <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelsePersonDoer.ttl>, # Anbefalt med inneholder hendelser
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseIngenHarTattAnsvarForGravferden.ttl>,
                         <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseGravferdsanvarAvklart.ttl>;
@@ -56,7 +56,7 @@
    dct:description """Avklare hvem som skal være ansvarlig for gravferden til en død person."""@nb,
        """Avklara kven som skal vera ansvarleg for gravferda til ein død person."""@nn,
        """Clarify who will be responsible for the burial of a dead person."""@en;
-   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>;
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>; # Organisasjonsnummer mangler...
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
    cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>;
    dct:title """Ta ansvar for en gravferd"""@nb,
@@ -132,7 +132,7 @@
    dct:description """xx"""@nb,
        """xx"""@nn,
        """xx"""@en;
-   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983744516>;
+   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983744516>; # Organisasjonsnummer til Folkehelseinstituttet
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl"^^xsd:anyURI;
    cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktErklaereEnPersonForDoed.ttl>;
    dct:title """Erklære en person for død"""@nb,
@@ -151,7 +151,7 @@
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:telephone """tel:+4721077000"""; # Valgfri med telefon
+   cv:telephone """+4721077000"""; # Valgfri med telefon
    cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
@@ -170,7 +170,7 @@
                 <http://publications.europa.eu/resource/authority/language/ENG>;
    xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseIngenHarTattAnsvarForGravferden.ttl>; # Valgfri med kan skape (relasjon til hendelse)
    dct:type <https://data.norge.no/vocabulary/service-output-type#declaration>; # Valgfri med type
-   .
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>
    rdf:type cv:Evidence;
@@ -206,8 +206,8 @@
    rdf:type cv:Event;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseIngenHarTattAnsvarForGravferden.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
    dct:title """Ingen har tatt ansvar for gravferden"""@nb, # Obligatorisk med navn
-       """Ingen har tatt ansvar for gravferden_nn"""@nn,
-       """Ingen har tatt ansvar for gravferden_en"""@en;
+       """Ingen har teke ansvar for gravferda"""@nn,
+       """No one has taken responsibility for the burial"""@en;
    dct:description """En juridisk person har ikke tatt ansvar for gravferd av en 'avdød'."""@nb, # Anbefalt med beskrivelse
        """Ein juridisk person har ikkje teke ansvar for gravferd av ein 'avdød'."""@nn,
        """A legal entity has not taken responsibility for the burial of a 'deceased'."""@en;
