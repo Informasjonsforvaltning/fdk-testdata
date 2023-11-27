@@ -232,21 +232,6 @@
    dct:type <https://data.norge.no/vocabulary/event-type#data-changed>; # Valgfri med oppgi hendelsestype
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse3.ttl>
-   rdf:type cv:Event;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse3.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
-   dct:title """Navn på hendelsen på bokmål"""@nb, # Obligatorisk med navn
-       """Navn på hendelsen på nynorsk"""@nn,
-       """Navn på hendelsen på engelsk"""@en;
-   dct:description """Beskrivelse av hendelsen på bokmål."""@nb, # Anbefalt med beskrivelse
-       """Beskrivelse av hendelsen på nynorsk."""@nn,
-       """Beskrivelse av hendelsen på engelsk."""@en;
-   cpsvno:mayTrigger <>; # Anbefalt med kan sett i gang (tjeneste)
-   dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/af1ee647-9e46-4cd8-9607-d32d1551cab3>; # Valgfri å relatere til til begrep 
-   dcat:distribution <https://example.org/example-distribusjon>; # Valgfri å refere til beskrivelsen av distribusjon av hendelsen
-   dct:type <https://data.norge.no/vocabulary/event-type#administrative-decision-made>; # Valgfri med oppgi hendelsestype
-.
-
 <https://example.com/test/begrep/gravferd> a skos:Concept;
     dct:identifier "https://example.com/test/begrep/gravferd"^^xsd:anyURI;
     skos:prefLabel "gravferd"@nb;
