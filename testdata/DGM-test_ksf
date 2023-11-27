@@ -73,12 +73,12 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>
    rdf:type cv:ContactPoint;
    schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
-   cv:ContactPage <https://prosjekt.statsforvalteren.no/gravferd/>; # Valgfri med kontaktside
+   cv:ContactPage <>; # Valgfri med kontaktside
    cv:email "xx"^^xsd:anyURI; # Valgfri med e-post
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:telephone """tel:+4712345678"""; # Valgfri med telefon
+   cv:telephone """"""; # Valgfri med telefon
    cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
@@ -87,8 +87,8 @@
    rdf:type cv:Output;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
    dct:title """Signert gravferdsansvar"""@nb,
-       """Signert gravferdsansvar_nn"""@nn,
-       """Signert gravferdsansvar_en"""@en;
+       """Signert gravferdsansvar"""@nn,
+       """Signed funeral responsibility"""@en;
    dct:description """xx"""@nb, # Anbefalt med beskrivelse
        """xx"""@nn,
        """xx."""@en;
@@ -191,8 +191,8 @@
    rdf:type cv:LifeEvent;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelsePersonDoer.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
    dct:title """En person dør"""@nb, # Obligatorisk med navn
-       """En person dør_nn"""@nn,
-       """En person dør_en"""@en;
+       """Ein person døyr"""@nn,
+       """A person dies"""@en;
    dct:description """Beskrivelse av livshendelsen på bokmål."""@nb, # Anbefalt med beskrivelse
        """Beskrivelse av livshendelsen på nynorsk."""@nn,
        """Beskrivelse av livshendelsen på engelsk."""@en;
