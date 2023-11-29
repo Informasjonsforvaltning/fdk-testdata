@@ -129,9 +129,9 @@
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>
    rdf:type cpsv:PublicService;
-   dct:description """xx"""@nb,
-       """xx"""@nn,
-       """xx"""@en;
+   dct:description """Medisinsk stadfesting av at døden har inntrådt."""@nb,
+       """Medisinsk stadfesting av at døden har tredd inn."""@nn,
+       """Medical confirmation that death has occurred."""@en;
    cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983744516>; # Organisasjonsnummer til Folkehelseinstituttet
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl"^^xsd:anyURI;
    cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktErklaereEnPersonForDoed.ttl>;
@@ -139,8 +139,20 @@
        """Erklæra ein person for død"""@nn,
        """Declare a person dead"""@en;
    dct:subject <https://example.com/test/begrep/doedsmelding>;
+   cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatDoedsmelding.ttl>;
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>
+   rdf:type eli:LegalResource;
+   dct:type <https://data.norge.no/vocabulary/legal-resource-type#regulation>; # forskrift
+   dct:description """Forskriften gir regler for innsamling og behandling av helseopplysninger i Dødsårsaksregisteret."""@nb,
+       """Forskrifta gir reglar for innsamling og behandling av helseopplysningar i Dødsårsaksregisteret."""@nn,
+       """The regulations provide rules for the collection and processing of health information in the Cause of Death Register."""@en;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl"^^xsd:anyURI;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Forskrift om innsamling og behandling av helseopplysninger i Dødsårsaksregisteret (Dødsårsaksregisterforskriften)"""@nb;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktErklaereEnPersonForDoed.ttl>
@@ -193,14 +205,14 @@
    dct:title """En person dør"""@nb, # Obligatorisk med navn
        """Ein person døyr"""@nn,
        """A person dies"""@en;
-   dct:description """Beskrivelse av livshendelsen på bokmål."""@nb, # Anbefalt med beskrivelse
-       """Beskrivelse av livshendelsen på nynorsk."""@nn,
-       """Beskrivelse av livshendelsen på engelsk."""@en;
+   dct:description """En person går fra å være levende til død."""@nb, # Anbefalt med beskrivelse
+       """Ein person går frå å vera levande til død."""@nn,
+       """A person goes from being alive to being dead."""@en;
    cpsvno:mayTriggerNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>; # Anbefalt med kan utløse behov for (tjeneste)
    dct:subject <http://begrepskatalogen/begrep/5138d9ef-be20-11e6-8004-005056825ca0; # Dødsfall
    dcat:distribution <https://example.org/example-distribution>; # Valgfri å refere til beskrivelsen av distribusjon av livshendelsen
    dct:type <https://data.norge.no/vocabulary/life-event-type#death-of-a-relative>; # Valgfri med oppgi livshendelsestype
-   .
+.
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseIngenHarTattAnsvarForGravferden.ttl>
    rdf:type cv:Event;
