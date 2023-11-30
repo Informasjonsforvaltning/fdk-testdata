@@ -151,6 +151,7 @@
        """Forskrifta gir reglar for innsamling og behandling av helseopplysningar i Dødsårsaksregisteret."""@nn,
        """The regulations provide rules for the collection and processing of health information in the Cause of Death Register."""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl"^^xsd:anyURI;
+   rdfs:seeAlso <https://lovdata.no/dokument/SF/forskrift/2001-12-21-1476>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:title """Forskrift om innsamling og behandling av helseopplysninger i Dødsårsaksregisteret (Dødsårsaksregisterforskriften)"""@nb;
 .
@@ -196,7 +197,7 @@
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
                 <http://publications.europa.eu/resource/authority/language/NNO>,
                 <http://publications.europa.eu/resource/authority/language/ENG>;
-   foaf:page <https://www.fhi.no/op/dodsarsaksregisteret/slik-skal-elektronisk-dodsmelding-fylles-ut/>
+   foaf:page <https://www.fhi.no/op/dodsarsaksregisteret/slik-skal-elektronisk-dodsmelding-fylles-ut/>;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelsePersonDoer.ttl>
