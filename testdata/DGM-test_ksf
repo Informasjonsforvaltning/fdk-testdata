@@ -175,9 +175,9 @@
    dct:title """Dødsmelding"""@nb,
              """Dødsmelding_nn"""@nn,
              """Notice of death"""@en;
-   dct:description """Status på død person mellom 'dødsfall' og før en juridisk person har tatt ansvar for gravferd."""@nb, # Anbefalt med beskrivelse
-                   """Status på død person mellom 'dødsfall' og før ein juridisk person har teke ansvar for gravferd."""@nn,
-                   """Status of a dead person between 'death' and before a legal person has taken responsibility for burial."""@en;
+   dct:description """Dokument som stadfester at en person er død."""@nb, # Anbefalt med beskrivelse
+                   """Dokument som stadfestar at ein person er død."""@nn,
+                   """Document confirming that a person has died."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
                 <http://publications.europa.eu/resource/authority/language/NNO>,
                 <http://publications.europa.eu/resource/authority/language/ENG>;
@@ -221,9 +221,9 @@
    dct:title """Ingen har tatt ansvar for gravferden"""@nb, # Obligatorisk med navn
        """Ingen har teke ansvar for gravferda"""@nn,
        """No one has taken responsibility for the burial"""@en;
-   dct:description """En juridisk person har ikke tatt ansvar for gravferd av en 'avdød'."""@nb, # Anbefalt med beskrivelse
-       """Ein juridisk person har ikkje teke ansvar for gravferd av ein 'avdød'."""@nn,
-       """A legal entity has not taken responsibility for the burial of a 'deceased'."""@en;
+   dct:description """En person har ikke tatt ansvar for gravferd av en 'avdød'."""@nb, # Anbefalt med beskrivelse
+       """Ein person har ikkje teke ansvar for gravferd av ein 'avdød'."""@nn,
+       """A person has not taken responsibility for the burial of a 'deceased'."""@en;
    cpsvno:mayTrigger <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteAvklaringshjelpGravferdsansvar.ttl>; # Anbefalt med kan sett i gang (tjeneste)
    dct:subject <https://example.com/test/begrep/utenGravferdsansvarlig>;
    dcat:distribution <https://example.org/example-distribusjon>; # Valgfri å refere til beskrivelsen av distribusjon av hendelsen
