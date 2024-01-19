@@ -9,11 +9,11 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-spesification-models>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-specification-model>
    rdf:type dcat:Catalog;
    dct:description """This catalog contains descriptions of the information models in national specifications and standards maintained by the Norwegian Digitalisation Agency (Digdir)."""@en,
        """Katalogen inneholder beskrivelser av informasjonsmodeller i nasjonale spesifikasjoner og forvaltningsstandarder som er forvaltet av Digitaliseringsdirektoratet (Digdir)."""@nb;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-spesification-models"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-spesifications.ttl#catalog-of-specification-models"^^xsd:anyURI;
    dct:title """Digdir's catalog of information models for various national specifications and standards"""@en,
        """Digdirs katalog over informasjonsmodeller for ulike nasjonale spesifikasjoner og standarder"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
