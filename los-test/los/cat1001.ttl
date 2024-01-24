@@ -10,7 +10,7 @@
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001>
    rdf:type skos:Concept;
    skos:prefLabel """work"""@en,
-       """arbeid"""@nb;
+       """arbeid"""@nb; 
    skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
    skos:topConceptOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001"^^xsd:anyURI;
