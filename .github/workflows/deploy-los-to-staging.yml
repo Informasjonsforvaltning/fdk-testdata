@@ -3,7 +3,7 @@ name: Deploy LOS to staging
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - los-test/**
   workflow_dispatch:
