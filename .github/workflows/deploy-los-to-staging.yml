@@ -26,7 +26,7 @@ jobs:
          ontology-type: "vocabulary"
          ontology: "los"
          host: "https://staging.fellesdatakatalog.digdir.no"
-         api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+         api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
          files: |
             los-test/LOS-en.html text/html en
             los-test/LOS-nb.html text/html nb
