@@ -26,8 +26,9 @@
        """arbeidskontrakt"""@nb,
        """arbeidskontrakt"""@nn,
        """tilsetjingskontrakt"""@nn;
+   dct:replaces <https://psi.norge.no/los/ord/arbeidsavtale>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
  
-#### End of the file, 2024-01-29 15:16:13
+#### End of the file, 2024-01-29 15:53:37
