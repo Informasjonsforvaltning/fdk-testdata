@@ -92,6 +92,7 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001"^^xsd:anyURI;
    xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001>,
        <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>;
+   dct:replaces <https://psi.norge.no/los/tema/arbeid>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
@@ -103,6 +104,7 @@
        """building and property"""@en;
    skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002"^^xsd:anyURI;
+   dct:replaces <https://psi.norge.no/los/tema/bygg-og-eiendom>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
@@ -114,6 +116,7 @@
        """democracy and citizen rights"""@en;
    skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003"^^xsd:anyURI;
+   dct:replaces <https://psi.norge.no/los/tema/demokrati-og-innbyggerrettigheter>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
@@ -127,6 +130,7 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001"^^xsd:anyURI;
    xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>;
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001>;
+   dct:replaces <https://psi.norge.no/los/tema/arbeidsliv>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
@@ -139,6 +143,7 @@
    skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002"^^xsd:anyURI;
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>;
+   dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
@@ -161,6 +166,7 @@
        """arbeidskontrakt"""@nb,
        """arbeidskontrakt"""@nn,
        """tilsetjingskontrakt"""@nn;
+   dct:replaces <https://psi.norge.no/los/ord/arbeidsavtale>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
    .
@@ -174,4 +180,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2024-01-29 15:16:16
+#### End of the file, 2024-01-29 15:53:48
