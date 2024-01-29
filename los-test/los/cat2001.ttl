@@ -7,15 +7,16 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>
    rdf:type skos:Concept;
    skos:prefLabel """employment"""@en,
-       """arbeidsliv"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001"^^xsd:anyURI;
-   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001>;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001>;
+       """arbeidsliv"""@nb,
+       """arbeidsliv"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001"^^xsd:anyURI;
+   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001>;
+   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1001>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-#### End of the file, 2024-01-23 15:23:54
+#### End of the file, 2024-01-29 09:52:05

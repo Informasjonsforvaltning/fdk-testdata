@@ -6,13 +6,14 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002>
    rdf:type skos:Concept;
    skos:prefLabel """building and property"""@en,
-       """bygg og eiendom"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002"^^xsd:anyURI;
+       """bygg og eiendom"""@nb,
+       """bygg og eigedom"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002"^^xsd:anyURI;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-#### End of the file, 2024-01-23 15:23:54
+#### End of the file, 2024-01-29 09:52:05

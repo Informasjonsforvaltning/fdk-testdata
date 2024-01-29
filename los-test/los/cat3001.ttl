@@ -7,16 +7,23 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001>
    rdf:type skos:Concept;
    skos:prefLabel """work contract"""@en,
        """arbeidsavtale"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
    xkos:coreContentNote """Inkluderer: Avtaler som omtaler rettene og pliktene til arbeidsgiver og arbeidstaker"""@nb,
        """Includes: Contracts that …"""@en;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001"^^xsd:anyURI;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001"^^xsd:anyURI;
+   skos:definition """avtale som omtaler rettene og pliktene til arbeidsgiver og arbeidstaker"""@en;
+   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>;
+   skos:hiddenLabel """ansettelsesforhold"""@nb,
+       """tilsetjingsforhold"""@nn;
+   skos:altLabel """ansettelseskontrakt"""@nb,
+       """arbeidskontrakt"""@nb,
+       """arbeidskontrakt"""@nn,
+       """tilsetjingskontrakt"""@nn;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-#### End of the file, 2024-01-23 15:23:54
+#### End of the file, 2024-01-29 09:52:05

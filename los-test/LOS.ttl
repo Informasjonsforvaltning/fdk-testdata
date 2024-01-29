@@ -9,10 +9,10 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los>
    rdf:type skos:ConceptScheme;
    xkos:numberOfLevels "3"^^xsd:positiveInteger;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS"^^xsd:anyURI;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los"^^xsd:anyURI;
    dct:title """LOS"""@en,
        """LOS"""@nb;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
@@ -23,21 +23,21 @@
    schema:validFrom "2024-01-01"^^xsd:date;
    schema:validThrough "2024-12-31"^^xsd:date;
    xkos:levels [ rdf:type rdf:List;
-      rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/lev1>;
+      rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/lev1>;
       rdf:rest  [ rdf:type rdf:List;
-         rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/lev2>;
+         rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/lev2>;
          rdf:rest  [ rdf:type rdf:List;
-            rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/lev3>;
+            rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/lev3>;
             rdf:rest rdf:nil;
             ];
          ];
       ];
-   uneskos:contains <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1003>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2002>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001>;
+   uneskos:contains <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1001>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1003>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2002>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001>;
    dct:modified "2024-01-22"^^xsd:date;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>;
@@ -48,94 +48,106 @@
    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/lev1>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/lev1>
    rdf:type xkos:ClassificationLevel;
    xkos:depth "1"^^xsd:positiveInteger;
-   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1003>;
+   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1001>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1003>;
    dct:title """LOS Level 1"""@en,
        """LOS nivå 1"""@nb;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/lev2>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/lev2>
    rdf:type xkos:ClassificationLevel;
    xkos:depth "2"^^xsd:positiveInteger;
-   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2002>;
+   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2002>;
    dct:title """LOS Level 2"""@en,
        """LOS nivå 2"""@nb;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/lev3>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/lev3>
    rdf:type xkos:ClassificationLevel;
    xkos:depth "3"^^xsd:positiveInteger;
-   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001>;
+   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001>;
    dct:title """LOS Level 3"""@en,
        """LOS nivå 3"""@nb;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1001>
    rdf:type skos:Concept;
    skos:prefLabel """work"""@en,
-       """arbeid"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   skos:topConceptOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001"^^xsd:anyURI;
-   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2002>;
+       """arbeid"""@nb,
+       """arbeid"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   skos:topConceptOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1001"^^xsd:anyURI;
+   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>,
+       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2002>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002>
    rdf:type skos:Concept;
    skos:prefLabel """building and property"""@en,
-       """bygg og eiendom"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002"^^xsd:anyURI;
+       """bygg og eiendom"""@nb,
+       """bygg og eigedom"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002"^^xsd:anyURI;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1003>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1003>
    rdf:type skos:Concept;
    skos:prefLabel """democracy and citizen rights"""@en,
-       """demokrati og innbyggerrettigheter"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1003"^^xsd:anyURI;
+       """demokrati og innbyggerrettigheter"""@nb,
+       """demokrati og innbyggjarrettar"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1003"^^xsd:anyURI;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>
    rdf:type skos:Concept;
    skos:prefLabel """employment"""@en,
-       """arbeidsliv"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001"^^xsd:anyURI;
-   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001>;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1001>;
+       """arbeidsliv"""@nb,
+       """arbeidsliv"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001"^^xsd:anyURI;
+   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001>;
+   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1001>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2002>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2002>
    rdf:type skos:Concept;
    skos:prefLabel """seeking employment"""@en,
-       """arbeidssøking"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2002"^^xsd:anyURI;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat1002>;
+       """arbeidssøking"""@nb,
+       """arbeidssøking"""@nn;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2002"^^xsd:anyURI;
+   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat1002>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001>
    rdf:type skos:Concept;
    skos:prefLabel """work contract"""@en,
        """arbeidsavtale"""@nb;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS>;
+   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
    xkos:coreContentNote """Inkluderer: Avtaler som omtaler rettene og pliktene til arbeidsgiver og arbeidstaker"""@nb,
        """Includes: Contracts that …"""@en;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat3001"^^xsd:anyURI;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/LOS/cat2001>;
+   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat3001"^^xsd:anyURI;
+   skos:definition """avtale som omtaler rettene og pliktene til arbeidsgiver og arbeidstaker"""@en;
+   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/cat2001>;
+   skos:hiddenLabel """ansettelsesforhold"""@nb,
+       """tilsetjingsforhold"""@nn;
+   skos:altLabel """ansettelseskontrakt"""@nb,
+       """arbeidskontrakt"""@nb,
+       """arbeidskontrakt"""@nn,
+       """tilsetjingskontrakt"""@nn;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
    .
  
-#### End of the file, 2024-01-23 15:25:27
+#### End of the file, 2024-01-29 09:52:27
