@@ -4,7 +4,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>
    rdf:type vcard:Organization;
    vcard:hasOrganizationName """Digitaliseringsdirektoratet"""@nb,
        """Digitaliseringsdirektoratet"""@nn,
@@ -13,4 +13,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2024-01-29 16:17:37
+#### End of the file, 2024-01-29 16:41:34

@@ -49,7 +49,7 @@
    dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
    xkos:belongsTo <https://example.org/dummy-concept>;
    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev1>
@@ -94,7 +94,7 @@
        <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>;
    dct:replaces <https://psi.norge.no/los/tema/arbeid>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>
@@ -106,7 +106,7 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/bygg-og-eiendom>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003>
@@ -118,7 +118,7 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/demokrati-og-innbyggerrettigheter>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001>
@@ -132,7 +132,7 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidsliv>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>
@@ -145,7 +145,7 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>
@@ -168,10 +168,10 @@
        """tilsetjingskontrakt"""@nn;
    dct:replaces <https://psi.norge.no/los/ord/arbeidsavtale>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>
+<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>
    rdf:type vcard:Organization;
    vcard:hasOrganizationName """Digitaliseringsdirektoratet"""@nb,
        """Digitaliseringsdirektoratet"""@nn,
@@ -180,4 +180,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2024-01-29 16:17:48
+#### End of the file, 2024-01-29 16:41:46

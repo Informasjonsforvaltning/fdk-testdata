@@ -20,7 +20,7 @@
        <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>;
    dct:replaces <https://psi.norge.no/los/tema/arbeid>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/digdir-contact-point>;
+   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
-#### End of the file, 2024-01-29 16:17:37
+#### End of the file, 2024-01-29 16:41:34
