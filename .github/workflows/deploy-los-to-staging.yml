@@ -30,24 +30,30 @@ jobs:
          files: |
             los-test/LOS-en.html text/html en
             los-test/LOS-nb.html text/html nb
+            los-test/LOS-nn.html text/html nn
             los-test/LOS.ttl text/turtle en
-            los-test/los/cat1001.ttl text/turtle en cat1001/cat1001.ttl
-            los-test/los/cat1001-en.html text/html en cat1001/cat1001-en.html
-            los-test/los/cat1001-nb.html text/html nb cat1001/cat1001-nb.html
-            los-test/los/cat1002.ttl text/turtle en cat1002/cat1002.ttl
-            los-test/los/cat1002-en.html text/html en cat1002/cat1002-en.html
-            los-test/los/cat1002-nb.html text/html nb cat1002/cat1002-nb.html
-            los-test/los/cat1003.ttl text/turtle en cat1003/cat1003.ttl
-            los-test/los/cat1003-en.html text/html en cat1003/cat1003-en.html
-            los-test/los/cat1003-nb.html text/html nb cat1003/cat1003-nb.html
-            los-test/los/cat2001.ttl text/turtle en cat2001/cat2001.ttl
-            los-test/los/cat2001-en.html text/html en cat2001/cat2001-en.html
-            los-test/los/cat2001-nb.html text/html nb cat2001/cat2001-nb.html
-            los-test/los/cat2002.ttl text/turtle en cat2002/cat2002.ttl
-            los-test/los/cat2002-en.html text/html en cat2002/cat2002-en.html
-            los-test/los/cat2002-nb.html text/html nb cat2002/cat2002-nb.html
-            los-test/los/cat3001.ttl text/turtle en cat3001/cat3001.ttl
-            los-test/los/cat3001-en.html text/html en cat3001/cat3001-en.html
-            los-test/los/cat3001-nb.html text/html nb cat3001/cat3001-nb.html
-             
-         
+            los-test/los/los10001.ttl text/turtle en los10001/los10001.ttl
+            los-test/los/los10001-en.html text/html en los10001/los10001-en.html
+            los-test/los/los10001-nb.html text/html nb los10001/los10001-nb.html
+            los-test/los/los10001-nn.html text/html nn los10001/los10001-nn.html
+            los-test/los/los10002.ttl text/turtle en los10002/los10002.ttl
+            los-test/los/los10002-en.html text/html en los10002/los10002-en.html
+            los-test/los/los10002-nb.html text/html nb los10002/los10002-nb.html
+            los-test/los/los10002-nn.html text/html nn los10002/los10002-nn.html
+            los-test/los/los10003.ttl text/turtle en los10003/los10003.ttl
+            los-test/los/los10003-en.html text/html en los10003/los10003-en.html
+            los-test/los/los10003-nb.html text/html nb los10003/los10003-nb.html
+            los-test/los/los10003-nn.html text/html nn los10003/los10003-nn.html
+            los-test/los/los20001.ttl text/turtle en los20001/los20001.ttl
+            los-test/los/los20001-en.html text/html en los20001/los20001-en.html
+            los-test/los/los20001-nb.html text/html nb los20001/los20001-nb.html
+            los-test/los/los20001-nn.html text/html nn los20001/los20001-nn.html
+            los-test/los/los20002.ttl text/turtle en los20002/los20002.ttl
+            los-test/los/los20002-en.html text/html en los20002/los20002-en.html
+            los-test/los/los20002-nb.html text/html nb los20002/los20002-nb.html
+            los-test/los/los20002-nn.html text/html nn los20002/los20002-nn.html
+            los-test/los/los30001.ttl text/turtle en los30001/los30001.ttl
+            los-test/los/los30001-en.html text/html en los30001/los30001-en.html
+            los-test/los/los30001-nb.html text/html nb los30001/los30001-nb.html
+            los-test/los/los30001-nn.html text/html nn los30001/los30001-nn.html
+            
