@@ -1,4 +1,4 @@
-name: Deploy LOS to staging
+name: Debug workflow for LOS to staging
 
 on:
   push:
@@ -28,19 +28,7 @@ jobs:
          host: "https://staging.fellesdatakatalog.digdir.no"
          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
          files: |
-            los-test/LOS-en.html text/html en
-            los-test/LOS-nb.html text/html nb
-            los-test/LOS-nn.html text/html nn
-            los-test/LOS.ttl text/turtle en
-            los-test/los/loslev1.ttl text/turtle en loslev1/loslev1.ttl
-            los-test/los/loslev1-en.html text/html en loslev1/loslev1-en.html
-            los-test/los/loslev1-nb.html text/html nb loslev1/loslev1-nb.html
-            los-test/los/loslev1-nn.html text/html nn loslev1/dloslev1-nn.html
-            los-test/los/loslev2.ttl text/turtle en loslev2/loslev2.ttl
-            los-test/los/loslev2-en.html text/html en loslev2/loslev2-en.html
-            los-test/los/loslev2-nb.html text/html nb loslev2/loslev2-nb.html
-            los-test/los/loslev2-nn.html text/html nn loslev2/loslev2-nn.html
-            los-test/los/loslev3.ttl text/turtle en loslev3/loslev3.ttl
-            los-test/los/loslev3-en.html text/html en loslev3/loslev3-en.html
-            los-test/los/loslev3-nb.html text/html nb loslev3/loslev3-nb.html
-            los-test/los/loslev3-nn.html text/html nn loslev3/loslev3-nn.html
+            los-test/los/digdir-contact-point.ttl text/turtle en digdir-contact-point/digdir-contact-point.ttl
+            los-test/los/digdir-contact-point-en.html text/html en digdir-contact-point/digdir-contact-point-en.html
+            los-test/los/digdir-contact-point-nb.html text/html nb digdir-contact-point/digdir-contact-point-nb.html
+            los-test/los/digdir-contact-point-nn.html text/html nn digdir-contact-point/digdir-contact-point-nn.html
