@@ -176,8 +176,8 @@
    vcard:hasOrganizationName """Digitaliseringsdirektoratet"""@nb,
        """Digitaliseringsdirektoratet"""@nn,
        """Norwegian Digitalisation Agency"""@en;
-   vcard:hasEmail "mailto:informasjonsforvaltning@digdir.no"^^xsd:anyURI;
+   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no>;
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2024-01-29 16:41:46
+#### End of the file, 2024-01-30 11:23:02
