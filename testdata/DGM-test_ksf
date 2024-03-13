@@ -56,7 +56,7 @@
    dct:description """Avklare hvem som skal være ansvarlig for gravferden til en død person."""@nb,
        """Avklara kven som skal vera ansvarleg for gravferda til ein død person."""@nn,
        """Clarify who will be responsible for the burial of a dead person."""@en;
-   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>; # Organisasjonsnummer mangler...
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
    cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>;
    dct:title """Ta ansvar for en gravferd"""@nb,
