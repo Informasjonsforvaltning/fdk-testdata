@@ -140,6 +140,7 @@
        """Declare a person dead"""@en;
    dct:subject <https://example.com/test/begrep/doedsmelding>;
    cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>;
+   cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatDoedsmelding.ttl>;
 .
@@ -154,6 +155,17 @@
    rdfs:seeAlso <https://lovdata.no/dokument/SF/forskrift/2001-12-21-1476>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:title """Forskrift om innsamling og behandling av helseopplysninger i Dødsårsaksregisteret (Dødsårsaksregisterforskriften)"""@nb;
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl>
+   rdf:type cpsv:Rule;
+   dct:type <https://data.norge.no/vocabulary/rule-type#case-management-rules>;
+   dct:description """Rundskriv fra Helsedirektoratet som inneholder fortolkning av hvordan Helsepersonelloven skal forstås og praktiseres."""@nb,
+                   """Circular from the Directorate of Health containing an interpretation of how the Health Personnel Act should be understood and practiced."""@en;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl"^^xsd:anyURI;
+   cpsv:implements <https://lovdata.no/dokument/NL/lov/1999-07-02-64>;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Helsedirektoratets fortolkning av Helsepersonelloven"""@nb;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktErklaereEnPersonForDoed.ttl>
