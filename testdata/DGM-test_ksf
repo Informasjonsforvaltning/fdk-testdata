@@ -210,7 +210,7 @@
        """Ein person går frå å vera levande til død."""@nn,
        """A person goes from being alive to being dead."""@en;
    cpsvno:mayTriggerNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>; # Anbefalt med kan utløse behov for (tjeneste)
-   dct:subject <http://begrepskatalogen/begrep/5138d9ef-be20-11e6-8004-005056825ca0; # Dødsfall
+   dct:subject <http://begrepskatalogen/begrep/5138d9ef-be20-11e6-8004-005056825ca0>; # Dødsfall
    dcat:distribution <https://example.org/example-distribution>; # Valgfri å refere til beskrivelsen av distribusjon av livshendelsen
    dct:type <https://data.norge.no/vocabulary/life-event-type#death-of-a-relative>; # Valgfri med oppgi livshendelsestype
 .
