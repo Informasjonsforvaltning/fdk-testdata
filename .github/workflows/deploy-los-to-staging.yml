@@ -116,4 +116,8 @@ jobs:
             los-test/los/los3000006-en.html text/html en los3000006/los3000006-en.html
             los-test/los/los3000006-nb.html text/html nb los3000006/los3000006-nb.html
             los-test/los/los3000006-nn.html text/html nn los3000006/los3000006-nn.html
+            los-test/los/los3000007.ttl text/turtle en los3000007/los3000007.ttl
+            los-test/los/los3000007-en.html text/html en los3000007/los3000007-en.html
+            los-test/los/los3000007-nb.html text/html nb los3000007/los3000007-nb.html
+            los-test/los/los3000007-nn.html text/html nn los3000007/los3000007-nn.html
            
