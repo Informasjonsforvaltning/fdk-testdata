@@ -56,7 +56,7 @@
    dct:description """Avklare hvem som skal være ansvarlig for gravferden til en død person."""@nb,
        """Avklara kven som skal vera ansvarleg for gravferda til ein død person."""@nn,
        """Clarify who will be responsible for the burial of a dead person."""@en;
-   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/(legg inn orgnr)>; # Organisasjonsnummer mangler...
+   cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteAvklaringshjelpGravferdsansvar.ttl"^^xsd:anyURI;
    cv:hasContactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktAvklaringshjelpGravferdsansvar.ttl>;
    dct:title """Ta ansvar for en gravferd"""@nb,
@@ -140,6 +140,7 @@
        """Declare a person dead"""@en;
    dct:subject <https://example.com/test/begrep/doedsmelding>;
    cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>;
+   cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
    cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatDoedsmelding.ttl>;
 .
@@ -154,6 +155,17 @@
    rdfs:seeAlso <https://lovdata.no/dokument/SF/forskrift/2001-12-21-1476>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
    dct:title """Forskrift om innsamling og behandling av helseopplysninger i Dødsårsaksregisteret (Dødsårsaksregisterforskriften)"""@nb;
+.
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl>
+   rdf:type cpsv:Rule;
+   dct:type <https://data.norge.no/vocabulary/rule-type#case-management-rules>;
+   dct:description """Rundskriv fra Helsedirektoratet som inneholder fortolkning av hvordan Helsepersonelloven skal forstås og praktiseres."""@nb,
+                   """Circular from the Directorate of Health containing an interpretation of how the Health Personnel Act should be understood and practiced."""@en;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl"^^xsd:anyURI;
+   cpsv:implements <https://lovdata.no/dokument/NL/lov/1999-07-02-64>;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
+   dct:title """Helsedirektoratets fortolkning av Helsepersonelloven"""@nb;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktErklaereEnPersonForDoed.ttl>
@@ -210,7 +222,7 @@
        """Ein person går frå å vera levande til død."""@nn,
        """A person goes from being alive to being dead."""@en;
    cpsvno:mayTriggerNeedFor <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>; # Anbefalt med kan utløse behov for (tjeneste)
-   dct:subject <http://begrepskatalogen/begrep/5138d9ef-be20-11e6-8004-005056825ca0; # Dødsfall
+   dct:subject <http://begrepskatalogen/begrep/5138d9ef-be20-11e6-8004-005056825ca0>; # Dødsfall
    dcat:distribution <https://example.org/example-distribution>; # Valgfri å refere til beskrivelsen av distribusjon av livshendelsen
    dct:type <https://data.norge.no/vocabulary/life-event-type#death-of-a-relative>; # Valgfri med oppgi livshendelsestype
 .
