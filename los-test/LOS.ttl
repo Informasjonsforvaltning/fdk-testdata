@@ -4,10 +4,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> . 
 @prefix dct: <http://purl.org/dc/terms/> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
-@prefix schema: <http://schema.org/> . 
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
-@prefix uneskos: <http://purl.org/umu/uneskos#> . 
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> . 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
@@ -15,169 +12,21 @@
    rdf:type skos:ConceptScheme;
    xkos:numberOfLevels "3"^^xsd:positiveInteger;
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los"^^xsd:anyURI;
-   dct:title """LOS"""@en,
-       """LOS"""@nb;
+   dct:title """Los"""@nb,
+       """Los"""@nn,
+       """Los"""@en;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   dct:description """Felles, kontrollert vokabular for klassifisering av offentlige tjenester"""@nb,
-       """Common, controlled vocabulary for classification of public services."""@en;
-   xkos:covers <https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0>;
-   xkos:coversExhaustively <https://data.norge.no/concepts/73f78f28-cab8-4dae-9029-6e5af9f98dc0>;
-   schema:validFrom "2024-01-01"^^xsd:date;
-   schema:validThrough "2024-12-31"^^xsd:date;
-   xkos:levels [ rdf:type rdf:List;
-      rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev1>;
-      rdf:rest  [ rdf:type rdf:List;
-         rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev2>;
-         rdf:rest  [ rdf:type rdf:List;
-            rdf:first <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev3>;
-            rdf:rest rdf:nil;
-            ];
-         ];
-      ];
-   uneskos:contains <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>;
-   dct:modified "2024-01-29"^^xsd:date;
+   dct:description """Felles, kontrollert vokabular for klassifisering av offentlige tjenester og ressurser."""@nb,
+       """Felles, kontrollert vokabular for klassifisering av offentlege tenester og ressursar."""@nn,
+       """Common, controlled vocabulary for classification of public services and resources."""@en;
+   xkos:supersedes <https://psi.norge.no/los/>;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   dct:issued "2024-01-22"^^xsd:date;
-   xkos:variant <https://example.org/dummy-classification>;
    dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-   xkos:belongsTo <https://example.org/dummy-concept>;
    adms:status <http://publications.europa.eu/resource/authority/dataset-status/DEVELOP>;
+   dcat:version """0.1""";
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev1>
-   rdf:type xkos:ClassificationLevel;
-   xkos:depth "1"^^xsd:positiveInteger;
-   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003>;
-   dct:title """LOS nivå 1"""@nb,
-       """LOS nivå 1"""@nn,
-       """LOS Level 1"""@en;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev2>
-   rdf:type xkos:ClassificationLevel;
-   xkos:depth "2"^^xsd:positiveInteger;
-   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>;
-   dct:title """Los nivå 2"""@nb,
-       """LOS nivå 2"""@nn,
-       """LOS Level 2"""@en;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/loslev3>
-   rdf:type xkos:ClassificationLevel;
-   xkos:depth "3"^^xsd:positiveInteger;
-   skos:member <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>;
-   dct:title """Los nivå 3"""@nb,
-       """LOS nivå 3"""@nn,
-       """LOS Level 3"""@en;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001>
-   rdf:type skos:Concept;
-   skos:prefLabel """arbeid"""@nb,
-       """arbeid"""@nn,
-       """work"""@en;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   skos:topConceptOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001"^^xsd:anyURI;
-   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001>,
-       <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>;
-   dct:replaces <https://psi.norge.no/los/tema/arbeid>;
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>
-   rdf:type skos:Concept;
-   skos:prefLabel """bygg og eiendom"""@nb,
-       """bygg og eigedom"""@nn,
-       """building and property"""@en;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002"^^xsd:anyURI;
-   dct:replaces <https://psi.norge.no/los/tema/bygg-og-eiendom>;
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003>
-   rdf:type skos:Concept;
-   skos:prefLabel """demokrati og innbyggerrettigheter"""@nb,
-       """demokrati og innbyggjarrettar"""@nn,
-       """democracy and citizen rights"""@en;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003"^^xsd:anyURI;
-   dct:replaces <https://psi.norge.no/los/tema/demokrati-og-innbyggerrettigheter>;
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001>
-   rdf:type skos:Concept;
-   skos:prefLabel """arbeidsliv"""@nb,
-       """arbeidsliv"""@nn,
-       """employment"""@en;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20001"^^xsd:anyURI;
-   xkos:hasPart <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001>;
-   dct:replaces <https://psi.norge.no/los/tema/arbeidsliv>;
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002>
-   rdf:type skos:Concept;
-   skos:prefLabel """arbeidssøking"""@nb,
-       """arbeidssøking"""@nn,
-       """seeking employment"""@en;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los20002"^^xsd:anyURI;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>;
-   dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>
-   rdf:type skos:Concept;
-   skos:prefLabel """arbeidsavtale"""@nb,
-       """arbeidsavtale"""@nn,
-       """work contract"""@en;
-   skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
-   xkos:coreContentNote """Inkluderer: Avtaler som omtaler rettene og pliktene til arbeidsgiver og arbeidstaker."""@nb,
-       """Inkluderer: Avtaler som omtalar rettane og pliktene til arbeidsgjevar og arbeidstakar."""@nn;
-   dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001"^^xsd:anyURI;
-   skos:definition """avtale som omtaler rettene og pliktene til arbeidsgiver og arbeidstaker"""@nb,
-       """avtale som omtalar rettane og pliktene til arbeidsgjevar og arbeidstakar"""@nn;
-   xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los30001>;
-   skos:hiddenLabel """ansettelsesforhold"""@nb,
-       """tilsetjingsforhold"""@nn;
-   skos:altLabel """ansettelseskontrakt"""@nb,
-       """arbeidskontrakt"""@nb,
-       """arbeidskontrakt"""@nn,
-       """tilsetjingskontrakt"""@nn;
-   dct:replaces <https://psi.norge.no/los/ord/arbeidsavtale>;
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
-   .
- 
-<https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>
-   rdf:type vcard:Organization;
-   vcard:hasOrganizationName """Digitaliseringsdirektoratet"""@nb,
-       """Digitaliseringsdirektoratet"""@nn,
-       """Norwegian Digitalisation Agency"""@en;
-   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no>;
-   vcard:hasURL <https://digdir.no>;
-   .
- 
-#### End of the file, 2024-01-30 11:36:34
+#### End of the file, 2024-04-22 12:03:59

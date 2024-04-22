@@ -2,15 +2,14 @@
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> . 
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
 
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>
    rdf:type vcard:Organization;
    vcard:hasOrganizationName """Digitaliseringsdirektoratet"""@nb,
        """Digitaliseringsdirektoratet"""@nn,
        """Norwegian Digitalisation Agency"""@en;
-   vcard:hasEmail "mailto:informasjonsforvaltning@digdir.no"^^xsd:anyURI;
+   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no>;
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2024-01-29 16:41:34
+#### End of the file, 2024-04-22 12:03:59

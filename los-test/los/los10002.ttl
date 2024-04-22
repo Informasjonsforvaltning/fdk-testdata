@@ -9,9 +9,9 @@
 
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>
    rdf:type skos:Concept;
-   skos:prefLabel """bygg og eiendom"""@nb,
-       """bygg og eigedom"""@nn,
-       """building and property"""@en;
+   skos:prefLabel """Bygg og eigedom"""@nn,
+       """Bygg og eiendom"""@nb,
+       """Building and property"""@en;
    skos:inScheme <https://staging.fellesdatakatalog.digdir.no/vocabulary/los>;
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/bygg-og-eiendom>;
@@ -19,4 +19,4 @@
    dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
-#### End of the file, 2024-01-30 11:22:52
+#### End of the file, 2024-04-22 12:03:59
