@@ -40,7 +40,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10001"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/arbeid>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002>
@@ -52,7 +51,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10002"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/bygg-og-eiendom>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003>
@@ -64,7 +62,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10003"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/demokrati-og-innbyggerrettigheter>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10004>
@@ -76,7 +73,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10004"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/familie-og-barn>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10005>
@@ -88,7 +84,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10005"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/helse-og-omsorg>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10006>
@@ -100,7 +95,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10006"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/kultur-idrett-og-fritid>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10007>
@@ -112,7 +106,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10007"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/lov-og-rett>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10008>
@@ -124,7 +117,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10008"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/naring>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10009>
@@ -136,7 +128,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10009"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/natur-klima-og-miljo>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10010>
@@ -148,7 +139,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10010"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/skole-og-utdanning>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10011>
@@ -160,7 +150,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10011"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/samfunnssikkerhet-og-beredskap>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10012>
@@ -172,7 +161,6 @@
    dct:identifier "https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los10012"^^xsd:anyURI;
    dct:replaces <https://psi.norge.no/los/tema/samfunnssikkerhet-og-beredskap>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200001>
@@ -189,7 +177,6 @@
        """Barnehage"""@nb;
    dct:replaces <https://psi.norge.no/los/tema/barnehage>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000001>
@@ -201,7 +188,6 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200001>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000002>
@@ -213,7 +199,6 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200001>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000003>
@@ -225,7 +210,6 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200001>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000004>
@@ -237,7 +221,6 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200001>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000005>
@@ -249,7 +232,6 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200001>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200002>
@@ -277,7 +259,6 @@
        """Skolehelsetjeneste"""@nb;
    dct:replaces <https://psi.norge.no/los/tema/grunnskole>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000006>
@@ -300,7 +281,6 @@
        """Ungdomsskole"""@nb;
    dct:replaces <https://psi.norge.no/los/ord/grunnskole>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los3000007>
@@ -312,7 +292,6 @@
    xkos:isPartOf <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/los200002>;
    dct:replaces <https://psi.norge.no/los/tema/arbeidssoking>;
    adms:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT>;
-   dcat:contactPoint <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>;
    .
  
 <https://staging.fellesdatakatalog.digdir.no/vocabulary/los/digdir-contact-point>
@@ -324,4 +303,4 @@
    vcard:hasURL <https://digdir.no>;
    .
  
-#### End of the file, 2024-04-22 13:59:36
+#### End of the file, 2024-04-22 15:42:19
