@@ -28,7 +28,7 @@ jobs:
          host: "https://staging.fellesdatakatalog.digdir.no"
          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
          files: |
-            los-test/Los-en.html text/html en
+            los-test/Los-en.html text/html en 
             los-test/Los-nb.html text/html nb
             los-test/Los-nn.html text/html nn
             los-test/Los.ttl text/turtle en
@@ -116,8 +116,4 @@ jobs:
             los-test/los/los3000006-en.html text/html en los3000006/los3000006-en.html
             los-test/los/los3000006-nb.html text/html nb los3000006/los3000006-nb.html
             los-test/los/los3000006-nn.html text/html nn los3000006/los3000006-nn.html
-            los-test/los/los3000007.ttl text/turtle en los3000007/los3000007.ttl
-            los-test/los/los3000007-en.html text/html en los3000007/los3000007-en.html
-            los-test/los/los3000007-nb.html text/html nb los3000007/los3000007-nb.html
-            los-test/los/los3000007-nn.html text/html nn los3000007/los3000007-nn.html
            
