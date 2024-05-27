@@ -10,4 +10,4 @@
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<https://platform.tt02.altinn.no/resourceregistry/api/v1/resource/export#GeneratedCatalog>.
+<https://platform.tt02.altinn.no/resourceregistry/api/v1/resource/export#GeneratedCatalog> a dcat:Catalog .
