@@ -6,8 +6,21 @@
 @prefix cv: <http://data.europa.eu/m8g/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcatno: <https://data.norge.no/vocabulary/dcatno#>.
 @prefix schema: <http://schema.org/>.
 @prefix eli: <http://data.europa.eu/eli/ontology#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<https://platform.tt02.altinn.no/resourceregistry/api/v1/resource/export#GeneratedCatalog> a dcat:Catalog .
+<https://platform.tt02.altinn.no/resourceregistry/api/v1/resource/export#GeneratedCatalog> a dcat:Catalog;
+  dcatno:containsService <https://platform.altinn.no/resourceRegistry/altinn_access_management>.
+
+<https://platform.altinn.no/resourceRegistry/altinn_access_management>  a cpsv:PublicService;
+  cv:hasCompetentAuthority <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827>;
+  dct:description "System resource for authorization of users which should have access to access management user interfaces and access information in Altinn."@en,
+                  "System ressurs for autorisasjon av brukere som skal ha tilgang til brukergrensesnitt og informasjon knytt til tilgangsstyring i Altinn."@nb,
+                  "System ressurs for autorisasjon av brukarar som skal ha tilgong til brukargrensesnitt og informasjon knytta til tilgongsstyring i Altinn."@nn;
+  dct:identifier "altinn_access_management";
+  dct:title "Access Management"@en,
+            "Tilgangsstyring"@nb,
+            "Tilgongsstyring"@nn.
+                                                                 
