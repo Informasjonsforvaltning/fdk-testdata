@@ -1,12 +1,24 @@
-PREFIX dcat:    <http://www.w3.org/ns/dcat#>
-PREFIX dct:     <http://purl.org/dc/terms/>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
-PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX adms:   <http://www.w3.org/ns/adms#>
+PREFIX dcat:   <http://www.w3.org/ns/dcat#>
+PREFIX dct:    <http://purl.org/dc/terms/>
+PREFIX dqv:    <http://www.w3.org/ns/dqv#>
+PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
+PREFIX iso:    <http://iso.org/25012/2008/dataquality/>
+PREFIX oa:     <http://www.w3.org/ns/prov#>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX skosno: <https://data.norge.no/vocabulary/skosno#>
+PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
+PREFIX spdx:   <http://spdx.org/rdf/terms#>
+PREFIX vcard:  <http://www.w3.org/2006/vcard/ns#>
+PREFIX xkos:   <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.norge.no>
-        a                skos:Collection;
-        dct:description  "Tom katalog"@nb;
+        rdf:type        skos:Collection;
+        dct:identifier  "https://data.norge.no";
         dct:publisher    <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
-        dct:title        "Tom katalog"@nb .
+        dct:title        "Tom katalog".
