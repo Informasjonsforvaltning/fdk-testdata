@@ -139,6 +139,7 @@
        """Erklæra ein person for død"""@nn,
        """Declare a person dead"""@en;
    dct:subject <https://example.com/test/begrep/doedsmelding>;
+   dct:type <http://publications.europa.eu/resource/authority/main-activity/health>;
    cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>;
    cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl>;
    cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
