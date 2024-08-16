@@ -17,18 +17,18 @@
     dct:identifier <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
     skos:member <https://nav.no/begrep/>,
-        <https://nav.no/begrep/Lars_Spesial_1>,
-        <https://nav.no/begrep/Lars_Spesial_2>,
-        <https://nav.no/begrep/Lars_Spesial_3>,
-        <https://nav.no/begrep/Lars_Spesial_4>,
-        <https://nav.no/begrep/Lars_Spesial_5>;
+        <https://nav.no/begrep/Lars_Spesial_Test_1>,
+        <https://nav.no/begrep/Lars_Spesial_Test_2>,
+        <https://nav.no/begrep/Lars_Spesial_Test_3>,
+        <https://nav.no/begrep/Lars_Spesial_Test_4>,
+        <https://nav.no/begrep/Lars_Spesial_Test_5>;
         
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
             vcard:hasTelephone <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
             vcard:organizationUnit "Nav - Informasjonsforvaltning" ] .
 
-<https://nav.no/begrep/Lars_Spesial_1> a skos:Concept ;
+<https://nav.no/begrep/Lars_Spesial_Test_1> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label """en inndeling der to ulike roller gjennomfører de ulike delene av en saks- eller disposisjonsbehandling. 
 """@nb ;
@@ -37,14 +37,14 @@
             skos:scopeNote """Denne inndelingen øker kvaliteten på saks- og utgiftsbehandling og reduserer muligheten for misbruk. 
 
 I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket. Vedtaket sendes deretter videre til beslutteren, som kontrollerer vedtaket og godkjenner det før det sendes ut."""@nb ] ;
-    dct:identifier "https://nav.no/begrep/Lars_Spesial_1" ;
+    dct:identifier "https://nav.no/begrep/Lars_Spesial_Test_1" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skos:example """- Saksbehandler og beslutter 
 - Utøvelse av budsjettdisponeringsmyndighet og attestasjon."""@nb ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "2-trinnsbehandling SPESIAL"@nb ] .
 
-<https://nav.no/begrep/Lars_Spesial_2> a skos:Concept ;
+<https://nav.no/begrep/Lars_Spesial_Test_2> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label """en konklusjon på en behovsvurdering som viser at en arbeidsevnevurdering er nødvendig for å fastsette brukers bistandsbehov. 
 """@nb ;
@@ -52,12 +52,12 @@ I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket
 "Behov for arbeidsevnevurdering". Retningslinjer for oppfølgingsvedtak i NAV s. 10. Hentet 25. april 2016 fra https://navet.adeo.no/ansatt/Fag/Arbeid+og+aktivitet/Relatert+innhold/retningslinjer-14a"""@nb ] ;
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote ""@nb ] ;
-    dct:identifier "https://nav.no/begrep/Lars_Spesial_2" ;
+    dct:identifier "https://nav.no/begrep/Lars_Spesial_Test_2" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Behov for arbeidsevnevurdering SPES"@nb ] .
 
-<https://nav.no/begrep/Lars_Spesial_3> a skos:Concept ;
+<https://nav.no/begrep/Lars_Spesial_Test_3> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label "en kategori som beskriver behovet til brukere med nedsatt arbeidsevne, som vil kunne komme i arbeid gjennom egeninnsats og en innsats fra NAV eller andre samarbeidende aktører."@nb ;
             dct:source [ rdfs:label """LOV-2006-06-16-20 Lov om arbeids- og velferdsforvaltningen (arbeids- og velferdsforvaltningsloven) NAV-loven] § 14a; 
@@ -66,14 +66,14 @@ I NAV er det saksbehandleren som behandler søknad fra bruker og fatter vedtaket
             skos:scopeNote """"Spesielt tilpasset innsats tilbys brukere som etter en arbeidsevnevurdering har fått fastslått at arbeidsevnen er nedsatt, samtidig som det legges til grunn at brukeren vil kunne skaffe seg eller beholde arbeid gjennom egeninnsats og en innsats fra NAV eller andre samarbeidende aktører. Det presiseres at det skal legges til grunn en vid tolkning av brukers mulighet til å skaffe seg eller beholde arbeid...]. 
 
 Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenester av både kortere og lengre varighet i tillegg til de generelle tjenestene. NAVs innsats vil ofte skje i kombinasjon med virkemidler fra andre, for eksempel medisinsk behandling og rehabilitering, tilrettelegging, sosial trening eller] oppfølging. Brukeren har rett til å delta i utformingen av en aktivitetsplan, eventuelt et kvalifiseringsprogram.\""""@nb ] ;
-    dct:identifier "https://nav.no/begrep/Lars_Spesial_3" ;
+    dct:identifier "https://nav.no/begrep/Lars_Spesial_Test_3" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skosxl:hiddenLabel [ a skosxl:Label ;
             skosxl:literalForm "Nedsatt arbeidsevne"@nb ] ;
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Spesielt tilpasset innsats SPES"@nb ] .
 
-<https://nav.no/begrep/Lars_Spesial_3> a skos:Concept ;
+<https://nav.no/begrep/Lars_Spesial_Test_3> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label """en kategori som beskriver behovet til brukere som vil komme i arbeid hovedsakelig gjennom egenaktiviteter og i løpet av relativt kort tid. 
 
@@ -85,7 +85,7 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
             skos:scopeNote """Innsatsgruppen inngår i oppfølgingsvedtak som beskriver brukers behov for bistand for å komme ut i arbeid. "Standardinnsats tilbys brukere som forventes å kunne nå sitt mål om arbeid hovedsakelig gjennom egenaktiviteter og i løpet av relativt kort tid ...]". 
 
 "Dette utfallet innebærer en innsats fra NAV som i hovedsak kun omfatter de generelle tjenestene som er tilgjengelig for alle brukere. Individuelt tilpassede tjenester kan tilbys i form av formidlingsbistand, veiledning i yrkesvalg, jobbsøking og lignende. Brukeren har ikke rett til en aktivitetsplan, men bør kunne tilbys dette dersom det er hensiktsmessig eller dersom brukeren selv ønsker det.\""""@nb ] ;
-    dct:identifier "https://nav.no/begrep/Lars_Spesial_3" ;
+    dct:identifier "https://nav.no/begrep/Lars_Spesial_Test_3" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     skos:example """Standardinnsats tilbys "...]eksempelvis jobbsøkere med kvalifikasjoner som er etterspurt i arbeidsmarkedet, jobbskiftere og nyutdannede ...]". 
 """@nb ;
@@ -94,28 +94,28 @@ Utfallet innebærer at innsatsen fra NAV kan omfatte både aktiviteter og tjenes
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "Test av høst IT"@nb ] .
 
-<https://nav.no/begrep/Lars_Spesial_4> a skos:Concept ;
+<https://nav.no/begrep/Lars_Spesial_Test_4> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label "LARS TESTER HARVESTER."@nb ;
             dct:source [ rdfs:label "\"Informasjonsaktiva\". I Overordnede sikkerhetskrav i Arbeids- og velferdsetaten v. 1.1. vedlegg C, s. 37. Hentet 24. mars 2015 fra https://navet.adeo.no/Systemsider/sok/solrDokumenterAlle/_attachment/263309?_ts=14ba6e46568"@nb ] ;
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
-    dct:identifier "https://nav.no/begrep/Lars_Spesial_4" ;
+    dct:identifier "https://nav.no/begrep/Lars_Spesial_Test_4" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
-    rdfs:seeAlso "https://nav.no/begrep/Lars_Spesial_3" ;
+    rdfs:seeAlso "https://nav.no/begrep/Lars_Spesial_Test_3" ;
     dct:temporal                  [ a                 dct:PeriodOfTime ;
                                         schema:startDate  "2020-02-01"^^xsd:date ;
                                         schema:endDate  "2020-01-30"^^xsd:date] ;   
     skosxl:prefLabel [ a skosxl:Label ;
             skosxl:literalForm "LARS TESTER HARVESTER"@nb ] .
             
-            <https://nav.no/begrep/Lars_Spesial_5> a skos:Concept ;
+            <https://nav.no/begrep/Lars_Spesial_Test_5> a skos:Concept ;
     skosno:betydningsbeskrivelse [ a skosno:Definisjon ;
             rdfs:label "Hans Olav og Lars tester."@nb ;
             dct:source [ rdfs:label "\"Informasjonsaktiva\". I Overordnede sikkerhetskrav i Arbeids- og velferdsetaten v. 1.1. vedlegg C, s. 37. Hentet 24. mars 2015 fra https://navet.adeo.no/Systemsider/sok/solrDokumenterAlle/_attachment/263309?_ts=14ba6e46568"@nb ] ;
             dct:type "Faglig definisjon"@nb ;
             skos:scopeNote "Det gjelder også informasjonsbærere som IKT-utstyr, arkiv, dokumenter og mennesker."@nb ] ;
-    dct:identifier "https://nav.no/begrep/Lars_Spesial_5" ;
+    dct:identifier "https://nav.no/begrep/Lars_Spesial_Test_5" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/910298062> ;
     rdfs:seeAlso "https://registrering-begrep-api.it1.fellesdatakatalog.brreg.no/910244132/af277c65-3e96-4b2b-8a04-72781d390dc4" ;
     dct:temporal                  [ a                 dct:PeriodOfTime ;
