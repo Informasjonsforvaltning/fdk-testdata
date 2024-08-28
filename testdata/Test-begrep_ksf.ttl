@@ -13,14 +13,16 @@
 @prefix uneskos: <http://purl.org/umu/uneskos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ns1: <https://data.norge.no/vocabulary/skosno#> .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF> a skos:Collection ;
-      dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF"^^xsd:anyURI;
-      skos:member <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDirekteAngivelseDefinisjon-TestBegrepKSF>, 
-                  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF>  ;
-      dct:title "Begrepssamling TestBegrepKSF"@nb;
-      dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrepsamling-TestBegrepKSF>
-      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726>;
+      dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF"^^xsd:anyURI ;
+      skos:member <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDirekteAngivelseDefinisjon-TestBegrepKSF> , 
+                  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> ;
+      dct:title "Begrepssamling TestBegrepKSF"@nb ;
+      dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrepsamling-TestBegrepKSF> ;
+      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrepsamling-TestBegrepKSF> a vcard:Organization ;
       vcard:hasEmail <mailto:ansvarligBegrepsamling@test.no> .
