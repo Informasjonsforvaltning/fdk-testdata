@@ -19,7 +19,8 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF> a skos:Collection ;
       dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF"^^xsd:anyURI ;
       skos:member <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDirekteAngivelseDefinisjon-TestBegrepKSF> , 
-                  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> ;
+                  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> ,
+		  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/BEGREP-886-TestBegrepKSF> ;
       dct:title "Begrepssamling TestBegrepKSF"@nb ;
       dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrepsamling-TestBegrepKSF> ;
       dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> .
@@ -46,7 +47,7 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Xlnote-TestBegrepKSF> a euvoc:XlNote ;
 	rdf:value "Definisjon til begrepet via definisjonsobjekt - bokmål"@nb ;
 	skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ;
-	dct:source: <https://lovdata.no/forskrift/2015-12-11-1598>, <https://lovdata.no/forskrift/2023-06-20-1073>, <https://lovdata.no/forskrift/2014-05-16-648> .
+	dct:source <https://lovdata.no/forskrift/2015-12-11-1598>, <https://lovdata.no/forskrift/2023-06-20-1073>, <https://lovdata.no/forskrift/2014-05-16-648> .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrep-TestBegrepKSF> a vcard:Organization ;
 	vcard:hasEmail <mailto:ansvarligBegrep@test.no> .
