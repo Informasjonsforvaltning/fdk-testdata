@@ -1,0 +1,84 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uneskos: <http://purl.org/umu/uneskos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF> a skos:Collection ;
+      dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepssamling-TestBegrepKSF"^^xsd:anyURI;
+      skos:member <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDirekteAngivelseDefinisjon-TestBegrepKSF>, 
+                  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF>  ;
+      dct:title "Begrepssamling TestBegrepKSF"@nb;
+      dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrepsamling-TestBegrepKSF>
+      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726>;
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrepsamling-TestBegrepKSF> a vcard:Organization ;
+      vcard:hasEmail <mailto:ansvarligBegrepsamling@test.no> .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDirekteAngivelseDefinisjon-TestBegrepKSF> a skos:Concept ;
+	    skos:prefLabel "exBegrepDirekteAngivelseDefinisjon - bokmål"@nb ,
+				   "exBegrepDirekteAngivelseDefinisjon - nynorsk"@nn ;
+	    skos:definition "Direkte angivelse av definisjon til begrepet på bokmål"@nb ,
+					"Direkte angivelse av definisjon til omgrepet på nynorsk"@nn ;
+	    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDirekteAngivelseDefinisjon-TestBegrepKSF"^^xsd:anyURI ;
+	    dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrep-TestBegrepKSF> ;
+      dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/312460726> .
+					
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> a skos:Concept ;
+	skos:prefLabel "exBegrepDefinisjonViaDefinisjonsobjekt - bokmål"@nb ;
+	euvoc:xlDefinition <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Xlnote-TestBegrepKSF> ;
+	dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF"^^xsd:anyURI ;
+	dcat:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrep-TestBegrepKSF> ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/312460726> .
+	
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Xlnote-TestBegrepKSF> a euvoc:XlNote ;
+	rdf:value "Definisjon til begrepet via definisjonsobjekt - bokmål"@nb ;
+	skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ;
+	dct:source: <https://lovdata.no/forskrift/2015-12-11-1598>, <https://lovdata.no/forskrift/2023-06-20-1073>, <https://lovdata.no/forskrift/2014-05-16-648> .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrep-TestBegrepKSF> a vcard:Organization ;
+	vcard:hasEmail <mailto:ansvarligBegrep@test.no> .
+
+#---Tester en av NAV sine beskrivelser der jeg har gjort endring dct:source---
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/BEGREP-886-TestBegrepKSF> a skos:Concept ;
+    dct:modified "2024-04-22"^^xsd:date ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/889640782> ;
+    dct:subject ""@en,
+        "arbeidsmarkedstiltak; arbeidsrettet oppfølging"@nb,
+        ""@nn ;
+    skosxl:altLabel [ a skosxl:Label ;
+            skosxl:literalForm ""@nb ] ;
+    skosxl:hiddenLabel [ a skosxl:Label ;
+            skosxl:literalForm "arbeidsrettet tiltak"@nb ] ;
+    skosxl:prefLabel [ a skosxl:Label ;
+            skosxl:literalForm ""@en,
+                "arbeidsmarkedstiltak"@nb,
+                "arbeidsmarknadstiltak"@nn ] ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:begrepskatalogen@nav.no> ;
+            vcard:hasOrganizationName ""@en,
+                ""@nb,
+                ""@nn ] ;
+    ns1:definisjon [ a ns1:Definisjon ;
+            rdfs:label ""@en,
+                "virkemiddel i NAV, hjemlet i tiltaksforskriften, forskrift om tiltak i egenregi, eller forskrift om stønad til arbeids- og utdanningsreiser, for å styrke brukerens muligheter til å få eller beholde arbeid"@nb,
+                "verkemiddel i NAV, heimla i tiltaksforskrifta, forskrift om tiltak i eigenregi, eller forskrift om stønad til arbeids- og utdanningsreiser, for å styrke brukaren si moglegheit til å få eller behalde arbeid"@nn ;
+            dct:source [ rdfs:label "FOR-2015-12-11-1598 Forskrift om arbeidsmarkedstiltak (tiltaksforskriften)"@nb ,
+                                    "FOR-2023-06-20-1073 Forskrift om oppfølgingstiltak i Arbeids- og velferdsetatens egenregi"@nb ,
+                                    "FOR-2014-05-16-648 Forskrift om stønad til arbeids- og utdanningsreiser."@nb ] ;
+            skos:scopeNote ""@en,
+                "Arbeidsmarkedstiltak kan gjennomføres i bedrifter i ordinært arbeidsliv, hos tiltaksarrangører som har vunnet en anbudsutsatt anskaffelse, eller hos forhåndsgodkjente bedrifter i skjermet virksomhet, eller hos institusjoner i det ordinære utdanningssystemet, eller hos NAV."@nb,
+                ""@nn ;
+            ns1:forholdTilKilde ns1:basertPåKilde ] .
+      
