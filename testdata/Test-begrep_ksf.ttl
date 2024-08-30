@@ -49,6 +49,18 @@
 	skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ;
 	dct:source <https://lovdata.no/forskrift/2015-12-11-1598>, <https://lovdata.no/forskrift/2023-06-20-1073>, <https://lovdata.no/forskrift/2014-05-16-648> .
 
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource1-TestBegrepKSF> a rdfs:Resource ;
+	rdfs:label "FOR-2015-12-11-1598 Forskrift om arbeidsmarkedstiltak (tiltaksforskriften)"@nb ;
+	rdfs:seeAlso <https://lovdata.no/forskrift/2015-12-11-1598> .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource2-TestBegrepKSF> a rdfs:Resource ;
+	rdfs:label "FOR-2023-06-20-1073 Forskrift om oppfølgingstiltak i Arbeids- og velferdsetatens egenregi"@nb ;
+	rdfs:seeAlso <https://lovdata.no/forskrift/2023-06-20-1073> .
+
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource3-TestBegrepKSF> a rdfs:Resource ;
+	rdfs:label "FOR-2014-05-16-648 Forskrift om stønad til arbeids- og utdanningsreiser."@nb ;
+	rdfs:seeAlso <https://lovdata.no/forskrift/2014-05-16-648> .
+
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exContactPointBegrep-TestBegrepKSF> a vcard:Organization ;
 	vcard:hasEmail <mailto:ansvarligBegrep@test.no> .
 
@@ -77,9 +89,9 @@
             rdfs:label ""@en,
                 "virkemiddel i NAV, hjemlet i tiltaksforskriften, forskrift om tiltak i egenregi, eller forskrift om stønad til arbeids- og utdanningsreiser, for å styrke brukerens muligheter til å få eller beholde arbeid"@nb,
                 "verkemiddel i NAV, heimla i tiltaksforskrifta, forskrift om tiltak i eigenregi, eller forskrift om stønad til arbeids- og utdanningsreiser, for å styrke brukaren si moglegheit til å få eller behalde arbeid"@nn ;
-            dct:source [ a rdfs:Resource ; rdfs:label "FOR-2015-12-11-1598 Forskrift om arbeidsmarkedstiltak (tiltaksforskriften)"@nb; ] , 
-  			[ a rdfs:Resource; rdfs:Label "FOR-2023-06-20-1073 Forskrift om oppfølgingstiltak i Arbeids- og velferdsetatens egenregi"@nb ; ] ,
-	    		[ a rdfs:Resource; rdfs:Label "FOR-2014-05-16-648 Forskrift om stønad til arbeids- og utdanningsreiser."@nb ; ] ;
+            dct:source [ a rdfs:Resource ; rdfs:label "FOR-2015-12-11-1598 Forskrift om arbeidsmarkedstiltak (tiltaksforskriften)"@nb; rdfs:seeAlso <https://lovdata.no/forskrift/2015-12-11-1598> ] , 
+  			[ a rdfs:Resource; rdfs:Label "FOR-2023-06-20-1073 Forskrift om oppfølgingstiltak i Arbeids- og velferdsetatens egenregi"@nb ; rdfs:seeAlso <https://lovdata.no/forskrift/2023-06-20-1073> ] ,
+	    		[ a rdfs:Resource; rdfs:Label "FOR-2014-05-16-648 Forskrift om stønad til arbeids- og utdanningsreiser."@nb ; rdfs:seeAlso <https://lovdata.no/forskrift/2014-05-16-648> ] ;
             skos:scopeNote ""@en,
                 "Arbeidsmarkedstiltak kan gjennomføres i bedrifter i ordinært arbeidsliv, hos tiltaksarrangører som har vunnet en anbudsutsatt anskaffelse, eller hos forhåndsgodkjente bedrifter i skjermet virksomhet, eller hos institusjoner i det ordinære utdanningssystemet, eller hos NAV."@nb,
                 ""@nn ;
