@@ -47,7 +47,7 @@
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Xlnote-TestBegrepKSF> a euvoc:XlNote ;
 	rdf:value "Definisjon til begrepet via definisjonsobjekt - bokmål"@nb ;
 	skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ;
-	dct:source <https://lovdata.no/forskrift/2015-12-11-1598>, <https://lovdata.no/forskrift/2023-06-20-1073>, <https://lovdata.no/forskrift/2014-05-16-648> .
+	dct:source <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource1-TestBegrepKSF>, <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource2-TestBegrepKSF>, <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource3-TestBegrepKSF> .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/Resource1-TestBegrepKSF> a rdfs:Resource ;
 	rdfs:label "FOR-2015-12-11-1598 Forskrift om arbeidsmarkedstiltak (tiltaksforskriften)"@nb ;
