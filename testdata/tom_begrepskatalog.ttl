@@ -17,8 +17,6 @@ PREFIX vcard:  <http://www.w3.org/2006/vcard/ns#>
 PREFIX xkos:   <http://rdf-vocabulary.ddialliance.org/xkos#>
 PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
 
-<https://data.norge.no>
+<https://concepts.staging.fellesdatakatalog.digdir.no/collections/0169ad76-9d06-37af-b2e7-4ca41f8de921>
         rdf:type        skos:Collection;
-        dct:identifier  "https://data.norge.no";
-        dct:publisher    <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
         dct:title        "Tom katalog".
