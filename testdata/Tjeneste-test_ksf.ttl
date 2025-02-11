@@ -59,9 +59,8 @@
    dct:title """Tjeneste 1"""@nb,
              """Teneste 1"""@nn,
              """Service 1"""@en;
-   cpsvno:hasPossibleOutput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exhMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl>;
-   cpsvno:hasRequiredEvidence <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonGravferdsmelding.ttl>,
-                 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonForhaandsavklaringGravferdsansvar.ttl>;
+   cpsvno:hasPossibleOutput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl>;
+   cpsvno:hasRequiredEvidence <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
    dct:subject <https://example.com/test/begrep/gravferd>
 .
 
@@ -78,9 +77,9 @@
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exhMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl>
    rdf:type cpsvno:hasPossibleOutput;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exhMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
    dct:title """Mulig tjenesteresultat"""@nb,
        """Mulig tenesteresultat"""@nn,
        """Possoble output"""@en;
@@ -90,45 +89,38 @@
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseGravferdsanvarAvklart.ttl>; # Valgfri med kan skape (relasjon til hendelse)
+   xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse1_Tjeneste-test_ksf.ttl>; # Valgfri med kan skape (relasjon til hendelse)
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit>; # Valgfri med type
-   dct:isPartOf: <> 
+   dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90> 
    .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonGravferdsmelding.ttl>
-   rdf:type cv:Evidence;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonGravferdsmelding.ttl"^^xsd:anyURI;
-   dct:title """Gravferdsmelding"""@nb,
-       """Gravferdsmelding"""@nn,
-       """Funeral notice"""@en;
-   dct:description """Skjema for bekreftelse av gravferdsansvar og valg av gravferdsform og grav."""@nb, # Anbefalt med beskrivelse
-                   """Skjema for stadfesting av gravferdsansvar og val av gravferdsform og grav."""@nn,
-                   """Form for confirmation of burial responsibility and choice of burial form and grave."""@en;
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>
+   rdf:type cpsvno:RequiredEvidence;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:title """Påkrevd dokumentasjon"""@nb,
+       """Påkravd dokumentasjon"""@nn,
+       """Required evidence"""@en;
+   dct:description """Beskrivelse påkrevet dokumentasjon."""@nb, # Anbefalt med beskrivelse
+                   """Omtale påkravd dokumentasjon."""@nn,
+                   """Description required evidence."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
                 <http://publications.europa.eu/resource/authority/language/NNO>,
                 <http://publications.europa.eu/resource/authority/language/ENG>;
+   cpsvno:validityDuration "P6M"^^xsd:duration ; # 6 måneder
+   dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90>;
+   dct:conformsTo <>;
+   foaf:page <https://vg.no>;
+   dct:type <https://data.norge.no/vocabulary/evidence-type#attestation> ; # attest
+   cv:supportsConcept <>;
+   cv:supportsRequirement <>
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonForhaandsavklaringGravferdsansvar.ttl>
-   rdf:type cv:Evidence;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonForhaandsavklaringGravferdsansvar.ttl"^^xsd:anyURI;
-   dct:title """Forhåndsavklaring av gravferdsansvar"""@nb,
-       """Førehandsavklaring av gravferdsansvar"""@nn,
-       """Preliminary clarification of funeral responsibilities"""@en;
-   dct:description """Dokument utstedt før død som gir en bestemt person ansvar for egen gravferd."""@nb, # Anbefalt med beskrivelse
-                   """Dokument utskrive før død som gir ein bestemd person ansvar for eiga gravferd."""@nn,
-                   """Document issued before death that gives a specific person responsibility for their own burial."""@en;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
-                <http://publications.europa.eu/resource/authority/language/NNO>,
-                <http://publications.europa.eu/resource/authority/language/ENG>;
-.
-
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>
+<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligeTjeneste1_Tjeneste-test_ksf.ttl>
    rdf:type cpsv:PublicService;
-   dct:description """Medisinsk stadfesting av at døden har inntrådt."""@nb,
-       """Medisinsk stadfesting av at døden har tredd inn."""@nn,
-       """Medical confirmation that death has occurred."""@en;
-   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/983744516>; # Organisasjonsnummer til Folkehelseinstituttet
+   dct:description """Beskrivelse av offentlige tjeneste 1."""@nb,
+       """Omtale av offentleg teneste 1."""@nn,
+       """Description of public service."""@en;
+   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>; # Organisasjonsnummer til Digdir
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl"^^xsd:anyURI;
    cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktPunktErklaereEnPersonForDoed.ttl>;
    dct:title """Erklære en person for død"""@nb,
