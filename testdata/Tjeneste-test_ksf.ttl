@@ -19,33 +19,172 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/> .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogTjeneste-test_ksf.ttl>
+resourceURI:exKatalogTjeneste-test_ksf.ttl
    rdf:type dcat:Catalog;
    dct:description """Katalog som inneholder testtjenester."""@nb,
        """Katalog som inneheld testtenester."""@nn,
        """Catalog containing sample test services."""@en;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKatalogTjeneste-test_ksf.ttl"^^xsd:anyURI;
-   dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteAvklaringshjelpGravferdsansvar.ttl>,
-                          <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligTjenesteErklaereEnPersonForDoed.ttl>;
-   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogDoedsfallOgArv.ttl>;
+   dcatno:containsService <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1_Tjeneste-test_ksf.ttl>,
+                          <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exOffentligeTjeneste1_Tjeneste-test_ksf.ttl>;
+   cv:contactPoint <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogTjeneste-test_ksf.ttl>;
    dct:title """Tjenestekatalog for testtjenester"""@nb,
        """Tenestekatalog for testtenester"""@nn,
        """Service catalog for test services"""@en;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>; # Organisasjonsnummer til Digdir
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exKontaktpunktKatalogTjeneste-test_ksf.ttl>
+resourceURI:exKontaktpunktKatalogTjeneste-test_ksf.ttl
    rdf:type cv:ContactPoint;
    schema:contactType "Kontaktside"@nb , "Kontaktside"@nn , "Contact page"@en ; # Valgfri med type kontaktpunkt
    cv:ContactPage <https://www.digdir.no/digdir/kontakt-oss/943>; # Valgfri med kontaktside
-   cv:email ""^^xsd:anyURI; # Valgfri med e-post
+   cv:email "mailto:test@test.no"^^xsd:anyURI; # Valgfri med e-post
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:telephone """"""; # Valgfri med telefon
-   cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
-   cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
+   cv:telephone "tel:+470000000"; # Valgfri med telefon
+   cv:openingHours <resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
+                   <resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
+                   <resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
+                   <resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
+                   <resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>; # Valgfri ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste-test_ksf.ttl>; # Valgfri begrenset åpningstid strukturert
+.
+
+resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+   rdf:type time:TemoralEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 9;
+                          time:minute 0;
+                          time:dayOfWeek time:Monday;
+                        ];
+                     ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 14;
+                          time:minute 30;
+                          time:dayOfWeek time:Monday;
+                     ];
+               ];
+      cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+      dct:description "normal åpningstid på mandager"@nb, "normal Monday opening hours"@en;
+.
+
+resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+   rdf:type time:TemoralEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 9;
+                          time:minute 0;
+                          time:dayOfWeek time:Tuesday;
+                        ];
+                     ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 14;
+                          time:minute 30;
+                          time:dayOfWeek time:Tuesday;
+                     ];
+               ];
+      cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+      dct:description "normal åpningstid på tirsdager"@nb, "normal Tuesday opening hours"@en;
+.
+
+resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+   rdf:type time:TemoralEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 9;
+                          time:minute 0;
+                          time:dayOfWeek time:Wednesday;
+                        ];
+                     ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 14;
+                          time:minute 30;
+                          time:dayOfWeek time:Wednesday;
+                     ];
+               ];
+      cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+      dct:description "normal åpningstid på onsdager"@nb, "normal Wednesday opening hours"@en;
+.
+
+resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+   rdf:type time:TemoralEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 9;
+                          time:minute 0;
+                          time:dayOfWeek time:Thursday;
+                        ];
+                     ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 14;
+                          time:minute 30;
+                          time:dayOfWeek time:Thursday;
+                     ];
+               ];
+      cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+      dct:description "normal åpningstid på torsdager"@nb, "normal Thursday opening hours"@en;
+.
+
+resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+   rdf:type time:TemoralEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 9;
+                          time:minute 0;
+                          time:dayOfWeek time:Friday;
+                        ];
+                     ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 14;
+                          time:minute 30;
+                          time:dayOfWeek time:Friday;
+                     ];
+               ];
+      cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY>;
+      dct:description "normal åpningstid på fredager"@nb, "normal Friday opening hours"@en;
+.
+
+resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste-test_ksf.ttl
+   rdf:type time:TemoralEntity;
+   time:hasBeginning [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 0;
+                          time:minute 0;
+                          time:day "---24"^^xsd:gDay;
+                          time:monthOfYear greg:December; 
+                        ];
+                     ];
+   time:hasEnd [ a time:Instant;
+      time:inDateTime [ a time:DateTimeDescription;
+                          time:unitType time:unitMinute;
+                          time:hour 0;
+                          time:minute 0;
+                          time:day "---25"^^xsd:gDay;
+                          time:monthOfYear greg:December; 
+                     ];
+               ];
+      cv:frequency <http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
+      dct:description "Stengt 24. og 25. desember hvert år"@nb, "Closed 24 and 25 December every year"@en;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjeneste1_Tjeneste-test_ksf.ttl>
