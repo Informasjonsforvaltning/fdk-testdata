@@ -208,11 +208,13 @@ resourceURI:testdata/exTjeneste1_Tjeneste-test_ksf.ttl
    cv:thematicArea <http://eurovoc.europa.eu/5237>, # research and development
                    <https://psi.norge.no/los/tema/naringsutvikling.html>; # Næringsutvikling
    cv:processingTime "P2W"^^xsd:duration;  
-   dct:audience <>;
+   dct:audience <http://purl.org/adms/publishertype/NationalAuthority>; # Er ikke avklart vokabular, så la til adms/publishertype
    dcat:keyword "Tjeneste"@nb, "Service"@en, "Teneste"@nn;
-   cv:sector <>;
-   dct:language <>;
-   dct:type <>;
+   cv:sector <http://publications.europa.eu/resource/authority/data-theme/TECH>;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+                <http://publications.europa.eu/resource/authority/language/NNO>,
+                <http://publications.europa.eu/resource/authority/language/ENG>;
+   dct:type <https://data.norge.no/vocabulary/service-type>; # Vokabularet inneholder foreløpig ikke noen tjenestetyper
    cv:isCassifiedBy <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba>; # tjeneste
    cv:isGroupedBy <>; # hendelse
    cv:isDescribedAt <>; # beskrivende datasett
@@ -295,8 +297,8 @@ resourceURI:exOffentligeTjeneste1_Tjeneste-test_ksf.ttl
    dct:type <http://publications.europa.eu/resource/authority/main-activity/health>;
    cv:hasLegalResource <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>;
    cpsv:follows <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegelHelsepersonellovenRundskriv.ttl>;
-   cpsv:hasInput <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
-   cpsv:produces <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatDoedsmelding.ttl>;
+   cpsvno:hasRequiredEvidence <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
+   cpsvno:hasPossibleOutput <resourceURI:exTjenesteresultatOffentligeTjeneste1_Tjeneste-test_ksf.ttl>;
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exRegulativRessursDoedsaarsaksregisterforskriften.ttl>
@@ -335,15 +337,15 @@ resourceURI:exKontaktpunktOffentligeTjeneste1_Tjeneste-test_ksf.ttl
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatDoedsmelding.ttl>
-   rdf:type cv:Output;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exTjenesteresultatDoedsmelding.ttl"^^xsd:anyURI;
-   dct:title """Dødsmelding"""@nb,
-             """Dødsmelding_nn"""@nn,
-             """Notice of death"""@en;
-   dct:description """Dokument som stadfester at en person er død."""@nb, # Anbefalt med beskrivelse
-                   """Dokument som stadfestar at ein person er død."""@nn,
-                   """Document confirming that a person has died."""@en;
+resourceURI:exMuligTjenesteresultatOffentligeTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cpsvno:PossibleOutput;
+   dct:identifier "resourceURI:exMuligTjenesteresultatOffentligeTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:title """Tjenesteresultat offentlig tjeneste 1"""@nb,
+             """Tenesteresultat offentleg teneste 1"""@nn,
+             """Service result public service 1"""@en;
+   dct:description """Beskrivelse av tjenesteresultat offentlig tjeneste 1."""@nb, # Anbefalt med beskrivelse
+                   """Beskriving av tenesteresultat offentleg teneste 1."""@nn,
+                   """Description of service results public service 1."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
                 <http://publications.europa.eu/resource/authority/language/NNO>,
                 <http://publications.europa.eu/resource/authority/language/ENG>;
@@ -351,19 +353,19 @@ resourceURI:exKontaktpunktOffentligeTjeneste1_Tjeneste-test_ksf.ttl
    dct:type <https://data.norge.no/vocabulary/service-output-type#declaration>; # Valgfri med type
 .
 
-<https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>
-   rdf:type cv:Evidence;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl"^^xsd:anyURI;
-   dct:title """Elektronisk dødsmelding"""@nb,
-       """Elektronisk dødsmelding"""@nn,
-       """Electronic death notification"""@en;
-   dct:description """Legeerklæring om dødsfall."""@nb, # Anbefalt med beskrivelse
-                   """Legeerklæring om dødsfall."""@nn,
-                   """Medical certificate of death."""@en;
+resourceURI:exPaakrevdDokumentasjonOffentligeTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cpsvno:RequiredEvidence;
+   dct:identifier "resourceURI:exPaakrevdDokumentasjonOffentligeTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:title """Påkrevd dokumentasjon offentlig tjeneste 1"""@nb,
+       """Påkravt dokumentasjon offentleg teneste 1"""@nn,
+       """Required documentation public service 1"""@en;
+   dct:description """Beskrivelse av påkrevd dokumentasjon offentlig tjeneste 1."""@nb, # Anbefalt med beskrivelse
+                   """Skildring av påkravd dokumentasjon offentleg teneste 1."""@nn,
+                   """Description of required documentation public service 1."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
                 <http://publications.europa.eu/resource/authority/language/NNO>,
                 <http://publications.europa.eu/resource/authority/language/ENG>;
-   foaf:page <https://www.fhi.no/op/dodsarsaksregisteret/slik-skal-elektronisk-dodsmelding-fylles-ut/>;
+   foaf:page <https://example.com/hjemmeside/MerInformasjon>; # Lenke til mer informasjon og/eller veiledning
 .
 
 <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exLivshendelsePersonDoer.ttl>
