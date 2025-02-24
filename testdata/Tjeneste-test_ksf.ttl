@@ -307,9 +307,57 @@ resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ks
    skos:prefLabel """"""@nb;
    dct:type <>;
 .
+resourceURI:exKriterium1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.tt
+   rdf:type cv:Criterion;
+   dct:identifier ""^^xsd:anyURI;
+   dct:title """"""@nb;
+   dct:description """"""@nb;
+   cv:bias ""^^xsd:decimal;  # parameter som brukes til å justere evalueringen av kriteriet
+   cv:isRequirementOf <>; # er subkrav av
+   cv:isDerivedFrom <>; # er utledet fra
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
+   cv:hasEvidenceTypeList <>; # har dokumnetasjonstypeliste
+   cv:hasConcept <>; # har informasjonsbegrep
+   cv:hasQualifiedRelation <>; # har kvalifisert relasjon til andre krav
+   cv:hasRequirement <>; # har mer spesifikt krav
+   cv:fulfils <>; # tilfredsstiller regel
+   dct:type <>; # referere til kategorien kriteriet tilhører
+   cv:weight ""^^xsd:decimal;  # for å oppgi relativ viktighet (vekting) av kriteriet
+   cv:weightingType <http://publications.europa.eu/resource/authority/number-weight/per-exa>; # for oppgi hvordan vektingen bør tolkes i et komplekst evalueringsuttrykk
+   cv:weightingConsiderationDescription """"""@nb; # forklaring på hvordan vektingen av et kriterium brukes
+.
 
-resourceURI:exKrav1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type 
+resourceURI:exInformasjonskravBegrensning1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cv:InformationRequirement;
+   dct:identifier ""^^xsd:anyURI;
+   dct:title """"""@nb;
+   dct:description """"""@nb;
+   cv:isRequirementOf <>;
+   cv:isDerivedFrom <>;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
+   cv:hasEvidenceTypeList <>;
+   cv:hasConcept <>; # har informasjonsbegrep
+   cv:hasQualifiedRelation <>;
+   cv:hasRequirement <>;
+   cv:fulfils <>; # referere til regel som informasjonskravet tilfredsstiller
+   dct:type <>; # referere til kategorien informasjonskravet tilhører   
+.
+
+resourceURI:exBegrensning1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cv:Constraint;
+   cv:constrains <>;   	
+   dct:identifier ""^^xsd:anyURI;
+   dct:title """"""@nb;
+   dct:description """"""@nb;
+   cv:isRequirementOf <>;
+   cv:isDerivedFrom <>;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
+   cv:hasEvidenceTypeList <>;
+   cv:hasQualifiedRelation <>;
+   cv:hasRequirement <>;
+   cv:fulfils <>;
+   dct:type <>;
+.
 
 resourceURI:exOffentligeTjeneste1_Tjeneste-test_ksf.ttl
    rdf:type cpsv:PublicService;
