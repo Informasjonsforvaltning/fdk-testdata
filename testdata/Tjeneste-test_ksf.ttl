@@ -217,7 +217,7 @@ resourceURI:testdata/exTjeneste1_Tjeneste-test_ksf.ttl
    dct:type <https://data.norge.no/vocabulary/service-type>; # Vokabularet inneholder foreløpig ikke noen tjenestetyper
    cv:isCassifiedBy <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba>; # tjeneste
    cv:isGroupedBy <>; # hendelse
-   cv:isDescribedAt <>; # beskrivende datasett
+   cv:isDescribedAt <https://data.norge.no/node/1231>; # beskrivende datasett -relatert til Norge.no - digitale tjenester fra det offentlige
    cv:hasParticipation <>; # har deltagelse
    cv:hasInputType <>; # Dokumentasjonstype
    cv:hasChannel <>; # tjenesten er tilgjengelig via kanal/er
@@ -246,7 +246,7 @@ resourceURI:exKontaktpunktTjeneste-test_ksf.ttl
 
 resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl
    rdf:type cpsvno:hasPossibleOutput;
-   dct:identifier "resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:identifier "resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI; # Valgfri
    dct:title """Mulig tjenesteresultat for en tjeneste"""@nb,
        """Mulig tenesteresultat for en tjeneste"""@nn,
        """Possoble output for a service"""@en;
@@ -258,12 +258,12 @@ resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl
        <http://publications.europa.eu/resource/authority/language/ENG>;
    xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse1_Tjeneste-test_ksf.ttl>; # Valgfri med kan skape (relasjon til hendelse)
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit>; # Valgfri med type
-   dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90> 
+   dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90>; # Valgfri - Er del av datasett
    .
 
 resourceURI:exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
    rdf:type cpsvno:RequiredEvidence;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI; # Valgfri
    dct:title """Påkrevd dokumentasjon"""@nb,
        """Påkravd dokumentasjon"""@nn,
        """Required evidence"""@en;
@@ -274,13 +274,42 @@ resourceURI:exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
                 <http://publications.europa.eu/resource/authority/language/NNO>,
                 <http://publications.europa.eu/resource/authority/language/ENG>;
    cpsvno:validityDuration "P6M"^^xsd:duration ; # 6 måneder
-   dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90>;
-   dct:conformsTo <>;
+   dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90>; # Valgfri - er del av datasett Datasett type - test
+   dct:conformsTo <resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
    foaf:page <https://vg.no>;
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation> ; # attest
-   cv:supportsConcept <>;
+   cv:supportsConcept <resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
    cv:supportsRequirement <>
 .
+
+resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cv:EvidenceType;
+   dct:identifier "resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   cv:evidenceTypeClassification <>;
+   cv:isSpecifiedIn <resourceURI:exDokumentasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.tt>;
+   cv:validityPeriodConstraint <>;
+   cv:issuingPlace <>;
+.
+
+resourceURI:exDokumentasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cv:EvidenceTypeList;
+   cv:specifiesEvidenceType <resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
+   dct:description """"""@nb;   	
+   dct:identifier "resourceURI:exDokumnetasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   skos:prefLabel """"""@nb;
+.
+
+resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type cv:InformationConcept; 
+   cv:expressionOfExpectedValue "";
+   dct:description """"""@nb;
+   dct:identifier "resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   skos:prefLabel """"""@nb;
+   dct:type <>;
+.
+
+resourceURI:exKrav1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+   rdf:type 
 
 resourceURI:exOffentligeTjeneste1_Tjeneste-test_ksf.ttl
    rdf:type cpsv:PublicService;
