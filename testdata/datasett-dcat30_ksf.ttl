@@ -69,12 +69,33 @@ resourceURI:exDatasett a dcat:Dataset ;
     prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
     dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ;
     dcatap:applicableLegislation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ;
-    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-    prov:qualifiedAttribution <> ;
-    adms:identifier ""^^xsd:anyURI ;
-    dcat:qualifiedRelation <> ;
-    foaf:page <> ;
-    dct:provenance <> .
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ; # Tilgangsrettigheter
+    prov:qualifiedAttribution <> ; # Annen ansvarlig aktør
+    adms:identifier ""^^xsd:anyURI ; # Annen identifikator
+    dcat:qualifiedRelation <> ; # Annen spesifikk relasjon
+    foaf:page <> ; # Lenke til side eller dokument som beskriver datasettet
+    dct:provenance <> ; # Eierskapshistorikk
+    adms:sample <> ; # Eksempeldata
+    dct:modified "2025-02-25"^^xsd:date ; # Endringsdato
+    dct:isReferencedBy <> ; # Er referert av
+    dct:replaces <> ; # Erstatter annet datasett
+    dcat:prev <> ; # referanse til det forrige datasettet i en ordnet samling/serie
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/UNKNOWN> ; # Oppdateringsfrekvens
+    cv:hasCost <> ; # Har gebyr
+    dqv:hasQualityAnnotation <> ; # Har kvalitetsmerknad
+    dqv:hasQualityMeasurement <> ; # Har kvalitetsmåling
+    dcat:hasVersion <> ; # Har versjon
+    dct:conformsTo <> ; # I samsvar med
+    dct:relation <> ; # Relatert ressur
+    dcat:spatialResolutionInMeters "2"^^xsd:decimal ; # Romlig oppløsning
+    dcat:temporalResolution "P1M"^^xsd:duration ; # Tidsoppløsning
+    dct:type <http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA> ; # Datasettes type
+    dct:issued "2025-02-25"^^xsd:date ; # Utgivelsesdato
+    dcat:version "0.0.1" ; # Versjonsnummer/versjonsbetegnelse
+    adms:versionNotes "Første versjon."@nb ,
+		      "Første versjon."@nn ,
+		      "First version."@en ; # versjonsmerknad
+.
 
 resourceURI:exKontaktpunktDatasett a vcard:Organization ;
     vcard:fn "Digitaliseringsdirektoratet - team Data.norge"@nb , "Norwegian Digitalisation Agency - team Data.norge"@en ;
