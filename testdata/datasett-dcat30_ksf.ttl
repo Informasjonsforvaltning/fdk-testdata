@@ -8,19 +8,29 @@
 
 resourceURI:exKatalog a dcat:Catalog ;
     dct:identifier "resourceURI:exKatalog"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:title "Test av komplett datasett"@nb ;
-    dct:description "Katalog for testing av et komplett datasett i henhold til DCAT-AP-NO 3.0." ;	
-    dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
-    dcat:dataset <https://example.com/test/relasjon/begrep/testDatasettserie> ;
-    foaf:homepage <https://digdir.no> ;
-    dcat:contactPoint <resourceURI:exKontaktpunktKatalog> ;
-    dct:spatial <> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # Utgiver
+    dct:title "Test av komplett datasett"@nb ,
+	      "Test av komplett datasett"@nn ,
+	      "Testing of complete dataset"@en ; # Tittel
+    dct:description "Katalog for testing av et komplett datasett i henhold til DCAT-AP-NO 3.0."@nb ,
+		    "Katalog for testing av eit komplett datasett i samsvar med DCAT-AP-NO 3.0"@nn ,
+		    "Catalog for testing a complete dataset according to DCAT-AP-NO 3.0."@en ; # Beskrivelse
+    dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ,
+		       <https://psi.norge.no/los/tema/mobilitetstilbud> ,
+		       <https://psi.norge.no/los/ord/trafikksikkerhet> ; # Temaer
+    dcat:dataset <https://example.com/test/relasjon/begrep/testDatasettserie> ; # Datasett som er en del av katalogen
+    foaf:homepage <https://digdir.no> ; # Hjemmeside til katalogen
+    dcat:contactPoint <resourceURI:exKontaktpunktKatalog> ; # Kontaktpunkt
+    dct:spatial <http://publications.europa.eu/resource/authority/place/NOR_OSL> ,
+		<https://sws.geonames.org/6453366/oslo.html> ,
+		<https://data.geonorge.no/administrativeEnheter/kommune/doc/173018> ; # Dekningsområde Oslo kommune
     dct:modified "2025-02-25"^^xsd:date ;
-    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
-    dct:issued "2025-02-25"^^xsd:date ;
-    dcatap:applicableLegislation <> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; # Lisens
+    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+		 <http://publications.europa.eu/resource/authority/language/NNO> ,
+		 <http://publications.europa.eu/resource/authority/language/ENG> ; # Språk
+    dct:issued "2025-02-25"^^xsd:date ; # Utgivelsesdato
+    dcatap:applicableLegislation <resourceURI:exRegulativRessurs> ; # Gjeldende lovgivning
     dct:hasPart <> ;
     dcat:catalog <> ;
     dcat:record <> ;
@@ -32,6 +42,29 @@ resourceURI:exKontaktpunktKatalog a vcard:Organization ;
     vcard:fn "Digitaliseringsdirektoratet - team Data.norge"@nb , "Norwegian Digitalisation Agency - team Data.norge"@en ;
     vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
     vcard:hasURL <https://https://data.norge.no/nb/contact> .
+
+resourceURI:exRegulativRessurs a eli:LegalResource ;
+    dct:description "Et eksempel på en regulativ ressurs, kun for illustrasjonsformål."@nb ,
+    		    "Eit døme på eit regulativ ressurs, berre for illustrasjonsformål."@nn ,
+		    "An example of a legal resource, for illustration purposes only."@en ; # Beskrivelse
+   dct:identifier "resourceURI:exRegulativRessurs"^^xsd:anyURI ;
+   rdfs:seeAlso <https://lovdata.no/eli/lov/2024/12/13/76> ; # Referanse
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ,
+		<http://publications.europa.eu/resource/authority/language/NNO> ,
+		<http://publications.europa.eu/resource/authority/language/ENG> ; # Språk 
+   dct:title "Lov om elektronisk kommunikasjon (ekomloven)"@nb ,
+	    "Lov om elektronisk kommunikasjon (ekomloven)"@nn ,
+	    "Electronic Communications Act (Ecom Act)"@en ; # Tittel
+   dct:type <https://data.norge.no/vocabulary/legal-resource-type#act> ; # Type regulativ ressurs
+  dct:relation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ; # relatert regulativ ressurs
+.
+
+resourceURI:exTidsrom a dct:PeriodOfTime
+    dcat:endDate "2025-02-25"^^xsd:date ;
+    dcat:startDate "2026-02-25"^^xsd:date ;
+    time:hasBeginning <> ;
+    time:hasEnd <> ;
+.
 
 resourceURI:exDatasett a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
@@ -68,7 +101,7 @@ resourceURI:exDatasett a dcat:Dataset ;
     dcat:inSeries <https://example.com/test/relasjon/begrep/testDatasettserie> ;
     prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
     dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ;
-    dcatap:applicableLegislation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ;
+    dcatap:applicableLegislation <resourceURI:exRegulativRessurs> ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ; # Tilgangsrettigheter
     prov:qualifiedAttribution <> ; # Annen ansvarlig aktør
     adms:identifier ""^^xsd:anyURI ; # Annen identifikator
