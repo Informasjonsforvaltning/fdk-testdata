@@ -14,12 +14,24 @@ resourceURI:exKatalog a dcat:Catalog ;
     dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
     dcat:dataset <https://example.com/test/relasjon/begrep/testDatasettserie> ;
     foaf:homepage <https://digdir.no> ;
-    dcat:contactPoint <resourceURI:exKontaktpunktKatalog> .
+    dcat:contactPoint <resourceURI:exKontaktpunktKatalog> ;
+    dct:spatial <> ;
+    dct:modified "2025-02-25"^^xsd:date ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+    dct:issued "2025-02-25"^^xsd:date ;
+    dcatap:applicableLegislation <> ;
+    dct:hasPart <> ;
+    dcat:catalog <> ;
+    dcat:record <> ;
+    dct:creator <> ;
+    dct:rights <> ;
+    dct:temporal <> .
 
 resourceURI:exKontaktpunktKatalog a vcard:Organization ;
     vcard:fn "Digitaliseringsdirektoratet - team Data.norge"@nb , "Norwegian Digitalisation Agency - team Data.norge"@en ;
     vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-    vcard:hasURL <https://https://data.norge.no/nb/contact> ;
+    vcard:hasURL <https://https://data.norge.no/nb/contact> .
 
 resourceURI:exDatasett a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
@@ -53,12 +65,21 @@ resourceURI:exDatasett a dcat:Dataset ;
     dcat:contactPoint <resourceURI:exKontaktpunktDatasett> ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> ;
-    dcat:inSeries <https://example.com/test/relasjon/begrep/testDatasettserie> .
+    dcat:inSeries <https://example.com/test/relasjon/begrep/testDatasettserie> ;
+    prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+    dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ;
+    dcatap:applicableLegislation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    prov:qualifiedAttribution <> ;
+    adms:identifier ""^^xsd:anyURI ;
+    dcat:qualifiedRelation <> ;
+    foaf:page <> ;
+    dct:provenance <> .
 
 resourceURI:exKontaktpunktDatasett a vcard:Organization ;
     vcard:fn "Digitaliseringsdirektoratet - team Data.norge"@nb , "Norwegian Digitalisation Agency - team Data.norge"@en ;
     vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-    vcard:hasURL <https://https://data.norge.no/nb/contact> ;
+    vcard:hasURL <https://https://data.norge.no/nb/contact> .
 	
 resourceURI:exDisribusjon1 a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
@@ -110,40 +131,16 @@ resourceURI:exDistribusjon4 a dcat:Distribution ;
         "Digitaliseringsdirektoratet"@nb .
 
 resourceURI:exDatasettserie a dcat:DatasetSeries ;
-        dct:identifier "hresourceURI:exDatasettserie"^^xsd:anyURI ;
+        dct:identifier "resourceURI:exDatasettserie"^^xsd:anyURI ;
         dct:title "Test datasettserie"@nb ;
         dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@nb ;
         dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
         dcat:first <https://example.com/test/relasjon/begrep/testDatasett> ;
         dcat:last <https://example.com/test/relasjon/begrep/testDatasett> .
-       
-<https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> a skos:Concept ;
-    dct:identifier "https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "Organisasjonsplan_labelFraDatasett"@nb ;
-    skos:definition "Plan som viser foretakets organisasjonsstruktur, herunder overordnet ansvars- og myndighetsfordeling_kun gyldig i demomiljø_lagt til via Datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-	    vcard:hasTelephone <tel:1233456> ;
-            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
-
-<https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f> a skos:Concept ;
-    dct:identifier "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "Testeterm_labelFraDatasett"@nb ;
-    skos:definition "Definert testing_kun gyldig i staging_lagt til via Datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-	    vcard:hasTelephone <tel:1233456> ;
-            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
 
 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "begrepIkkeHostetTilFDK"@nb ;
-    skos:definition "Definisjon til begrepIkkeHostetTilFDK satt via datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-	    vcard:hasTelephone <tel:1233456> ;
-            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
+    skos:definition "Definisjon til begrepIkkeHostetTilFDK satt via datasett."@nb .
 
