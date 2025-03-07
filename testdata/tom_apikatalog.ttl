@@ -1,0 +1,6 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://dataservice-publisher.digdir.no/catalogs/2d795f2e16757134b064f2a5cfa4ec9a2f85fa36> a dcat:Catalog ;
+    dct:description "Tom API katalog"@nb ;
+    dct:title "Tom API katalog"@nb .
