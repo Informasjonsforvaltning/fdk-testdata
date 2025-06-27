@@ -19,7 +19,7 @@
 <https://example.com/testdata/exBegrepssamling/begrep-skos2-testdata> a skos:Collection ;
       dct:identifier "https://example.com/testdata/exBegrepssamling/begrep-skos2-testdata"^^xsd:anyURI ;
       skos:member <https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon> , 
-                  <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> ;
+                  <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt> ;
       dct:title "Begrepssamling begrep-skos2-testdata"@nb ;
       dcat:contactPoint <https://example.com/testdata/exBegrepssamling/exContactPointBegrepsamling> ;
       dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> .
