@@ -28,15 +28,18 @@
       vcard:hasEmail <mailto:ansvarligBegrepsamling@test.no> .
 
 <https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon> a skos:Concept ;
+      dct:identifier "https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon"^^xsd:anyURI ; 
+      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726>
       skos:prefLabel "testbegrep 1"@nb ,
 		     "testomgrep 1"@nn,
 		     "test concept 1"@en ;
       skos:definition "begrep som kun er ment for test av direkte angivelse av definisjon"@nb ,
 		      "omgrep som berre er meint for test av direkte opplysningar om definisjon"@nn ,
 		      "concept intended only for testing direct statement of definition"@en ;
-      dct:identifier "https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon"^^xsd:anyURI ; 
+      dct:subject <https://catalog-admin.staging.fellesdatakatalog.digdir.no/catalogs/312460726/concepts/code-lists/47f92ffc-6173-49da-a614-043d448a3cbf>
+      skosno:valueRange "Verdiområde - kun tekst"@nb ;
       dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
-      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> .
+ .
 
 
 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt> a skos:Concept ;
@@ -45,12 +48,12 @@
       skos:prefLabel "testbegrep 2"@nb ,
 		     "testomgrep 2"@nn ,
 		     "test concept 2"@en ;
-      skos:altLabel "tillatt term"@nb ,
-		    "tillaten term"@nn ,
-		    "allowed term"@en ;
-      skos:hiddenLabel "frarådd term"@nb ,
-		       "frårådd term "@nn ,
-		       "not allowed term"@en ;
+      skos:altLabel "tillatt term 1"@nb , "tilltatt term 2"@nb ,
+		    "tillaten term"@nn , "tillaten term 2"@nn ,
+		    "allowed term"@en , "allowed term 2"@en ;
+      skos:hiddenLabel "frarådd term"@nb , "frarådd term 2"@nb ,
+		       "frårådd term"@nn , "frårådd term 2"@nn ,
+		       "not allowed term"@en , "not allowed term 2"@en ;
       euvoc:xlDefinition <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn> ,
 			 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/spesialist> ,
 			 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/utenMaalgruppe> ;   
@@ -60,8 +63,35 @@
       dct:subject "Fagområde - fritekst"@nb ,
 		  "Fagområde - fritekst - NN"@nn ,
 		  "Subject area - free text"@en ;
-      dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
-       .
+     skos:example "Eksempel - fritekst"@nb ,
+		  "Døme - fritekst"@nn ,
+		  "Example - fritekst"@en ;
+     skosno:valueRange "Verdiområde - tekst"@nb ;
+     skosno:valueRange <https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de> ;
+     skosno:isFromConceptIn [a skosno:AssociativeConceptRelation ;
+         skosno:hasToConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/6bbb74d6-7f89-42de-add6-2d378458286f> ;
+         skosno:relationRole "Relasjonsrolle - bokmål"@nb , "Relasjonsrolle - nynorsk"@nn , "Relationship role"@en ;
+        ] ;
+     skos:hasGenericConceptRelation [a skosno:GenericConceptRelation;
+         skosno:hasGenericConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/575c79c8-6a77-426f-bfd9-1c75ac7e7bed> ; # har overbegrep
+         dct:description "inndelingskriterium - overbegrep"@nb , "inndelingskriterium - overomgrep"@nn , "classification criterion - general concept"@en ;
+         ];
+      skos:hasGenericConceptRelation [a skosno:GenericConceptRelation; #  har generisk begrepsrelasjon
+         skosno:hasSpecificConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/0b489b19-4008-4af5-aeb5-58a231e1a5d9> ; # har underbegrep
+         dct:description "inndelingskriterium - underbegrep"@nb , "inndelingskriterium - underomgrep"@nn "classification criterion - sub-term"@en ; # inndelingskriterium
+         ];
+     skosno:hasPartitiveConceptRelation [a skosno:PartitiveConceptRelation; # har partitiv begrepsrelasjon
+         skosno:hasComprehensiveConcept :tstCpt2 ; 
+         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         ];
+      skosno:hasPartitiveConceptRelation [a skosno:PartitiveConceptRelation; # har partitiv begrepsrelasjon
+         skosno:hasPartitiveConcept :tstCpt3 ; # har delbegrep
+         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         ];
+     dct:isReplacedBy <> ;
+     rdfs:seeAlso <> ;
+     dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
+.
 
 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn> a euvoc:XlNote ;
                rdf:value "begrep som kun er ment for test av angivelse av definisjon via definisjonsobjekt - allmenn"@nb ,
