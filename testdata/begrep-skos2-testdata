@@ -40,15 +40,28 @@
 
 
 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt> a skos:Concept ;
-      skos:prefLabel "testbegrep 2 - bokmål"@nb ,
+      dct:identifier "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt"^^xsd:anyURI ;
+      dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/312460726> ;
+      skos:prefLabel "testbegrep 2"@nb ,
 		     "testomgrep 2"@nn ,
 		     "test concept 2"@en ;
+      skos:altLabel "tillatt term"@nb ,
+		    "tillaten term"@nn ,
+		    "allowed term"@en ;
+      skos:hiddenLabel "frarådd term"@nb ,
+		       "frårådd term "@nn ,
+		       "not allowed term"@en ;
       euvoc:xlDefinition <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn> ,
 			 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/spesialist> ,
-			 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/utenMaalgruppe> ;
-	    dct:identifier "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt"^^xsd:anyURI ;
-	    dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
-      dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/312460726> .
+			 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/utenMaalgruppe> ;   
+      skos:scopeNote "NB! dette er et fiktivt begrep"@nb ,
+		     "NB! dette er eit fiktivt omgrep"@nn ,
+		     "Note: this is a fictive concept"@en ;
+      dct:subject "Fagområde - fritekst"@nb ,
+		  "Fagområde - fritekst - NN"@nn ,
+		  "Subject area - free text"@en ;
+      dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
+       .
 
 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn> a euvoc:XlNote ;
                rdf:value "begrep som kun er ment for test av angivelse av definisjon via definisjonsobjekt - allmenn"@nb ,
