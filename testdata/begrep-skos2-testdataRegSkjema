@@ -1,26 +1,19 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
-@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix uneskos: <http://purl.org/umu/uneskos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 
-<https://example.com/testdata/exBegrepssamling/begrep-skos2-testdata> a skos:Collection ;
-      dct:identifier "https://example.com/testdata/exBegrepssamling/begrep-skos2-testdata"^^xsd:anyURI ;
+<https://example.com/testdata/exBegrepssamling/begrep-skos2-testdataRegSkjema> a skos:Collection ;
+      dct:identifier "https://example.com/testdata/exBegrepssamling/begrep-skos2-testdataRegSkjema"^^xsd:anyURI ;
       skos:member <https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon> , 
                   <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt> ;
-      dct:title "Begrepssamling begrep-skos2-testdata"@nb ;
+      dct:title "Begrepssamling begrep-skos2-testdataRegSkjema"@nb ;
       dcat:contactPoint <https://example.com/testdata/exBegrepssamling/exContactPointBegrepsamling> ;
       dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> .
 
@@ -29,18 +22,20 @@
 
 <https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon> a skos:Concept ;
       dct:identifier "https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon"^^xsd:anyURI ; 
-      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726>
+      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
       skos:prefLabel "testbegrep 1"@nb ,
 		     "testomgrep 1"@nn,
 		     "test concept 1"@en ;
       skos:definition "begrep som kun er ment for test av direkte angivelse av definisjon"@nb ,
 		      "omgrep som berre er meint for test av direkte opplysningar om definisjon"@nn ,
 		      "concept intended only for testing direct statement of definition"@en ;
-      dct:subject <https://catalog-admin-service.staging.fellesdatakatalog.digdir.no/312460726/concepts/code-list/subjects/47f92ffc-6173-49da-a614-043d448a3cbf>
+      dct:subject <https://catalog-admin-service.staging.fellesdatakatalog.digdir.no/312460726/concepts/code-list/subjects/47f92ffc-6173-49da-a614-043d448a3cbf> ;
       skosno:valueRange "Verdiområde - kun tekst"@nb ;
-      dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
- .
-
+      euvoc:status <http://publications.europa.eu/resource/authority/concept-status/CANDIDATE> ;
+      owl:versionInfo "0.9.1" ;
+      euvoc:startDate "2022-01-01"^^xsd:date ;
+      euvoc:endDate "2030-12-31"^^xsd:date ;
+      dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> .
 
 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt> a skos:Concept ;
       dct:identifier "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt"^^xsd:anyURI ;
@@ -69,29 +64,41 @@
      skosno:valueRange "Verdiområde - tekst"@nb ;
      skosno:valueRange <https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de> ;
      skosno:isFromConceptIn [a skosno:AssociativeConceptRelation ;
-         skosno:hasToConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/6bbb74d6-7f89-42de-add6-2d378458286f> ;
-         skosno:relationRole "Relasjonsrolle - bokmål"@nb , "Relasjonsrolle - nynorsk"@nn , "Relationship role"@en ;
+         skosno:hasToConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/6bbb74d6-7f89-42de-add6-2d378458286f> ; # har til-begrep
+         skosno:relationRole "Relasjonsrolle - bokmål"@nb , 
+			     "Relasjonsrolle - nynorsk"@nn , 
+			     "Relationship role"@en ;
         ] ;
      skos:hasGenericConceptRelation [a skosno:GenericConceptRelation;
          skosno:hasGenericConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/575c79c8-6a77-426f-bfd9-1c75ac7e7bed> ; # har overbegrep
-         dct:description "inndelingskriterium - overbegrep"@nb , "inndelingskriterium - overomgrep"@nn , "classification criterion - general concept"@en ;
+         dct:description "inndelingskriterium - overbegrep"@nb , 
+			 "inndelingskriterium - overomgrep"@nn , 
+			 "classification criterion - general concept"@en ;
          ];
       skos:hasGenericConceptRelation [a skosno:GenericConceptRelation; #  har generisk begrepsrelasjon
          skosno:hasSpecificConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/0b489b19-4008-4af5-aeb5-58a231e1a5d9> ; # har underbegrep
-         dct:description "inndelingskriterium - underbegrep"@nb , "inndelingskriterium - underomgrep"@nn "classification criterion - sub-term"@en ; # inndelingskriterium
+         dct:description "inndelingskriterium - underbegrep"@nb , 
+			 "inndelingskriterium - underomgrep"@nn , 
+			 "classification criterion - sub-concept"@en ;
          ];
      skosno:hasPartitiveConceptRelation [a skosno:PartitiveConceptRelation; # har partitiv begrepsrelasjon
-         skosno:hasComprehensiveConcept :tstCpt2 ; 
-         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         skosno:hasComprehensiveConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/91797c3a-ea30-4ae4-8e82-b3674cbc083e> ; # har helhetsbegrep
+         dct:description "inndelingskriterium - helhetsbegrep"@nb ,
+			 "inndelingskriterium - heilskapsomgrep"@nn , 
+			 "classification criterion - overall concept"@en ;
          ];
       skosno:hasPartitiveConceptRelation [a skosno:PartitiveConceptRelation; # har partitiv begrepsrelasjon
-         skosno:hasPartitiveConcept :tstCpt3 ; # har delbegrep
-         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         skosno:hasPartitiveConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/d7807e93-0ffe-4294-8403-da76781d521b> ; # har delbegrep
+         dct:description "inndelingskriterium - delbegrep"@nb , 
+			 "inndelingskriterium - delomgrep"@nn , 
+			 "classification criterion - part-concept"@en ;
          ];
-     dct:isReplacedBy <> ;
-     rdfs:seeAlso <> ;
-     dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> ;
-.
+     dct:isReplacedBy <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/862be8a7-b464-4129-8c83-c786dafbd941> ;
+     rdfs:seeAlso <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/d1dae30e-aff0-4341-8d86-fc3b04279fc1> ;
+     euvoc:status <http://publications.europa.eu/resource/authority/concept-status/DRAFT> ;
+     owl:versionInfo "0.1.0" ;
+     euvoc:startDate "2025-07-01"^^xsd:date ;
+     dcat:contactPoint <https://example.com/testdata/exBegrep/exContactPointBegrep> .
 
 <https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn> a euvoc:XlNote ;
                rdf:value "begrep som kun er ment for test av angivelse av definisjon via definisjonsobjekt - allmenn"@nb ,
