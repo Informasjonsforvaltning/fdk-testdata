@@ -57,7 +57,7 @@
             "kilde": [
                 {
                     "tekst": "Tittel på kilde_allmennheten",
-                    "uri": "http://kildesitatallmennhetenuri.no/"
+                    "uri": "https://kildesitatallmennhetenuri.no/"
                 }
             ]
         }
@@ -73,7 +73,7 @@
             "kilde": [
                 {
                     "tekst": "Tittel på kilde_spesialister",
-                    "uri": "http://kildebasertspesialisteruri.no/"
+                    "uri": "https://kildebasertspesialisteruri.no/"
                 }
             ]
         }
@@ -168,7 +168,7 @@
     },
     "omfang": {
         "tekst": "Tittel på verdiområde",
-        "uri": "http://lenketilverdiomraade.no"
+        "uri": "https://lenketilverdiomraade.no"
     },
     "kontaktpunkt": {
         "harEpost": "e-post@epost.no",
@@ -239,7 +239,7 @@
             "kilde": [
                 {
                     "tekst": "Tittel på kilde_allmennheten",
-                    "uri": "http://kildesitatallmennhetenuri.no/"
+                    "uri": "https://kildesitatallmennhetenuri.no/"
                 }
             ]
         }
@@ -255,7 +255,7 @@
             "kilde": [
                 {
                     "tekst": "Tittel på kilde_spesialister",
-                    "uri": "http://kildebasertspesialisteruri.no/"
+                    "uri": "https://kildebasertspesialisteruri.no/"
                 }
             ]
         }
@@ -350,7 +350,7 @@
     },
     "omfang": {
         "tekst": "Tittel på verdiområde",
-        "uri": "http://lenketilverdiomraade.no"
+        "uri": "https://lenketilverdiomraade.no"
     },
     "kontaktpunkt": {
         "harEpost": "e-post@epost.no",
