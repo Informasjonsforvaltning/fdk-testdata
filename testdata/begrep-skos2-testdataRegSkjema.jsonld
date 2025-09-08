@@ -1,0 +1,659 @@
+[
+  {
+    "@id": "https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://publications.europa.eu/ontology/euvoc#endDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2030-12-31"
+      }
+    ],
+    "http://publications.europa.eu/ontology/euvoc#startDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-01-01"
+      }
+    ],
+    "http://publications.europa.eu/ontology/euvoc#status": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/concept-status/CANDIDATE"
+      }
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://catalog-admin-service.staging.fellesdatakatalog.digdir.no/312460726/concepts/code-list/subjects/47f92ffc-6173-49da-a614-043d448a3cbf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "0.9.1"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "nb",
+        "@value": "begrep som kun er ment for test av direkte angivelse av definisjon"
+      },
+      {
+        "@language": "nn",
+        "@value": "omgrep som berre er meint for test av direkte opplysningar om definisjon"
+      },
+      {
+        "@language": "en",
+        "@value": "concept intended only for testing direct statement of definition"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "nb",
+        "@value": "testbegrep 1"
+      },
+      {
+        "@language": "nn",
+        "@value": "testomgrep 1"
+      },
+      {
+        "@language": "en",
+        "@value": "test concept 1"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#contactPoint": [
+      {
+        "@id": "https://example.com/testdata/exBegrep/exContactPointBegrep"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#valueRange": [
+      {
+        "@language": "nb",
+        "@value": "Verdiområde - kun tekst"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exBegrep/exContactPointBegrep",
+    "@type": [
+      "http://www.w3.org/2006/vcard/ns#Organization"
+    ],
+    "http://www.w3.org/2006/vcard/ns#hasEmail": [
+      {
+        "@id": "mailto:ansvarligBegrep@test.no"
+      }
+    ],
+    "http://www.w3.org/2006/vcard/ns#hasOrganizationName": [
+      {
+        "@language": "nb",
+        "@value": "data.norge.no"
+      },
+      {
+        "@language": "nn",
+        "@value": "data.norge.no"
+      },
+      {
+        "@language": "en",
+        "@value": "data.norge.no"
+      }
+    ],
+    "http://www.w3.org/2006/vcard/ns#hasTelephone": [
+      {
+        "@id": "tel:00000000"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exBegrepssamling/begrep-skos2-testdataRegSkjema",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://example.com/testdata/exBegrepssamling/begrep-skos2-testdataRegSkjema"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "nb",
+        "@value": "Begrepssamling begrep-skos2-testdataRegSkjema"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "https://example.com/testdata/exbegrep/exBegrepDirekteAngivelseDefinisjon"
+      },
+      {
+        "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#contactPoint": [
+      {
+        "@id": "https://example.com/testdata/exBegrepssamling/exContactPointBegrepsamling"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn",
+    "@type": [
+      "http://publications.europa.eu/ontology/euvoc#XlNote"
+    ],
+    "http://purl.org/dc/terms/audience": [
+      {
+        "@id": "https://data.norge.no/vocabulary/audience-type#public"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@language": "nb",
+        "@value": "begrep som kun er ment for test av angivelse av definisjon via definisjonsobjekt - allmenn"
+      },
+      {
+        "@language": "nn",
+        "@value": "omgrep som berre er meint for test av opplysningar om definisjon via definisjonsobjekt - allmenn"
+      },
+      {
+        "@language": "en",
+        "@value": "concept that is only intended for testing the specification of definition via definition object - public"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#relationshipWithSource": [
+      {
+        "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#self-composed"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b6",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Resource"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "nb",
+        "@value": "Definisjon – kilde - egendefinert"
+      },
+      {
+        "@language": "nn",
+        "@value": "Definisjon – kjelde - eigendefinert"
+      },
+      {
+        "@language": "en",
+        "@value": "Definition - source - self composed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://data.norge.no/specification/skos-ap-no-begrep#Definisjon-kilde"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://publications.europa.eu/ontology/euvoc#startDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-07-01"
+      }
+    ],
+    "http://publications.europa.eu/ontology/euvoc#status": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/concept-status/DRAFT"
+      }
+    ],
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": [
+      {
+        "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/allmenn"
+      },
+      {
+        "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/spesialist"
+      },
+      {
+        "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/utenMaalgruppe"
+      }
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt"
+      }
+    ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/862be8a7-b464-4129-8c83-c786dafbd941"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/312460726"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@language": "nb",
+        "@value": "Fagområde - fritekst"
+      },
+      {
+        "@language": "nn",
+        "@value": "Fagområde - fritekst - NN"
+      },
+      {
+        "@language": "en",
+        "@value": "Subject area - free text"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/d1dae30e-aff0-4341-8d86-fc3b04279fc1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "0.1.0"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "nb",
+        "@value": "tillatt term 1"
+      },
+      {
+        "@language": "nb",
+        "@value": "tilltatt term 2"
+      },
+      {
+        "@language": "nn",
+        "@value": "tillaten term"
+      },
+      {
+        "@language": "nn",
+        "@value": "tillaten term 2"
+      },
+      {
+        "@language": "en",
+        "@value": "allowed term"
+      },
+      {
+        "@language": "en",
+        "@value": "allowed term 2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#example": [
+      {
+        "@language": "nb",
+        "@value": "Eksempel - fritekst"
+      },
+      {
+        "@language": "nn",
+        "@value": "Døme - fritekst"
+      },
+      {
+        "@language": "en",
+        "@value": "Example - fritekst"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasGenericConceptRelation": [
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b2"
+      },
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b3"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hiddenLabel": [
+      {
+        "@language": "nb",
+        "@value": "frarådd term"
+      },
+      {
+        "@language": "nb",
+        "@value": "frarådd term 2"
+      },
+      {
+        "@language": "nn",
+        "@value": "frårådd term"
+      },
+      {
+        "@language": "nn",
+        "@value": "frårådd term 2"
+      },
+      {
+        "@language": "en",
+        "@value": "not allowed term"
+      },
+      {
+        "@language": "en",
+        "@value": "not allowed term 2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "nb",
+        "@value": "testbegrep 2"
+      },
+      {
+        "@language": "nn",
+        "@value": "testomgrep 2"
+      },
+      {
+        "@language": "en",
+        "@value": "test concept 2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "nb",
+        "@value": "NB! dette er et fiktivt begrep"
+      },
+      {
+        "@language": "nn",
+        "@value": "NB! dette er eit fiktivt omgrep"
+      },
+      {
+        "@language": "en",
+        "@value": "Note: this is a fictive concept"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#contactPoint": [
+      {
+        "@id": "https://example.com/testdata/exBegrep/exContactPointBegrep"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#hasPartitiveConceptRelation": [
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b4"
+      },
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b5"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#isFromConceptIn": [
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b1"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#valueRange": [
+      {
+        "@language": "nb",
+        "@value": "Verdiområde - tekst"
+      },
+      {
+        "@id": "https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b1",
+    "@type": [
+      "https://data.norge.no/vocabulary/skosno#AssociativeConceptRelation"
+    ],
+    "https://data.norge.no/vocabulary/skosno#hasToConcept": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/6bbb74d6-7f89-42de-add6-2d378458286f"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#relationRole": [
+      {
+        "@language": "nb",
+        "@value": "Relasjonsrolle - bokmål"
+      },
+      {
+        "@language": "nn",
+        "@value": "Relasjonsrolle - nynorsk"
+      },
+      {
+        "@language": "en",
+        "@value": "Relationship role"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b2",
+    "@type": [
+      "https://data.norge.no/vocabulary/skosno#GenericConceptRelation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "nb",
+        "@value": "inndelingskriterium - overbegrep"
+      },
+      {
+        "@language": "nn",
+        "@value": "inndelingskriterium - overomgrep"
+      },
+      {
+        "@language": "en",
+        "@value": "classification criterion - general concept"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#hasGenericConcept": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/575c79c8-6a77-426f-bfd9-1c75ac7e7bed"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b3",
+    "@type": [
+      "https://data.norge.no/vocabulary/skosno#GenericConceptRelation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "nb",
+        "@value": "inndelingskriterium - underbegrep"
+      },
+      {
+        "@language": "nn",
+        "@value": "inndelingskriterium - underomgrep"
+      },
+      {
+        "@language": "en",
+        "@value": "classification criterion - sub-concept"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#hasSpecificConcept": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/0b489b19-4008-4af5-aeb5-58a231e1a5d9"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b4",
+    "@type": [
+      "https://data.norge.no/vocabulary/skosno#PartitiveConceptRelation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "nb",
+        "@value": "inndelingskriterium - helhetsbegrep"
+      },
+      {
+        "@language": "nn",
+        "@value": "inndelingskriterium - heilskapsomgrep"
+      },
+      {
+        "@language": "en",
+        "@value": "classification criterion - overall concept"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#hasComprehensiveConcept": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/91797c3a-ea30-4ae4-8e82-b3674cbc083e"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b5",
+    "@type": [
+      "https://data.norge.no/vocabulary/skosno#PartitiveConceptRelation"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "nb",
+        "@value": "inndelingskriterium - delbegrep"
+      },
+      {
+        "@language": "nn",
+        "@value": "inndelingskriterium - delomgrep"
+      },
+      {
+        "@language": "en",
+        "@value": "classification criterion - part-concept"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#hasPartitiveConcept": [
+      {
+        "@id": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/d7807e93-0ffe-4294-8403-da76781d521b"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/spesialist",
+    "@type": [
+      "http://publications.europa.eu/ontology/euvoc#XlNote"
+    ],
+    "http://purl.org/dc/terms/audience": [
+      {
+        "@id": "https://data.norge.no/vocabulary/audience-type#specialist"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@language": "nb",
+        "@value": "begrep som kun er ment for test av angivelse av definisjon via definisjonsobjekt - spesialist"
+      },
+      {
+        "@language": "nn",
+        "@value": "omgrep som berre er meint for test av opplysningar om definisjon via definisjonsobjekt - spesialist"
+      },
+      {
+        "@language": "en",
+        "@value": "concept that is only intended for testing the specification of definition via definition object - specialist"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#relationshipWithSource": [
+      {
+        "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Resource"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "nb",
+        "@value": "Definisjon – kilde - basert på kilde"
+      },
+      {
+        "@language": "nn",
+        "@value": "Definisjon – kjelde - basert på kjelde"
+      },
+      {
+        "@language": "en",
+        "@value": "Definition - source - derived from source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://data.norge.no/specification/skos-ap-no-begrep#Definisjon-kilde"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exbegrep/exBegrepDefinisjonViaDefinisjonsobjekt/utenMaalgruppe",
+    "@type": [
+      "http://publications.europa.eu/ontology/euvoc#XlNote"
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "_:n295caa060cf34af092cf9f9280d332b7b8"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
+      {
+        "@language": "nb",
+        "@value": "begrep som kun er ment for test av angivelse av definisjon via definisjonsobjekt - uten målgruppe"
+      },
+      {
+        "@language": "nn",
+        "@value": "omgrep som berre er meint for test av opplysningar om definisjon via definisjonsobjekt - spesialist"
+      },
+      {
+        "@language": "en",
+        "@value": "concept that is only intended for testing the specification of definition via definition object - without audience type"
+      }
+    ],
+    "https://data.norge.no/vocabulary/skosno#relationshipWithSource": [
+      {
+        "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#direct-from-source"
+      }
+    ]
+  },
+  {
+    "@id": "_:n295caa060cf34af092cf9f9280d332b7b8",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Resource"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "nb",
+        "@value": "Definisjon – kilde - sitat fra kilde"
+      },
+      {
+        "@language": "nn",
+        "@value": "Definisjon – kjelde - sitat frå kjelde"
+      },
+      {
+        "@language": "en",
+        "@value": "Definition - source - direct from source"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://data.norge.no/specification/skos-ap-no-begrep#Definisjon-kilde"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.com/testdata/exBegrepssamling/exContactPointBegrepsamling",
+    "@type": [
+      "http://www.w3.org/2006/vcard/ns#Organization"
+    ],
+    "http://www.w3.org/2006/vcard/ns#hasEmail": [
+      {
+        "@id": "mailto:ansvarligBegrepsamling@test.no"
+      }
+    ]
+  }
+]
