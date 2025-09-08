@@ -84,11 +84,11 @@
     "gyldigFom": "2023-11-20",
     "gyldigTom": "2024-11-25",
     "seOgså": [
-        "http://begrepskatalogen/begrep/20b2e299-9fe1-11e5-a9f8-e4115b280940",
-        "http://begrepskatalogen/begrep/20b2e299-9fe1-11e5-a9f8-e4115b280940"
+        "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/910298062/concepts/6c5ae564-bb03-41d0-81d0-38f2be16e8a0",
+        "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/910258028/concepts/c8751e98-3083-450e-94f2-46a41426a0b0"
     ],
     "erstattesAv": [
-        "http://begrepskatalogen/begrep/20b2e284-9fe1-11e5-a9f8-e4115b280940"
+        "hhttps://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/9a9e4310-8fb8-4bab-a875-4cd37cbd7025"
     ],
     "abbreviatedLabel": "forkortelse-av-begrepet",
     "begrepsRelasjon": [
@@ -99,7 +99,7 @@
                 "nn": "skildring på norsk nynorsk",
                 "en": "description in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111016/concepts/66eb2cb3-3b2d-4811-815d-3ef5a07ad75c"
         },
 	{
             "relasjon": "partitiv",
@@ -109,7 +109,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/6a46721a-cffa-4cdd-b963-a7efe00111e5"
         },
 	{
             "relasjon": "partitiv",
@@ -119,7 +119,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/6a46721a-cffa-4cdd-b963-a7efe00111e5"
         },
 	{
             "relasjon": "generisk",
@@ -129,7 +129,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/d29dc5df-cf1d-4110-8cc3-6d8c77863fe5"
         },
 	{
             "relasjon": "generisk",
@@ -139,7 +139,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/d29dc5df-cf1d-4110-8cc3-6d8c77863fe5"
         }
     ],
     "merknad": {
@@ -266,11 +266,11 @@
     "gyldigFom": "2023-11-20",
     "gyldigTom": "2024-11-25",
     "seOgså": [
-        "http://begrepskatalogen/begrep/20b2e299-9fe1-11e5-a9f8-e4115b280940",
-        "http://begrepskatalogen/begrep/20b2e299-9fe1-11e5-a9f8-e4115b280940"
+        "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/910298062/concepts/6c5ae564-bb03-41d0-81d0-38f2be16e8a0",
+        "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/910258028/concepts/c8751e98-3083-450e-94f2-46a41426a0b0"
     ],
     "erstattesAv": [
-        "http://begrepskatalogen/begrep/20b2e284-9fe1-11e5-a9f8-e4115b280940"
+        "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/9a9e4310-8fb8-4bab-a875-4cd37cbd7025"
     ],
     "abbreviatedLabel": "forkortelse-av-begrepet",
     "begrepsRelasjon": [
@@ -281,7 +281,7 @@
                 "nn": "skildring på norsk nynorsk",
                 "en": "description in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111016/concepts/66eb2cb3-3b2d-4811-815d-3ef5a07ad75c"
         },
 	{
             "relasjon": "partitiv",
@@ -291,7 +291,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/6a46721a-cffa-4cdd-b963-a7efe00111e5"
         },
 	{
             "relasjon": "partitiv",
@@ -301,7 +301,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/6a46721a-cffa-4cdd-b963-a7efe00111e5"
         },
 	{
             "relasjon": "generisk",
@@ -311,7 +311,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/d29dc5df-cf1d-4110-8cc3-6d8c77863fe5"
         },
 	{
             "relasjon": "generisk",
@@ -321,7 +321,7 @@
                 "nn": "inndelingskriterium på norsk nynorsk",
                 "en": "division criterion in english"
             },
-            "relatertBegrep": "http://begrepskatalogen/begrep/20b2e277-9fe1-11e5-a9f8-e4115b280940"
+            "relatertBegrep": "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/d29dc5df-cf1d-4110-8cc3-6d8c77863fe5"
         }
     ],
     "merknad": {
