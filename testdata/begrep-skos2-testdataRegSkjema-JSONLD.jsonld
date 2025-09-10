@@ -34,7 +34,7 @@
     ],
     "http://purl.org/dc/terms/subject": [
       {
-        "@id": "https://catalog-admin-service.staging.fellesdatakatalog.digdir.no/312460726/concepts/code-list/subjects/47f92ffc-6173-49da-a614-043d448a3cbf"
+        "@id": "https://catalog-admin-service.staging.fellesdatakatalog.digdir.no/312460726/concepts/subjects#47f92ffc-6173-49da-a614-043d448a3cbf"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
