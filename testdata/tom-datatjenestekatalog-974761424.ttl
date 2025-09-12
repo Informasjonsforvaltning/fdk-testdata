@@ -1,0 +1,7 @@
+PREFIX dcat:    <http://www.w3.org/ns/dcat#>
+PREFIX dct:     <http://purl.org/dc/terms/>
+
+<https://dataservice-catalog.fellesdatakatalog.digdir.no/catalogs/974761424>
+        a                dcat:Catalog;
+        dct:publisher    <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974761424>;
+        dct:title        "Datatjenestekatalog for Departementenes sikkerhets- og serviceorganisasjon (DSS)"@nb .
