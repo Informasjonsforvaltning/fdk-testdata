@@ -69,13 +69,13 @@
 			     "Relasjonsrolle - nynorsk"@nn , 
 			     "Relationship role"@en ;
         ] ;
-     skos:hasGenericConceptRelation [a skosno:GenericConceptRelation;
+     skosno:hasGenericConceptRelation [a skosno:GenericConceptRelation;
          skosno:hasGenericConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/575c79c8-6a77-426f-bfd9-1c75ac7e7bed> ; # har overbegrep
          dct:description "inndelingskriterium - overbegrep"@nb , 
 			 "inndelingskriterium - overomgrep"@nn , 
 			 "classification criterion - general concept"@en ;
          ];
-      skos:hasGenericConceptRelation [a skosno:GenericConceptRelation; #  har generisk begrepsrelasjon
+      skosno:hasGenericConceptRelation [a skosno:GenericConceptRelation; #  har generisk begrepsrelasjon
          skosno:hasSpecificConcept <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/0b489b19-4008-4af5-aeb5-58a231e1a5d9> ; # har underbegrep
          dct:description "inndelingskriterium - underbegrep"@nb , 
 			 "inndelingskriterium - underomgrep"@nn , 
