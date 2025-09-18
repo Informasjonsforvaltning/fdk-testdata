@@ -51,8 +51,8 @@
     <skosno:valueRange xml:lang="nb">Verdiområde - tekst</skosno:valueRange>
     <skosno:valueRange rdf:resource="https://data.norge.no/specification/skos-ap-no-begrep#Begrep-verdiomr%C3%A5de"/>
     <skosno:isFromConceptIn rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b1"/>
-    <skos:hasGenericConceptRelation rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b2"/>
-    <skos:hasGenericConceptRelation rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b3"/>
+    <skosno:hasGenericConceptRelation rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b2"/>
+    <skosno:hasGenericConceptRelation rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b3"/>
     <skosno:hasPartitiveConceptRelation rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b4"/>
     <skosno:hasPartitiveConceptRelation rdf:nodeID="n295caa060cf34af092cf9f9280d332b7b5"/>
     <dct:isReplacedBy rdf:resource="https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/862be8a7-b464-4129-8c83-c786dafbd941"/>
