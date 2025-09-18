@@ -315,7 +315,7 @@
         "@value": "Example - fritekst"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#hasGenericConceptRelation": [
+    "http://www.w3.org/2004/02/skosno/core#hasGenericConceptRelation": [
       {
         "@id": "_:n295caa060cf34af092cf9f9280d332b7b2"
       },
