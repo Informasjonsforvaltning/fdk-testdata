@@ -1,0 +1,44 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<https://example.com/test/test_datasett_ksf/testKatalog> a dcat:Catalog ;
+    dct:identifier "https://example.com/test/test_datasett_ksf/testKatalog" ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:title "Test av datasett"@nb ;
+    dct:description "Katalog for testing av datasett" ;	
+    dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
+    dcat:dataset <https://example.com/test/test_datasett_ksf/testDatasett> ;
+    foaf:homepage <https://digdir.no> .
+
+<https://example.com/test/test_datasett_ksf/testDatasett> a dcat:Dataset ;
+    dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:identifier "https://example.com/test/test_datasett_ksf/testDatasett" ;
+    dct:description "Test"@nb ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENER>,
+               <https://psi.norge.no/los/ord/allergi> ;
+    dct:title "Test av datasett"@nb,
+	      "Test of dataset"@en,
+	      "Test av datasett"@nn ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] ;
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
+    dcat:landingPage <https://www.digdir.no/> .
+	
+<https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> a foaf:Agent ;
+    foaf:name "Comic Precise Beetle IKS"@en,
+        "Komisk Presis Bille IKS"@nb .    
+
+
