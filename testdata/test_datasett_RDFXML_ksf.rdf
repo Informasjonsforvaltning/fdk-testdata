@@ -10,7 +10,12 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <dct:creator rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
     <dct:identifier>https://example.com/test/test_datasett_ksf/testDatasett</dct:identifier>
-    <dct:description xml:lang="nb">Test</dct:description>
+    <dct:description xml:lang="nb">Test
+- First item
+- Second item
+- Third item
+- Fourth item</dct:description>
+    <dct:description xml:lang="nn">&lt;p&gt;bla &lt;b&gt;blabla&lt;/b&gt;.&lt;/p&gt;</dct:description>
     <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/NOR"/>
     <dct:publisher rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
     <dct:type rdf:resource="http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST"/>
