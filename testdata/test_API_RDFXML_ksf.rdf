@@ -13,7 +13,16 @@
 - First item
 - Second item
 - Third item
-- Fourth item</dct:description>
+- Fourth item
+
+**Bold tekst**
+
+_Kursiv tekst_
+
+ny tekst
+
+
+</dct:description>
     <dct:description xml:lang="nn">&lt;p&gt;bla &lt;b&gt;blabla&lt;/b&gt;.&lt;/p&gt;</dct:description>
     <dct:publisher rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
     <dcat:endpointURL rdf:resource="https://vg.no"/>
