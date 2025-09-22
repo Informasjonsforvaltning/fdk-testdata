@@ -6,9 +6,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
 >
-  <rdf:Description rdf:about="https://example.com/test/test_API_ksf/testAPI">
+  <rdf:Description rdf:about="https://example.com/test/test_api_ksf/testAPI">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
-    <dct:identifier>https://example.com/test/test_API_ksf/testAPI</dct:identifier>
+    <dct:identifier>https://example.com/test/test_api_ksf/testAPI</dct:identifier>
     <dct:description xml:lang="nb">Test
 - First item
 - Second item
@@ -25,14 +25,14 @@
     <dcat:contactPoint rdf:nodeID="n368eb8a7406c4c69853ec882e6b5741ab1"/>
     <dcat:landingPage rdf:resource="https://www.digdir.no/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://example.com/test/test_API_ksf/testKatalog">
+  <rdf:Description rdf:about="https://example.com/test/test_api_ksf/testKatalog">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-    <dct:identifier>https://example.com/test/test_API_ksf/testKatalog</dct:identifier>
+    <dct:identifier>https://example.com/test/test_api_ksf/testKatalog</dct:identifier>
     <dct:publisher rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
     <dct:title xml:lang="nb">Test av API</dct:title>
     <dct:description>Katalog for testing av API</dct:description>
     <dcat:themeTaxonomy rdf:resource="http://eurovoc.europa.eu/100148"/>
-    <dcat:dataService rdf:resource="https://example.com/test/test_API_ksf/testAPI"/>
+    <dcat:service rdf:resource="https://example.com/test/test_api_ksf/testAPI"/>
     <foaf:homepage rdf:resource="https://digdir.no"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="n368eb8a7406c4c69853ec882e6b5741ab1">
