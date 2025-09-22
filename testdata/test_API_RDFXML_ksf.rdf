@@ -8,7 +8,6 @@
 >
   <rdf:Description rdf:about="https://example.com/test/test_API_ksf/testAPI">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
-    <dct:creator rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
     <dct:identifier>https://example.com/test/test_API_ksf/testAPI</dct:identifier>
     <dct:description xml:lang="nb">Test
 - First item
@@ -16,16 +15,14 @@
 - Third item
 - Fourth item</dct:description>
     <dct:description xml:lang="nn">&lt;p&gt;bla &lt;b&gt;blabla&lt;/b&gt;.&lt;/p&gt;</dct:description>
-    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/NOR"/>
     <dct:publisher rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
-    <dct:type rdf:resource="http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST"/>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENER"/>
+    <dcat:endpointURL rdf:resource="https://vg.no"/>
+    <dcat:theme rdf:resource="https://publications.europa.eu/resource/authority/data-theme/ENER"/>
     <dcat:theme rdf:resource="https://psi.norge.no/los/ord/allergi"/>
     <dct:title xml:lang="nb">Test av API</dct:title>
     <dct:title xml:lang="en">Test of API</dct:title>
     <dct:title xml:lang="nn">Test av API</dct:title>
     <dcat:contactPoint rdf:nodeID="n368eb8a7406c4c69853ec882e6b5741ab1"/>
-    <dct:spatial rdf:resource="https://data.geonorge.no/administrativeEnheter/kommune/id/172833"/>
     <dcat:landingPage rdf:resource="https://www.digdir.no/"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://example.com/test/test_API_ksf/testKatalog">
@@ -35,7 +32,7 @@
     <dct:title xml:lang="nb">Test av API</dct:title>
     <dct:description>Katalog for testing av API</dct:description>
     <dcat:themeTaxonomy rdf:resource="http://eurovoc.europa.eu/100148"/>
-    <dcat:dataset rdf:resource="https://example.com/test/test_API_ksf/testAPI"/>
+    <dcat:dataService rdf:resource="https://example.com/test/test_API_ksf/testAPI"/>
     <foaf:homepage rdf:resource="https://digdir.no"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="n368eb8a7406c4c69853ec882e6b5741ab1">
