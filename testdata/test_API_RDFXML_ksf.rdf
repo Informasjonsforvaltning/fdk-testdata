@@ -15,11 +15,33 @@
 - Third item
 - Fourth item
 
+
 **Bold tekst**
 
-_Kursiv tekst_
+_Kursiv tekst - underscore_
+
+*Kursiv tekst 2 - asterisk*
 
 ny tekst
+
+[VG](https://vg.no)
+
+# Overskrift 1
+## Overskrift 2
+### Overskrift 3
+#### Overskrift 4
+##### Overskrift 5
+###### Overskrift 6
+
+<h1>Overskrift nivå 1</h1>
+<h2>Overskrift nivå 2</h2>
+
+bryte en  
+linje.
+
+> Test avBlockquotes.
+
+
 
 
 </dct:description>
