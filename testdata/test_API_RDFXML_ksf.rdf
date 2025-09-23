@@ -22,28 +22,30 @@ _Kursiv tekst - underscore_
 
 *Kursiv tekst 2 - asterisk*
 
-ny tekst
-
-[VG](https://vg.no)
+Nettaddresse: [VG](https://vg.no)
 
 # Overskrift 1
-## Overskrift 2
-### Overskrift 3
-#### Overskrift 4
-##### Overskrift 5
-###### Overskrift 6
+Tekst 1
 
-<h1>Overskrift nivå 1</h1>
-<h2>Overskrift nivå 2</h2>
+## Overskrift 2
+Tekst 2
+
+### Overskrift 3
+Tekst 3
+
+#### Overskrift 4
+Tekst 4
+
+##### Overskrift 5
+Tekst 5
+
+###### Overskrift 6
+Tekst 6
 
 bryte en  
 linje.
 
 > Test avBlockquotes.
-
-
-
-
 </dct:description>
     <dct:description xml:lang="nn">&lt;p&gt;bla &lt;b&gt;blabla&lt;/b&gt;.&lt;/p&gt;</dct:description>
     <dct:publisher rdf:resource="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726"/>
