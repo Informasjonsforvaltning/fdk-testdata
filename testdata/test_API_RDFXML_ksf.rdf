@@ -10,10 +10,10 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
     <dct:identifier>https://example.com/test/test_api_ksf/testAPI</dct:identifier>
     <dct:description xml:lang="nb">Test
-- First item
-- Second item
-- Third item
-- Fourth item
+- Første punkt
+- Andre punkt
+- Tredje punkt
+- Fjerde punkt
 
 
 **Bold tekst**
