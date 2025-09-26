@@ -32,7 +32,7 @@
 	      "Test av datasett"@nn ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-	    vcard:hasTelephone <tel:1233456> ;
+	    vcard:hasTelephone <tel:00 00 00 00> ;
             vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> .
