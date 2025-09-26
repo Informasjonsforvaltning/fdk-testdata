@@ -41,7 +41,7 @@
   <rdf:Description rdf:nodeID="n368eb8a7406c4c69853ec882e6b5741ab1">
     <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
     <vcard:hasEmail rdf:resource="mailto:fellesdatakatalog@digdir.no"/>
-    <vcard:hasTelephone rdf:resource="tel:1233456"/>
+    <vcard:hasTelephone rdf:resource="tel:00 00 00 00"/>
     <vcard:organization-unit xml:lang="nb">Informasjonsforvaltningsgruppen</vcard:organization-unit>
   </rdf:Description>
   <rdf:Description rdf:about="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726">
