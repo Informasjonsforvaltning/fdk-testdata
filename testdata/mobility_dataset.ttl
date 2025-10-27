@@ -1,0 +1,122 @@
+@prefix adms:   <http://www.w3.org/ns/adms#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix mobilitydcatap:     <https://w3id.org/mobilitydcat-ap#> .
+@prefix dqv:    <http://www.w3.org/ns/dqv#> .
+@prefix iso:    <http://iso.org/25012/2008/dataquality/> .
+@prefix oa:     <http://www.w3.org/ns/oa#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+<https://testdirektoratet.no/mobility/catalog>
+    a               dcat:Catalog ;
+    dcat:dataset    <https://testdirektoratet.no/mobility/dataset> ;
+    dct:title       "Testkatalog for mobilityDCAT"@nb ;
+    dct:publisher   <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> .
+
+<https://testdirektoratet.no/mobility/dataset>
+    a                       dcat:Dataset ;
+    dct:title               "Testdatasett for mobilityDCAT"@nb ;
+    dct:description         "Beskrivelse av testdatasett for mobilityDCAT"@nb ;
+    dct:accessRights        <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+    dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:publisher           <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dcat:distribution       <https://testdirektoratet.no/mobility/distribution> ;
+    dct:issued              "2025-10-27"^^xsd:date;
+    dct:modified            "2025-10-27"^^xsd:date;
+    dct:conformsTo  [
+                        dct:source    <https://www.conforms.to> ;
+                        dct:title     "I samsvar med"@nb
+                    ] ;
+    dct:temporal    [
+                        dcat:endDate    "2125-12-11"^^xsd:date;
+                        dcat:startDate  "2023-09-18"^^xsd:date
+                    ];
+    dcat:contactPoint   [ rdf:type            vcard:Organization;
+                          vcard:fn            "Kontaktpunkt - test"@nb;
+                          vcard:hasEmail      <mailto:test@test.no>;
+                          vcard:hasTelephone  <tel:98765432>;
+                          vcard:hasURL        <https://data.norge.no>
+                        ];
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172925>;
+    dcat:theme  <https://psi.norge.no/los/tema/mobilitetstilbud> ;
+    dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/910298062/concepts/6c5ae564-bb03-41d0-81d0-38f2be16e8a0>;
+    dqv:hasQualityAnnotation   [ rdf:type         dqv:QualityAnnotation;
+                                 dqv:inDimension  iso:Relevance;
+                                 oa:hasBody       [ rdf:type      oa:TextualBody;
+                                                    rdf:value     "Relevansverdi";
+                                                    dct:format    <http://publications.europa.eu/resource/authority/file-type/TXT>;
+                                                    dct:language  <http://publications.europa.eu/resource/authority/language/NOB>
+                                                  ]
+                               ];
+    dqv:hasQualityAnnotation   [ rdf:type         dqv:QualityAnnotation;
+                                 dqv:inDimension  iso:Completeness;
+                                 oa:hasBody       [ rdf:type      oa:TextualBody;
+                                                    rdf:value     "Kompletthetverdi";
+                                                    dct:format    <http://publications.europa.eu/resource/authority/file-type/TXT>;
+                                                    dct:language  <http://publications.europa.eu/resource/authority/language/NOB>
+                                                  ]
+                               ];
+    dqv:hasQualityAnnotation   [ rdf:type         dqv:QualityAnnotation;
+                                    dqv:inDimension  iso:Currentness;
+                                    oa:hasBody      [ rdf:type      oa:TextualBody;
+                                                      rdf:value     "Aktualitetverdi";
+                                                      dct:format    <http://publications.europa.eu/resource/authority/file-type/TXT>;
+                                                      dct:language  <http://publications.europa.eu/resource/authority/language/NOB>
+                                                    ]
+                               ];
+    dqv:hasQualityAnnotation   [ rdf:type         dqv:QualityAnnotation;
+                                 dqv:inDimension  iso:Accuracy;
+                                 oa:hasBody       [ rdf:type      oa:TextualBody;
+                                                    rdf:value     "Nøyaktighetverdi";
+                                                    dct:format    <http://publications.europa.eu/resource/authority/file-type/TXT>;
+                                                    dct:language  <http://publications.europa.eu/resource/authority/language/NOB>
+                                                  ]
+                                ];
+    dqv:hasQualityAnnotation    [ rdf:type         dqv:QualityAnnotation;
+                                  dqv:inDimension  iso:Availability;
+                                  oa:hasBody       [ rdf:type      oa:TextualBody;
+                                                     rdf:value     "Tilgjengelighetverdi";
+                                                     dct:format    <http://publications.europa.eu/resource/authority/file-type/TXT>;
+                                                     dct:language  <http://publications.europa.eu/resource/authority/language/NOB>
+                                                    ]
+                                ];
+    dct:provenance                  <http://data.brreg.no/datakatalog/provinens/bruker> ;
+    prov:qualifiedAttribution       [
+                                        dcat:hadRole  <http://registry.it.csiro.au/def/isotc211/CI_RoleCode/contributor> ;
+                                        prov:agent    <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/210841962>
+                                    ] ;
+    dct:isVersionOf                 <https://example.com/test/test_datasett_ksf/testDatasett> ;
+    dcat:keyword                    "mobilityDCAT"@nb ;
+    dct:language                    <http://publications.europa.eu/resource/authority/language/NOB> ;
+    foaf:page                       <https://datasett-dokument.no> ;
+    dcat:landingPage                <https://www.landingsside.no>;
+    dct:type                        <http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA> ;
+    mobilitydcatap:mobilityTheme    <https://w3id.org/mobilitydcat-ap/mobility-theme/bike-hiring-availability> .
+
+<https://testdirektoratet.no/mobility/distribution>
+    a                                   dcat:Distribution ;
+    dcat:accessURL                      <https://testdirektoratet.no/access> ;
+    dcat:downloadURL                    <https://testdirektoratet.no/download> ;
+    dct:title                           "Distribusjonstittel"@nb ;
+    dct:description                     "Beskrivelse av distribusjon"@nb ;
+    dcat:accessService                  <https://testdata.api.skatteetaten.no/api/testnorge/v2/soek/sd-test/> ;
+    foaf:page                           <https://distribusjon-dokument.no> ;
+    dct:conformsTo    [
+                            dct:source    <https://www.conform.com> ;
+                            dct:title     "Samsvarer med dette"@nb
+                      ] ;
+    dct:license                         <http://publications.europa.eu/resource/authority/licence/CC0> ;
+    dct:format                          <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    adms:status                         <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    adms:sample                         <https://testdirektoratet.no/mobility/sample> ;
+    mobilitydcatap:mobilityDataStandard <https://w3id.org/mobilitydcat-ap/mobility-data-standard/other> ;
+    dct:rights                          <https://testdirektoratet.no/mobility/rights> .
+
+<https://testdirektoratet.no/mobility/rights>
+    dct:type        <https://w3id.org/mobilitydcat-ap/conditions-for-access-and-usage/free-of-charge> .
