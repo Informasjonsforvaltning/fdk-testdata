@@ -1,0 +1,374 @@
+@prefix dct:         <http://purl.org/dc/terms/> .
+@prefix dcat:        <http://www.w3.org/ns/dcat#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix vcard:       <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:        <http://www.w3.org/ns/adms#> .
+@prefix modelldcatno:<https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix ex:          <https://example.com/model/nordre-follo/parkeringstillatelse/> .
+
+#################################################################
+# Aktør / utgiver
+#################################################################
+
+ex:NordreFolloKommune
+    a foaf:Agent ;
+    foaf:name "Nordre Follo kommune"@nb ;
+    dct:identifier "921234875" .
+
+#################################################################
+# Kontaktpunkt for modellkatalogen
+#################################################################
+
+ex:ModellkatalogKontaktpunkt
+    a vcard:Organization ;
+    vcard:fn "Digitaliseringsenheten, Nordre Follo kommune"@nb ;
+    vcard:hasEmail <mailto:post@nordrefollo.kommune.no> .
+
+#################################################################
+# Modellkatalog (dcat:Catalog)
+#################################################################
+
+ex:ParkeringstillatelseModelCatalog
+    a dcat:Catalog ;
+    dct:identifier "https://example.com/catalogs/parkeringstillatelse" ;
+    dct:title "Modellkatalog – parkeringstillatelse for forflytningshemmede"@nb ;
+    dct:description "Katalog over informasjonsmodellen knyttet til søknad om parkeringstillatelse for forflytningshemmede."@nb ;
+    dct:publisher ex:NordreFolloKommune ;
+    dcat:contactPoint ex:ModellkatalogKontaktpunkt ;
+
+    # Obligatorisk: har del (minst én katalogisert ressurs)
+    dct:hasPart ex:InformationModelParkeringstillatelse ;
+
+    # Anbefalt i ModellDCAT-AP-NO: peker eksplisitt på informasjonsmodell(er)
+    modelldcatno:model ex:InformationModelParkeringstillatelse ;
+
+    # Anbefalte metadata (eksempelverdier)
+    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+    dct:issued "2025-01-01"^^xsd:date ;
+    dct:modified "2025-01-01"^^xsd:date .
+
+#################################################################
+# Informasjonsmodell (modelldcatno:InformationModel)
+#################################################################
+
+ex:InformationModelParkeringstillatelse
+    a modelldcatno:InformationModel ;
+    dct:identifier "https://example.com/model/nordre-follo/parkeringstillatelse" ;
+    modelldcatno:informationModelIdentifier "ParkeringstillatelseForForflytningshemmede" ;
+    dct:title "Søknad om parkeringstillatelse for forflytningshemmede"@nb ;
+    dct:description "Informasjonsmodell for kommunalt søknadsskjema om parkeringstillatelse for forflytningshemmede. Modellen beskriver søker, funksjonsnedsettelse og steder der det er behov for lettelser ved parkering."@nb ;
+    dct:publisher ex:NordreFolloKommune ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+    dct:type <https://data.norge.no/vocabulary/information-model-type#logical-model> ;
+
+    # Knytter til alle sentrale modellelementer i modellen
+    modelldcatno:containsModelElement
+        ex:SoeknadParkeringstillatelse ,
+        ex:Soeker ,
+        ex:ParkeringSted ,
+        ex:SoekerrolleKodeliste ,
+        ex:KoennKodeliste ,
+        ex:StedstypeKodeliste .
+
+#################################################################
+# Objekttype: Søknad om parkeringstillatelse (rotobjekt)
+#################################################################
+
+ex:SoeknadParkeringstillatelse
+    a modelldcatno:RootObjectType , modelldcatno:ObjectType ;
+    dct:title "Søknad om parkeringstillatelse"@nb ;
+    dct:description "Rotobjekt som representerer én innsendt søknad om parkeringstillatelse for forflytningshemmede."@nb ;
+    modelldcatno:hasProperty
+        ex:soeker ,
+        ex:soekerrolle ,
+        ex:harEksisterendeTillatelse ,
+        ex:eksisterendeTillatelseUtlopsdato ,
+        ex:harRullestoltilpasning ,
+        ex:girSamtykkeTilInnhenting ,
+        ex:funksjonsbeskrivelse ,
+        ex:parkeringSted .
+
+# Relasjon: søknad → søker (inneholder objekttypen Soeker)
+
+ex:soeker
+    a modelldcatno:Attribute ;
+    dct:title "Søker"@nb ;
+    dct:description "Den personen som søker om parkeringstillatelse."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:containsObjectType ex:Soeker .
+
+# Søkerrolle: fører eller passasjer
+
+ex:soekerrolle
+    a modelldcatno:Attribute ;
+    dct:title "Søkerrolle"@nb ;
+    dct:description "Angir om søknaden gjelder søker som fører av motorvogn eller som passasjer."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:SoekerrolleKodeliste .
+
+# Har parkeringstillatelse fra før (Ja/Nei)
+
+ex:harEksisterendeTillatelse
+    a modelldcatno:Attribute ;
+    dct:title "Har parkeringstillatelse fra før"@nb ;
+    dct:description "Angir om søker allerede har parkeringstillatelse per i dag."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:boolean .
+
+# Utløpsdato for eksisterende tillatelse
+
+ex:eksisterendeTillatelseUtlopsdato
+    a modelldcatno:Attribute ;
+    dct:title "Utløpsdato for eksisterende tillatelse"@nb ;
+    dct:description "Utløpsdato for nåværende parkeringstillatelse dersom søker har en fra før."@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:date .
+
+# Kjøretøy har rullestolheis / skinner / rampe (Ja/Nei)
+
+ex:harRullestoltilpasning
+    a modelldcatno:Attribute ;
+    dct:title "Kjøretøy har rullestoltilpasning"@nb ;
+    dct:description "Angir om kjøretøyet har rullestolheis eller skinner/rampe."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:boolean .
+
+# Samtykke til at kommunen kan innhente ytterligere legeopplysninger
+
+ex:girSamtykkeTilInnhenting
+    a modelldcatno:Attribute ;
+    dct:title "Samtykke til innhenting av legeopplysninger"@nb ;
+    dct:description "Angir om søker gir kommunen tillatelse til å innhente ytterligere opplysninger fra lege."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:boolean .
+
+# Fritekstbeskrivelse av funksjonshemming og forflytningsproblemer
+
+ex:funksjonsbeskrivelse
+    a modelldcatno:Attribute ;
+    dct:title "Beskrivelse av forflytningsvansker"@nb ;
+    dct:description "Søkers egen beskrivelse av hvorfor ordinære parkeringsplasser ikke kan benyttes, og hvilke problemer som oppstår ved forflytning."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+# Liste over konkrete steder hvor søker har vansker med å parkere
+
+ex:parkeringSted
+    a modelldcatno:Attribute ;
+    dct:title "Konkrete steder med parkeringsutfordringer"@nb ;
+    dct:description "Opplysninger om steder der søker har vansker med å parkere på ordinære parkeringsplasser, for eksempel bosted, arbeid, lege, sykehus osv."@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    # Ubegrenset antall forekomster
+    modelldcatno:maxOccurs "*" ;
+    modelldcatno:containsObjectType ex:ParkeringSted .
+
+#################################################################
+# Objekttype: Søker
+#################################################################
+
+ex:Soeker
+    a modelldcatno:ObjectType ;
+    dct:title "Søker"@nb ;
+    dct:description "Person som søker om parkeringstillatelse."@nb ;
+    modelldcatno:hasProperty
+        ex:etternavn ,
+        ex:fornavn ,
+        ex:adresse ,
+        ex:postnummer ,
+        ex:poststed ,
+        ex:foedselsnummer ,
+        ex:koenn ,
+        ex:epost ,
+        ex:telefon .
+
+ex:etternavn
+    a modelldcatno:Attribute ;
+    dct:title "Etternavn"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:fornavn
+    a modelldcatno:Attribute ;
+    dct:title "Fornavn"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:adresse
+    a modelldcatno:Attribute ;
+    dct:title "Adresse"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:postnummer
+    a modelldcatno:Attribute ;
+    dct:title "Postnummer"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:poststed
+    a modelldcatno:Attribute ;
+    dct:title "Poststed"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:foedselsnummer
+    a modelldcatno:Attribute ;
+    dct:title "Fødselsnummer (11 siffer)"@nb ;
+    dct:description "Fødselsnummer bestående av 11 siffer. Kan valideres nærmere ved behov."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    # Kun som streng her – kunne vært modellert som SimpleType med pattern
+    modelldcatno:hasDataType xsd:string .
+
+ex:koenn
+    a modelldcatno:Attribute ;
+    dct:title "Kjønn"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:KoennKodeliste .
+
+ex:epost
+    a modelldcatno:Attribute ;
+    dct:title "E-post"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:telefon
+    a modelldcatno:Attribute ;
+    dct:title "Telefon"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+#################################################################
+# Objekttype: ParkeringSted (steder med behov)
+#################################################################
+
+ex:ParkeringSted
+    a modelldcatno:ObjectType ;
+    dct:title "Sted med parkeringsbehov"@nb ;
+    dct:description "Beskriver ett konkret sted der søker har behov for parkeringslettelser (bosted, arbeid, lege, sykehus, fysioterapi/trening/behandling, annen aktivitet)."@nb ;
+    modelldcatno:hasProperty
+        ex:stedstype ,
+        ex:stedAdresse ,
+        ex:antallGangerPerMaaned .
+
+ex:stedstype
+    a modelldcatno:Attribute ;
+    dct:title "Stedstype"@nb ;
+    dct:description "Type sted, for eksempel Bosted, Arbeid, Lege, Sykehus, Fysioterapi/trening/behandling eller Annen aktivitet."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:StedstypeKodeliste .
+
+ex:stedAdresse
+    a modelldcatno:Attribute ;
+    dct:title "Adresse til stedet"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:string .
+
+ex:antallGangerPerMaaned
+    a modelldcatno:Attribute ;
+    dct:title "Antall ganger per måned"@nb ;
+    dct:description "Omtrentlig hyppighet for hvor ofte søker har behov for parkering på det aktuelle stedet."@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType xsd:integer .
+
+#################################################################
+# Kodelister
+#################################################################
+
+# Søkerrolle: fører eller passasjer
+
+ex:SoekerrolleKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for søkerrolle"@nb .
+
+ex:Soekerrolle_Foerer
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SoekerrolleKodeliste ;
+    skos:notation "FOERER" ;
+    skos:prefLabel "Fører av motorvogn"@nb .
+
+ex:Soekerrolle_Passasjer
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SoekerrolleKodeliste ;
+    skos:notation "PASSASJER" ;
+    skos:prefLabel "Passasjer"@nb .
+
+# Kjønn
+
+ex:KoennKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for kjønn"@nb .
+
+ex:Koenn_Kvinne
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:KoennKodeliste ;
+    skos:notation "K" ;
+    skos:prefLabel "Kvinne"@nb .
+
+ex:Koenn_Mann
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:KoennKodeliste ;
+    skos:notation "M" ;
+    skos:prefLabel "Mann"@nb .
+
+# Stedstype (bosted, arbeid, lege, sykehus, fysioterapi, annen aktivitet)
+
+ex:StedstypeKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for stedstyper i parkeringsbehov"@nb .
+
+ex:Stedstype_Bosted
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "BOSTED" ;
+    skos:prefLabel "Bosted"@nb .
+
+ex:Stedstype_Arbeid
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "ARBEID" ;
+    skos:prefLabel "Arbeid"@nb .
+
+ex:Stedstype_Lege
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "LEGE" ;
+    skos:prefLabel "Lege"@nb .
+
+ex:Stedstype_Sykehus
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "SYKEHUS" ;
+    skos:prefLabel "Sykehus"@nb .
+
+ex:Stedstype_FysioterapiTreningBehandling
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "FYSIOTERAPI_TRENING_BEHANDLING" ;
+    skos:prefLabel "Fysioterapi/trening/behandling"@nb .
+
+ex:Stedstype_AnnenAktivitet
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "ANNEN_AKTIVITET" ;
+    skos:prefLabel "Annen aktivitet"@nb .
