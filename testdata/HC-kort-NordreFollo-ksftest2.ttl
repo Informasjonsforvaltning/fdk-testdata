@@ -1,0 +1,522 @@
+@prefix dct:         <http://purl.org/dc/terms/> .
+@prefix dcat:        <http://www.w3.org/ns/dcat#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix vcard:       <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:        <http://www.w3.org/ns/adms#> .
+@prefix modelldcatno:<https://data.norge.no/vocabulary/modelldcatno#> .
+@prefix ex:          <https://nordrefollo.kommune.no/model/parkeringstillatelse-for-forflytningshemmede/2/> .
+
+#################################################################
+# Ekstern vokabular – modelltype (for SHACL, skos:Concept-krav)
+#################################################################
+
+<https://data.norge.no/vocabulary/information-model-type#logical-model>
+    a skos:Concept .
+
+#################################################################
+# Datatyper (modelldcatno:DataType) brukt av hasDataType
+#################################################################
+
+ex:StringDatatype
+    a modelldcatno:DataType ;
+    dct:title "Tekst"@nb .
+
+ex:BooleanDatatype
+    a modelldcatno:DataType ;
+    dct:title "Boolsk verdi"@nb .
+
+ex:IntegerDatatype
+    a modelldcatno:DataType ;
+    dct:title "Heltall"@nb .
+
+ex:DateDatatype
+    a modelldcatno:DataType ;
+    dct:title "Dato"@nb .
+
+#################################################################
+# Utgiver (foaf:Agent)
+#################################################################
+
+ex:NordreFolloKommune
+    a foaf:Agent ;
+    foaf:name "Nordre Follo kommune"@nb ;
+    dct:identifier "922092648" .
+
+#################################################################
+# Kontaktpunkt (vcard:Organization)
+#################################################################
+
+ex:ModellkatalogKontaktpunkt
+    a vcard:Organization ;
+    vcard:fn "Nordre Follo kommune – Postmottak"@nb ;
+    vcard:hasEmail <mailto:postmottak@nordrefollo.kommune.no> .
+
+#################################################################
+# Modellkatalog (dcat:Catalog)
+#################################################################
+
+ex:ParkeringstillatelseModelCatalog
+    a dcat:Catalog ;
+    dct:identifier "https://nordrefollo.kommune.no/model/katalog/parkeringstillatelse-for-forflytningshemmede" ;
+    dct:title "Modellkatalog – søknad om parkeringstillatelse for forflytningshemmede"@nb ;
+    dct:description "Katalog over informasjonsmodellen knyttet til Nordre Follo kommunes søknadsskjema for parkeringstillatelse for forflytningshemmede."@nb ;
+    dct:publisher ex:NordreFolloKommune ;
+    dcat:contactPoint ex:ModellkatalogKontaktpunkt ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+    dct:issued "2025-01-01"^^xsd:date ;
+    dct:modified "2025-01-01"^^xsd:date ;
+
+    dct:hasPart ex:InformationModelParkeringstillatelse ;
+    modelldcatno:model ex:InformationModelParkeringstillatelse .
+
+#################################################################
+# Informasjonsmodell (modelldcatno:InformationModel)
+#################################################################
+
+ex:InformationModelParkeringstillatelse
+    a modelldcatno:InformationModel ;
+    dct:identifier "https://nordrefollo.kommune.no/model/parkeringstillatelse-for-forflytningshemmede" ;
+    modelldcatno:informationModelIdentifier "ParkeringstillatelseForForflytningshemmede" ;
+    dct:title "Søknad om parkeringstillatelse for forflytningshemmede"@nb ;
+    dct:description "Informasjonsmodell for Nordre Follo kommunes søknadsskjema om parkeringstillatelse for forflytningshemmede."@nb ;
+    dct:publisher ex:NordreFolloKommune ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+    dct:type <https://data.norge.no/vocabulary/information-model-type#logical-model> ;
+
+    modelldcatno:containsModelElement
+        ex:SoeknadParkeringstillatelse ,
+        ex:Soeker ,
+        ex:ParkeringSted ,
+        ex:Signatur ,
+        ex:Vedlegg ,
+        ex:SoekerrolleKodeliste ,
+        ex:KoennKodeliste ,
+        ex:StedstypeKodeliste ,
+        ex:SignaturrolleKodeliste ,
+        ex:StringDatatype ,
+        ex:BooleanDatatype ,
+        ex:IntegerDatatype ,
+        ex:DateDatatype .
+
+#################################################################
+# Rotobjekt – RootObjectType (i tråd med spesifikasjonen)
+#################################################################
+
+ex:SoeknadParkeringstillatelse
+    a modelldcatno:RootObjectType ;
+    dct:title "Søknad om parkeringstillatelse"@nb ;
+    dct:description "Rotobjekt som representerer én innsendt søknad om parkeringstillatelse for forflytningshemmede."@nb ;
+    modelldcatno:hasProperty
+        ex:soeker ,
+        ex:soekerrolle ,
+        ex:harEksisterendeTillatelse ,
+        ex:eksisterendeTillatelseUtlopsdato ,
+        ex:harRullestoltilpasning ,
+        ex:girSamtykkeTilInnhenting ,
+        ex:funksjonsbeskrivelse ,
+        ex:parkeringSted ,
+        ex:signatur ,
+        ex:vedlegg .
+
+#################################################################
+# Objekttype: Søker
+#################################################################
+
+ex:Soeker
+    a modelldcatno:ObjectType ;
+    dct:title "Søker"@nb ;
+    dct:description "Person som søker om parkeringstillatelse for forflytningshemmede."@nb ;
+    modelldcatno:hasProperty
+        ex:etternavn ,
+        ex:fornavn ,
+        ex:adresse ,
+        ex:postnummer ,
+        ex:poststed ,
+        ex:foedselsnummer ,
+        ex:koenn ,
+        ex:epost ,
+        ex:telefon .
+
+#################################################################
+# Objekttype: ParkeringSted
+#################################################################
+
+ex:ParkeringSted
+    a modelldcatno:ObjectType ;
+    dct:title "Sted med parkeringsbehov"@nb ;
+    dct:description "Sted der søker har behov for parkeringslettelser, som bosted, arbeid, lege eller behandlingssted."@nb ;
+    modelldcatno:hasProperty
+        ex:stedstype ,
+        ex:stedAdresse ,
+        ex:antallGangerPerMaaned .
+
+#################################################################
+# Objekttype: Signatur
+#################################################################
+
+ex:Signatur
+    a modelldcatno:ObjectType ;
+    dct:title "Signatur"@nb ;
+    dct:description "Opplysninger om hvem som signerte søknaden, når og hvor."@nb ;
+    modelldcatno:hasProperty
+        ex:signaturRolle ,
+        ex:signaturNavn ,
+        ex:signaturSted ,
+        ex:signaturDato .
+
+#################################################################
+# Objekttype: Vedlegg
+#################################################################
+
+ex:Vedlegg
+    a modelldcatno:ObjectType ;
+    dct:title "Vedlegg"@nb ;
+    dct:description "Dokumentasjon som følger søknaden, for eksempel legeerklæring, bilde, førerkort og annen dokumentasjon."@nb ;
+    modelldcatno:hasProperty
+        ex:legeerklaeringVedlagt ,
+        ex:fotoVedlagt ,
+        ex:kopiForerkortVedlagt ,
+        ex:dokumentasjonBehovVedlagt .
+
+#################################################################
+# Attributter – Søknad (rotobjekt)
+#################################################################
+
+ex:soeker
+    a modelldcatno:Attribute ;
+    dct:title "Søker"@nb ;
+    dct:description "Person oppført som søker."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:containsObjectType ex:Soeker .
+
+ex:soekerrolle
+    a modelldcatno:Attribute ;
+    dct:title "Søkerrolle"@nb ;
+    dct:description "Angir om søker er fører av motorvogn eller passasjer."@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:SoekerrolleKodeliste .
+
+ex:harEksisterendeTillatelse
+    a modelldcatno:Attribute ;
+    dct:title "Har parkeringstillatelse fra før"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+ex:eksisterendeTillatelseUtlopsdato
+    a modelldcatno:Attribute ;
+    dct:title "Utløpsdato for eksisterende tillatelse"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:DateDatatype .
+
+ex:harRullestoltilpasning
+    a modelldcatno:Attribute ;
+    dct:title "Kjøretøy har rullestolheis eller skinner/rampe"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+ex:girSamtykkeTilInnhenting
+    a modelldcatno:Attribute ;
+    dct:title "Samtykke til innhenting av legeopplysninger"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+ex:funksjonsbeskrivelse
+    a modelldcatno:Attribute ;
+    dct:title "Beskrivelse av forflytningsvansker"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:parkeringSted
+    a modelldcatno:Attribute ;
+    dct:title "Konkrete steder"@nb ;
+    dct:description "Steder der søker har vansker med å benytte ordinære parkeringsplasser."@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "*" ;
+    modelldcatno:containsObjectType ex:ParkeringSted .
+
+ex:signatur
+    a modelldcatno:Attribute ;
+    dct:title "Signatur"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:containsObjectType ex:Signatur .
+
+ex:vedlegg
+    a modelldcatno:Attribute ;
+    dct:title "Vedlegg"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:containsObjectType ex:Vedlegg .
+
+#################################################################
+# Attributter – Søker
+#################################################################
+
+ex:etternavn
+    a modelldcatno:Attribute ;
+    dct:title "Etternavn"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:fornavn
+    a modelldcatno:Attribute ;
+    dct:title "Fornavn"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:adresse
+    a modelldcatno:Attribute ;
+    dct:title "Adresse"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:postnummer
+    a modelldcatno:Attribute ;
+    dct:title "Postnummer"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:poststed
+    a modelldcatno:Attribute ;
+    dct:title "Poststed"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:foedselsnummer
+    a modelldcatno:Attribute ;
+    dct:title "Fødselsnummer (11 siffer)"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:koenn
+    a modelldcatno:Attribute ;
+    dct:title "Kjønn"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:KoennKodeliste .
+
+ex:epost
+    a modelldcatno:Attribute ;
+    dct:title "E-post"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:telefon
+    a modelldcatno:Attribute ;
+    dct:title "Telefon"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+#################################################################
+# Attributter – ParkeringSted
+#################################################################
+
+ex:stedstype
+    a modelldcatno:Attribute ;
+    dct:title "Stedstype"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:StedstypeKodeliste .
+
+ex:stedAdresse
+    a modelldcatno:Attribute ;
+    dct:title "Adresse til stedet"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:antallGangerPerMaaned
+    a modelldcatno:Attribute ;
+    dct:title "Antall ganger per måned"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:IntegerDatatype .
+
+#################################################################
+# Attributter – Signatur
+#################################################################
+
+ex:signaturRolle
+    a modelldcatno:Attribute ;
+    dct:title "Signatørrolle"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasValueFrom ex:SignaturrolleKodeliste .
+
+ex:signaturNavn
+    a modelldcatno:Attribute ;
+    dct:title "Navn på signatør"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:signaturSted
+    a modelldcatno:Attribute ;
+    dct:title "Sted for signatur"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:StringDatatype .
+
+ex:signaturDato
+    a modelldcatno:Attribute ;
+    dct:title "Dato for signatur"@nb ;
+    modelldcatno:minOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:DateDatatype .
+
+#################################################################
+# Attributter – Vedlegg
+#################################################################
+
+ex:legeerklaeringVedlagt
+    a modelldcatno:Attribute ;
+    dct:title "Legeerklæring vedlagt"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+ex:fotoVedlagt
+    a modelldcatno:Attribute ;
+    dct:title "Foto vedlagt"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+ex:kopiForerkortVedlagt
+    a modelldcatno:Attribute ;
+    dct:title "Kopi av førerkort vedlagt"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+ex:dokumentasjonBehovVedlagt
+    a modelldcatno:Attribute ;
+    dct:title "Annen dokumentasjon vedlagt"@nb ;
+    modelldcatno:minOccurs "0"^^xsd:nonNegativeInteger ;
+    modelldcatno:maxOccurs "1"^^xsd:nonNegativeInteger ;
+    modelldcatno:hasDataType ex:BooleanDatatype .
+
+#################################################################
+# Kodelister
+#################################################################
+
+### Søkerrolle
+ex:SoekerrolleKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for søkerrolle"@nb .
+
+ex:Soekerrolle_Foerer
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SoekerrolleKodeliste ;
+    skos:notation "FOERER" ;
+    skos:prefLabel "Fører av motorvogn"@nb .
+
+ex:Soekerrolle_Passasjer
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SoekerrolleKodeliste ;
+    skos:notation "PASSASJER" ;
+    skos:prefLabel "Passasjer"@nb .
+
+### Kjønn
+ex:KoennKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for kjønn"@nb .
+
+ex:Koenn_Kvinne
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:KoennKodeliste ;
+    skos:notation "K" ;
+    skos:prefLabel "Kvinne"@nb .
+
+ex:Koenn_Mann
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:KoennKodeliste ;
+    skos:notation "M" ;
+    skos:prefLabel "Mann"@nb .
+
+### Stedstype
+ex:StedstypeKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for stedstyper"@nb .
+
+ex:Stedstype_Bosted
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "BOSTED" ;
+    skos:prefLabel "Bosted"@nb .
+
+ex:Stedstype_Arbeid
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "ARBEID" ;
+    skos:prefLabel "Arbeid"@nb .
+
+ex:Stedstype_Lege
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "LEGE" ;
+    skos:prefLabel "Lege"@nb .
+
+ex:Stedstype_Sykehus
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "SYKEHUS" ;
+    skos:prefLabel "Sykehus"@nb .
+
+ex:Stedstype_FysioterapiTreningBehandling
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "FYSIO" ;
+    skos:prefLabel "Fysioterapi/trening/behandling"@nb .
+
+ex:Stedstype_AnnenAktivitet
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:StedstypeKodeliste ;
+    skos:notation "ANNEN" ;
+    skos:prefLabel "Annen aktivitet"@nb .
+
+### Signatørrolle
+ex:SignaturrolleKodeliste
+    a modelldcatno:CodeList ;
+    dct:title "Kodeliste for signatørrolle"@nb .
+
+ex:Signaturrolle_Soeker
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SignaturrolleKodeliste ;
+    skos:notation "SOEKER" ;
+    skos:prefLabel "Søker"@nb .
+
+ex:Signaturrolle_Verge
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SignaturrolleKodeliste ;
+    skos:notation "VERGE" ;
+    skos:prefLabel "Oppnevnt verge"@nb .
+
+ex:Signaturrolle_Foresatt
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SignaturrolleKodeliste ;
+    skos:notation "FORESATT" ;
+    skos:prefLabel "Foresatt"@nb .
+
+ex:Signaturrolle_Fullmektig
+    a modelldcatno:CodeElement ;
+    skos:inScheme ex:SignaturrolleKodeliste ;
+    skos:notation "FULLMEKTIG" ;
+    skos:prefLabel "Fullmektig"@nb .
