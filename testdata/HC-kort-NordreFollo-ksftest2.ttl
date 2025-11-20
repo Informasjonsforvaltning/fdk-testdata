@@ -79,7 +79,7 @@ ex:InformationModelParkeringstillatelse
     a modelldcatno:InformationModel ;
     dct:identifier "https://nordrefollo.kommune.no/model/parkeringstillatelse-for-forflytningshemmede" ;
     modelldcatno:informationModelIdentifier "ParkeringstillatelseForForflytningshemmede" ;
-    dct:title "Søknad om parkeringstillatelse for forflytningshemmede"@nb ;
+    dct:title "Søknad om parkeringstillatelse for forflytningshemmede versjon 2"@nb ;
     dct:description "Informasjonsmodell for Nordre Follo kommunes søknadsskjema om parkeringstillatelse for forflytningshemmede."@nb ;
     dct:publisher ex:NordreFolloKommune ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
