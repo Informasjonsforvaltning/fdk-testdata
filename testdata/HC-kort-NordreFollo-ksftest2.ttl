@@ -60,7 +60,7 @@ ex:ModellkatalogKontaktpunkt
 ex:ParkeringstillatelseModelCatalog
     a dcat:Catalog ;
     dct:identifier "https://nordrefollo.kommune.no/model/katalog/parkeringstillatelse-for-forflytningshemmede" ;
-    dct:title "Modellkatalog – søknad om parkeringstillatelse for forflytningshemmede"@nb ;
+    dct:title "Modellkatalog – søknad om parkeringstillatelse for forflytningshemmede versjon 2"@nb ;
     dct:description "Katalog over informasjonsmodellen knyttet til Nordre Follo kommunes søknadsskjema for parkeringstillatelse for forflytningshemmede."@nb ;
     dct:publisher ex:NordreFolloKommune ;
     dcat:contactPoint ex:ModellkatalogKontaktpunkt ;
