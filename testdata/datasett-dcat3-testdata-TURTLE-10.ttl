@@ -55,7 +55,7 @@
   dct:description "Description of test dataset 1 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-001" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 1"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
@@ -114,7 +114,7 @@
   dct:description "Description of test dataset 2 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-002" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 2"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
@@ -176,7 +176,7 @@
   dct:description "Description of test dataset 3 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-003" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 3"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
@@ -242,7 +242,7 @@
   dct:description "Description of test dataset 4 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-004" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 4"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
@@ -301,7 +301,7 @@
   dct:description "Description of test dataset 5 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-005" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 5"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
@@ -368,7 +368,7 @@
   dct:description "Description of test dataset 6 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-006" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 6"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
@@ -428,7 +428,7 @@
   dct:description "Description of test dataset 7 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-007" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 7"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/INTR> ;
@@ -486,7 +486,7 @@
   dct:description "Description of test dataset 8 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-008" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 8"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
@@ -546,7 +546,7 @@
   dct:description "Description of test dataset 9 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-009" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 9"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
@@ -608,7 +608,7 @@
   dct:description "Description of test dataset 10 used for DCAT-AP-NO 3.0 testing."@en ;
   dct:identifier "dataset-010" ;
   dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
-  dct:keyword "testdatasett"@nb,
+  dcat:keyword "testdatasett"@nb,
               "eksempel"@nb,
               "datasett 10"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
