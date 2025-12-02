@@ -1,0 +1,659 @@
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:   <http://www.w3.org/ns/adms#> .
+@prefix org:    <http://www.w3.org/ns/org#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+
+#################################################################
+# Felles utgiver: Komisk Presis Bille IKS
+#################################################################
+
+<https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726>
+  a org:Organization ;
+  dct:identifier "312460726" ;
+  foaf:name "Komisk Presis Bille IKS"@nb .
+
+#################################################################
+# Katalog
+#################################################################
+
+<https://example.com/testdata/catalog/test-catalog> a dcat:Catalog ;
+  dct:title "Testkatalog for DCAT-AP-NO 3.0 – 10 datasett"@nb ;
+  dct:title "Test catalogue for DCAT-AP-NO 3.0 – 10 datasets"@en ;
+  dct:description "Kunstig eksempel brukt til testing av DCAT-AP-NO 3.0-implementasjon."@nb ;
+  dct:description "Artificial example used for testing a DCAT-AP-NO 3.0 implementation."@en ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:identifier "catalog-001" ;
+  dct:issued "2024-01-01"^^xsd:date ;
+  dct:modified "2024-12-01"^^xsd:date ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dcat:dataset
+    <https://example.com/testdata/dataset/ds1>,
+    <https://example.com/testdata/dataset/ds2>,
+    <https://example.com/testdata/dataset/ds3>,
+    <https://example.com/testdata/dataset/ds4>,
+    <https://example.com/testdata/dataset/ds5>,
+    <https://example.com/testdata/dataset/ds6>,
+    <https://example.com/testdata/dataset/ds7>,
+    <https://example.com/testdata/dataset/ds8>,
+    <https://example.com/testdata/dataset/ds9>,
+    <https://example.com/testdata/dataset/ds10> .
+
+#################################################################
+# Datasett 1 – Nordland fylke, NOB
+#################################################################
+
+<https://example.com/testdata/dataset/ds1> a dcat:Dataset ;
+  dct:title "Testdatasett 1"@nb ;
+  dct:title "Test dataset 1"@en ;
+  dct:description "Beskrivelse av testdatasett 1 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Description of test dataset 1 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-001" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 1"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds1-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds1-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:issued "2024-02-01"^^xsd:date ;
+  dct:modified "2024-11-01"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds1> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/fylke/id/173144> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2006-05-19/16> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds1> ;
+  dct:conformsTo
+      <https://schema.org/Dataset>,
+      <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-model> ;
+  dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/964338531/concepts/12d0e398-d827-4f94-ae6e-fd7b1c7b860a> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds1-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 1"@nb ;
+  vcard:hasEmail <mailto:testkontakt1@example.com> .
+
+<https://example.com/testdata/period/ds1> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds1-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 1"@nb ;
+  dct:description "Nedlasting av testdatasett 1 som CSV-fil."@nb ;
+  dcat:accessURL   <https://example.com/testdata/download/ds1.csv> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds1.csv> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:issued "2024-03-01"^^xsd:date ;
+  dct:modified "2024-10-01"^^xsd:date ;
+  dcat:byteSize "1000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds1> ;
+  dct:conformsTo <https://schemas.example.com/csv-standard> .
+
+#################################################################
+# Datasett 2 – Møre og Romsdal, ENG
+#################################################################
+
+<https://example.com/testdata/dataset/ds2> a dcat:Dataset ;
+  dct:title "Testdatasett 2"@nb ;
+  dct:title "Test dataset 2"@en ;
+  dct:description "Beskrivelse av testdatasett 2 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Description of test dataset 2 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-002" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 2"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds2-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds2-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-02-02"^^xsd:date ;
+  dct:modified "2024-11-02"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds2> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/fylke/id/173147> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38>,
+      <https://lovdata.no/eli/lov/2006-05-19/16> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds2> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dct:subject
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba>,
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/20b2e243-9fe1-11e5-a9f8-e4115b280940> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds2-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 2"@nb ;
+  vcard:hasEmail <mailto:testkontakt2@example.com> .
+
+<https://example.com/testdata/period/ds2> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds2-dist1> a dcat:Distribution ;
+  dct:title "Main distribution for test dataset 2"@en ;
+  dct:description "Download of test dataset 2 as JSON file."@en ;
+  dcat:accessURL   <https://example.com/testdata/download/ds2.json> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds2.json> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-03-02"^^xsd:date ;
+  dct:modified "2024-10-02"^^xsd:date ;
+  dcat:byteSize "2000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds2> ;
+  dct:conformsTo <https://schemas.example.com/json-standard> .
+
+#################################################################
+# Datasett 3 – Brønnøy, NNO + NOB, med versionNotes
+#################################################################
+
+<https://example.com/testdata/dataset/ds3> a dcat:Dataset ;
+  dct:title "Testdatasett 3"@nb ;
+  dct:title "Testdatasett 3"@nn ;
+  dct:title "Test dataset 3"@en ;
+  dct:description "Beskrivelse av testdatasett 3 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Skildring av testdatasett 3 brukt til testing av DCAT-AP-NO 3.0."@nn ;
+  dct:description "Description of test dataset 3 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-003" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 3"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds3-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds3-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NNO> ;
+  dct:issued "2024-02-03"^^xsd:date ;
+  dct:modified "2024-11-03"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds3> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds3> ;
+  dct:conformsTo
+      <https://schema.org/Dataset>,
+      <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-model> ;
+  dct:subject
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/970205039/concepts/88166582-03fa-41bd-8ee0-220095771fbc>,
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/971032081/concepts/aa223af4-b183-4f30-9a1e-ccb668a4ce9a>,
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/707421d4-3239-404b-8bab-5b51385c5fdc> ;
+  dcat:version "1.0" ;
+  adms:versionNotes "Første publiserte versjon av datasettet i testkatalogen."@nb .
+
+<https://example.com/testdata/contact/ds3-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 3"@nb ;
+  vcard:fn "Testkontakt for datasett 3"@nn ;
+  vcard:hasEmail <mailto:testkontakt3@example.com> .
+
+<https://example.com/testdata/period/ds3> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds3-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 3"@nb ;
+  dct:title "Hovuddistribusjon for testdatasett 3"@nn ;
+  dct:description "Nedlasting av testdatasett 3 som XML-fil."@nb ;
+  dct:description "Nedlasting av testdatasett 3 som XML-fil."@nn ;
+  dcat:accessURL   <https://example.com/testdata/download/ds3.xml> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds3.xml> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_SA_4_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NNO> ;
+  dct:issued "2024-03-03"^^xsd:date ;
+  dct:modified "2024-10-03"^^xsd:date ;
+  dcat:byteSize "3000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds3> ;
+  dct:conformsTo <https://schemas.example.com/xml-standard> .
+
+#################################################################
+# Datasett 4 – Bindal, NOB
+#################################################################
+
+<https://example.com/testdata/dataset/ds4> a dcat:Dataset ;
+  dct:title "Testdatasett 4"@nb ;
+  dct:title "Test dataset 4"@en ;
+  dct:description "Beskrivelse av testdatasett 4 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Description of test dataset 4 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-004" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 4"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds4-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds4-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:issued "2024-02-04"^^xsd:date ;
+  dct:modified "2024-11-04"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds4> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/kommune/id/172995> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2006-05-19/16> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds4> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/707421d4-3239-404b-8bab-5b51385c5fdc> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds4-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 4"@nb ;
+  vcard:hasEmail <mailto:testkontakt4@example.com> .
+
+<https://example.com/testdata/period/ds4> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds4-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 4"@nb ;
+  dct:description "Nedlasting av testdatasett 4 som Excel-fil (XLSX)."@nb ;
+  dcat:accessURL   <https://example.com/testdata/download/ds4.xlsx> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds4.xlsx> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_ND_4_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:issued "2024-03-04"^^xsd:date ;
+  dct:modified "2024-10-04"^^xsd:date ;
+  dcat:byteSize "4000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds4> ;
+  dct:conformsTo <https://schemas.example.com/xlsx-standard> .
+
+#################################################################
+# Datasett 5 – Nordland, ENG + litt NNO
+#################################################################
+
+<https://example.com/testdata/dataset/ds5> a dcat:Dataset ;
+  dct:title "Testdatasett 5"@nb ;
+  dct:title "Testdatasett 5"@nn ;
+  dct:title "Test dataset 5"@en ;
+  dct:description "Beskrivelse av testdatasett 5 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Skildring av testdatasett 5 brukt til testing av DCAT-AP-NO 3.0."@nn ;
+  dct:description "Description of test dataset 5 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-005" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 5"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds5-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds5-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-02-05"^^xsd:date ;
+  dct:modified "2024-11-05"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds5> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/fylke/id/173144> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38>,
+      <https://lovdata.no/eli/lov/2016-12-09/88> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds5> ;
+  dct:conformsTo
+      <https://schema.org/Dataset>,
+      <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-model> ;
+  dct:subject
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/971032081/concepts/aa223af4-b183-4f30-9a1e-ccb668a4ce9a>,
+      <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/20b2e243-9fe1-11e5-a9f8-e4115b280940> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds5-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 5"@nb ;
+  vcard:fn "Testkontakt for datasett 5"@nn ;
+  vcard:hasEmail <mailto:testkontakt5@example.com> .
+
+<https://example.com/testdata/period/ds5> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds5-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 5"@nb ;
+  dct:title "Hovuddistribusjon for testdatasett 5"@nn ;
+  dct:description "Dokumentasjon for testdatasett 5 som PDF-fil."@nb ;
+  dct:description "Dokumentasjon for testdatasett 5 som PDF-fil."@nn ;
+  dcat:accessURL   <https://example.com/testdata/download/ds5.pdf> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds5.pdf> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/NLOD_2_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-03-05"^^xsd:date ;
+  dct:modified "2024-10-05"^^xsd:date ;
+  dcat:byteSize "5000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds5> ;
+  dct:conformsTo <https://schemas.example.com/pdf-standard> .
+
+#################################################################
+# Datasett 6 – Møre og Romsdal, NNO
+#################################################################
+
+<https://example.com/testdata/dataset/ds6> a dcat:Dataset ;
+  dct:title "Testdatasett 6"@nb ;
+  dct:title "Testdatasett 6"@nn ;
+  dct:title "Test dataset 6"@en ;
+  dct:description "Beskrivelse av testdatasett 6 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Skildring av testdatasett 6 brukt til testing av DCAT-AP-NO 3.0."@nn ;
+  dct:description "Description of test dataset 6 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-006" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 6"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds6-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds6-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NNO> ;
+  dct:issued "2024-02-06"^^xsd:date ;
+  dct:modified "2024-11-06"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds6> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/fylke/id/173147> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38>,
+      <https://lovdata.no/eli/lov/2006-05-19/16> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds6> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds6-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 6"@nb ;
+  vcard:fn "Testkontakt for datasett 6"@nn ;
+  vcard:hasEmail <mailto:testkontakt6@example.com> .
+
+<https://example.com/testdata/period/ds6> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds6-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 6"@nb ;
+  dct:title "Hovuddistribusjon for testdatasett 6"@nn ;
+  dct:description "Nedlasting av testdatasett 6 som RDF/Turtle-fil."@nb ;
+  dct:description "Nedlasting av testdatasett 6 som RDF/Turtle-fil."@nn ;
+  dcat:accessURL   <https://example.com/testdata/download/ds6.ttl> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds6.ttl> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NNO> ;
+  dct:issued "2024-03-06"^^xsd:date ;
+  dct:modified "2024-10-06"^^xsd:date ;
+  dcat:byteSize "6000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds6> ;
+  dct:conformsTo <https://schemas.example.com/rdf-standard> .
+
+#################################################################
+# Datasett 7 – Brønnøy, NOB
+#################################################################
+
+<https://example.com/testdata/dataset/ds7> a dcat:Dataset ;
+  dct:title "Testdatasett 7"@nb ;
+  dct:title "Test dataset 7"@en ;
+  dct:description "Beskrivelse av testdatasett 7 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Description of test dataset 7 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-007" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 7"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/INTR> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds7-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds7-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:issued "2024-02-07"^^xsd:date ;
+  dct:modified "2024-11-07"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds7> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2006-05-19/16> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds7> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds7-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 7"@nb ;
+  vcard:hasEmail <mailto:testkontakt7@example.com> .
+
+<https://example.com/testdata/period/ds7> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds7-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 7"@nb ;
+  dct:description "Tilgang til testdatasett 7 via HTML-side."@nb ;
+  dcat:accessURL   <https://example.com/testdata/download/ds7.html> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds7.html> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_SA_4_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+  dct:issued "2024-03-07"^^xsd:date ;
+  dct:modified "2024-10-07"^^xsd:date ;
+  dcat:byteSize "7000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds7> ;
+  dct:conformsTo <https://schemas.example.com/html-standard> .
+
+#################################################################
+# Datasett 8 – Bindal, ENG + litt NNO
+#################################################################
+
+<https://example.com/testdata/dataset/ds8> a dcat:Dataset ;
+  dct:title "Testdatasett 8"@nb ;
+  dct:title "Testdatasett 8"@nn ;
+  dct:title "Test dataset 8"@en ;
+  dct:description "Beskrivelse av testdatasett 8 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Skildring av testdatasett 8 brukt til testing av DCAT-AP-NO 3.0."@nn ;
+  dct:description "Description of test dataset 8 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-008" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 8"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds8-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds8-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-02-08"^^xsd:date ;
+  dct:modified "2024-11-08"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds8> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/kommune/id/172995> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38>,
+      <https://lovdata.no/eli/lov/2016-12-09/88> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds8> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds8-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 8"@nb ;
+  vcard:fn "Testkontakt for datasett 8"@nn ;
+  vcard:hasEmail <mailto:testkontakt8@example.com> .
+
+<https://example.com/testdata/period/ds8> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds8-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 8"@nb ;
+  dct:title "Hovuddistribusjon for testdatasett 8"@nn ;
+  dct:description "Nedlasting av testdatasett 8 som tekstfil (TXT)."@nb ;
+  dct:description "Nedlasting av testdatasett 8 som tekstfil (TXT)."@nn ;
+  dcat:accessURL   <https://example.com/testdata/download/ds8.txt> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds8.txt> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-03-08"^^xsd:date ;
+  dct:modified "2024-10-08"^^xsd:date ;
+  dcat:byteSize "8000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds8> ;
+  dct:conformsTo <https://schemas.example.com/txt-standard> .
+
+#################################################################
+# Datasett 9 – Nordland, NOB + ENG
+#################################################################
+
+<https://example.com/testdata/dataset/ds9> a dcat:Dataset ;
+  dct:title "Testdatasett 9"@nb ;
+  dct:title "Test dataset 9"@en ;
+  dct:description "Beskrivelse av testdatasett 9 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Description of test dataset 9 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-009" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 9"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/REGI> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds9-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds9-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+               <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-02-09"^^xsd:date ;
+  dct:modified "2024-11-09"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds9> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/fylke/id/173144> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38>,
+      <https://lovdata.no/eli/lov/2006-05-19/16>,
+      <https://lovdata.no/eli/lov/2016-12-09/88> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds9> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds9-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 9"@nb ;
+  vcard:hasEmail <mailto:testkontakt9@example.com> .
+
+<https://example.com/testdata/period/ds9> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds9-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 9"@nb ;
+  dct:description "Nedlasting av testdatasett 9 som ZIP-fil med flere formater."@nb ;
+  dcat:accessURL   <https://example.com/testdata/download/ds9.zip> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds9.zip> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/NLOD_2_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/ZIP> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+               <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dct:issued "2024-03-09"^^xsd:date ;
+  dct:modified "2024-10-09"^^xsd:date ;
+  dcat:byteSize "9000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds9> ;
+  dct:conformsTo <https://schemas.example.com/zip-standard> .
+
+#################################################################
+# Datasett 10 – Møre og Romsdal, NOB + NNO
+#################################################################
+
+<https://example.com/testdata/dataset/ds10> a dcat:Dataset ;
+  dct:title "Testdatasett 10"@nb ;
+  dct:title "Testdatasett 10"@nn ;
+  dct:title "Test dataset 10"@en ;
+  dct:description "Beskrivelse av testdatasett 10 for DCAT-AP-NO 3.0-test."@nb ;
+  dct:description "Skildring av testdatasett 10 brukt til testing av DCAT-AP-NO 3.0."@nn ;
+  dct:description "Description of test dataset 10 used for DCAT-AP-NO 3.0 testing."@en ;
+  dct:identifier "dataset-010" ;
+  dct:publisher <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+  dct:keyword "testdatasett"@nb,
+              "eksempel"@nb,
+              "datasett 10"@nb ;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
+  dcat:contactPoint <https://example.com/testdata/contact/ds10-cp> ;
+  dcat:distribution <https://example.com/testdata/distribution/ds10-dist1> ;
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
+  dct:issued "2024-02-10"^^xsd:date ;
+  dct:modified "2024-11-10"^^xsd:date ;
+  dct:temporal <https://example.com/testdata/period/ds10> ;
+  dct:spatial  <https://data.geonorge.no/administrativeEnheter/fylke/id/173147> ;
+  dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
+  dcatap:applicableLegislation
+      <https://lovdata.no/eli/lov/2018-06-15/38> ;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/STATISTICAL> ;
+  adms:status <http://publications.europa.eu/resource/authority/dataset-status/COMPLETED> ;
+  dcat:landingPage <https://example.com/testdata/datasets/ds10> ;
+  dct:conformsTo <https://schema.org/Dataset> ;
+  dcat:version "1.0" .
+
+<https://example.com/testdata/contact/ds10-cp> a vcard:Organization ;
+  vcard:fn "Testkontakt for datasett 10"@nb ;
+  vcard:fn "Testkontakt for datasett 10"@nn ;
+  vcard:hasEmail <mailto:testkontakt10@example.com> .
+
+<https://example.com/testdata/period/ds10> a dct:PeriodOfTime ;
+  dcat:startDate "2023-01-01"^^xsd:date ;
+  dcat:endDate   "2023-12-31"^^xsd:date .
+
+<https://example.com/testdata/distribution/ds10-dist1> a dcat:Distribution ;
+  dct:title "Hoveddistribusjon for testdatasett 10"@nb ;
+  dct:title "Hovuddistribusjon for testdatasett 10"@nn ;
+  dct:description "Nedlasting av testdatasett 10 som rasterbilde (TIFF)."@nb ;
+  dct:description "Nedlasting av testdatasett 10 som rasterbilete (TIFF)."@nn ;
+  dcat:accessURL   <https://example.com/testdata/download/ds10.tif> ;
+  dcat:downloadURL <https://example.com/testdata/download/ds10.tif> ;
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+  dct:language <http://publications.europa.eu/resource/authority/language/NOB>,
+               <http://publications.europa.eu/resource/authority/language/NNO> ;
+  dct:issued "2024-03-10"^^xsd:date ;
+  dct:modified "2024-10-10"^^xsd:date ;
+  dcat:byteSize "10000"^^xsd:decimal ;
+  dcat:accessService <https://example.com/testdata/service/api-ds10> ;
+  dct:conformsTo <https://schemas.example.com/tiff-standard> .
