@@ -8,6 +8,7 @@
 @prefix org:    <http://www.w3.org/ns/org#> .
 @prefix dcatap: <http://data.europa.eu/r5r/> .
 @prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/datasett-dcat3-testdata-TURTLE-100.ttl> .
 
 #################################################################
 # Utgiver
@@ -22,7 +23,7 @@
 # Katalog for 100 datasett
 #################################################################
 
-<https://example.com/testdata2/catalog/main-catalog> a dcat:Catalog ;
+resourceURI:catalog2 a dcat:Catalog ;
   dct:title "Testkatalog 2 for DCAT-AP-NO 3.0 – 100 datasett"@nb ;
   dct:title "Test catalogue 2 for DCAT-AP-NO 3.0 – 100 datasets"@en ;
   dct:description "Andre testkatalog med nye datasett for testing av DCAT-AP-NO 3.0-implementasjon."@nb ;
@@ -33,10 +34,10 @@
   dct:modified "2024-12-01"^^xsd:date ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
   dcat:dataset
-    <https://example.com/testdata2/dataset/ds001>,
-    <https://example.com/testdata2/dataset/ds002>,
-    <https://example.com/testdata2/dataset/ds003>,
-    <https://example.com/testdata2/dataset/ds004>,
+    <resourceURI:dataset/ds001>,
+    <resourceURI:dataset/ds002>,
+    <resourceURI:dataset/ds003>,
+    <resourceURI:dataset/ds004>,
     <https://example.com/testdata2/dataset/ds005>,
     <https://example.com/testdata2/dataset/ds006>,
     <https://example.com/testdata2/dataset/ds007>,
@@ -148,7 +149,7 @@
 # Datasett 001
 #################################################################
 
-<https://example.com/testdata2/dataset/ds001> a dcat:Dataset ;
+resourceURI:dataset/ds001 a dcat:Dataset ;
   dct:title "Testdatasett 001"@nb ;
   dct:title "Test dataset 001"@en ;
   dct:description "Beskrivelse av testdatasett 001 i testkatalog 2."@nb ;
@@ -160,13 +161,13 @@
               "datasett 001"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENVI> ;
   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-  dcat:contactPoint <https://example.com/testdata2/contact/ds001-cp> ;
-  dcat:distribution <https://example.com/testdata2/distribution/ds001-dist1> ;
+  dcat:contactPoint <resourceURI:contact/ds001-cp> ;
+  dcat:distribution <resourceURI:distribution/ds001-dist1> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
   dct:issued "2024-02-01"^^xsd:date ;
   dct:modified "2024-11-01"^^xsd:date ;
-  dct:temporal <https://example.com/testdata2/period/ds001> ;
+  dct:temporal <resourceURI:period/ds001> ;
   dct:spatial <https://data.geonorge.no/administrativeEnheter/fylke/id/173144> ;
   dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
@@ -180,15 +181,15 @@
   dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/964338531/concepts/12d0e398-d827-4f94-ae6e-fd7b1c7b860a> ;
   dcat:version "1.0" .
 
-<https://example.com/testdata2/contact/ds001-cp> a vcard:Organization ;
+resourceURI:contact/ds001-cp a vcard:Organization ;
   vcard:fn "Testkontakt for datasett 001"@nb ;
   vcard:hasEmail <mailto:testkontakt001@example.com> .
 
-<https://example.com/testdata2/period/ds001> a dct:PeriodOfTime ;
+resourceURI:period/ds001 a dct:PeriodOfTime ;
   dcat:startDate "2023-01-01"^^xsd:date ;
   dcat:endDate   "2023-12-31"^^xsd:date .
 
-<https://example.com/testdata2/distribution/ds001-dist1> a dcat:Distribution ;
+resourceURI:distribution/ds001-dist1> a dcat:Distribution ;
   dct:title "Hoveddistribusjon for testdatasett 001"@nb ;
   dct:description "Nedlasting av testdatasett 001 som CSV-fil."@nb ;
   dcat:accessURL   <https://example.com/testdata2/download/ds001.csv> ;
@@ -206,7 +207,7 @@
 # Datasett 002
 #################################################################
 
-<https://example.com/testdata2/dataset/ds002> a dcat:Dataset ;
+resourceURI:dataset/ds002 a dcat:Dataset ;
   dct:title "Testdatasett 002"@nb ;
   dct:title "Test dataset 002"@en ;
   dct:description "Beskrivelse av testdatasett 002 i testkatalog 2."@nb ;
@@ -218,13 +219,13 @@
               "datasett 002"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TRAN> ;
   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
-  dcat:contactPoint <https://example.com/testdata2/contact/ds002-cp> ;
-  dcat:distribution <https://example.com/testdata2/distribution/ds002-dist1> ;
+  dcat:contactPoint <resourceURI:contact/ds002-cp> ;
+  dcat:distribution <resourceURI:distribution/ds002-dist1> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
   dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
   dct:issued "2024-02-02"^^xsd:date ;
   dct:modified "2024-11-02"^^xsd:date ;
-  dct:temporal <https://example.com/testdata2/period/ds002> ;
+  dct:temporal <resourceURI:period/ds002> ;
   dct:spatial <https://data.geonorge.no/administrativeEnheter/fylke/id/173147> ;
   dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
@@ -240,15 +241,15 @@
       <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/20b2e243-9fe1-11e5-a9f8-e4115b280940> ;
   dcat:version "1.0" .
 
-<https://example.com/testdata2/contact/ds002-cp> a vcard:Organization ;
+resourceURI:contact/ds002-cp a vcard:Organization ;
   vcard:fn "Testkontakt for datasett 002"@nb ;
   vcard:hasEmail <mailto:testkontakt002@example.com> .
 
-<https://example.com/testdata2/period/ds002> a dct:PeriodOfTime ;
+resourceURI:period/ds002 a dct:PeriodOfTime ;
   dcat:startDate "2023-01-01"^^xsd:date ;
   dcat:endDate   "2023-12-31"^^xsd:date .
 
-<https://example.com/testdata2/distribution/ds002-dist1> a dcat:Distribution ;
+resourceURI:distribution/ds002-dist1 a dcat:Distribution ;
   dct:title "Main distribution for test dataset 002"@en ;
   dct:description "Download of test dataset 002 as JSON file."@en ;
   dcat:accessURL   <https://example.com/testdata2/download/ds002.json> ;
@@ -266,7 +267,7 @@
 # Datasett 003
 #################################################################
 
-<https://example.com/testdata2/dataset/ds003> a dcat:Dataset ;
+resourceURI:dataset/ds003 a dcat:Dataset ;
   dct:title "Testdatasett 003"@nb ;
   dct:title "Testdatasett 003"@nn ;
   dct:title "Test dataset 003"@en ;
@@ -280,13 +281,13 @@
               "datasett 003"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
-  dcat:contactPoint <https://example.com/testdata2/contact/ds003-cp> ;
-  dcat:distribution <https://example.com/testdata2/distribution/ds003-dist1> ;
+  dcat:contactPoint <resourceURI:contact/ds003-cp> ;
+  dcat:distribution <resourceURI:distribution/ds003-dist1> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NNO> ;
   dct:issued "2024-02-03"^^xsd:date ;
   dct:modified "2024-11-03"^^xsd:date ;
-  dct:temporal <https://example.com/testdata2/period/ds003> ;
+  dct:temporal <resourceURI:period/ds003> ;
   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
   dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
@@ -303,16 +304,16 @@
   dcat:version "1.0" ;
   adms:versionNotes "Første versjon av datasett 003 i testkatalog 2."@nb .
 
-<https://example.com/testdata2/contact/ds003-cp> a vcard:Organization ;
+resourceURI:contact/ds003-cp a vcard:Organization ;
   vcard:fn "Testkontakt for datasett 003"@nb ;
   vcard:fn "Testkontakt for datasett 003"@nn ;
   vcard:hasEmail <mailto:testkontakt003@example.com> .
 
-<https://example.com/testdata2/period/ds003> a dct:PeriodOfTime ;
+resourceURI:period/ds003 a dct:PeriodOfTime ;
   dcat:startDate "2023-01-01"^^xsd:date ;
   dcat:endDate   "2023-12-31"^^xsd:date .
 
-<https://example.com/testdata2/distribution/ds003-dist1> a dcat:Distribution ;
+resourceURI:distribution/ds003-dist1 a dcat:Distribution ;
   dct:title "Hoveddistribusjon for testdatasett 003"@nb ;
   dct:title "Hovuddistribusjon for testdatasett 003"@nn ;
   dct:description "Nedlasting av testdatasett 003 som XML-fil."@nb ;
@@ -332,7 +333,7 @@
 # Datasett 004
 #################################################################
 
-<https://example.com/testdata2/dataset/ds004> a dcat:Dataset ;
+resourceURI:dataset/ds004 a dcat:Dataset ;
   dct:title "Testdatasett 004"@nb ;
   dct:title "Test dataset 004"@en ;
   dct:description "Beskrivelse av testdatasett 004 i testkatalog 2."@nb ;
@@ -344,13 +345,13 @@
               "datasett 004"@nb ;
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
-  dcat:contactPoint <https://example.com/testdata2/contact/ds004-cp> ;
-  dcat:distribution <https://example.com/testdata2/distribution/ds004-dist1> ;
+  dcat:contactPoint <resourceURI:contact/ds004-cp> ;
+  dcat:distribution <resourceURI:distribution/ds004-dist1> ;
   dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
   dct:issued "2024-02-04"^^xsd:date ;
   dct:modified "2024-11-04"^^xsd:date ;
-  dct:temporal <https://example.com/testdata2/period/ds004> ;
+  dct:temporal <resourceURI:period/ds004> ;
   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172995> ;
   dct:provenance <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> ;
@@ -362,15 +363,15 @@
   dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974760673/concepts/707421d4-3239-404b-8bab-5b51385c5fdc> ;
   dcat:version "1.0" .
 
-<https://example.com/testdata2/contact/ds004-cp> a vcard:Organization ;
+resourceURI:contact/ds004-cp a vcard:Organization ;
   vcard:fn "Testkontakt for datasett 004"@nb ;
   vcard:hasEmail <mailto:testkontakt004@example.com> .
 
-<https://example.com/testdata2/period/ds004> a dct:PeriodOfTime ;
+resourceURI:period/ds004 a dct:PeriodOfTime ;
   dcat:startDate "2023-01-01"^^xsd:date ;
   dcat:endDate   "2023-12-31"^^xsd:date .
 
-<https://example.com/testdata2/distribution/ds004-dist1> a dcat:Distribution ;
+resourceURI:distribution/ds004-dist1 a dcat:Distribution ;
   dct:title "Hoveddistribusjon for testdatasett 004"@nb ;
   dct:description "Nedlasting av testdatasett 004 som Excel-fil (XLSX)."@nb ;
   dcat:accessURL   <https://example.com/testdata2/download/ds004.xlsx> ;
