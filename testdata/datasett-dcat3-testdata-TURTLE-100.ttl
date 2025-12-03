@@ -34,13 +34,13 @@ resourceURI:catalog2 a dcat:Catalog ;
   dct:modified "2024-12-01"^^xsd:date ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
   dcat:dataset
-    resourceURI:dataset/ds001,
-    resourceURI:dataset/ds002,
-    resourceURI:dataset/ds003,
-    resourceURI:dataset/ds004,
-    resourceURI:dataset/ds005,
-    resourceURI:dataset/ds006,
-    resourceURI:dataset/ds007,
+    resourceURI:dataset/ds001 ,
+    resourceURI:dataset/ds002 ,
+    resourceURI:dataset/ds003 ,
+    resourceURI:dataset/ds004 ,
+    resourceURI:dataset/ds005 ,
+    resourceURI:dataset/ds006 ,
+    resourceURI:dataset/ds007 ,
     resourceURI:dataset/ds008,
     resourceURI:dataset/ds009,
     resourceURI:dataset/ds010,
