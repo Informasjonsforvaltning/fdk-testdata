@@ -19,47 +19,47 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/> .
+@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/tjeneste-test_ksf.ttl/> .
 
-resourceURI:exKatalogTjenesteHendelse-test_ksf.ttl
-   rdf:type dcat:Catalog;
-   dct:description """Katalog som inneholder testtjenester og testhendelser."""@nb,
-       """Katalog som inneheld testtenester og testhendingar."""@nn,
-       """Catalog containing sample test services and test events."""@en;
-   dct:identifier "resourceURI:exKatalogTjenesteHendelse-test_ksf.ttl"^^xsd:anyURI;
-   dcatno:containsService <resourceURI:testdata/exTjeneste1_Tjeneste-test_ksf.ttl>,
-                          <resourceURI:testdata/exTjeneste2_Tjeneste-test_ksf.ttl>,
+resourceURI:exKatalogTjenesteHendelse
+   rdf:type dcat:Catalog ;
+   dct:description """Katalog som inneholder testtjenester og testhendelser."""@nb ,
+       """Katalog som inneheld testtenester og testhendingar."""@nn ,
+       """Catalog containing sample test services and test events."""@en ;
+   dct:identifier resourceURI:exKatalogTjenesteHendelse ;
+   dcatno:containsService resourceURI:testdata/exTjeneste1 ,
+                          resourceURI:testdata/exTjeneste2 ,
                           <resourceURI:exOffentligeTjeneste1_Tjeneste-test_ksf.ttl>,
                           <resourceURI:exOffentligeTjeneste2_Tjeneste-test_ksf.ttl>;
    dcatno:containsEvent <resourceURI:exLivshendelse1.ttl>,
                         <resourceURI:exVirksomhetshendelse1.ttl>,
                         <resourceURI:exHendelse1.ttl>,
                         <resourceURI:exHendelse2.ttl>;
-   cv:contactPoint <resourceURI:exKontaktpunktKatalogTjeneste-test_ksf.ttl>;
+   cv:contactPoint resourceURI:exKontaktpunktKatalogTjeneste ;
    dct:title """Tjenestekatalog for testtjenester"""@nb,
        """Tenestekatalog for testtenester"""@nn,
        """Service catalog for test services"""@en;
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>; # Organisasjonsnummer til Digdir
 .
 
-resourceURI:exKontaktpunktKatalogTjeneste-test_ksf.ttl
+resourceURI:exKontaktpunktKatalogTjeneste
    rdf:type cv:ContactPoint;
    schema:contactType "Kontaktside"@nb , "Kontaktside"@nn , "Contact page"@en ; # Valgfri med type kontaktpunkt
-   cv:ContactPage <https://www.digdir.no/digdir/kontakt-oss/943>; # Valgfri med kontaktside
-   cv:email "mailto:test@test.no"^^xsd:anyURI; # Valgfri med e-post
+   cv:ContactPage <https://www.digdir.no/digdir/kontakt-oss/943> ; # Valgfri med kontaktside
+   cv:email "mailto:test@test.no"^^xsd:anyURI ; # Valgfri med e-post
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
-       <http://publications.europa.eu/resource/authority/language/NNO>,
-       <http://publications.europa.eu/resource/authority/language/ENG>;
+       <http://publications.europa.eu/resource/authority/language/NNO> ,
+       <http://publications.europa.eu/resource/authority/language/ENG> ;
    cv:telephone "tel:+470000000"; # Valgfri med telefon
-   cv:openingHours <resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
-                   <resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
-                   <resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
-                   <resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>,
-                   <resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl>; # Valgfri ordinær åpningstid strukturert
-   cv:specialOpeningHoursSpecification <resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste-test_ksf.ttl>; # Valgfri begrenset åpningstid strukturert
+   cv:openingHours resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste ,
+                   resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste ,
+                   resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste ,
+                   resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste ,
+                   resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste ; # Valgfri ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste ; # Valgfri begrenset åpningstid strukturert
 .
 
-resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste
    rdf:type time:TemoralEntity;
    time:hasBeginning [ a time:Instant;
       time:inDateTime [ a time:DateTimeDescription;
@@ -81,7 +81,7 @@ resourceURI:exNormalMandagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
       dct:description "normal åpningstid på mandager"@nb, "normal Monday opening hours"@en;
 .
 
-resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste
    rdf:type time:TemoralEntity;
    time:hasBeginning [ a time:Instant;
       time:inDateTime [ a time:DateTimeDescription;
@@ -103,7 +103,7 @@ resourceURI:exNormalTirsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
       dct:description "normal åpningstid på tirsdager"@nb, "normal Tuesday opening hours"@en;
 .
 
-resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste
    rdf:type time:TemoralEntity;
    time:hasBeginning [ a time:Instant;
       time:inDateTime [ a time:DateTimeDescription;
@@ -125,8 +125,8 @@ resourceURI:exNormalOnsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
       dct:description "normal åpningstid på onsdager"@nb, "normal Wednesday opening hours"@en;
 .
 
-resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
-   rdf:type time:TemoralEntity;
+resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste
+rdf:type time:TemoralEntity;
    time:hasBeginning [ a time:Instant;
       time:inDateTime [ a time:DateTimeDescription;
                           time:unitType time:unitMinute;
@@ -147,7 +147,7 @@ resourceURI:exNormalTorsdagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
       dct:description "normal åpningstid på torsdager"@nb, "normal Thursday opening hours"@en;
 .
 
-resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
+resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste
    rdf:type time:TemoralEntity;
    time:hasBeginning [ a time:Instant;
       time:inDateTime [ a time:DateTimeDescription;
@@ -169,7 +169,7 @@ resourceURI:exNormalFredagApningstid_KontaktpunktKatalogTjeneste-test_ksf.ttl
       dct:description "normal åpningstid på fredager"@nb, "normal Friday opening hours"@en;
 .
 
-resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste-test_ksf.ttl
+resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste
    rdf:type time:TemoralEntity;
    time:hasBeginning [ a time:Instant;
       time:inDateTime [ a time:DateTimeDescription;
@@ -193,21 +193,21 @@ resourceURI:exBegrensetApningstidStengtJul_KontaktpunktKatalogTjeneste-test_ksf.
       dct:description "Stengt 24. og 25. desember hvert år"@nb, "Closed 24 and 25 December every year"@en;
 .
 
-resourceURI:testdata/exTjeneste1_Tjeneste-test_ksf.ttl
+resourceURI:exTjeneste1
    rdf:type cpsvno:Service;
    dct:description """Beskrivelse tjeneste 1"""@nb,
        """Omtale teneste 1"""@nn,
        """Description service 1."""@en;
    cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN
-   dct:identifier "resourceURI:testdata/exTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   cv:hasContactPoint <resourceURI:exKontaktpunktTjeneste-test_ksf.ttl>;
+   dct:identifier resourceURI:exTjeneste1 ;
+   cv:hasContactPoint resourceURI:exKontaktpunktTjeneste ;
    dct:title """Tjeneste 1"""@nb,
              """Teneste 1"""@nn,
              """Service 1"""@en;
-   cpsvno:hasPossibleOutput <resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl>;
-   cpsvno:hasRequiredEvidence <resourceURI:exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
+   cpsvno:hasPossibleOutput resourceURI:exMuligTjenesteresultatTjeneste1 ;
+   cpsvno:hasRequiredEvidence resourceURI:exPaakrevdDokumentasjonTjeneste1 ;
    dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba>; # tjeneste
-   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/doc/172833>,
+   dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/doc/172833>, # Dekningsområde for tjenesten
                <https://sws.geonames.org/3159955/bronnoy.html>;
    foaf:homepage <https://example.com/hjemmeside/Tjeneste1>;
    adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP>;
@@ -237,21 +237,21 @@ resourceURI:testdata/exTjeneste1_Tjeneste-test_ksf.ttl
    dct:hasPart <>; # har del i annen tjenste;
 .
 
-resourceURI:testdata/exTjeneste2_Tjeneste-test_ksf.ttl
+resourceURI:exTjeneste2
    rdf:type cpsvno:Service;
    dct:description """Beskrivelse tjeneste 2"""@nb,
        """Omtale teneste 2"""@nn,
        """Description service 2."""@en;
    cv:ownedBy <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN
-   dct:identifier "resourceURI:testdata/exTjeneste2_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   cv:hasContactPoint <resourceURI:exKontaktpunktTjeneste-test_ksf.ttl>;
+   dct:identifier resourceURI:exTjeneste2 ;
+   cv:hasContactPoint resourceURI:exKontaktpunktTjeneste ;
    dct:title """Tjeneste 2"""@nb,
              """Teneste 2"""@nn,
              """Service 2"""@en;
-   cpsvno:PossibleOutput <resourceURI:exMuligTjenesteresultatTjeneste2_Tjeneste-test_ksf.tt>;
+   cpsvno:PossibleOutput resourceURI:exMuligTjenesteresultatTjeneste2 ;
 .
 
-resourceURI:exKontaktpunktTjeneste-test_ksf.ttl
+resourceURI:exKontaktpunktTjeneste
    rdf:type cv:ContactPoint;
    schema:contactType "xx"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
    cv:ContactPage <>; # Valgfri med kontaktside
@@ -264,26 +264,26 @@ resourceURI:exKontaktpunktTjeneste-test_ksf.ttl
    cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
 .
 
-resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl
+resourceURI:exMuligTjenesteresultatTjeneste1
    rdf:type cpsvno:hasPossibleOutput;
-   dct:identifier "resourceURI:exMuligTjenesteresultatTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI; # Valgfri
+   dct:identifier resourceURI:exMuligTjenesteresultatTjeneste1 ; # Valgfri
    dct:title """Mulig tjenesteresultat tjeneste 1"""@nb,
        """Mulig tenesteresultat teneste 1"""@nn,
-       """Possoble output service 1."""@en;
+       """Possible output service 1."""@en;
    dct:description """Mulig tjenesteresultat for tjeneste 1"""@nb, # Anbefalt med beskrivelse
        """Mulig tenesteresultat for teneste 1."""@nn,
-       """Possoble output for service 1."""@en;
+       """Possible output for service 1."""@en;
    dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
        <http://publications.europa.eu/resource/authority/language/NNO>,
        <http://publications.europa.eu/resource/authority/language/ENG>;
-   xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelse1_Tjeneste-test_ksf.ttl>; # Valgfri med kan skape (relasjon til hendelse)
+   xkos:causes resourceURI:exHendelse1 ; # Valgfri med kan skape (relasjon til hendelse)
    dct:type <https://data.norge.no/vocabulary/service-output-type#permit>; # Valgfri med type
    dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90>; # Valgfri - Er del av datasett
    .
 
-resourceURI:exMuligTjenesteresultatTjeneste2_Tjeneste-test_ksf.ttl
+resourceURI:exMuligTjenesteresultatTjeneste2
    rdf:type cpsvno:hasPossibleOutput;
-   dct:identifier "resourceURI:exMuligTjenesteresultatTjeneste2_Tjeneste-test_ksf.ttl"^^xsd:anyURI; # Valgfri
+   dct:identifier resourceURI:exMuligTjenesteresultatTjeneste2 ; # Valgfri
    dct:title """Mulig tjenesteresultat tjeneste 2"""@nb,
        """Mulig tenesteresultat teneste 2"""@nn,
        """Possoble output service 2."""@en;
@@ -297,9 +297,9 @@ resourceURI:exMuligTjenesteresultatTjeneste2_Tjeneste-test_ksf.ttl
    dct:type <>; # Valgfri med type
    dct:isPartOf <>; # Valgfri - Er del av datasett
 
-resourceURI:exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+resourceURI:exPaakrevdDokumentasjonTjeneste1
    rdf:type cpsvno:RequiredEvidence;
-   dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI; # Valgfri
+   dct:identifier resourceURI:exPaakrevdDokumentasjonTjeneste1 ; # Valgfri
    dct:title """Påkrevd dokumentasjon"""@nb,
        """Påkravd dokumentasjon"""@nn,
        """Required evidence"""@en;
@@ -311,209 +311,210 @@ resourceURI:exPaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
                 <http://publications.europa.eu/resource/authority/language/ENG>;
    cpsvno:validityDuration "P6M"^^xsd:duration ; # 6 måneder
    dct:isPartOf <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/312460726/datasets/1030cb40-d9cc-4ea8-ae34-29ec365aee90>; # Valgfri - er del av datasett Datasett type - test
-   dct:conformsTo <resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
+   dct:conformsTo resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1 ;
    foaf:page <https://vg.no>;
    dct:type <https://data.norge.no/vocabulary/evidence-type#attestation> ; # attest
-   cv:supportsConcept <resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
+   cv:supportsConcept resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1 ;
    cv:supportsRequirement <>
 .
 
-resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1
    rdf:type cv:EvidenceType;
-   dct:identifier "resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:identifier resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1 ;
    cv:evidenceTypeClassification <>;
-   cv:isSpecifiedIn <resourceURI:exDokumentasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.tt>;
+   cv:isSpecifiedIn resourceURI:exDokumentasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1 ;
    cv:validityPeriodConstraint <>;
    cv:issuingPlace <>;
 .
 
-resourceURI:exDokumentasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
+resourceURI:exDokumentasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1
    rdf:type cv:EvidenceTypeList;
-   cv:specifiesEvidenceType <resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl>;
+   cv:specifiesEvidenceType resourceURI:exDokumentasjonstype1DokumentasjonTjeneste1 ;
    dct:description """"""@nb;   	
-   dct:identifier "resourceURI:exDokumnetasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
+   dct:identifier resourceURI:exDokumnetasjonstypeliste1Dokumentasjonstype1DokumentasjonTjeneste1 ;
    skos:prefLabel """"""@nb;
 .
 
-resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type cv:InformationConcept; 
-   cv:expressionOfExpectedValue "";
+resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1
+   rdf:type cv:InformationConcept ; 
+   cv:expressionOfExpectedValue "" ;
    dct:description """"""@nb;
-   dct:identifier "resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   skos:prefLabel """"""@nb;
-   dct:type <>;
-.
-resourceURI:exKriterium1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.tt
-   rdf:type cv:Criterion;
-   dct:identifier ""^^xsd:anyURI;
-   dct:title """"""@nb;
-   dct:description """"""@nb;
-   cv:bias ""^^xsd:decimal;  # parameter som brukes til å justere evalueringen av kriteriet
-   cv:isRequirementOf <>; # er subkrav av
-   cv:isDerivedFrom <>; # er utledet fra
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
-   cv:hasEvidenceTypeList <>; # har dokumnetasjonstypeliste
-   cv:hasConcept <>; # har informasjonsbegrep
-   cv:hasQualifiedRelation <>; # har kvalifisert relasjon til andre krav
-   cv:hasRequirement <>; # har mer spesifikt krav
-   cv:fulfils <>; # tilfredsstiller regel
-   dct:type <>; # referere til kategorien kriteriet tilhører
-   cv:weight ""^^xsd:decimal;  # for å oppgi relativ viktighet (vekting) av kriteriet
-   cv:weightingType <http://publications.europa.eu/resource/authority/number-weight/per-exa>; # for oppgi hvordan vektingen bør tolkes i et komplekst evalueringsuttrykk
-   cv:weightingConsiderationDescription """"""@nb; # forklaring på hvordan vektingen av et kriterium brukes
+   dct:identifier resourceURI:exInformasjonsbegrep1PaakrevdDokumentasjonTjeneste1 ;
+   skos:prefLabel """"""@nb ;
+   dct:type <> ;
 .
 
-resourceURI:exInformasjonskravBegrensning1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type cv:InformationRequirement;
-   dct:identifier ""^^xsd:anyURI;
-   dct:title """"""@nb;
-   dct:description """"""@nb;
-   cv:isRequirementOf <>;
-   cv:isDerivedFrom <>;
+resourceURI:exKriterium1PaakrevdDokumentasjonTjeneste1
+   rdf:type cv:Criterion ;
+   dct:identifier resourceURI:exKriterium1PaakrevdDokumentasjonTjeneste1 ;
+   dct:title """"""@nb ;
+   dct:description """"""@nb ;
+   cv:bias ""^^xsd:decimal ;  # parameter som brukes til å justere evalueringen av kriteriet
+   cv:isRequirementOf <> ; # er subkrav av
+   cv:isDerivedFrom <> ; # er utledet fra
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
-   cv:hasEvidenceTypeList <>;
-   cv:hasConcept <>; # har informasjonsbegrep
-   cv:hasQualifiedRelation <>;
-   cv:hasRequirement <>;
-   cv:fulfils <>; # referere til regel som informasjonskravet tilfredsstiller
-   dct:type <>; # referere til kategorien informasjonskravet tilhører   
+   cv:hasEvidenceTypeList <> ; # har dokumnetasjonstypeliste
+   cv:hasConcept <> ; # har informasjonsbegrep
+   cv:hasQualifiedRelation <> ; # har kvalifisert relasjon til andre krav
+   cv:hasRequirement <> ; # har mer spesifikt krav
+   cv:fulfils <> ; # tilfredsstiller regel
+   dct:type <> ; # referere til kategorien kriteriet tilhører
+   cv:weight ""^^xsd:decimal ;  # for å oppgi relativ viktighet (vekting) av kriteriet
+   cv:weightingType <http://publications.europa.eu/resource/authority/number-weight/per-exa> ; # for oppgi hvordan vektingen bør tolkes i et komplekst evalueringsuttrykk
+   cv:weightingConsiderationDescription """"""@nb ; # forklaring på hvordan vektingen av et kriterium brukes
 .
 
-resourceURI:exBegrensning1PaakrevdDokumentasjonTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type cv:Constraint;
-   cv:constrains <>;   	
-   dct:identifier ""^^xsd:anyURI;
-   dct:title """"""@nb;
-   dct:description """"""@nb;
-   cv:isRequirementOf <>;
-   cv:isDerivedFrom <>;
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170>; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
-   cv:hasEvidenceTypeList <>;
-   cv:hasQualifiedRelation <>;
-   cv:hasRequirement <>;
-   cv:fulfils <>;
-   dct:type <>;
+resourceURI:exInformasjonskravBegrensning1PaakrevdDokumentasjonTjeneste1
+   rdf:type cv:InformationRequirement ;
+   dct:identifier resourceURI:exInformasjonskravBegrensning1PaakrevdDokumentasjonTjeneste1 ;
+   dct:title """"""@nb ;
+   dct:description """"""@nb ;
+   cv:isRequirementOf <> ;
+   cv:isDerivedFrom <> ;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170> ; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
+   cv:hasEvidenceTypeList <> ;
+   cv:hasConcept <> ; # har informasjonsbegrep
+   cv:hasQualifiedRelation <> ;
+   cv:hasRequirement <> ;
+   cv:fulfils <> ; # referere til regel som informasjonskravet tilfredsstiller
+   dct:type <> ; # referere til kategorien informasjonskravet tilhører   
 .
 
-resourceURI:exOffentligeTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type cpsv:PublicService;
-   dct:description """Beskrivelse av offentlige tjeneste 1."""@nb,
-       """Omtale av offentleg teneste 1."""@nn,
-       """Description of public service 1."""@en;
-   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>; # Organisasjonsnummer til Digdir
-   dct:identifier "resourceURI:exOffentligeTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   cv:contactPoint <resourceURI:exKontaktpunktOffentligeTjeneste_Tjeneste-test_ksf.ttl>;
+resourceURI:exBegrensning1PaakrevdDokumentasjonTjeneste1
+   rdf:type cv:Constraint ;
+   cv:constrains <> ;   	
+   dct:identifier resourceURI:exBegrensning1PaakrevdDokumentasjonTjeneste1 ;
+   dct:title """"""@nb ;
+   dct:description """"""@nb ;
+   cv:isRequirementOf <> ;
+   cv:isDerivedFrom <> ;
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/911527170> ; # Lagt inn testvirksomheten SKATVAL OG BREIVIKBOTN>;
+   cv:hasEvidenceTypeList <> ;
+   cv:hasQualifiedRelation <> ;
+   cv:hasRequirement <> ;
+   cv:fulfils <> ;
+   dct:type <> ;
+.
+
+resourceURI:exOffentligeTjeneste1
+   rdf:type cpsv:PublicService ;
+   dct:description """Beskrivelse av offentlige tjeneste 1."""@nb ,
+       """Omtale av offentleg teneste 1."""@nn ,
+       """Description of public service 1."""@en ;
+   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # Organisasjonsnummer til Digdir
+   dct:identifier resourceURI:exOffentligeTjeneste1 ;
+   cv:contactPoint resourceURI:exKontaktpunktOffentligeTjeneste ;
    dct:title """Offentlig tjeneste 1"""@nb,
        """Offentleg teneste 1"""@nn,
        """Public service 1"""@en;
    dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/a727e473-28a0-4562-b4ec-38fc8ff4ce66>; # offentlig tjeneste
    dct:type <http://publications.europa.eu/resource/authority/main-activity/health>;
-   cv:hasLegalResource <resourceURI:exRegulativRessursDodsarsaksregisterforskriften.ttl>;
-   cpsv:follows <resourceURI:exRegelHelsepersonellovenRundskriv.ttl>;
-   cpsvno:hasRequiredEvidence <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl>;
-   cpsvno:hasPossibleOutput <resourceURI:exTjenesteresultatOffentligeTjeneste1_Tjeneste-test_ksf.ttl>;
+   cv:hasLegalResource resourceURI:exRegulativRessursDodsarsaksregisterforskriften ;
+   cpsv:follows resourceURI:exRegelHelsepersonellovenRundskriv ;
+   cpsvno:hasRequiredEvidence <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exDokumentasjonElektroniskDoedsmelding.ttl> ;
+   cpsvno:hasPossibleOutput resourceURI:exTjenesteresultatOffentligeTjeneste1 ;
 .
 
-resourceURI:exOffentligeTjeneste2_Tjeneste-test_ksf.ttl
-   rdf:type cpsv:PublicService;
-   dct:description """Beskrivelse av offentlige tjeneste 2."""@nb,
-       """Omtale av offentleg teneste 2."""@nn,
-       """Description of public service 2."""@en;
-   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>; # Organisasjonsnummer til Digdir
-   dct:identifier "resourceURI:exOffentligeTjeneste2_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   cv:contactPoint <resourceURI:exKontaktpunktOffentligeTjeneste_Tjeneste-test_ksf.ttl>;
-   dct:title """Offentlig tjeneste 2"""@nb,
-       """Offentleg teneste 2"""@nn,
-       """Public service 2"""@en;
-   cpsvno:hasPossibleOutput <resourceURI:exTjenesteresultatOffentligeTjeneste2_Tjeneste-test_ksf.ttl>;
+resourceURI:exOffentligeTjeneste2
+   rdf:type cpsv:PublicService ;
+   dct:description """Beskrivelse av offentlige tjeneste 2."""@nb ,
+       """Omtale av offentleg teneste 2."""@nn ,
+       """Description of public service 2."""@en ;
+   cv:hasCompetentAuthority <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # Organisasjonsnummer til Digdir
+   dct:identifier resourceURI:exOffentligeTjeneste2 ;
+   cv:contactPoint resourceURI:exKontaktpunktOffentligeTjeneste ;
+   dct:title """Offentlig tjeneste 2"""@nb ,
+       """Offentleg teneste 2"""@nn ,
+       """Public service 2"""@en ;
+   cpsvno:hasPossibleOutput resourceURI:exTjenesteresultatOffentligeTjeneste2 ;
 .
 
-resourceURI:exRegulativRessursDodsarsaksregisterforskriften.ttl
-   rdf:type eli:LegalResource;
-   dct:type <https://data.norge.no/vocabulary/legal-resource-type#regulation>; # forskrift
-   dct:description """Forskriften gir regler for innsamling og behandling av helseopplysninger i Dødsårsaksregisteret."""@nb,
-       """Forskrifta gir reglar for innsamling og behandling av helseopplysningar i Dødsårsaksregisteret."""@nn,
-       """The regulations provide rules for the collection and processing of health information in the Cause of Death Register."""@en;
-   dct:identifier "resourceURI:exRegulativRessursDodsarsaksregisterforskriften.ttl"^^xsd:anyURI;
-   rdfs:seeAlso <https://lovdata.no/dokument/SF/forskrift/2001-12-21-1476>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Forskrift om innsamling og behandling av helseopplysninger i Dødsårsaksregisteret (Dødsårsaksregisterforskriften)"""@nb;
+resourceURI:exRegulativRessursDodsarsaksregisterforskriften
+   rdf:type eli:LegalResource ;
+   dct:type <https://data.norge.no/vocabulary/legal-resource-type#regulation> ; # forskrift
+   dct:description """Forskriften gir regler for innsamling og behandling av helseopplysninger i Dødsårsaksregisteret."""@nb ,
+       """Forskrifta gir reglar for innsamling og behandling av helseopplysningar i Dødsårsaksregisteret."""@nn ,
+       """The regulations provide rules for the collection and processing of health information in the Cause of Death Register."""@en ;
+   dct:identifier resourceURI:exRegulativRessursDodsarsaksregisterforskriften ;
+   rdfs:seeAlso <https://lovdata.no/dokument/SF/forskrift/2001-12-21-1476> ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+   dct:title """Forskrift om innsamling og behandling av helseopplysninger i Dødsårsaksregisteret (Dødsårsaksregisterforskriften)"""@nb ;
 .
 
-resourceURI:exRegelHelsepersonellovenRundskriv.ttl
-   rdf:type cpsv:Rule;
-   dct:type <https://data.norge.no/vocabulary/rule-type#case-management-rules>;
-   dct:description """Rundskriv fra Helsedirektoratet som inneholder fortolkning av hvordan Helsepersonelloven skal forstås og praktiseres."""@nb,
-                   """Circular from the Directorate of Health containing an interpretation of how the Health Personnel Act should be understood and practiced."""@en;
-   dct:identifier "resourceURI:exRegelHelsepersonellovenRundskriv.ttl"^^xsd:anyURI;
-   cpsv:implements <https://lovdata.no/dokument/NL/lov/1999-07-02-64>;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>;
-   dct:title """Helsedirektoratets fortolkning av Helsepersonelloven"""@nb;
+resourceURI:exRegelHelsepersonellovenRundskriv
+   rdf:type cpsv:Rule ;
+   dct:type <https://data.norge.no/vocabulary/rule-type#case-management-rules> ;
+   dct:description """Rundskriv fra Helsedirektoratet som inneholder fortolkning av hvordan Helsepersonelloven skal forstås og praktiseres."""@nb ,
+                   """Circular from the Directorate of Health containing an interpretation of how the Health Personnel Act should be understood and practiced."""@en ;
+   dct:identifier resourceURI:exRegelHelsepersonellovenRundskriv ;
+   cpsv:implements <https://lovdata.no/dokument/NL/lov/1999-07-02-64> ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
+   dct:title """Helsedirektoratets fortolkning av Helsepersonelloven"""@nb ;
 .
 
-resourceURI:exKontaktpunktOffentligeTjeneste_Tjeneste-test_ksf.ttl
-   rdf:type cv:ContactPoint;
+resourceURI:exKontaktpunktOffentligeTjeneste
+   rdf:type cv:ContactPoint ;
    schema:contactType "Sentralbord og resepsjon"@nb , "xx"@nn , "xx"@en ; # Valgfri med type kontaktpunkt
-   cv:ContactPage <https://www.fhi.no/om/fhi/apningstider-ansattoversikt-adresser-til-folkehelseinstituttet/>; # Valgfri med kontaktside
-   cv:email "folkehelseinstituttet@fhi.no"^^xsd:anyURI; # Valgfri med e-post
-   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB>, # Valgfri med har språk
-       <http://publications.europa.eu/resource/authority/language/NNO>,
-       <http://publications.europa.eu/resource/authority/language/ENG>;
-   cv:telephone """+4721077000"""; # Valgfri med telefon
-   cv:openingHours <>; # Valgfri ordinær åpningstid strukturert
-   cv:specialOpeningHoursSpecification <>; # Valgfri begrenset åpningstid strukturert
+   cv:ContactPage <https://www.fhi.no/om/fhi/apningstider-ansattoversikt-adresser-til-folkehelseinstituttet/> ; # Valgfri med kontaktside
+   cv:email "folkehelseinstituttet@fhi.no"^^xsd:anyURI ; # Valgfri med e-post
+   vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB> , # Valgfri med har språk
+       <http://publications.europa.eu/resource/authority/language/NNO> ,
+       <http://publications.europa.eu/resource/authority/language/ENG> ;
+   cv:telephone """+4721077000""" ; # Valgfri med telefon
+   cv:openingHours <> ; # Valgfri ordinær åpningstid strukturert
+   cv:specialOpeningHoursSpecification <> ; # Valgfri begrenset åpningstid strukturert
 .
 
-resourceURI:exMuligTjenesteresultatOffentligeTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type cpsvno:PossibleOutput;
-   dct:identifier "resourceURI:exMuligTjenesteresultatOffentligeTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   dct:title """Tjenesteresultat offentlig tjeneste 1"""@nb,
-             """Tenesteresultat offentleg teneste 1"""@nn,
-             """Service result public service 1"""@en;
-   dct:description """Beskrivelse av tjenesteresultat offentlig tjeneste 1."""@nb, # Anbefalt med beskrivelse
-                   """Beskriving av tenesteresultat offentleg teneste 1."""@nn,
-                   """Description of service results public service 1."""@en;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
-                <http://publications.europa.eu/resource/authority/language/NNO>,
-                <http://publications.europa.eu/resource/authority/language/ENG>;
-   xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseIngenHarTattAnsvarForGravferden.ttl>; # Valgfri med kan skape (relasjon til hendelse)
-   dct:type <https://data.norge.no/vocabulary/service-output-type#declaration>; # Valgfri med type
+resourceURI:exMuligTjenesteresultatOffentligeTjeneste1
+   rdf:type cpsvno:PossibleOutput ;
+   dct:identifier resourceURI:exMuligTjenesteresultatOffentligeTjeneste1 ;
+   dct:title """Tjenesteresultat offentlig tjeneste 1"""@nb ,
+             """Tenesteresultat offentleg teneste 1"""@nn ,
+             """Service result public service 1"""@en ;
+   dct:description """Beskrivelse av tjenesteresultat offentlig tjeneste 1."""@nb , # Anbefalt med beskrivelse
+                   """Beskriving av tenesteresultat offentleg teneste 1."""@nn ,
+                   """Description of service results public service 1."""@en ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> , # Anbefalt med språk
+                <http://publications.europa.eu/resource/authority/language/NNO> ,
+                <http://publications.europa.eu/resource/authority/language/ENG> ;
+   xkos:causes <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseIngenHarTattAnsvarForGravferden.ttl> ; # Valgfri med kan skape (relasjon til hendelse)
+   dct:type <https://data.norge.no/vocabulary/service-output-type#declaration> ; # Valgfri med type
 .
 
-resourceURI:exMuligTjenesteresultatOffentligeTjeneste2_Tjeneste-test_ksf.ttl
-   rdf:type cpsvno:PossibleOutput;
-   dct:identifier "resourceURI:exMuligTjenesteresultatOffentligeTjeneste2_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   dct:title """Tjenesteresultat offentlig tjeneste 2"""@nb,
-             """Tenesteresultat offentleg teneste 2"""@nn,
-             """Service result public service 2"""@en;
-   dct:description """Beskrivelse av tjenesteresultat offentlig tjeneste 2."""@nb, # Anbefalt med beskrivelse
-                   """Beskriving av tenesteresultat offentleg teneste 2."""@nn,
-                   """Description of service results public service 2."""@en;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
-                <http://publications.europa.eu/resource/authority/language/NNO>,
-                <http://publications.europa.eu/resource/authority/language/ENG>;
-   xkos:causes <>; # Valgfri med kan skape (relasjon til hendelse)
-   dct:type <>; # Valgfri med type
+resourceURI:exMuligTjenesteresultatOffentligeTjeneste2
+   rdf:type cpsvno:PossibleOutput ;
+   dct:identifier resourceURI:exMuligTjenesteresultatOffentligeTjeneste2 ;
+   dct:title """Tjenesteresultat offentlig tjeneste 2"""@nb ,
+             """Tenesteresultat offentleg teneste 2"""@nn ,
+             """Service result public service 2"""@en ;
+   dct:description """Beskrivelse av tjenesteresultat offentlig tjeneste 2."""@nb , # Anbefalt med beskrivelse
+                   """Beskriving av tenesteresultat offentleg teneste 2."""@nn ,
+                   """Description of service results public service 2."""@en ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> , # Anbefalt med språk
+                <http://publications.europa.eu/resource/authority/language/NNO> ,
+                <http://publications.europa.eu/resource/authority/language/ENG> 
+   xkos:causes <> ; # Valgfri med kan skape (relasjon til hendelse)
+   dct:type <> ; # Valgfri med type
 .
 
-resourceURI:exPaakrevdDokumentasjonOffentligeTjeneste1_Tjeneste-test_ksf.ttl
-   rdf:type cpsvno:RequiredEvidence;
-   dct:identifier "resourceURI:exPaakrevdDokumentasjonOffentligeTjeneste1_Tjeneste-test_ksf.ttl"^^xsd:anyURI;
-   dct:title """Påkrevd dokumentasjon offentlig tjeneste 1"""@nb,
-       """Påkravt dokumentasjon offentleg teneste 1"""@nn,
-       """Required documentation public service 1"""@en;
-   dct:description """Beskrivelse av påkrevd dokumentasjon offentlig tjeneste 1."""@nb, # Anbefalt med beskrivelse
-                   """Skildring av påkravd dokumentasjon offentleg teneste 1."""@nn,
-                   """Description of required documentation public service 1."""@en;
-   dct:language <http://publications.europa.eu/resource/authority/language/NOB>, # Anbefalt med språk
-                <http://publications.europa.eu/resource/authority/language/NNO>,
-                <http://publications.europa.eu/resource/authority/language/ENG>;
-   foaf:page <https://example.com/hjemmeside/MerInformasjon>; # Lenke til mer informasjon og/eller veiledning
+resourceURI:exPaakrevdDokumentasjonOffentligeTjeneste1
+   rdf:type cpsvno:RequiredEvidence ;
+   dct:identifier resourceURI:exPaakrevdDokumentasjonOffentligeTjeneste1 ;
+   dct:title """Påkrevd dokumentasjon offentlig tjeneste 1"""@nb ,
+       """Påkravt dokumentasjon offentleg teneste 1"""@nn ,
+       """Required documentation public service 1"""@en ;
+   dct:description """Beskrivelse av påkrevd dokumentasjon offentlig tjeneste 1."""@nb , # Anbefalt med beskrivelse
+                   """Skildring av påkravd dokumentasjon offentleg teneste 1."""@nn ,
+                   """Description of required documentation public service 1."""@en ;
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> , # Anbefalt med språk
+                <http://publications.europa.eu/resource/authority/language/NNO> ,
+                <http://publications.europa.eu/resource/authority/language/ENG> ;
+   foaf:page <https://example.com/hjemmeside/MerInformasjon> ; # Lenke til mer informasjon og/eller veiledning
 .
 
-resourceURI:exLivshendelse1.ttl
+resourceURI:exLivshendelse1
    rdf:type cv:LifeEvent;
-   dct:identifier "resourceURI:exLivshendelse1.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
+   dct:identifier resourceURI:exLivshendelse1 ; # Obligatorisk med idenfikator
    dct:title """Livshendelse 1"""@nb, # Obligatorisk med navn
        """Livshending 1"""@nn,
        """Life event 1"""@en;
@@ -526,24 +527,24 @@ resourceURI:exLivshendelse1.ttl
    dct:type <https://data.norge.no/vocabulary/life-event-type#having-a-child>; # Valgfri med oppgi livshendelsestype
 .
 
-resourceURI:exVirksomhetshendelse1.ttl
-   rdf:type cv:BusinessEvent;
-   dct:identifier "resourceURI:exVirksomhetshendelse1.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
+resourceURI:exVirksomhetshendelse1
+   rdf:type cv:BusinessEvent ;
+   dct:identifier resourceURI:exVirksomhetshendelse1 ; # Obligatorisk med idenfikator
    dct:title """Virksomhetshendelse 1"""@nb, # Obligatorisk med navn
        """Verksemdshending 1"""@nn,
        """Business event 1"""@en;
    dct:description """Beskrivelse av virksomhetshendelse 1."""@nb, # Anbefalt med beskrivelse
        """Skildring av verksemdshending 1."""@nn,
        """Description of business event 1."""@en;
-   cpsvno:mayTriggerNeedFor <resourceURI:exTjeneste1_Tjeneste-test_ksf.ttl>; # Anbefalt med kan utløse behov for (tjeneste)
+   cpsvno:mayTriggerNeedFor resourceURI:exTjeneste1 ; # Anbefalt med kan utløse behov for (tjeneste)
    dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b>; # Virksomhetshendelse
    dcat:distribution <https://example.org/example-distribution>; # Valgfri å refere til beskrivelsen av distribusjon av virksomhetshendelsen
    dct:type <https://data.norge.no/vocabulary/business-event-type#starting-business>; # Valgfri med oppgi virksomhetshendelsestype
 .
 
-resourceURI:exHendelse1.ttl
+resourceURI:exHendelse1
    rdf:type cv:Event;
-   dct:identifier "resourceURI:exHendelse1.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
+   dct:identifier resourceURI:exHendelse1 ; # Obligatorisk med idenfikator
    dct:title """Hendelse 1"""@nb, # Obligatorisk med navn
        """Hending 1"""@nn,
        """Event 1"""@en;
@@ -556,7 +557,7 @@ resourceURI:exHendelse1.ttl
    dct:type <https://data.norge.no/vocabulary/event-type#data-changed>; # Valgfri med oppgi hendelsestype
 .
 
-resourceURI:exHendelse2.ttl
+resourceURI:exHendelse2
    rdf:type cv:Event;
    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exHendelseGravferdsanvarAvklart.ttl"^^xsd:anyURI; # Obligatorisk med idenfikator
    dct:title """Gravferdsansvar er avklart"""@nb, # Obligatorisk med navn
