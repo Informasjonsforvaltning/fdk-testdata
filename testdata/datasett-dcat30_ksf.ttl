@@ -18,7 +18,7 @@ resourceURI:exKatalog a dcat:Catalog ;
     dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> , # Team - fra Data theme
 		       <https://psi.norge.no/los/tema/mobilitetstilbud> , # Tema - fra LOS
 		       <https://psi.norge.no/los/ord/trafikksikkerhet> ; # Tema - fra LOS
-    dcat:dataset <https://example.com/test/relasjon/begrep/testDatasettserie> ; # Datasett som er en del av katalogen
+    dcat:dataset resourceURI:exDatasettserie ; # Datasett som er en del av katalogen
     foaf:homepage <https://digdir.no> ; # Hjemmeside til katalogen
     dcat:contactPoint resourceURI:exKontaktpunktKatalog ; # Kontaktpunkt
     dct:spatial <http://publications.europa.eu/resource/authority/place/NOR_OSL> , # Dekningsområde Place - Oslo kommune
@@ -78,21 +78,17 @@ resourceURI:exDatasett a dcat:Dataset ;
                <http://eurovoc.europa.eu/100181>,
                <https://psi.norge.no/los/ord/allergi> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
-                <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388>,
-                <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f>,
-                <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK>,
-                <http://begrepskatalogen/begrep/testURISomIkkeFungerer>,
-                <http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel>,
-                <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet>,
-		<https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgURI> ;
+                <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> ,
+                <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f> ,
+                <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> ;
     dct:temporal resourceURI:exTidsromDatasett ; # Tidsrom som er dekket av datasettet
-    dct:title "Test av relasjon til begrep"@nb,
-	      "Test of relation to concept"@en,
+    dct:title "Test av relasjon til begrep"@nb ,
+	      "Test of relation to concept"@en ,
 	      "Test av relasjon til omgrep"@nn ;
-    dcat:distribution <https://example.com/test/relasjon/begrep/testDistribusjon1>,
-		      <https://example.com/test/relasjon/begrep/testDistribusjon2>,
-		      <https://example.com/test/relasjon/begrep/testDistribusjon3>,
-		      <https://example.com/test/relasjon/begrep/testDistribusjon4> ;
+    dcat:distribution resourceURI:exDistribusjon1 ,
+		      		  resourceURI:exDistribusjon2 ,
+		      		  resourceURI:exDistribusjon3 ,
+		      		  resourceURI:exDistribusjon4 ;
     dcat:contactPoint resourceURI:exKontaktpunktDatasett ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> ;
@@ -140,7 +136,7 @@ resourceURI:exTidsromDatasett a dct:PeriodOfTime
     time:hasEnd <> ; # Slutten på et tidsrom eller intervall
 .
 
-resourceURI:exDisribusjon1 a dcat:Distribution ;
+resourceURI:exDistribusjon1 a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
     dct:description "dct:format = .../file-type/JSON, dcat:mediaType = iana.../json, dcat:packageFormat = JSON_fritekst"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
@@ -194,8 +190,8 @@ resourceURI:exDatasettserie a dcat:DatasetSeries ;
         dct:title "Test datasettserie"@nb ;
         dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@nb ;
         dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-        dcat:first <https://example.com/test/relasjon/begrep/testDatasett> ;
-        dcat:last <https://example.com/test/relasjon/begrep/testDatasett> .
+        dcat:first resourceURI:exDatasett ;
+        dcat:last resourceURI:exDatasett .
 
 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
