@@ -64,7 +64,7 @@ resourceURI:exKontaktpunktKatalogTjeneste
    schema:contactType "Kontaktside"@nb ,
                       "Kontaktside"@nn ,
                       "Contact page"@en ; # Valgfri med type kontaktpunkt
-   cv:ContactPage <https://www.digdir.no/digdir/kontakt-oss/943> ; # Valgfri med kontaktside
+   cv:contactPage <https://www.digdir.no/digdir/kontakt-oss/943> ; # Valgfri med kontaktside
    cv:email "mailto:test@test.no"^^xsd:anyURI ; # Valgfri med e-post
    vcard:hasLanguage <http://publications.europa.eu/resource/authority/language/NOB> , # Valgfri med har språk
        <http://publications.europa.eu/resource/authority/language/NNO> ,
@@ -287,7 +287,7 @@ resourceURI:exTjeneste2
    dct:title """Tjeneste 2"""@nb ,
              """Teneste 2"""@nn ,
              """Service 2"""@en ;
-   cpsvno:PossibleOutput resourceURI:exMuligTjenesteresultatTjeneste2 ;
+   cpsvno:hasPossibleOutput resourceURI:exMuligTjenesteresultatTjeneste2 ;
 .
 
 resourceURI:exKontaktpunktTjeneste
@@ -310,7 +310,7 @@ resourceURI:exKontaktpunktTjeneste
 .
 
 resourceURI:exMuligTjenesteresultatTjeneste1
-   rdf:type cpsvno:hasPossibleOutput ;
+   rdf:type cpsvno:PossibleOutput ;
    dct:identifier resourceURI:exMuligTjenesteresultatTjeneste1 ; # Valgfri
    dct:title "Mulig tjenesteresultat tjeneste 1"@nb ,
              "Mulig tenesteresultat teneste 1"@nn ,
@@ -327,7 +327,7 @@ resourceURI:exMuligTjenesteresultatTjeneste1
    .
 
 resourceURI:exMuligTjenesteresultatTjeneste2
-   rdf:type cpsvno:hasPossibleOutput ;
+   rdf:type cpsvno:PossibleOutput ;
    dct:identifier resourceURI:exMuligTjenesteresultatTjeneste2 ; # Valgfri
    dct:title "Mulig tjenesteresultat tjeneste 2"@nb ,
              "Mulig tenesteresultat teneste 2"@nn ,
