@@ -4246,7 +4246,7 @@ resourceURI:virksomhetshendelse-002
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-002, resourceURI:offentlig-tjeneste-003, resourceURI:tjeneste-008 ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
-    dct:type <https://data.norge.no/vocabulary/business-event-type#closing-business"> ;
+    dct:type <https://data.norge.no/vocabulary/business-event-type#closing-business> ;
     .
 
 resourceURI:virksomhetshendelse-003
