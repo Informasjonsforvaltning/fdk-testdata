@@ -1,5 +1,5 @@
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix adms:   <http://www.w3.org/ns/adms#> .
 @prefix cpsv:   <http://purl.org/vocab/cpsv#> .
 @prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
@@ -15,7 +15,6 @@
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix time:   <http://www.w3.org/2006/time#> .
 @prefix greg:   <http://www.w3.org/ns/time/gregorian#> .
-@prefix schema: <http://schema.org/> .
 @prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/tjeneste_hendelse-cpsv-testdata-10_10_10_10_10.ttl#> .
 
 
@@ -35,8 +34,8 @@
 
 resourceURI:cp-katalog
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/katalog> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/katalog> ;
     cv:email "mailto:kontakt+katalog@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4713356886" ;
@@ -213,8 +212,8 @@ resourceURI:oh-katalog-special-3
 
 resourceURI:cp-offentlig-tjeneste-001
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-001> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-001> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-001@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4741227216" ;
@@ -421,7 +420,7 @@ resourceURI:lov-offentlig-tjeneste-001
 resourceURI:offentlig-tjeneste-001
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-001" ;
-    dct:title "Offentlig tjeneste 1 (RID_20251212_135243)"@nb, "Offentleg teneste 1 (RID_20251212_135243)"@nn, "Public service 1 (RID_20251212_135243)"@en ;
+    dct:title "Offentlig tjeneste 1 (RID_20251212_150513)"@nb, "Offentleg teneste 1 (RID_20251212_150513)"@nn, "Public service 1 (RID_20251212_150513)"@en ;
     dct:description "Nasjonal kvalitet ordning virksomhet prosess eksempel innsyn system regelverk kvalitet nasjonal tilgang livshendelse digital data registrering søknad data informasjon registrering forvaltning status status løsning offentlig brukerreise forvaltning kvalitet veiledning livshendelse veiledning innsyn."@nb, "Hending data handsaming støtte søknad regelverk ordning innsyn søknad portal system livshending løysing manuell lokal forvaltning skjema skjema verksemd prosess verksemd kontakt tilgang status døme skjema manuell verksemd nasjonal skjema skjema hending kvalitet innsyn kvalitet automatisk offentleg system brukarreise hending brukar lokal verksemd støtte vedtak registrering skjema teneste livshending livshending."@nn, "Support manual information management national manual solution status form description journey portal quality manual user status example scheme data data system application business legislation example process user update description guidance process quality description journey business event life-event access update status portal documentation."@en ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/solid-fuel> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
@@ -440,8 +439,8 @@ resourceURI:offentlig-tjeneste-001
 
 resourceURI:cp-offentlig-tjeneste-002
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-002> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-002> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-002@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4714216175" ;
@@ -594,7 +593,7 @@ resourceURI:lov-offentlig-tjeneste-002
 resourceURI:offentlig-tjeneste-002
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-002" ;
-    dct:title "Offentlig tjeneste 2 (RID_20251212_135243)"@nb ;
+    dct:title "Offentlig tjeneste 2 (RID_20251212_150513)"@nb ;
     dct:description "Oppdatering status kontakt nasjonal søknad oppdatering forvaltning søknad livshendelse ordning bruker løsning prosess skjema veiledning automatisk."@nb ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/solid-fuel> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEPRECATED> ;
@@ -613,8 +612,8 @@ resourceURI:offentlig-tjeneste-002
 
 resourceURI:cp-offentlig-tjeneste-003
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-003> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-003> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-003@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4775181648" ;
@@ -823,7 +822,7 @@ resourceURI:lov-offentlig-tjeneste-003
 resourceURI:offentlig-tjeneste-003
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-003" ;
-    dct:title "Offentlig tjeneste 3 (RID_20251212_135243)"@nb ;
+    dct:title "Offentlig tjeneste 3 (RID_20251212_150513)"@nb ;
     dct:description "Tilgang system virksomhet søknad tilgang manuell nasjonal skjema beskrivelse søknad veiledning kvalitet oppdatering."@nb ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/post> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
@@ -842,8 +841,8 @@ resourceURI:offentlig-tjeneste-003
 
 resourceURI:cp-offentlig-tjeneste-004
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-004> ;
+    vcard:category "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-004> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-004@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4737415205" ;
@@ -1025,7 +1024,7 @@ resourceURI:lov-offentlig-tjeneste-004
 resourceURI:offentlig-tjeneste-004
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-004" ;
-    dct:title "Offentlig tjeneste 4 (RID_20251212_135243)"@nb, "Offentleg teneste 4 (RID_20251212_135243)"@nn ;
+    dct:title "Offentlig tjeneste 4 (RID_20251212_150513)"@nb, "Offentleg teneste 4 (RID_20251212_150513)"@nn ;
     dct:description "Brukerreise lokal lokal status skjema regelverk livshendelse kvalitet eksempel oppdatering tjeneste regelverk behandling oppdatering brukerreise bruker bruker informasjon."@nb, "Skjema registrering løysing vedtak hending nasjonal manuell offentleg portal digital forvaltning regelverk digital vedtak brukar døme skjema dokumentasjon livshending system brukar brukarreise hending skjema digital status system kontakt digital status brukarreise skildring digital status hending oppdatering status system lokal døme verksemd brukarreise data rettleiing ordning."@nn ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/urttb> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN> ;
@@ -1044,8 +1043,8 @@ resourceURI:offentlig-tjeneste-004
 
 resourceURI:cp-offentlig-tjeneste-005
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-005> ;
+    vcard:category "Kontaktside"@nb ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-005> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-005@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB> ;
     cv:telephone "tel:+4773174945" ;
@@ -1171,7 +1170,7 @@ resourceURI:lov-offentlig-tjeneste-005
 resourceURI:offentlig-tjeneste-005
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-005" ;
-    dct:title "Offentlig tjeneste 5 (RID_20251212_135243)"@nb, "Offentleg teneste 5 (RID_20251212_135243)"@nn, "Public service 5 (RID_20251212_135243)"@en ;
+    dct:title "Offentlig tjeneste 5 (RID_20251212_150513)"@nb, "Offentleg teneste 5 (RID_20251212_150513)"@nn, "Public service 5 (RID_20251212_150513)"@en ;
     dct:description "Innsyn eksempel prosess brukerreise bruker beskrivelse veiledning beskrivelse offentlig bruker dokumentasjon livshendelse behandling kvalitet manuell innsyn tilgang offentlig livshendelse tjeneste brukerreise prosess livshendelse virksomhet oppdatering status søknad oppdatering vedtak behandling nasjonal livshendelse behandling behandling kontakt innsyn registrering bruker kontakt brukerreise hendelse portal."@nb, "Tilgang kontakt regelverk handsaming løysing ordning kvalitet handsaming dokumentasjon oppdatering manuell ordning skildring verksemd oppdatering registrering oppdatering kvalitet informasjon skildring data handsaming ordning skjema digital døme kvalitet støtte dokumentasjon lokal tilgang livshending innsyn innsyn skjema hending portal nasjonal lokal støtte data ordning hending automatisk system portal brukar brukar automatisk."@nn, "Example quality description local quality life-event manual legislation system portal business automatic public public management support process management registration application registration registration processing process form data event life-event application contact system contact solution contact portal availability event national support access service status business."@en ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/education> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN> ;
@@ -1190,8 +1189,8 @@ resourceURI:offentlig-tjeneste-005
 
 resourceURI:cp-offentlig-tjeneste-006
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-006> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-006> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-006@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4762191530" ;
@@ -1344,7 +1343,7 @@ resourceURI:lov-offentlig-tjeneste-006
 resourceURI:offentlig-tjeneste-006
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-006" ;
-    dct:title "Offentlig tjeneste 6 (RID_20251212_135243)"@nb ;
+    dct:title "Offentlig tjeneste 6 (RID_20251212_150513)"@nb ;
     dct:description "Innsyn løsning vedtak støtte innsyn virksomhet regelverk offentlig informasjon tjeneste prosess eksempel vedtak oppdatering støtte oppdatering virksomhet beskrivelse løsning tjeneste skjema bruker oppdatering system data hendelse."@nb ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/urttb> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
@@ -1363,8 +1362,8 @@ resourceURI:offentlig-tjeneste-006
 
 resourceURI:cp-offentlig-tjeneste-007
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-007> ;
+    vcard:category "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-007> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-007@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4787282128" ;
@@ -1602,7 +1601,7 @@ resourceURI:lov-offentlig-tjeneste-007
 resourceURI:offentlig-tjeneste-007
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-007" ;
-    dct:title "Offentlig tjeneste 7 (RID_20251212_135243)"@nb, "Public service 7 (RID_20251212_135243)"@en ;
+    dct:title "Offentlig tjeneste 7 (RID_20251212_150513)"@nb, "Public service 7 (RID_20251212_150513)"@en ;
     dct:description "Dokumentasjon status lokal automatisk skjema veiledning prosess oppdatering kvalitet brukerreise støtte automatisk regelverk tilgang behandling offentlig."@nb, "Registration documentation business availability update decision manual decision manual status public registration quality local system."@en ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/health> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN> ;
@@ -1621,8 +1620,8 @@ resourceURI:offentlig-tjeneste-007
 
 resourceURI:cp-offentlig-tjeneste-008
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-008> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-008> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-008@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4712314351" ;
@@ -1750,7 +1749,7 @@ resourceURI:lov-offentlig-tjeneste-008
 resourceURI:offentlig-tjeneste-008
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-008" ;
-    dct:title "Offentlig tjeneste 8 (RID_20251212_135243)"@nb, "Offentleg teneste 8 (RID_20251212_135243)"@nn ;
+    dct:title "Offentlig tjeneste 8 (RID_20251212_150513)"@nb, "Offentleg teneste 8 (RID_20251212_150513)"@nn ;
     dct:description "Livshendelse registrering offentlig bruker løsning bruker prosess støtte veiledning data automatisk livshendelse eksempel prosess registrering informasjon løsning data veiledning tjeneste prosess registrering eksempel system hendelse bruker lokal manuell lokal tilgang automatisk dokumentasjon."@nb, "Skildring offentleg nasjonal brukar søknad manuell tilgang hending skjema regelverk skildring informasjon offentleg system kontakt kvalitet kvalitet støtte innsyn portal handsaming."@nn ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/pub-os> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
@@ -1769,8 +1768,8 @@ resourceURI:offentlig-tjeneste-008
 
 resourceURI:cp-offentlig-tjeneste-009
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-009> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-009> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-009@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4731079846" ;
@@ -1925,7 +1924,7 @@ resourceURI:lov-offentlig-tjeneste-009
 resourceURI:offentlig-tjeneste-009
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-009" ;
-    dct:title "Offentlig tjeneste 9 (RID_20251212_135243)"@nb, "Offentleg teneste 9 (RID_20251212_135243)"@nn, "Public service 9 (RID_20251212_135243)"@en ;
+    dct:title "Offentlig tjeneste 9 (RID_20251212_150513)"@nb, "Offentleg teneste 9 (RID_20251212_150513)"@nn, "Public service 9 (RID_20251212_150513)"@en ;
     dct:description "Ordning forvaltning oppdatering brukerreise kontakt system forvaltning portal regelverk søknad veiledning behandling virksomhet tilgang registrering bruker hendelse hendelse brukerreise manuell manuell søknad digital kontakt behandling offentlig."@nb, "Data oppdatering nasjonal tilgang teneste støtte regelverk tilgang støtte rettleiing prosess dokumentasjon registrering døme dokumentasjon."@nn, "Description automatic contact processing information form contact manual update access support digital information public user support local legislation service local automatic application process management manual documentation digital public user registration local automatic digital management scheme life-event processing service contact data national."@en ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/post> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN> ;
@@ -1944,8 +1943,8 @@ resourceURI:offentlig-tjeneste-009
 
 resourceURI:cp-offentlig-tjeneste-010
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/offentlig-tjeneste-010> ;
+    vcard:category "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-010> ;
     cv:email "mailto:kontakt+offentlig-tjeneste-010@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4742713008" ;
@@ -2154,7 +2153,7 @@ resourceURI:lov-offentlig-tjeneste-010
 resourceURI:offentlig-tjeneste-010
     a cpsv:PublicService ;
     dct:identifier "offentlig-tjeneste-010" ;
-    dct:title "Offentlig tjeneste 10 (RID_20251212_135243)"@nb ;
+    dct:title "Offentlig tjeneste 10 (RID_20251212_150513)"@nb ;
     dct:description "Lokal dokumentasjon automatisk vedtak støtte status brukerreise lokal eksempel data innsyn nasjonal kontakt behandling automatisk portal innsyn eksempel ordning oppdatering skjema beskrivelse bruker beskrivelse vedtak informasjon nasjonal informasjon portal tjeneste skjema lokal beskrivelse søknad støtte offentlig forvaltning innsyn søknad vedtak oppdatering."@nb ;
     dct:type <http://publications.europa.eu/resource/authority/main-activity/rail> ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
@@ -2173,8 +2172,8 @@ resourceURI:offentlig-tjeneste-010
 
 resourceURI:cp-tjeneste-001
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/tjeneste-001> ;
+    vcard:category "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-001> ;
     cv:email "mailto:kontakt+tjeneste-001@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4722130508" ;
@@ -2354,7 +2353,7 @@ resourceURI:lov-tjeneste-001
 resourceURI:tjeneste-001
     a cpsvno:Service ;
     dct:identifier "tjeneste-001" ;
-    dct:title "Tjeneste 1 (RID_20251212_135243)"@nb, "Teneste 1 (RID_20251212_135243)"@nn ;
+    dct:title "Tjeneste 1 (RID_20251212_150513)"@nb, "Teneste 1 (RID_20251212_150513)"@nn ;
     dct:description "Veiledning kvalitet innsyn hendelse manuell tilgang data forvaltning automatisk oppdatering portal automatisk registrering system søknad brukerreise eksempel behandling beskrivelse hendelse."@nb, "Nasjonal løysing innsyn automatisk data tilgang tilgang døme registrering døme oppdatering registrering system hending verksemd digital kvalitet manuell portal registrering ordning kvalitet status forvaltning kvalitet hending livshending oppdatering nasjonal forvaltning portal forvaltning handsaming dokumentasjon tilgang verksemd informasjon registrering verksemd."@nn ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
     cv:contactPoint resourceURI:cp-tjeneste-001 ;
@@ -2371,8 +2370,8 @@ resourceURI:tjeneste-001
 
 resourceURI:cp-tjeneste-002
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/tjeneste-002> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-002> ;
     cv:email "mailto:kontakt+tjeneste-002@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4755461591" ;
@@ -2471,7 +2470,7 @@ resourceURI:lov-tjeneste-002
 resourceURI:tjeneste-002
     a cpsvno:Service ;
     dct:identifier "tjeneste-002" ;
-    dct:title "Tjeneste 2 (RID_20251212_135243)"@nb ;
+    dct:title "Tjeneste 2 (RID_20251212_150513)"@nb ;
     dct:description "Bruker status virksomhet offentlig innsyn forvaltning status oppdatering automatisk kvalitet brukerreise vedtak kvalitet forvaltning forvaltning automatisk hendelse oppdatering bruker digital digital eksempel bruker data prosess innsyn status beskrivelse hendelse prosess tilgang livshendelse lokal oppdatering regelverk kvalitet brukerreise registrering hendelse data dokumentasjon data status eksempel."@nb ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
     cv:contactPoint resourceURI:cp-tjeneste-002 ;
@@ -2488,8 +2487,8 @@ resourceURI:tjeneste-002
 
 resourceURI:cp-tjeneste-003
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/tjeneste-003> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-003> ;
     cv:email "mailto:kontakt+tjeneste-003@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4796128115" ;
@@ -2754,7 +2753,7 @@ resourceURI:lov-tjeneste-003
 resourceURI:tjeneste-003
     a cpsvno:Service ;
     dct:identifier "tjeneste-003" ;
-    dct:title "Tjeneste 3 (RID_20251212_135243)"@nb ;
+    dct:title "Tjeneste 3 (RID_20251212_150513)"@nb ;
     dct:description "Ordning bruker lokal bruker status ordning tilgang tjeneste offentlig bruker kontakt bruker søknad dokumentasjon status tilgang dokumentasjon data kvalitet livshendelse portal oppdatering behandling forvaltning digital eksempel."@nb ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
     cv:contactPoint resourceURI:cp-tjeneste-003 ;
@@ -2771,8 +2770,8 @@ resourceURI:tjeneste-003
 
 resourceURI:cp-tjeneste-004
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/tjeneste-004> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-004> ;
     cv:email "mailto:kontakt+tjeneste-004@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4718815720" ;
@@ -2956,7 +2955,7 @@ resourceURI:lov-tjeneste-004
 resourceURI:tjeneste-004
     a cpsvno:Service ;
     dct:identifier "tjeneste-004" ;
-    dct:title "Tjeneste 4 (RID_20251212_135243)"@nb, "Teneste 4 (RID_20251212_135243)"@nn ;
+    dct:title "Tjeneste 4 (RID_20251212_150513)"@nb, "Teneste 4 (RID_20251212_150513)"@nn ;
     dct:description "Regelverk innsyn livshendelse behandling behandling offentlig beskrivelse hendelse automatisk informasjon informasjon kontakt virksomhet status bruker søknad beskrivelse system oppdatering kontakt lokal brukerreise kontakt portal digital registrering behandling informasjon manuell skjema automatisk."@nb, "Vedtak system brukar registrering data kontakt system støtte forvaltning oppdatering system kvalitet oppdatering hending digital registrering."@nn ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN> ;
     cv:contactPoint resourceURI:cp-tjeneste-004 ;
@@ -2973,8 +2972,8 @@ resourceURI:tjeneste-004
 
 resourceURI:cp-tjeneste-005
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/tjeneste-005> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/tjeneste-005> ;
     cv:email "mailto:kontakt+tjeneste-005@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4794982908" ;
@@ -3073,7 +3072,7 @@ resourceURI:lov-tjeneste-005
 resourceURI:tjeneste-005
     a cpsvno:Service ;
     dct:identifier "tjeneste-005" ;
-    dct:title "Tjeneste 5 (RID_20251212_135243)"@nb, "Teneste 5 (RID_20251212_135243)"@nn ;
+    dct:title "Tjeneste 5 (RID_20251212_150513)"@nb, "Teneste 5 (RID_20251212_150513)"@nn ;
     dct:description "Skjema virksomhet digital informasjon dokumentasjon kontakt kvalitet kontakt løsning manuell vedtak bruker hendelse."@nb, "Manuell oppdatering digital innsyn kvalitet teneste handsaming løysing skjema offentleg vedtak teneste verksemd rettleiing innsyn livshending manuell regelverk ordning søknad nasjonal digital teneste brukarreise nasjonal tilgang tilgang livshending kontakt brukar teneste vedtak ordning kvalitet regelverk brukarreise informasjon nasjonal offentleg tilgang prosess innsyn handsaming vedtak vedtak rettleiing manuell."@nn ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEPRECATED> ;
     cv:contactPoint resourceURI:cp-tjeneste-005 ;
@@ -3090,8 +3089,8 @@ resourceURI:tjeneste-005
 
 resourceURI:cp-tjeneste-006
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/tjeneste-006> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/tjeneste-006> ;
     cv:email "mailto:kontakt+tjeneste-006@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4733286644" ;
@@ -3327,7 +3326,7 @@ resourceURI:lov-tjeneste-006
 resourceURI:tjeneste-006
     a cpsvno:Service ;
     dct:identifier "tjeneste-006" ;
-    dct:title "Tjeneste 6 (RID_20251212_135243)"@nb, "Teneste 6 (RID_20251212_135243)"@nn, "Service 6 (RID_20251212_135243)"@en ;
+    dct:title "Tjeneste 6 (RID_20251212_150513)"@nb, "Teneste 6 (RID_20251212_150513)"@nn, "Service 6 (RID_20251212_150513)"@en ;
     dct:description "Søknad automatisk digital status registrering forvaltning eksempel informasjon tilgang innsyn tilgang beskrivelse virksomhet digital portal tilgang veiledning kvalitet manuell beskrivelse dokumentasjon regelverk regelverk eksempel informasjon forvaltning digital livshendelse eksempel prosess kvalitet status portal innsyn støtte hendelse digital forvaltning vedtak vedtak system innsyn."@nb, "Livshending oppdatering portal lokal vedtak tilgang skjema vedtak skildring hending innsyn kvalitet brukarreise handsaming status ordning regelverk oppdatering regelverk verksemd hending prosess forvaltning kontakt status status."@nn, "Description decision support solution example form registration scheme manual process business process update local quality quality form guidance event management portal."@en ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN> ;
     cv:contactPoint resourceURI:cp-tjeneste-006 ;
@@ -3344,8 +3343,8 @@ resourceURI:tjeneste-006
 
 resourceURI:cp-tjeneste-007
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/tjeneste-007> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/tjeneste-007> ;
     cv:email "mailto:kontakt+tjeneste-007@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4742100652" ;
@@ -3527,7 +3526,7 @@ resourceURI:lov-tjeneste-007
 resourceURI:tjeneste-007
     a cpsvno:Service ;
     dct:identifier "tjeneste-007" ;
-    dct:title "Tjeneste 7 (RID_20251212_135243)"@nb ;
+    dct:title "Tjeneste 7 (RID_20251212_150513)"@nb ;
     dct:description "System informasjon nasjonal nasjonal registrering støtte registrering portal skjema dokumentasjon beskrivelse data dokumentasjon vedtak tjeneste digital manuell data eksempel status digital brukerreise nasjonal oppdatering ordning skjema registrering regelverk hendelse skjema livshendelse dokumentasjon tjeneste."@nb ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEPRECATED> ;
     cv:contactPoint resourceURI:cp-tjeneste-007 ;
@@ -3544,8 +3543,8 @@ resourceURI:tjeneste-007
 
 resourceURI:cp-tjeneste-008
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
-    cv:ContactPage <https://www.example.org/tjeneste-008> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/tjeneste-008> ;
     cv:email "mailto:kontakt+tjeneste-008@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
     cv:telephone "tel:+4716408822" ;
@@ -3700,7 +3699,7 @@ resourceURI:lov-tjeneste-008
 resourceURI:tjeneste-008
     a cpsvno:Service ;
     dct:identifier "tjeneste-008" ;
-    dct:title "Tjeneste 8 (RID_20251212_135243)"@nb ;
+    dct:title "Tjeneste 8 (RID_20251212_150513)"@nb ;
     dct:description "Data kontakt oppdatering informasjon eksempel søknad prosess manuell eksempel system innsyn automatisk forvaltning eksempel offentlig tjeneste ordning vedtak virksomhet forvaltning støtte virksomhet vedtak digital system regelverk veiledning støtte automatisk hendelse forvaltning regelverk."@nb ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
     cv:contactPoint resourceURI:cp-tjeneste-008 ;
@@ -3717,8 +3716,8 @@ resourceURI:tjeneste-008
 
 resourceURI:cp-tjeneste-009
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/tjeneste-009> ;
+    vcard:category "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-009> ;
     cv:email "mailto:kontakt+tjeneste-009@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4779173614" ;
@@ -3956,7 +3955,7 @@ resourceURI:lov-tjeneste-009
 resourceURI:tjeneste-009
     a cpsvno:Service ;
     dct:identifier "tjeneste-009" ;
-    dct:title "Tjeneste 9 (RID_20251212_135243)"@nb ;
+    dct:title "Tjeneste 9 (RID_20251212_150513)"@nb ;
     dct:description "Status ordning offentlig informasjon kontakt kontakt eksempel veiledning registrering informasjon vedtak registrering dokumentasjon livshendelse veiledning dokumentasjon dokumentasjon livshendelse portal kvalitet dokumentasjon forvaltning ordning søknad oppdatering kontakt manuell virksomhet skjema digital nasjonal hendelse dokumentasjon bruker data forvaltning status beskrivelse digital skjema dokumentasjon."@nb ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
     cv:contactPoint resourceURI:cp-tjeneste-009 ;
@@ -3973,8 +3972,8 @@ resourceURI:tjeneste-009
 
 resourceURI:cp-tjeneste-010
     a cv:ContactPoint ;
-    schema:contactType "Kontaktside"@nb, "Kontaktside"@nn ;
-    cv:ContactPage <https://www.example.org/tjeneste-010> ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-010> ;
     cv:email "mailto:kontakt+tjeneste-010@example.org"^^xsd:anyURI ;
     vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
     cv:telephone "tel:+4743502308" ;
@@ -4102,7 +4101,7 @@ resourceURI:lov-tjeneste-010
 resourceURI:tjeneste-010
     a cpsvno:Service ;
     dct:identifier "tjeneste-010" ;
-    dct:title "Tjeneste 10 (RID_20251212_135243)"@nb, "Service 10 (RID_20251212_135243)"@en ;
+    dct:title "Tjeneste 10 (RID_20251212_150513)"@nb, "Service 10 (RID_20251212_150513)"@en ;
     dct:description "Løsning skjema søknad veiledning livshendelse eksempel ordning beskrivelse eksempel oppdatering livshendelse system registrering behandling skjema livshendelse hendelse veiledning status data eksempel ordning data manuell status tilgang automatisk eksempel bruker lokal søknad innsyn livshendelse automatisk kontakt kontakt tilgang bruker behandling søknad automatisk."@nb, "Decision local support management guidance description documentation portal application user form guidance processing life-event decision journey portal national public management system user processing process manual guidance journey form update life-event quality national system legislation digital digital management availability update support contact management manual."@en ;
     adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
     cv:contactPoint resourceURI:cp-tjeneste-010 ;
@@ -4120,7 +4119,7 @@ resourceURI:tjeneste-010
 resourceURI:livshendelse-001
     a cv:LifeEvent ;
     dct:identifier "livshendelse-001" ;
-    dct:title "Livshendelse 1 (RID_20251212_135243)"@nb, "Livshending 1 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 1 (RID_20251212_150513)"@nb, "Livshending 1 (RID_20251212_150513)"@nn ;
     dct:description "Dokumentasjon automatisk løsning kvalitet behandling livshendelse virksomhet nasjonal eksempel bruker status system behandling automatisk offentlig offentlig informasjon registrering innsyn kvalitet."@nb, "Skildring portal regelverk brukarreise livshending løysing skjema døme automatisk lokal manuell informasjon innsyn dokumentasjon data tilgang digital registrering kvalitet nasjonal oppdatering registrering teneste informasjon brukar."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-002, resourceURI:tjeneste-003, resourceURI:tjeneste-010 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/91797c3a-ea30-4ae4-8e82-b3674cbc083e> ;
@@ -4131,7 +4130,7 @@ resourceURI:livshendelse-001
 resourceURI:livshendelse-002
     a cv:LifeEvent ;
     dct:identifier "livshendelse-002" ;
-    dct:title "Livshendelse 2 (RID_20251212_135243)"@nb, "Livshending 2 (RID_20251212_135243)"@nn, "Life event 2 (RID_20251212_135243)"@en ;
+    dct:title "Livshendelse 2 (RID_20251212_150513)"@nb, "Livshending 2 (RID_20251212_150513)"@nn, "Life event 2 (RID_20251212_150513)"@en ;
     dct:description "Løsning system søknad manuell støtte registrering eksempel hendelse bruker eksempel innsyn ordning vedtak brukerreise virksomhet løsning manuell manuell digital skjema vedtak automatisk dokumentasjon kvalitet prosess vedtak kvalitet veiledning eksempel virksomhet behandling vedtak regelverk prosess livshendelse behandling regelverk status oppdatering eksempel tilgang ordning livshendelse hendelse tjeneste."@nb, "Offentleg oppdatering skildring tilgang data digital automatisk prosess livshending støtte innsyn regelverk data tilgang hending løysing dokumentasjon kontakt kontakt løysing manuell kvalitet automatisk nasjonal livshending livshending prosess system døme automatisk status skildring automatisk prosess system hending lokal hending ordning offentleg."@nn, "Solution public system data description processing registration solution life-event processing decision journey scheme registration user event access example legislation description scheme registration registration life-event decision documentation public automatic solution process journey event form quality availability data update process management digital."@en ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-006, resourceURI:offentlig-tjeneste-004, resourceURI:offentlig-tjeneste-005 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/d67e065f-6dcf-11e6-be2b-ba992a0501a6> ;
@@ -4142,7 +4141,7 @@ resourceURI:livshendelse-002
 resourceURI:livshendelse-003
     a cv:LifeEvent ;
     dct:identifier "livshendelse-003" ;
-    dct:title "Livshendelse 3 (RID_20251212_135243)"@nb, "Livshending 3 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 3 (RID_20251212_150513)"@nb, "Livshending 3 (RID_20251212_150513)"@nn ;
     dct:description "Kontakt brukerreise lokal automatisk løsning beskrivelse behandling forvaltning portal informasjon tilgang prosess livshendelse brukerreise portal veiledning lokal veiledning brukerreise eksempel."@nb, "Ordning rettleiing verksemd lokal registrering digital handsaming kvalitet brukarreise vedtak dokumentasjon forvaltning prosess lokal brukar manuell registrering ordning vedtak verksemd forvaltning livshending teneste vedtak registrering oppdatering løysing kvalitet forvaltning kontakt kontakt vedtak innsyn informasjon døme."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:offentlig-tjeneste-008, resourceURI:offentlig-tjeneste-001, resourceURI:offentlig-tjeneste-009 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f5e-dc82-11e5-9b2b-d6d6eb145c82> ;
@@ -4153,7 +4152,7 @@ resourceURI:livshendelse-003
 resourceURI:livshendelse-004
     a cv:LifeEvent ;
     dct:identifier "livshendelse-004" ;
-    dct:title "Livshendelse 4 (RID_20251212_135243)"@nb, "Livshending 4 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 4 (RID_20251212_150513)"@nb, "Livshending 4 (RID_20251212_150513)"@nn ;
     dct:description "Beskrivelse behandling livshendelse tjeneste oppdatering hendelse søknad bruker behandling kontakt manuell portal livshendelse behandling bruker portal registrering kvalitet data bruker skjema virksomhet kvalitet kontakt system automatisk prosess."@nb, "Støtte hending kvalitet ordning prosess prosess status portal brukar regelverk portal løysing prosess rettleiing nasjonal dokumentasjon hending livshending manuell portal dokumentasjon søknad brukar."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-009, resourceURI:offentlig-tjeneste-002, resourceURI:tjeneste-008 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/d67e065f-6dcf-11e6-be2b-ba992a0501a6> ;
@@ -4164,7 +4163,7 @@ resourceURI:livshendelse-004
 resourceURI:livshendelse-005
     a cv:LifeEvent ;
     dct:identifier "livshendelse-005" ;
-    dct:title "Livshendelse 5 (RID_20251212_135243)"@nb, "Livshending 5 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 5 (RID_20251212_150513)"@nb, "Livshending 5 (RID_20251212_150513)"@nn ;
     dct:description "Innsyn regelverk virksomhet tilgang digital vedtak søknad eksempel brukerreise søknad brukerreise."@nb, "Registrering rettleiing skjema forvaltning livshending skildring status lokal dokumentasjon portal status søknad."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-008, resourceURI:offentlig-tjeneste-005, resourceURI:tjeneste-002 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5711f8e0-d72b-11e6-a0bf-0050568351d2> ;
@@ -4175,7 +4174,7 @@ resourceURI:livshendelse-005
 resourceURI:livshendelse-006
     a cv:LifeEvent ;
     dct:identifier "livshendelse-006" ;
-    dct:title "Livshendelse 6 (RID_20251212_135243)"@nb, "Livshending 6 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 6 (RID_20251212_150513)"@nb, "Livshending 6 (RID_20251212_150513)"@nn ;
     dct:description "Prosess livshendelse data tjeneste tjeneste behandling oppdatering system prosess regelverk offentlig vedtak registrering brukerreise livshendelse bruker ordning kontakt støtte lokal tjeneste løsning informasjon digital kvalitet livshendelse digital virksomhet innsyn data data nasjonal søknad manuell registrering."@nb, "Handsaming kvalitet oppdatering handsaming handsaming skjema oppdatering data handsaming søknad skildring lokal portal forvaltning kontakt manuell skildring brukarreise oppdatering ordning handsaming kontakt skjema status verksemd automatisk nasjonal handsaming livshending ordning portal system skildring system brukar data løysing forvaltning brukarreise nasjonal informasjon livshending løysing offentleg oppdatering kvalitet."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-009, resourceURI:tjeneste-008, resourceURI:offentlig-tjeneste-007 ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b> ;
@@ -4186,7 +4185,7 @@ resourceURI:livshendelse-006
 resourceURI:livshendelse-007
     a cv:LifeEvent ;
     dct:identifier "livshendelse-007" ;
-    dct:title "Livshendelse 7 (RID_20251212_135243)"@nb, "Livshending 7 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 7 (RID_20251212_150513)"@nb, "Livshending 7 (RID_20251212_150513)"@nn ;
     dct:description "Behandling portal løsning løsning virksomhet virksomhet virksomhet portal hendelse livshendelse innsyn data behandling registrering automatisk oppdatering behandling status lokal automatisk ordning livshendelse støtte behandling løsning behandling digital nasjonal virksomhet tjeneste system."@nb, "Tilgang kontakt skjema vedtak innsyn regelverk manuell oppdatering hending offentleg regelverk skildring forvaltning manuell rettleiing ordning rettleiing livshending manuell portal system forvaltning søknad digital nasjonal brukarreise oppdatering støtte kontakt nasjonal data livshending teneste manuell status kvalitet oppdatering kvalitet automatisk manuell teneste system teneste prosess registrering døme teneste."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:offentlig-tjeneste-006, resourceURI:offentlig-tjeneste-004, resourceURI:tjeneste-009 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5711f8e0-d72b-11e6-a0bf-0050568351d2> ;
@@ -4197,7 +4196,7 @@ resourceURI:livshendelse-007
 resourceURI:livshendelse-008
     a cv:LifeEvent ;
     dct:identifier "livshendelse-008" ;
-    dct:title "Livshendelse 8 (RID_20251212_135243)"@nb, "Life event 8 (RID_20251212_135243)"@en ;
+    dct:title "Livshendelse 8 (RID_20251212_150513)"@nb, "Life event 8 (RID_20251212_150513)"@en ;
     dct:description "Prosess regelverk offentlig innsyn status kontakt system eksempel data hendelse nasjonal oppdatering nasjonal støtte informasjon innsyn system søknad tjeneste veiledning manuell dokumentasjon ordning system nasjonal informasjon prosess digital løsning lokal lokal automatisk digital søknad brukerreise portal system digital brukerreise behandling beskrivelse tilgang virksomhet livshendelse innsyn søknad veiledning data regelverk."@nb, "Event system access business scheme event application business decision information data application quality quality quality description decision management support documentation data system status guidance availability access support registration public application public access scheme form."@en ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-002, resourceURI:offentlig-tjeneste-004, resourceURI:offentlig-tjeneste-003 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5138da03-be20-11e6-8004-005056825ca0> ;
@@ -4208,7 +4207,7 @@ resourceURI:livshendelse-008
 resourceURI:livshendelse-009
     a cv:LifeEvent ;
     dct:identifier "livshendelse-009" ;
-    dct:title "Livshendelse 9 (RID_20251212_135243)"@nb, "Livshending 9 (RID_20251212_135243)"@nn ;
+    dct:title "Livshendelse 9 (RID_20251212_150513)"@nb, "Livshending 9 (RID_20251212_150513)"@nn ;
     dct:description "Støtte informasjon informasjon kontakt system manuell informasjon informasjon system kvalitet ordning nasjonal tjeneste kontakt støtte livshendelse system eksempel data prosess hendelse veiledning offentlig offentlig skjema veiledning registrering behandling støtte status brukerreise livshendelse manuell."@nb, "Løysing informasjon handsaming skildring vedtak kvalitet ordning vedtak vedtak regelverk nasjonal døme skjema handsaming skildring løysing handsaming skildring skildring registrering hending manuell tilgang data status regelverk innsyn brukar system tilgang system hending system skildring automatisk livshending dokumentasjon registrering hending regelverk ordning kontakt manuell forvaltning data oppdatering livshending ordning søknad."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-009, resourceURI:tjeneste-003, resourceURI:tjeneste-008 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f55-dc82-11e5-9b2b-d6d6eb145c82> ;
@@ -4219,7 +4218,7 @@ resourceURI:livshendelse-009
 resourceURI:livshendelse-010
     a cv:LifeEvent ;
     dct:identifier "livshendelse-010" ;
-    dct:title "Livshendelse 10 (RID_20251212_135243)"@nb ;
+    dct:title "Livshendelse 10 (RID_20251212_150513)"@nb ;
     dct:description "System ordning status portal prosess forvaltning informasjon støtte oppdatering status forvaltning digital eksempel hendelse innsyn virksomhet beskrivelse kontakt tjeneste offentlig manuell prosess tilgang tilgang dokumentasjon innsyn støtte tilgang manuell vedtak tjeneste informasjon kontakt beskrivelse bruker brukerreise."@nb ;
     cpsvno:mayTriggerNeedFor resourceURI:offentlig-tjeneste-010, resourceURI:tjeneste-001, resourceURI:tjeneste-005 ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/a727e473-28a0-4562-b4ec-38fc8ff4ce66> ;
@@ -4230,7 +4229,7 @@ resourceURI:livshendelse-010
 resourceURI:virksomhetshendelse-001
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-001" ;
-    dct:title "Virksomhetshendelse 1 (RID_20251212_135243)"@nb ;
+    dct:title "Virksomhetshendelse 1 (RID_20251212_150513)"@nb ;
     dct:description "Automatisk dokumentasjon hendelse behandling behandling ordning bruker nasjonal forvaltning hendelse veiledning eksempel offentlig veiledning skjema system beskrivelse data innsyn veiledning forvaltning kontakt digital kvalitet løsning tilgang innsyn livshendelse løsning virksomhet ordning søknad."@nb ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-002, resourceURI:tjeneste-001, resourceURI:offentlig-tjeneste-007 ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba> ;
@@ -4241,7 +4240,7 @@ resourceURI:virksomhetshendelse-001
 resourceURI:virksomhetshendelse-002
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-002" ;
-    dct:title "Virksomhetshendelse 2 (RID_20251212_135243)"@nb, "Verksemdshending 2 (RID_20251212_135243)"@nn, "Business event 2 (RID_20251212_135243)"@en ;
+    dct:title "Virksomhetshendelse 2 (RID_20251212_150513)"@nb, "Verksemdshending 2 (RID_20251212_150513)"@nn, "Business event 2 (RID_20251212_150513)"@en ;
     dct:description "Prosess forvaltning kvalitet kvalitet tilgang vedtak nasjonal kvalitet regelverk livshendelse behandling kvalitet informasjon bruker bruker behandling veiledning hendelse manuell kontakt skjema innsyn veiledning forvaltning hendelse forvaltning eksempel system manuell skjema behandling dokumentasjon digital status tjeneste skjema regelverk beskrivelse manuell manuell hendelse."@nb, "Livshending dokumentasjon rettleiing system ordning data digital data registrering støtte system støtte manuell manuell tilgang offentleg system døme system støtte støtte dokumentasjon data kontakt verksemd oppdatering offentleg lokal digital offentleg nasjonal informasjon lokal brukar regelverk løysing."@nn, "Event national quality contact quality scheme legislation scheme availability process quality guidance example registration availability description process portal legislation form business contact application registration update event user form processing public national access form management management status application scheme support access business event local documentation manual availability local."@en ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-002, resourceURI:offentlig-tjeneste-003, resourceURI:tjeneste-008 ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b> ;
@@ -4252,7 +4251,7 @@ resourceURI:virksomhetshendelse-002
 resourceURI:virksomhetshendelse-003
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-003" ;
-    dct:title "Virksomhetshendelse 3 (RID_20251212_135243)"@nb, "Verksemdshending 3 (RID_20251212_135243)"@nn ;
+    dct:title "Virksomhetshendelse 3 (RID_20251212_150513)"@nb, "Verksemdshending 3 (RID_20251212_150513)"@nn ;
     dct:description "Manuell behandling registrering system bruker nasjonal ordning portal støtte digital forvaltning regelverk tjeneste brukerreise skjema dokumentasjon eksempel kontakt eksempel portal lokal behandling lokal."@nb, "Informasjon status informasjon oppdatering oppdatering digital forvaltning livshending verksemd kontakt informasjon informasjon løysing søknad tilgang prosess dokumentasjon teneste vedtak brukar nasjonal hending automatisk data informasjon ordning informasjon."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:offentlig-tjeneste-005, resourceURI:tjeneste-003, resourceURI:tjeneste-010 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/e4f49dbf-1777-4c03-823a-1e963164ce7d> ;
@@ -4263,7 +4262,7 @@ resourceURI:virksomhetshendelse-003
 resourceURI:virksomhetshendelse-004
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-004" ;
-    dct:title "Virksomhetshendelse 4 (RID_20251212_135243)"@nb ;
+    dct:title "Virksomhetshendelse 4 (RID_20251212_150513)"@nb ;
     dct:description "Prosess tjeneste oppdatering dokumentasjon livshendelse forvaltning skjema kontakt hendelse nasjonal informasjon informasjon virksomhet tilgang."@nb ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-004, resourceURI:tjeneste-001, resourceURI:offentlig-tjeneste-005 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5138da03-be20-11e6-8004-005056825ca0> ;
@@ -4274,7 +4273,7 @@ resourceURI:virksomhetshendelse-004
 resourceURI:virksomhetshendelse-005
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-005" ;
-    dct:title "Virksomhetshendelse 5 (RID_20251212_135243)"@nb, "Verksemdshending 5 (RID_20251212_135243)"@nn ;
+    dct:title "Virksomhetshendelse 5 (RID_20251212_150513)"@nb, "Verksemdshending 5 (RID_20251212_150513)"@nn ;
     dct:description "System kvalitet kvalitet støtte hendelse nasjonal oppdatering behandling prosess manuell virksomhet registrering søknad portal beskrivelse manuell bruker manuell tilgang prosess eksempel eksempel brukerreise bruker nasjonal."@nb, "Kontakt system rettleiing automatisk døme søknad tilgang teneste løysing brukarreise skildring innsyn registrering livshending støtte kontakt innsyn forvaltning prosess skjema informasjon søknad brukarreise døme skjema vedtak tilgang støtte oppdatering forvaltning handsaming dokumentasjon skildring data offentleg brukarreise brukar kvalitet søknad oppdatering oppdatering rettleiing teneste skjema teneste manuell."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-007, resourceURI:offentlig-tjeneste-009, resourceURI:offentlig-tjeneste-006 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/e4f49dbf-1777-4c03-823a-1e963164ce7d> ;
@@ -4285,7 +4284,7 @@ resourceURI:virksomhetshendelse-005
 resourceURI:virksomhetshendelse-006
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-006" ;
-    dct:title "Virksomhetshendelse 6 (RID_20251212_135243)"@nb, "Verksemdshending 6 (RID_20251212_135243)"@nn ;
+    dct:title "Virksomhetshendelse 6 (RID_20251212_150513)"@nb, "Verksemdshending 6 (RID_20251212_150513)"@nn ;
     dct:description "Virksomhet bruker portal vedtak kontakt prosess offentlig eksempel forvaltning manuell manuell søknad nasjonal veiledning skjema støtte portal oppdatering bruker virksomhet tjeneste nasjonal tjeneste digital status brukerreise veiledning."@nb, "System portal verksemd kontakt handsaming kontakt livshending registrering søknad status manuell portal."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-007, resourceURI:offentlig-tjeneste-002, resourceURI:tjeneste-003 ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/568c9f59-e81f-4a46-9d71-85e983d741bf> ;
@@ -4296,7 +4295,7 @@ resourceURI:virksomhetshendelse-006
 resourceURI:virksomhetshendelse-007
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-007" ;
-    dct:title "Virksomhetshendelse 7 (RID_20251212_135243)"@nb, "Verksemdshending 7 (RID_20251212_135243)"@nn ;
+    dct:title "Virksomhetshendelse 7 (RID_20251212_150513)"@nb, "Verksemdshending 7 (RID_20251212_150513)"@nn ;
     dct:description "Støtte behandling informasjon dokumentasjon status registrering ordning virksomhet data status beskrivelse eksempel støtte virksomhet system ordning skjema brukerreise tjeneste system forvaltning hendelse tjeneste vedtak støtte status virksomhet behandling."@nb, "Prosess data manuell søknad døme livshending informasjon brukarreise portal prosess hending status døme informasjon informasjon brukar regelverk søknad tilgang dokumentasjon skildring data offentleg."@nn ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-001, resourceURI:tjeneste-010, resourceURI:tjeneste-005 ;
     dct:subject <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> ;
@@ -4307,7 +4306,7 @@ resourceURI:virksomhetshendelse-007
 resourceURI:virksomhetshendelse-008
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-008" ;
-    dct:title "Virksomhetshendelse 8 (RID_20251212_135243)"@nb, "Verksemdshending 8 (RID_20251212_135243)"@nn, "Business event 8 (RID_20251212_135243)"@en ;
+    dct:title "Virksomhetshendelse 8 (RID_20251212_150513)"@nb, "Verksemdshending 8 (RID_20251212_150513)"@nn, "Business event 8 (RID_20251212_150513)"@en ;
     dct:description "Skjema støtte bruker informasjon dokumentasjon behandling bruker status støtte dokumentasjon automatisk nasjonal informasjon ordning behandling livshendelse kvalitet løsning nasjonal skjema livshendelse beskrivelse."@nb, "Manuell hending offentleg døme digital innsyn dokumentasjon verksemd offentleg automatisk ordning skjema teneste regelverk døme brukar regelverk status forvaltning forvaltning tilgang offentleg regelverk teneste søknad portal dokumentasjon brukar portal regelverk vedtak digital automatisk rettleiing tilgang."@nn, "Manual access contact status portal registration documentation form quality quality management manual local automatic information access contact management scheme public example system service access life-event automatic support decision system processing registration service quality digital scheme."@en ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-006, resourceURI:tjeneste-007, resourceURI:tjeneste-002 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/91797c3a-ea30-4ae4-8e82-b3674cbc083e> ;
@@ -4318,7 +4317,7 @@ resourceURI:virksomhetshendelse-008
 resourceURI:virksomhetshendelse-009
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-009" ;
-    dct:title "Virksomhetshendelse 9 (RID_20251212_135243)"@nb ;
+    dct:title "Virksomhetshendelse 9 (RID_20251212_150513)"@nb ;
     dct:description "Informasjon oppdatering offentlig regelverk portal søknad eksempel data nasjonal ordning status nasjonal nasjonal veiledning tilgang ordning hendelse portal digital hendelse."@nb ;
     cpsvno:mayTriggerNeedFor resourceURI:tjeneste-009, resourceURI:offentlig-tjeneste-007, resourceURI:tjeneste-006 ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f6a-dc82-11e5-9b2b-d6d6eb145c82> ;
@@ -4329,7 +4328,7 @@ resourceURI:virksomhetshendelse-009
 resourceURI:virksomhetshendelse-010
     a cv:BusinessEvent ;
     dct:identifier "virksomhetshendelse-010" ;
-    dct:title "Virksomhetshendelse 10 (RID_20251212_135243)"@nb, "Business event 10 (RID_20251212_135243)"@en ;
+    dct:title "Virksomhetshendelse 10 (RID_20251212_150513)"@nb, "Business event 10 (RID_20251212_150513)"@en ;
     dct:description "Informasjon data data prosess tjeneste portal løsning bruker livshendelse portal nasjonal behandling."@nb, "Form life-event form user process status application life-event update availability decision."@en ;
     cpsvno:mayTriggerNeedFor resourceURI:offentlig-tjeneste-006, resourceURI:tjeneste-004, resourceURI:tjeneste-006 ;
     dct:subject <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/master/testdata/exBegrepDefinisjonViaDefinisjonsobjekt-TestBegrepKSF> ;
@@ -4340,7 +4339,7 @@ resourceURI:virksomhetshendelse-010
 resourceURI:hendelse-001
     a cv:Event ;
     dct:identifier "hendelse-001" ;
-    dct:title "Hendelse 1 (RID_20251212_135243)"@nb, "Event 1 (RID_20251212_135243)"@en ;
+    dct:title "Hendelse 1 (RID_20251212_150513)"@nb, "Event 1 (RID_20251212_150513)"@en ;
     dct:description "Hendelse brukerreise ordning data tilgang veiledning behandling hendelse bruker livshendelse beskrivelse beskrivelse innsyn eksempel beskrivelse digital kvalitet brukerreise beskrivelse data system brukerreise skjema virksomhet data eksempel veiledning lokal informasjon livshendelse forvaltning lokal dokumentasjon offentlig offentlig søknad offentlig informasjon tjeneste innsyn virksomhet beskrivelse lokal manuell innsyn."@nb, "Status legislation scheme availability support data documentation scheme digital service public information decision local form application journey example decision example portal life-event contact update quality documentation digital decision example contact system journey process update processing information access system manual application service information legislation management."@en ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f5e-dc82-11e5-9b2b-d6d6eb145c82> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/ENG> ;
@@ -4351,7 +4350,7 @@ resourceURI:hendelse-001
 resourceURI:hendelse-002
     a cv:Event ;
     dct:identifier "hendelse-002" ;
-    dct:title "Hendelse 2 (RID_20251212_135243)"@nb, "Hending 2 (RID_20251212_135243)"@nn, "Event 2 (RID_20251212_135243)"@en ;
+    dct:title "Hendelse 2 (RID_20251212_150513)"@nb, "Hending 2 (RID_20251212_150513)"@nn, "Event 2 (RID_20251212_150513)"@en ;
     dct:description "Automatisk bruker ordning automatisk portal offentlig forvaltning innsyn status innsyn veiledning digital dokumentasjon offentlig regelverk."@nb, "Søknad verksemd oppdatering informasjon vedtak system skildring tilgang system nasjonal regelverk kontakt prosess lokal automatisk lokal automatisk søknad portal livshending manuell portal ordning hending kvalitet brukar støtte rettleiing døme skildring ordning brukar kontakt døme dokumentasjon døme forvaltning regelverk offentleg portal portal søknad innsyn innsyn vedtak registrering."@nn, "Portal service event availability support user form system availability description information information support scheme local local local public update availability automatic guidance access quality event access access local event digital automatic public status decision scheme processing national national event."@en ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/96fb41b7-c4f9-4084-a0b1-1c6d656ad658> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO>, <https://publications.europa.eu/resource/authority/language/ENG> ;
@@ -4362,7 +4361,7 @@ resourceURI:hendelse-002
 resourceURI:hendelse-003
     a cv:Event ;
     dct:identifier "hendelse-003" ;
-    dct:title "Hendelse 3 (RID_20251212_135243)"@nb, "Hending 3 (RID_20251212_135243)"@nn ;
+    dct:title "Hendelse 3 (RID_20251212_150513)"@nb, "Hending 3 (RID_20251212_150513)"@nn ;
     dct:description "Veiledning løsning regelverk virksomhet støtte lokal regelverk prosess skjema behandling manuell skjema nasjonal lokal digital."@nb, "Lokal løysing søknad digital digital status løysing status automatisk innsyn brukarreise hending data manuell dokumentasjon skildring automatisk system vedtak regelverk offentleg regelverk."@nn ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
@@ -4373,7 +4372,7 @@ resourceURI:hendelse-003
 resourceURI:hendelse-004
     a cv:Event ;
     dct:identifier "hendelse-004" ;
-    dct:title "Hendelse 4 (RID_20251212_135243)"@nb, "Hending 4 (RID_20251212_135243)"@nn ;
+    dct:title "Hendelse 4 (RID_20251212_150513)"@nb, "Hending 4 (RID_20251212_150513)"@nn ;
     dct:description "Nasjonal forvaltning hendelse offentlig kontakt tjeneste støtte støtte tjeneste portal forvaltning kvalitet tjeneste offentlig ordning behandling beskrivelse forvaltning kontakt status vedtak offentlig automatisk."@nb, "Regelverk innsyn informasjon manuell oppdatering nasjonal status forvaltning kvalitet handsaming informasjon søknad døme forvaltning nasjonal offentleg livshending portal handsaming skjema støtte portal ordning ordning kvalitet oppdatering hending livshending oppdatering døme offentleg kontakt innsyn digital livshending tilgang løysing livshending data prosess ordning portal oppdatering."@nn ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f5d-dc82-11e5-9b2b-d6d6eb145c82> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
@@ -4384,7 +4383,7 @@ resourceURI:hendelse-004
 resourceURI:hendelse-005
     a cv:Event ;
     dct:identifier "hendelse-005" ;
-    dct:title "Hendelse 5 (RID_20251212_135243)"@nb, "Hending 5 (RID_20251212_135243)"@nn ;
+    dct:title "Hendelse 5 (RID_20251212_150513)"@nb, "Hending 5 (RID_20251212_150513)"@nn ;
     dct:description "Livshendelse system portal beskrivelse portal oppdatering data data lokal kontakt lokal status tilgang automatisk bruker digital forvaltning tilgang kvalitet automatisk løsning bruker hendelse prosess kontakt lokal."@nb, "Skjema løysing kontakt tilgang portal dokumentasjon handsaming livshending støtte manuell forvaltning rettleiing forvaltning teneste registrering støtte rettleiing støtte manuell."@nn ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/4edbe539-9e64-4e74-8505-091f0a57bc9b> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
@@ -4395,7 +4394,7 @@ resourceURI:hendelse-005
 resourceURI:hendelse-006
     a cv:Event ;
     dct:identifier "hendelse-006" ;
-    dct:title "Hendelse 6 (RID_20251212_135243)"@nb, "Hending 6 (RID_20251212_135243)"@nn ;
+    dct:title "Hendelse 6 (RID_20251212_150513)"@nb, "Hending 6 (RID_20251212_150513)"@nn ;
     dct:description "Tjeneste prosess virksomhet beskrivelse portal støtte prosess tjeneste tjeneste virksomhet data lokal behandling informasjon manuell behandling søknad digital beskrivelse dokumentasjon prosess prosess dokumentasjon hendelse bruker eksempel manuell virksomhet veiledning portal regelverk tjeneste data eksempel."@nb, "Verksemd tilgang rettleiing status oppdatering digital lokal offentleg prosess digital døme oppdatering oppdatering teneste hending kontakt innsyn system automatisk skjema hending forvaltning handsaming."@nn ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5711f8e0-d72b-11e6-a0bf-0050568351d2> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
@@ -4406,7 +4405,7 @@ resourceURI:hendelse-006
 resourceURI:hendelse-007
     a cv:Event ;
     dct:identifier "hendelse-007" ;
-    dct:title "Hendelse 7 (RID_20251212_135243)"@nb, "Hending 7 (RID_20251212_135243)"@nn ;
+    dct:title "Hendelse 7 (RID_20251212_150513)"@nb, "Hending 7 (RID_20251212_150513)"@nn ;
     dct:description "Livshendelse bruker bruker informasjon løsning løsning offentlig prosess løsning livshendelse registrering digital manuell løsning brukerreise vedtak tjeneste oppdatering portal regelverk oppdatering skjema informasjon manuell livshendelse informasjon offentlig data eksempel registrering automatisk informasjon veiledning digital registrering ordning behandling virksomhet informasjon støtte digital nasjonal."@nb, "Vedtak portal skildring offentleg verksemd status vedtak brukar innsyn dokumentasjon regelverk hending automatisk kontakt lokal rettleiing brukar livshending døme nasjonal."@nn ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/e51d808c-f6f9-45f6-939f-b36b446760ba> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
@@ -4417,7 +4416,7 @@ resourceURI:hendelse-007
 resourceURI:hendelse-008
     a cv:Event ;
     dct:identifier "hendelse-008" ;
-    dct:title "Hendelse 8 (RID_20251212_135243)"@nb, "Hending 8 (RID_20251212_135243)"@nn ;
+    dct:title "Hendelse 8 (RID_20251212_150513)"@nb, "Hending 8 (RID_20251212_150513)"@nn ;
     dct:description "Kvalitet nasjonal lokal livshendelse lokal automatisk manuell lokal dokumentasjon søknad oppdatering tjeneste lokal prosess virksomhet livshendelse data beskrivelse lokal prosess hendelse kvalitet dokumentasjon livshendelse automatisk oppdatering forvaltning skjema regelverk portal kvalitet tjeneste."@nb, "Manuell automatisk manuell rettleiing verksemd handsaming vedtak registrering manuell system innsyn regelverk søknad dokumentasjon tilgang informasjon manuell handsaming døme verksemd."@nn ;
     dct:subject <https://concept-catalog.fellesdatakatalog.digdir.no/collections/991825827/concepts/af1ee647-9e46-4cd8-9607-d32d1551cab3> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/NNO> ;
@@ -4428,7 +4427,7 @@ resourceURI:hendelse-008
 resourceURI:hendelse-009
     a cv:Event ;
     dct:identifier "hendelse-009" ;
-    dct:title "Hendelse 9 (RID_20251212_135243)"@nb, "Event 9 (RID_20251212_135243)"@en ;
+    dct:title "Hendelse 9 (RID_20251212_150513)"@nb, "Event 9 (RID_20251212_150513)"@en ;
     dct:description "Ordning beskrivelse forvaltning lokal system oppdatering dokumentasjon vedtak regelverk regelverk nasjonal vedtak støtte kvalitet livshendelse."@nb, "Life-event user support data decision legislation description registration process event digital guidance form life-event life-event information quality guidance journey access documentation support life-event information contact journey legislation availability support documentation update description user."@en ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f5e-dc82-11e5-9b2b-d6d6eb145c82> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB>, <https://publications.europa.eu/resource/authority/language/ENG> ;
@@ -4439,7 +4438,7 @@ resourceURI:hendelse-009
 resourceURI:hendelse-010
     a cv:Event ;
     dct:identifier "hendelse-010" ;
-    dct:title "Hendelse 10 (RID_20251212_135243)"@nb ;
+    dct:title "Hendelse 10 (RID_20251212_150513)"@nb ;
     dct:description "Brukerreise støtte portal hendelse veiledning regelverk informasjon oppdatering kvalitet behandling lokal kontakt kvalitet hendelse offentlig innsyn vedtak registrering ordning skjema kvalitet lokal manuell nasjonal system behandling virksomhet system data løsning livshendelse hendelse brukerreise bruker livshendelse eksempel veiledning system forvaltning livshendelse."@nb ;
     dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/e4f49dbf-1777-4c03-823a-1e963164ce7d> ;
     dct:language <https://publications.europa.eu/resource/authority/language/NOB> ;
@@ -4450,7 +4449,7 @@ resourceURI:hendelse-010
 resourceURI:catalog_50ds
     a dcat:Catalog ;
     dct:identifier "catalog_50ds" ;
-    dct:title "Testkatalog for tjenester og hendelser (RID_20251212_135243)"@nb ;
+    dct:title "Testkatalog for tjenester og hendelser (RID_20251212_150513)"@nb ;
     dct:description "Testkatalog som inneholder tjenester og hendelser i henhold til CPSV-AP-NO."@nb ;
     dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
     cv:contactPoint resourceURI:cp-katalog ;
