@@ -15,7 +15,7 @@
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix time:   <http://www.w3.org/2006/time#> .
 @prefix greg:   <http://www.w3.org/ns/time/gregorian#> .
-@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/tjeneste_hendelse-cpsv-testdata-100.ttl#> .
+@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/tjeneste_hendelse-cpsv-testdata-500.ttl#> .
 
 
 <https://staging.fellesdatakatalog.digdir.no/organizations/312460726>
