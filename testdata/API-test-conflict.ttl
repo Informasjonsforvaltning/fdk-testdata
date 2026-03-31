@@ -41,4 +41,4 @@ PREFIX vcard:  <http://www.w3.org/2006/vcard/ns#>
         rdf:type       dcat:Catalog;
         dct:publisher  <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/555111098>;
         dct:title      "Conflict test"@en;
-        dcat:service   <https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/data-services/69689d345d1c7f6160ca338d> , <https://testdepartementet/data-services/no-conflict> .
+        dcat:service   <https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/data-services/69689d345d1c7f6160ca338d> , <https://testdepartementet.no/data-services/no-conflict> .
