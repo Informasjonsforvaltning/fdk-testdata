@@ -20,11 +20,25 @@ PREFIX vcard:  <http://www.w3.org/2006/vcard/ns#>
                              ];
         dcat:endpointURL     <https://asdf.no>;
         dcat:keyword         "test2"@nb , "test2"@nn , "test2"@en;
-        dcat:servesDataset   <https://registrering.staging.fellesdatakatalog.digdir.no/catalogs/910244132/datasets/e238edd9-b05c-435c-a844-89bb27d883bb>;
         dcat:version         "1.2.5" .
 
-<https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/555111098>
+<https://testdepartementet.no/data-services/no-conflict>
+        rdf:type             dcat:DataService;
+        dcatap:availability  <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL>;
+        dct:accessRights     <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC>;
+        dct:publisher        <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/555111098>;
+        dct:title            "API without conflict"@nb;
+        adms:status          <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP>;
+        dcat:contactPoint    [ rdf:type      vcard:Organization;
+                               vcard:fn      "Testdepartementet"@nb;
+                               vcard:hasURL  <https://testdepartementet.no>
+                             ];
+        dcat:endpointURL     <https://asdf.no>;
+        dcat:keyword         "testing"@nb , "testing"@nn , "testing"@en;
+        dcat:version         "1.1.1" .
+
+<https://testdepartementet.no/api-katalog>
         rdf:type       dcat:Catalog;
         dct:publisher  <https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/555111098>;
         dct:title      "Conflict test"@en;
-        dcat:service   <https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/data-services/69689d345d1c7f6160ca338d> .
+        dcat:service   <https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/data-services/69689d345d1c7f6160ca338d> , <https://testdepartementet/data-services/no-conflict> .
