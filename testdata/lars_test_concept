@@ -11,7 +11,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://www.nav.no/begrepskatalog> a skos:Collection ;
+<https://www.nav.no/begrepskatalog/2> a skos:Collection ;
     rdfs:label "Begrepskatalog BR"@nb ;
     dct:description "UTKAST til Navs begrepskatalog, godkjente begreper" ;
     dct:identifier <file:///C:/Users/stsk/PyCharmProjects/nav-concept-csv-2-skos-ap-no/katalog.ttl> ;
