@@ -79,7 +79,8 @@
       <https://schema.org/Dataset>,
       <https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/src/model/catalog-of-models-for-specifications.ttl#modelldcat-ap-no-model> ;
   dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/964338531/concepts/12d0e398-d827-4f94-ae6e-fd7b1c7b860a> ;
-  dcat:version "1.0" .
+  dcat:version "1.0" ;
+  foaf:page <https://data.norge.no/specification/dcat-ap-no#Datasett-dokumentasjon> .
 
 <https://example.com/testdata/contact/ds1-cp> a vcard:Organization ;
   vcard:fn "Testkontakt for datasett 1"@nb ;
