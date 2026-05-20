@@ -17,10 +17,10 @@ jobs:
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4.3.1
 
     - name: Upload files
-      uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+      uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@84beeeacd364f310ef6a253bc079354cdf62e5dd  # v3.2.0
       id: upload-files
       with:
          ontology-type: "vocabulary"
