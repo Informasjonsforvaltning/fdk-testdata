@@ -1,0 +1,436 @@
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix adms:   <http://www.w3.org/ns/adms#> .
+@prefix cpsv:   <http://purl.org/vocab/cpsv#> .
+@prefix cpsvno: <https://data.norge.no/vocabulary/cpsvno#> .
+@prefix cv:     <http://data.europa.eu/m8g/> .
+@prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix org:    <http://www.w3.org/ns/org#> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix locn:   <http://www.w3.org/ns/locn#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix eli:    <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+@prefix greg:   <http://www.w3.org/ns/time/gregorian#> .
+@prefix resourceURI: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/tjeneste_hendelse-cpsv-testdata-minimal.ttl#> .
+
+
+# ---------------------------------------------------------------------------
+# Organisasjoner
+# ---------------------------------------------------------------------------
+
+<https://staging.fellesdatakatalog.digdir.no/organizations/312460726>
+    a cv:PublicOrganisation ;
+    dct:identifier "312460726" ;
+    dct:title "Komisk Presis Bille IKS"@nb ;
+    org:identifier "0192:312460726" ;
+    .
+
+<https://staging.fellesdatakatalog.digdir.no/organizations/312922304>
+    a org:Organization ;
+    dct:identifier "312922304" ;
+    dct:title "Empatisk Possessiv Piggsvin"@nb ;
+    org:identifier "0192:312922304" ;
+    .
+
+
+# ---------------------------------------------------------------------------
+# Katalog – kontaktpunkt
+# ---------------------------------------------------------------------------
+
+resourceURI:cp-katalog
+    a cv:ContactPoint ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/katalog> ;
+    cv:email "mailto:kontakt+katalog@example.org"^^xsd:anyURI ;
+    vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>,
+                      <https://publications.europa.eu/resource/authority/language/NNO> ;
+    cv:telephone "tel:+4713356886" ;
+    cv:openingHours resourceURI:oh-katalog-normal-1 ;
+    cv:specialOpeningHoursSpecification resourceURI:oh-katalog-special-1 ;
+    .
+
+resourceURI:oh-katalog-normal-1
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 9 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Monday ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 15 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Monday ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY> ;
+    dct:description "normal åpningstid på mandager"@nb ,
+                    "normal Monday opening hours"@en ;
+    .
+
+resourceURI:oh-katalog-special-1
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 0 ;
+            time:minute 0 ;
+            time:day "---17"^^xsd:gDay ;
+            time:monthOfYear greg:May ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 0 ;
+            time:minute 0 ;
+            time:day "---17"^^xsd:gDay ;
+            time:monthOfYear greg:May ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Stengt 17. mai hvert år"@nb ,
+                    "Closed 17 May every year"@en ;
+    .
+
+
+# ===========================================================================
+# OFFENTLIG TJENESTE  (cpsv:PublicService)
+# ===========================================================================
+
+resourceURI:cp-offentlig-tjeneste-nr001
+    a cv:ContactPoint ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn, "Contact page"@en ;
+    cv:contactPage <https://www.example.org/offentlig-tjeneste-nr001> ;
+    cv:email "mailto:kontakt+offentlig-tjeneste-001@example.org"^^xsd:anyURI ;
+    vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>,
+                      <https://publications.europa.eu/resource/authority/language/NNO>,
+                      <https://publications.europa.eu/resource/authority/language/ENG> ;
+    cv:telephone "tel:+4741227216" ;
+    cv:openingHours resourceURI:oh-offentlig-tjeneste-nr001-normal-1,
+                    resourceURI:oh-offentlig-tjeneste-nr001-normal-2 ;
+    cv:specialOpeningHoursSpecification resourceURI:oh-offentlig-tjeneste-nr001-special-1 ;
+    .
+
+resourceURI:oh-offentlig-tjeneste-nr001-normal-1
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 8 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Monday ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 15 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Monday ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY> ;
+    dct:description "normal åpningstid på mandager"@nb ,
+                    "normal Monday opening hours"@en ;
+    .
+
+resourceURI:oh-offentlig-tjeneste-nr001-normal-2
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 8 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Friday ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 15 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Friday ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY> ;
+    dct:description "normal åpningstid på fredager"@nb ,
+                    "normal Friday opening hours"@en ;
+    .
+
+resourceURI:oh-offentlig-tjeneste-nr001-special-1
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 0 ;
+            time:minute 0 ;
+            time:day "---17"^^xsd:gDay ;
+            time:monthOfYear greg:May ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 0 ;
+            time:minute 0 ;
+            time:day "---17"^^xsd:gDay ;
+            time:monthOfYear greg:May ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Stengt 17. mai hvert år"@nb ,
+                    "Closed 17 May every year"@en ;
+    .
+
+resourceURI:output-offentlig-tjeneste-nr001-ok
+    a cpsvno:PossibleOutput ;
+    dct:title "Innvilget resultat"@nb, "Innvilga resultat"@nn, "Approved outcome"@en ;
+    dct:description "Tjenesten offentlig-tjeneste-nr001 er innvilget."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO>,
+                 <https://publications.europa.eu/resource/authority/language/ENG> ;
+    .
+
+resourceURI:output-offentlig-tjeneste-nr001-avslag
+    a cpsvno:PossibleOutput ;
+    dct:title "Avslått resultat"@nb, "Avslått resultat"@nn, "Rejected outcome"@en ;
+    dct:description "Tjenesten offentlig-tjeneste-nr001 er avslått."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO>,
+                 <https://publications.europa.eu/resource/authority/language/ENG> ;
+    .
+
+resourceURI:evidence-offentlig-tjeneste-nr001-firmaattest
+    a cpsvno:RequiredEvidence ;
+    dct:identifier "evidence-offentlig-tjeneste-nr001-firmaattest" ;
+    dct:title "Firmaattest"@nb ;
+    dct:description "Firmaattest som dokumenterer organisasjonsnummeret."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO>,
+                 <https://publications.europa.eu/resource/authority/language/ENG> ;
+    cpsvno:validityDuration "P3M"^^xsd:duration ;
+    .
+
+resourceURI:lov-offentlig-tjeneste-nr001
+    a eli:LegalResource ;
+    dct:identifier "lov-offentlig-tjeneste-nr001" ;
+    dct:type <https://data.norge.no/vocabulary/legal-resource-type#regulation> ;
+    dct:title "Lov/forskrift om offentlig-tjeneste-nr001"@nb ;
+    dct:description "Fiktiv lov/forskrift som regulerer tjenesten offentlig-tjeneste-nr001."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB> ;
+    rdfs:seeAlso <https://lovdata.no/eli/no/forskrift/2017/02/13/lov-offentlig-tjeneste-001-199> ;
+    .
+
+resourceURI:offentlig-tjeneste-nr001
+    a cpsv:PublicService ;
+    dct:identifier "offentlig-tjeneste-nr001" ;
+    dct:title "Offentlig tjeneste 1"@nb, "Offentleg teneste 1"@nn, "Public service 1"@en ;
+    dct:description "Beskrivelse av offentlig tjeneste 1. Tjenesten tilbys av en offentlig virksomhet og er tilgjengelig for alle innbyggere."@nb,
+                    "Skildring av offentleg teneste 1. Tenesta er tilgjengeleg for alle innbyggjarar."@nn,
+                    "Description of public service 1. The service is provided by a public organisation and is available to all residents."@en ;
+    dct:type <http://publications.europa.eu/resource/authority/main-activity/solid-fuel> ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
+    cv:hasCompetentAuthority <https://staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    cv:contactPoint resourceURI:cp-offentlig-tjeneste-nr001 ;
+    cpsvno:hasPossibleOutput resourceURI:output-offentlig-tjeneste-nr001-ok,
+                             resourceURI:output-offentlig-tjeneste-nr001-avslag ;
+    cpsvno:hasRequiredEvidence resourceURI:evidence-offentlig-tjeneste-nr001-firmaattest ;
+    dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/974761076/concepts/5cd23f6a-dc82-11e5-9b2b-d6d6eb145c82> ;
+    cv:thematicArea <https://psi.norge.no/los/tema/familie-og-barn> ;
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/nasjon/id/173163> , # Norge
+                <http://publications.europa.eu/resource/authority/country/NOR> , # Norge
+                <https://sws.geonames.org/3144096/kingdom-of-norway.html> ; # Norge
+
+    foaf:homepage <https://www.example.org/offentlig-tjeneste/1> ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO>,
+                 <https://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:keyword "Offentlig tjeneste 1"@nb, "test"@nb ;
+    cv:hasLegalResource resourceURI:lov-offentlig-tjeneste-nr001 ;
+    .
+
+
+# ===========================================================================
+# IKKE-OFFENTLIG TJENESTE  (cpsvno:Service)
+# ===========================================================================
+
+resourceURI:cp-tjeneste-nr001
+    a cv:ContactPoint ;
+    vcard:category "Kontaktside"@nb, "Kontaktside"@nn ;
+    cv:contactPage <https://www.example.org/tjeneste-nr001> ;
+    cv:email "mailto:kontakt+tjeneste-001@example.org"^^xsd:anyURI ;
+    vcard:hasLanguage <https://publications.europa.eu/resource/authority/language/NOB>,
+                      <https://publications.europa.eu/resource/authority/language/NNO> ;
+    cv:telephone "tel:+4796128115" ;
+    cv:openingHours resourceURI:oh-tjeneste-nr001-normal-1 ;
+    cv:specialOpeningHoursSpecification resourceURI:oh-tjeneste-nr001-special-1 ;
+    .
+
+resourceURI:oh-tjeneste-nr001-normal-1
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 9 ;
+            time:minute 0 ;
+            time:dayOfWeek time:Thursday ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 14 ;
+            time:minute 30 ;
+            time:dayOfWeek time:Thursday ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/WEEKLY> ;
+    dct:description "normal åpningstid på torsdager"@nb ,
+                    "normal Thursday opening hours"@en ;
+    .
+
+resourceURI:oh-tjeneste-nr001-special-1
+    a time:TemporalEntity ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 0 ;
+            time:minute 0 ;
+            time:day "---24"^^xsd:gDay ;
+            time:monthOfYear greg:December ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:DateTimeDescription ;
+            time:unitType time:unitMinute ;
+            time:hour 0 ;
+            time:minute 0 ;
+            time:day "---25"^^xsd:gDay ;
+            time:monthOfYear greg:December ;
+        ] ;
+    ] ;
+    cv:frequency <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+    dct:description "Stengt 24. og 25. desember hvert år"@nb ,
+                    "Closed 24 and 25 December every year"@en ;
+    .
+
+resourceURI:output-tjeneste-nr001-ok
+    a cpsvno:PossibleOutput ;
+    dct:title "Innvilget resultat"@nb, "Innvilga resultat"@nn ;
+    dct:description "Tjenesten tjeneste-001 er innvilget."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO> ;
+    .
+
+resourceURI:output-tjeneste-nr001-avslag
+    a cpsvno:PossibleOutput ;
+    dct:title "Avslått resultat"@nb, "Avslått resultat"@nn ;
+    dct:description "Tjenesten tjeneste-nr001 er avslått."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO> ;
+    .
+
+resourceURI:evidence-tjeneste-nr001-firmaattest
+    a cpsvno:RequiredEvidence ;
+    dct:identifier "evidence-tjeneste-nr001-firmaattest" ;
+    dct:title "Firmaattest"@nb ;
+    dct:description "Firmaattest som dokumenterer organisasjonsnummeret."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO> ;
+    cpsvno:validityDuration "P3M"^^xsd:duration ;
+    .
+
+resourceURI:lov-tjeneste-nr001
+    a eli:LegalResource ;
+    dct:identifier "lov-tjeneste-nr001" ;
+    dct:type <https://data.norge.no/vocabulary/legal-resource-type#regulation> ;
+    dct:title "Lov/forskrift om tjeneste-nr001"@nb ;
+    dct:description "Fiktiv lov/forskrift som regulerer tjenesten tjeneste-nr001."@nb ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB> ;
+    rdfs:seeAlso <https://lovdata.no/eli/no/forskrift/2025/11/26/lov-tjeneste-001-284> ;
+    .
+
+resourceURI:tjeneste-nr001
+    a cpsvno:Service ;
+    dct:identifier "tjeneste-nr001" ;
+    dct:title "Tjeneste 1"@nb, "Teneste 1"@nn ;
+    dct:description "Beskrivelse av ikke-offentlig tjeneste 1. Tjenesten er eid av en privat virksomhet og er tilgjengelig for virksomheter i utvalgte fylker."@nb,
+                    "Skildring av ikkje-offentleg teneste 1. Tenesta er eigd av ei privat verksemd og er tilgjengeleg for verksemder i utvalde fylke."@nn ;
+    adms:status <http://publications.europa.eu/resource/authority/distribution-status/UNDER_DEVELOPMENT> ;
+    cv:contactPoint resourceURI:cp-tjeneste-nr001 ;
+    cpsvno:hasPossibleOutput resourceURI:output-tjeneste-nr001-ok,
+                             resourceURI:output-tjeneste-nr001-avslag ;
+    cpsvno:hasRequiredEvidence resourceURI:evidence-tjeneste-nr001-firmaattest ;
+    dct:subject <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/312460726/concepts/e4f49dbf-1777-4c03-823a-1e963164ce7d> ;
+    cv:thematicArea <http://eurovoc.europa.eu/100242> ;
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/fylke/id/1731539>, # Oslo fylke
+                <https://data.geonorge.no/administrativeEnheter/kommune/id/173018> , # Oslo kommune
+                <http://publications.europa.eu/resource/authority/continent/EUROPE> ,
+                <http://publications.europa.eu/resource/authority/country/NOR> , # Norge
+                <https://www.geonames.org/3143244/oslo.html> , # Oslo kommune
+                <https://sws.geonames.org/3143244/oslo.html> , # Oslo kommune
+                <https://sws.geonames.org/3143242/oslo-county.html> ; #Oslo fylke
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO> ;
+    dcat:keyword "Tjeneste 1"@nb, "eksempel"@nb ;
+    cv:ownedBy <https://staging.fellesdatakatalog.digdir.no/organizations/312922304> ;
+    cv:hasLegalResource resourceURI:lov-tjeneste-nr001 ;
+    .
+
+
+# ===========================================================================
+# KATALOG
+# ===========================================================================
+
+resourceURI:catalog_minimal
+    a dcat:Catalog ;
+    dct:identifier "catalog_minimal" ;
+    dct:title "Minimal testkatalog for tjenester"@nb ;
+    dct:description "Testkatalog som inneholder én offentlig tjeneste (cpsv:PublicService) og én ikke-offentlig tjeneste (cpsvno:Service) i henhold til CPSV-AP-NO."@nb ;
+    dct:publisher <https://staging.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    cv:contactPoint resourceURI:cp-katalog ;
+    dct:language <https://publications.europa.eu/resource/authority/language/NOB>,
+                 <https://publications.europa.eu/resource/authority/language/NNO>,
+                 <https://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:themeTaxonomy <https://psi.norge.no/los/tema/familie-og-barn>,
+                       <http://eurovoc.europa.eu/100242> ;
+    dct:issued "2026-06-19"^^xsd:date ;
+    dcatno:containsService resourceURI:offentlig-tjeneste-nr001, resourceURI:tjeneste-nr001 ;
+    .
