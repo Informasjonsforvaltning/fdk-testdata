@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record>
+    <id>1</id>
+    <name>Alpha</name>
+    <value>100</value>
+  </record>
+  <record>
+    <id>2</id>
+    <name>Beta</name>
+    <value>200</value>
+  </record>
+  <record>
+    <id>3</id>
+    <name>Gamma</name>
+    <value>300</value>
+  </record>
+</records>
