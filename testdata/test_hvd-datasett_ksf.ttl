@@ -8,19 +8,21 @@
 @prefix dcatap: <http://data.europa.eu/r5r/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
-@prefix digdir: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl>
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix digdir: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl> .
 
-<digdir:testKatalog> a dcat:Catalog ;
+digdir:testKatalog a dcat:Catalog ;
     dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#testKatalog"^^xsd:anyURI ;
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
     dct:title "Katalog for HVD-datasett"@nb ;
-    dct:description "Katalog for testing av HVD-datasett" ;	
+    dct:description "Katalog for testing av HVD-datasett"@nb ;	
     dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
     dcat:dataset <https://example.com/test/test_datasett_ksf/testDatasett> ;
     foaf:homepage <https://digdir.no> ;
-    dcat:contactPoint <digdir:kontaktpunt> .
+    dcat:contactPoint <digdir:kontaktpunkt> .
 
-<digdir:test-HVD-datasett1> a dcat:Dataset ;
+digdir:test_HVD-datasett1 a dcat:Dataset ;
     dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
     dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#test_HVD-datasett1"^^xsd:anyURI ;
     dct:description "Test av HVD-datsett"@nb ;
@@ -32,21 +34,21 @@
     dct:title "HVD-datasett 1"@nb,
 	      "HVD dataset 1"@en,
 	      "HVD-datasett 1"@nn ;
-    dcat:contactPoint <digdir:kontaktpunt> ;
+    dcat:contactPoint <digdir:kontaktpunkt> ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> ;
     dcatap:applicableLegislation <digdir:regulativressurs1> ;
-    dcatap: hvdCategory <http://data.europa.eu/bna/c_a9135398> .
+    dcatap:hvdCategory <http://data.europa.eu/bna/c_a9135398> .
 	
 <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> a foaf:Agent ;
     foaf:name "Comic Precise Beetle IKS"@en,
         "Komisk Presis Bille IKS"@nb . 
 
-<digdir:regulativressurs1> a eli:LegalResource ;
+digdir:regulativressurs1 a eli:LegalResource ;
     rdfs:seeAlso <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
     dct:description "Regulation (EU) 2023/138 of 21 December 2022."@en .
 
-<digdir:kontaktpunt> a vcard:Organization ;
+digdir:kontaktpunkt a vcard:Organization ;
     vcard:fn "data.norge.no"@nb ;
     vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
     vcard:hasURL <https://data.norge.no/nb/contact> .
