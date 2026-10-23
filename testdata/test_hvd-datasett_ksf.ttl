@@ -18,14 +18,14 @@ digdir:testKatalog a dcat:Catalog ;
     dct:title "Katalog for HVD-datasett"@nb ;
     dct:description "Katalog for testing av HVD-datasett"@nb ;	
     dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
-    dcat:dataset <https://example.com/test/test_datasett_ksf/testDatasett> ;
+    dcat:dataset digdir:test_HVD-datasett1 ;
     foaf:homepage <https://digdir.no> ;
-    dcat:contactPoint <digdir:kontaktpunkt> .
+    dcat:contactPoint digdir:kontaktpunk .
 
 digdir:test_HVD-datasett1 a dcat:Dataset ;
     dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
     dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#test_HVD-datasett1"^^xsd:anyURI ;
-    dct:description "Test av HVD-datsett"@nb ;
+    dct:description "Test av HVD-datasett"@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
     dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
@@ -34,10 +34,10 @@ digdir:test_HVD-datasett1 a dcat:Dataset ;
     dct:title "HVD-datasett 1"@nb,
 	      "HVD dataset 1"@en,
 	      "HVD-datasett 1"@nn ;
-    dcat:contactPoint <digdir:kontaktpunkt> ;
+    dcat:contactPoint digdir:kontaktpunkt ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> ;
-    dcatap:applicableLegislation <digdir:regulativressurs1> ,
+    dcatap:applicableLegislation digdir:regulativressurs1 ,
 								 <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
     dcatap:hvdCategory <http://data.europa.eu/bna/c_a9135398> .
 	
