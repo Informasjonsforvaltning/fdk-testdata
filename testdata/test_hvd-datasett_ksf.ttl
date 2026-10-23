@@ -60,7 +60,7 @@ digdir:distribusjon1 a dcat:Distribution ;
 	dcat:accessURL <https://vg.no> ;
 	dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 	dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-	dct:description <Test distribusjon> ;
+	dct:description "Test distribusjon"@nb ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
 	adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP> ;
 	dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL> .
