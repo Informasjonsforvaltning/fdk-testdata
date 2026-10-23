@@ -11,7 +11,7 @@
 @prefix digdir: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl>
 
 <digdir:testKatalog> a dcat:Catalog ;
-    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#testKatalog"^^xsd:anyURI" ;
+    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#testKatalog"^^xsd:anyURI ;
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
     dct:title "Katalog for HVD-datasett"@nb ;
     dct:description "Katalog for testing av HVD-datasett" ;	
@@ -22,7 +22,7 @@
 
 <digdir:test-HVD-datasett1> a dcat:Dataset ;
     dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
-    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#test_HVD-datasett1"^^xsd:anyURI" ;
+    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#test_HVD-datasett1"^^xsd:anyURI ;
     dct:description "Test av HVD-datsett"@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
@@ -46,7 +46,7 @@
     rdfs:seeAlso <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
     dct:description "Regulation (EU) 2023/138 of 21 December 2022."@en .
 
-<digdir:kontaktpunt> a a vcard:Organization ;
+<digdir:kontaktpunt> a vcard:Organization ;
     vcard:fn "data.norge.no"@nb ;
     vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
     vcard:hasURL <https://data.norge.no/nb/contact> .
