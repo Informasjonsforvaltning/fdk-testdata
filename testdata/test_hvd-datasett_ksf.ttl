@@ -39,7 +39,9 @@ digdir:test_HVD-datasett1 a dcat:Dataset ;
     dcat:landingPage <https://www.digdir.no/> ;
     dcatap:applicableLegislation digdir:regulativressurs1 ,
 								 <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
-    dcatap:hvdCategory <http://data.europa.eu/bna/c_a9135398> .
+    dcatap:hvdCategory <http://data.europa.eu/bna/c_a9135398> ;
+	dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+	dcat:distribution digdir:distribusjon1 .
 	
 <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> a foaf:Agent ;
     foaf:name "Comic Precise Beetle IKS"@en,
@@ -53,4 +55,13 @@ digdir:kontaktpunkt a vcard:Organization ;
     vcard:fn "data.norge.no"@nb ;
     vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
     vcard:hasURL <https://data.norge.no/nb/contact> .
+
+digdir:distribusjon1 a dcat:Distribution
+	dcat:accessURL <https//vg.no> ;
+	dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+	dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+	dct:description <Test distribusjon> ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+	adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP> ;
+	dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL> .
 
