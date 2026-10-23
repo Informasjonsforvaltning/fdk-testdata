@@ -37,11 +37,49 @@ digdir:test_HVD-datasett1 a dcat:Dataset ;
     dcat:contactPoint digdir:kontaktpunkt ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> ;
-    dcatap:applicableLegislation digdir:regulativressurs1 ,
-								 <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+    dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
     dcatap:hvdCategory <http://data.europa.eu/bna/c_a9135398> ;
 	dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
 	dcat:distribution digdir:distribusjon1 .
+
+digdir:test_HVD-datasett2 a dcat:Dataset ;
+    dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#test_HVD-datasett2"^^xsd:anyURI ;
+    dct:description "Test av HVD-datasett nr. 2"@nb ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENER>,
+               <https://psi.norge.no/los/ord/allergi> ;
+    dct:title "HVD-datasett 2"@nb,
+	      "HVD dataset 2"@en,
+	      "HVD-datasett 2"@nn ;
+    dcat:contactPoint digdir:kontaktpunkt ;
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
+    dcat:landingPage <https://www.digdir.no/> ;
+    dcatap:applicableLegislation digdir:regulativressurs1 ;					 
+    dcatap:hvdCategory <http://data.europa.eu/bna/c_36807466> ;
+	dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+	dcat:distribution digdir:distribusjon2 .
+
+digdir:test_HVD-datasett3 a dcat:Dataset ;
+    dct:creator <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-testdata/refs/heads/master/testdata/test_hvd-datasett_ksf.ttl#test_HVD-datasett3"^^xsd:anyURI ;
+    dct:description "Test av HVD-datasett nr. 3"@nb ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> ;
+    dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ENER>,
+               <https://psi.norge.no/los/ord/allergi> ;
+    dct:title "HVD-datasett 3"@nb,
+	      "HVD dataset 3"@en,
+	      "HVD-datasett 3"@nn ;
+    dcat:contactPoint digdir:kontaktpunkt ;
+    dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
+    dcat:landingPage <https://www.digdir.no/> ;				 
+    dcatap:hvdCategory <http://data.europa.eu/bna/c_4b74ea13> ;
+	dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+	dcat:distribution digdir:distribusjon3 .
 	
 <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> a foaf:Agent ;
     foaf:name "Comic Precise Beetle IKS"@en,
@@ -61,6 +99,24 @@ digdir:distribusjon1 a dcat:Distribution ;
 	dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 	dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
 	dct:description "Test distribusjon"@nb ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+	adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP> ;
+	dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL> .
+
+digdir:distribusjon2 a dcat:Distribution ;
+	dcat:accessURL <https://dagbladet.no> ;
+	dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+	dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+	dct:description "Test distribusjon nr. 2"@nb ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+	adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP> ;
+	dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL> .
+
+digdir:distribusjon3 a dcat:Distribution ;
+	dcat:accessURL <https://banett.no> ;
+	dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+	dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+	dct:description "Test distribusjon nr. 3"@nb ;
 	dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
 	adms:status <http://publications.europa.eu/resource/authority/distribution-status/DEVELOP> ;
 	dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL> .
