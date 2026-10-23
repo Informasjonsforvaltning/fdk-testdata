@@ -37,7 +37,8 @@ digdir:test_HVD-datasett1 a dcat:Dataset ;
     dcat:contactPoint <digdir:kontaktpunkt> ;
     dct:spatial <https://data.geonorge.no/administrativeEnheter/kommune/id/172833> ;
     dcat:landingPage <https://www.digdir.no/> ;
-    dcatap:applicableLegislation <digdir:regulativressurs1> ;
+    dcatap:applicableLegislation <digdir:regulativressurs1> ,
+								 <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
     dcatap:hvdCategory <http://data.europa.eu/bna/c_a9135398> .
 	
 <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/312460726> a foaf:Agent ;
