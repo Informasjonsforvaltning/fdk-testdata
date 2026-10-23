@@ -57,7 +57,7 @@ digdir:kontaktpunkt a vcard:Organization ;
     vcard:hasURL <https://data.norge.no/nb/contact> .
 
 digdir:distribusjon1 a dcat:Distribution ;
-	dcat:accessURL <https//vg.no> ;
+	dcat:accessURL <https://vg.no> ;
 	dcatap:applicableLegislation <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
 	dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
 	dct:description <Test distribusjon> ;
